@@ -207,6 +207,16 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-4.1.0\css\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-4.1.0\css\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-4.1.0\css\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-4.1.0\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-4.1.0\css\bootstrap.css" />
+    <Content Include="Content\bootstrap-4.1.0\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap-4.1.0\js\bootstrap.bundle.js" />
+    <Content Include="Content\bootstrap-4.1.0\js\bootstrap.bundle.min.js" />
+    <Content Include="Content\bootstrap-4.1.0\js\bootstrap.js" />
+    <Content Include="Content\bootstrap-4.1.0\js\bootstrap.min.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -220,6 +230,16 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\bootstrap-4.1.0\css\bootstrap-grid.css.map" />
+    <Content Include="Content\bootstrap-4.1.0\css\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-4.1.0\css\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-4.1.0\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-4.1.0\css\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-4.1.0\css\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap-4.1.0\js\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap-4.1.0\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Content\bootstrap-4.1.0\js\bootstrap.js.map" />
+    <Content Include="Content\bootstrap-4.1.0\js\bootstrap.min.js.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
