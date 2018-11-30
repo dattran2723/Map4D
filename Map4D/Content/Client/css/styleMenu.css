@@ -1,0 +1,18 @@
+﻿#menu-top {
+    margin: auto 0;
+}
+    #menu-top #menu-recommend {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #1079ef;
+        color: white;
+        height: 40px;
+    }
+    #menu-top nav,a {
+        background-color: #45a4e8;
+        color: white;
+    }
+    #menu-top nav .collapse ul li .nav-link {
+        padding: 0 1rem;
+    }
