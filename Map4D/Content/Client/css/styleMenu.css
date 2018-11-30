@@ -1,10 +1,16 @@
-﻿#menu-top {
-    margin: auto 0;
+﻿@font-face {
+    font-family: 'Myriad Pro';
+    src: url('/fonts/MYRIADPRO-REGULAR.woff') format('woff');
 }
 
-    #menu-top #menu-recommend span {
-        margin: auto 8px;
-    }
+#menu-top {
+    margin: auto 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    transition: 0.7s;
+}
 
     #menu-top #menu-recommend {
         display: flex;
@@ -14,6 +20,11 @@
         color: white;
         height: 55px;
     }
+
+        #menu-top #menu-recommend span {
+            margin: auto 8px;
+        }
+
 
     #menu-top a {
         color: white;
@@ -26,7 +37,7 @@
     #menu-top nav {
         padding-left: 5%;
         color: white;
-        position: relative;
+        transition: 0.7s
     }
 
         #menu-top nav .logo a {
@@ -40,9 +51,10 @@
             height: 90px;
             background-size: cover;
             position: absolute;
-            right: 18%;
+            right: 30%;
             top: -60px;
-            box-shadow: 0px 13px 20px 2px rgba(0, 0, 0, 0.21)
+            box-shadow: 0px 13px 20px 2px rgba(0, 0, 0, 0.21);
+            transition:0.7s;
         }
 
         #menu-top nav button {
@@ -57,6 +69,8 @@
 
             #menu-top nav .collapse ul li .nav-link {
                 padding: 0 1rem;
+                font-family: 'Myriad Pro';
+                font-size: 18px;
             }
 
             #menu-top nav .collapse ul li#btn-signin {
@@ -64,6 +78,8 @@
             }
 
                 #menu-top nav .collapse ul li#btn-signin a {
+                    font-family: 'Myriad Pro';
+                    font-size: 18px;
                     background-color: #0cf8c8;
                     color: black;
                     width: 160px;
@@ -72,4 +88,6 @@
                     align-items: center;
                     justify-content: center;
                     border-radius: 30px;
+                    box-shadow: 0px 13px 20px 2px rgba(0, 0, 0, 0.21);
+                    transition:0.7s
                 }
