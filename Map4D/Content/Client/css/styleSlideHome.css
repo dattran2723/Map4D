@@ -1,4 +1,11 @@
-﻿
+﻿@font-face {
+    font-family: 'UTM Avo';
+    src: url('/fonts/UTM Avo.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('/fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
 #wrap-slide {
     margin: auto 0;
     background-image: url("/Content/Client/img/icon-page-1_0016_Header-Bg.png");
@@ -6,6 +13,7 @@
     margin-top: -70px;
     padding-top: 16%;
 }
+
 #carouselExampleIndicators .carousel-indicators li {
     border-radius: 10px;
     height: 10px;
@@ -14,10 +22,11 @@
 
 #carouselExampleIndicators {
     margin: 0 auto;
-}    
+}
+
     #carouselExampleIndicators ol {
         bottom: 56%;
-        left: 80%;
+        left: 75%;
     }
 
     #carouselExampleIndicators .carousel-indicators {
@@ -28,13 +37,48 @@
             display: block;
             margin-top: 5px;
         }
+
     #carouselExampleIndicators .carousel-inner .carousel-item .row .image-slide {
-        padding-left:7%;
-    }
-    #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide {
-        padding-top: 7%;
+        padding-left: 7%;
     }
 
+    #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide {
+        padding-top: 11%;
+    }
+
+        #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide h1 {
+            color: white;
+            font-family: 'UTM Avo';
+            font-size: 51px;
+        }
+
+        #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide p {
+            color: #0b4f7a;
+            font-family: 'Myriad Pro';
+            font-size: 18px;
+        }
+
+        #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide a {
+            background-color: #0df8c8;
+            width: 37%;
+            height: 50px;
+            border-radius: 30px;
+            font-family: 'Myriad Pro';
+            font-size: 18px;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top:7%;
+        }
+        #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide .btn-arrow {
+            margin-top: 24%;
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0px 13px 20px 2px rgba(0, 0, 0, 0.21)
+        }
     #carouselExampleIndicators .carousel-control-prev {
         visibility: hidden;
     }

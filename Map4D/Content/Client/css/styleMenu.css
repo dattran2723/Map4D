@@ -12,7 +12,7 @@
         justify-content: center;
         background-color: #1079ef;
         color: white;
-        height: 60px;
+        height: 55px;
     }
 
     #menu-top a {
@@ -60,7 +60,7 @@
             }
 
             #menu-top nav .collapse ul li#btn-signin {
-                padding-left: 18%;
+                margin-left: 18%;
             }
 
                 #menu-top nav .collapse ul li#btn-signin a {
