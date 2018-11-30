@@ -1,0 +1,35 @@
+﻿@font-face {
+    font-family: 'UTM Avo';
+    src: url('../../../fonts/UTM Avo.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MYRIADPRO-REGULAR';
+    src: url('../../../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+.buildMap4D {
+    background-image: url("/Content/Client/img/icon-page-1_0006_Grey-Bg_Repair3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .buildMap4D .rowbottom {
+        margin: 0 auto;
+    }
+
+    .buildMap4D .top {
+        padding-top: 29%;
+    }
+
+        .buildMap4D .top .more {
+            font-family: 'UTM Avo';
+            font-size: 51.02px;
+            color: #4882dc;
+        }
+
+        .buildMap4D .top .build {
+            font-family: 'UTM Avo';
+            font-size: 51.02px;
+            margin-top: -1.5%;
+        }
