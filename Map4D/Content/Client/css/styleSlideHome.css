@@ -2,26 +2,23 @@
     font-family: 'UTM Avo';
     src: url('/fonts/UTM Avo.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'Myriad Pro';
     src: url('/fonts/MYRIADPRO-REGULAR.woff') format('woff');
 }
+
 #wrap-slide {
     margin: auto 0;
     background-image: url("/Content/Client/img/icon-page-1_0016_Header-Bg.png");
     background-size: cover;
-    margin-top: -70px;
     padding-top: 16%;
 }
 
-#carouselExampleIndicators .carousel-indicators li {
-    border-radius: 10px;
-    height: 10px;
-    width: 10px;
-}
 
 #carouselExampleIndicators {
     margin: 0 auto;
+    margin-top:5%;
 }
 
     #carouselExampleIndicators ol {
@@ -34,6 +31,12 @@
     }
 
         #carouselExampleIndicators .carousel-indicators li {
+            border-radius: 10px;
+            height: 10px;
+            width: 10px;
+        }
+
+        #carouselExampleIndicators .carousel-indicators li {
             display: block;
             margin-top: 5px;
         }
@@ -43,7 +46,7 @@
     }
 
     #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide {
-        padding-top: 11%;
+        padding-top: 10%;
     }
 
         #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide h1 {
@@ -69,8 +72,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top:7%;
+            margin-top: 7%;
+            box-shadow: 0px 13px 20px 2px rgba(0, 0, 0, 0.21)
         }
+
         #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide .btn-arrow {
             margin-top: 24%;
             width: 70px;
@@ -79,6 +84,7 @@
             border-radius: 50%;
             box-shadow: 0px 13px 20px 2px rgba(0, 0, 0, 0.21)
         }
+
     #carouselExampleIndicators .carousel-control-prev {
         visibility: hidden;
     }
