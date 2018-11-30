@@ -1,0 +1,93 @@
+﻿@font-face {
+    font-family: 'UTM Avo';
+    src: url('../fonts/UTM Avo.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Bold SemiExtended';
+    src: url('../fonts/Myriad Pro Bold SemiExtended.ttf') format('truetype');
+}
+
+.createMobileApps {
+    background-image: url("/Content/Client/img/icon-page-1_0006_Grey-Bg_Repair3.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    /*position: relative;*/
+}
+
+    .createMobileApps .left {
+        padding-bottom: 28%;
+    }
+
+        .createMobileApps .left .content {
+            padding-left: 45%;
+            padding-top: 59%;
+        }
+
+            .createMobileApps .left .content .create {
+                font-family: 'utm avo';
+                font-weight: normal;
+                color: #1a6ad9;
+                font-size: 51.02px;
+                margin-top: -6%;
+            }
+
+            .createMobileApps .left .content .mobileapps {
+                font-family: 'utm avo';
+                font-weight: normal;
+                font-size: 51.02px;
+                margin-top: -9%;
+            }
+
+            .createMobileApps .left .content .contrary {
+                font-family: 'Myriad Pro Bold SemiExtended';
+                font-size: 18.43px;
+                font-weight: normal;
+                color: #919191;
+            }
+
+    .createMobileApps .right {
+    }
+
+        .createMobileApps .right .imgPhone {
+            width: 100%;
+            margin-top: -37%;
+        }
+
+@media only screen and (max-width: 575px) {
+    .createMobileApps .left {
+        width: 50%;
+    }
+
+    .createMobileApps .right {
+        width: 50%;
+    }
+
+    .createMobileApps .left {
+        padding-bottom: 5%;
+    }
+
+        .createMobileApps .left .content {
+            padding-left: 18%;
+            padding-top: 36%;
+        }
+
+            .createMobileApps .left .content .imgIP {
+                width: 33%;
+            }
+
+            .createMobileApps .left .content .create {
+                font-size: 18px;
+                margin-top: -6%;
+            }
+
+            .createMobileApps .left .content .mobileapps {
+                font-size: 18px;
+                margin-top: -9%;
+            }
+
+            .createMobileApps .left .content .contrary {
+                font-size: 12px;
+            }
+}
