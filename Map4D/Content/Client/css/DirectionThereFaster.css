@@ -1,0 +1,46 @@
+﻿@font-face {
+    font-family: 'UTM Avo';
+    src: url('/fonts/UTM Avo.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Bold SemiExtended';
+    src: url('/fonts/Myriad Pro Bold SemiExtended.ttf') format('truetype');
+}
+
+.direction {
+    background-image: url("/Content/Client/img/icon-page-1_0004_Blue-Bg.png");
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 50% 5%;
+    border-bottom-right-radius: 50% 5%;
+}
+
+    .direction .right .content {
+        padding-top: 58%;
+        padding-left: 7%;
+        padding-bottom: 30%;
+    }
+
+        .direction .right .content .direction1 {
+            color: #fff;
+            font-family: 'UTM Avo';
+            font-size: 51.02px;
+            padding-left: 6%;
+        }
+
+        .direction .right .content .gettherefaster {
+            font-family: 'UTM Avo';
+            font-size: 51.02px;
+            color: #fff;
+            padding-left: 6%;
+        }
+
+        .direction .right .content .contrary {
+            font-family: 'UTM Avo';
+            font-size: 18.43px;
+            color: #fff;
+            padding-left: 6%;
+        }
