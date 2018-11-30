@@ -1,18 +1,75 @@
 ﻿#menu-top {
     margin: auto 0;
 }
+
+    #menu-top #menu-recommend span {
+        margin: auto 8px;
+    }
+
     #menu-top #menu-recommend {
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #1079ef;
         color: white;
-        height: 40px;
+        height: 60px;
     }
-    #menu-top nav,a {
-        background-color: #45a4e8;
+
+    #menu-top a {
         color: white;
     }
-    #menu-top nav .collapse ul li .nav-link {
-        padding: 0 1rem;
+
+        #menu-top a:hover {
+            color: black;
+        }
+
+    #menu-top nav {
+        padding-left: 5%;
+        color: white;
+        position: relative;
     }
+
+        #menu-top nav .logo a {
+            background-image: linear-gradient(to bottom left, #0b4ebf, #498af8);
+            border-radius: 15px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90px;
+            height: 90px;
+            background-size: cover;
+            position: absolute;
+            right: 18%;
+            top: -60px;
+            box-shadow: 0px 13px 20px 2px rgba(0, 0, 0, 0.21)
+        }
+
+        #menu-top nav button {
+            color: white;
+        }
+
+        #menu-top nav .collapse ul li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            #menu-top nav .collapse ul li .nav-link {
+                padding: 0 1rem;
+            }
+
+            #menu-top nav .collapse ul li#btn-signin {
+                padding-left: 18%;
+            }
+
+                #menu-top nav .collapse ul li#btn-signin a {
+                    background-color: #0cf8c8;
+                    color: black;
+                    width: 160px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 30px;
+                }
