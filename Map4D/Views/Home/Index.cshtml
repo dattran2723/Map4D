@@ -3,5 +3,10 @@
 }
 @section css{
     <link href="~/Content/Client/css/styleSlideHome.css" rel="stylesheet" />
+    <link href="~/Content/Client/css/styleMapbox.css" rel="stylesheet" />
 }
 @RenderPage("Slide.cshtml")
+@RenderPage("Mapbox.cshtml")
+@section scripts{
+    <script src="~/Scripts/js/hover-mapbox.js"></script>
+}

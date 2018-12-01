@@ -5,42 +5,81 @@
         <img src="~/Content/Client/img/icon-page-1_0023_continue-.png" />
     </div>
     <nav class="navbar navbar-expand-lg col-md-12  navbar-fixed-top">
+            <div class="col-md-3 logo text-right">
+                <a class="navbar-brand" href="#" id="logo-map4d">
+                    <img class="img-responsive w-75" src="~/Content/Client/img/icon-page-1_0022_logo-map-4d.png" />
+                </a>
+            </div>
+            <button class="navbar-toggler text-right" id="btn-menu" type="button" data-toggle="collapse" data-target=".showMenu" aria-controls="showMenu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse mx-auto showMenu" id="list-menu-top">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="space-item">|</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Solutions</a>
+                    </li>
+                    <li class="space-item">|</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Document</a>
+                    </li>
+                    <li class="space-item">|</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Company</a>
+                    </li>
+                    <li class="space-item">|</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse col-md-4 showMenu">
+                <a class="btn" id="btn-signin">Sign In</a>
+            </div>
+        </nav>
+    @*<nav class="navbar navbar-expand-lg w-100">
         <div class="col-md-3 logo text-right">
             <a class="navbar-brand" href="#" id="logo-map4d">
                 <img class="img-responsive w-75" src="~/Content/Client/img/icon-page-1_0022_logo-map-4d.png" />
             </a>
         </div>
-        <button class="navbar-toggler text-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" id="btn-menu" type="button" data-toggle="collapse" data-target=".showMenu">
             <i class="fas fa-bars"></i>
         </button>
 
-        <div class="collapse navbar-collapse mx-auto" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse showMenu col-md-6">
+            <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Products</a>
                 </li>
-                <li class="distance">|</li>
+                <li class="h"><h5>|</h5></li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Solutions</a>
                 </li>
-                <li class="distance">|</li>
+                <li class="h"><h5>|</h5></li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Document</a>
                 </li>
-                <li class="distance">|</li>
+                <li class="h"><h5>|</h5></li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Company</a>
                 </li>
-                <li class="distance">|</li>
+                <li class="h"><h5>|</h5></li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>
                 </li>
-                <li id="btn-signin">
-                    <a class="btn">Sign In</a>
-                </li>
             </ul>
         </div>
-        <div class="col-md-2">
+
+        <div class="collapse navbar-collapse col-md-3 showMenu">
+            <a class="btn" id="btn-signin">Sign In</a>
         </div>
-    </nav>
+    </nav>*@
 </div>

@@ -1,0 +1,45 @@
+﻿#map-box {
+    margin: 9% 0 5% 0;
+}
+
+    #map-box #map-box-title h1 {
+        font-family: 'UTM Avo';
+        font-size: 51px;
+    }
+
+    #map-box #map-box-content {
+        margin-top: 2%;
+    }
+
+        #map-box #map-box-content a {
+            text-decoration:none;
+        }
+        #map-box #map-box-content .map-box-item {
+            width: 100%;
+            border-radius: 30px;
+        }
+            #map-box #map-box-content .map-box-item.active, #mapbox-default {
+                box-shadow: 0px 20px 50px 0px rgba(16, 25, 255, 0.20);
+            }
+                #map-box #map-box-content .map-box-item.active h5, #map-box #map-box-content .map-box-item#mapbox-default h5 {
+                    color: #1c80df;
+                }        
+
+            #map-box #map-box-content .map-box-item img {
+                padding-top: 31%;
+                padding-bottom: 6%;
+            }
+            #map-box #map-box-content .map-box-item h5 {
+                color:black;
+                font-family: 'Myriad Pro';
+                font-size:22px;
+            }
+
+            #map-box #map-box-content .map-box-item p {
+                padding-bottom: 28%;
+                width: 80%;
+                margin: auto;
+                font-family: 'Myriad Pro';
+                font-size: 15px;
+                color: #b2b2b2;
+            }

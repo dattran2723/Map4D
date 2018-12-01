@@ -8,8 +8,8 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10;
-    transition: 0.7s;
+    z-index: 100;
+    transition: 0.5s;
 }
 
     #menu-top #menu-recommend {
@@ -37,57 +37,136 @@
     #menu-top nav {
         padding-left: 5%;
         color: white;
-        transition: 0.7s
+        transition: 0.5s;
+        font-family: 'Myriad Pro';
+        font-size: 18px;
     }
 
-        #menu-top nav .logo a {
-            background-image: linear-gradient(to bottom left, #0b4ebf, #498af8);
-            border-radius: 15px;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 90px;
-            height: 90px;
-            background-size: cover;
-            position: absolute;
-            right: 30%;
-            top: -60px;
-            box-shadow: 0px 13px 20px 2px rgba(0, 0, 0, 0.21);
-            transition:0.7s;
+        #menu-top nav .logo {
+            transition: 0.3s;
+        }
+
+            #menu-top nav .logo a {
+                background-image: linear-gradient(to bottom left, #0b4ebf, #498af8);
+                border-radius: 15px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 90px;
+                height: 90px;
+                background-size: cover;
+                position: absolute;
+                right: 30%;
+                top: -60px;
+                box-shadow: 0px 13px 20px 2px rgba(0, 0, 0, 0.21);
+                transition: 0.5s;
+            }
+
+            #menu-top nav .logo.sticky a {
+                width: 50px;
+                height: 50px;
+                top: -25px;
+            }
+
+        #menu-top nav.bg-color {
+            background: #3597e4;
+        }
+
+        #menu-top nav #list-menu-top {
+            transition: 0.5s;
         }
 
         #menu-top nav button {
             color: white;
         }
 
-        #menu-top nav .collapse ul li {
+        #menu-top nav .collapse ul .space-item {
+            margin: 2% 2% auto 2%;
+        }
+
+
+        #menu-top nav .collapse #btn-signin {
+            margin-left: 30%;
+            background: #0cf8c8;
+            color: black;
+            width: 160px;
+            height: 50px;
             display: flex;
             align-items: center;
             justify-content: center;
+            border-radius: 30px;
+            box-shadow: 0px 13px 20px 2px rgba(0, 0, 0, 0.21);
+            transition: 0.5s
         }
 
-            #menu-top nav .collapse ul li .nav-link {
-                padding: 0 1rem;
-                font-family: 'Myriad Pro';
-                font-size: 18px;
+            #menu-top nav .collapse #btn-signin:hover {
+                background: #00cda3;
             }
 
-            #menu-top nav .collapse ul li#btn-signin {
-                margin-left: 18%;
-            }
+#btn-menu {
+    border: 1px solid white;
+}
 
-                #menu-top nav .collapse ul li#btn-signin a {
-                    font-family: 'Myriad Pro';
-                    font-size: 18px;
-                    background-color: #0cf8c8;
-                    color: black;
-                    width: 160px;
-                    height: 50px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 30px;
-                    box-shadow: 0px 13px 20px 2px rgba(0, 0, 0, 0.21);
-                    transition:0.7s
-                }
+@media only screen and (max-width: 1280px) {
+    #menu-top nav .logo {
+        max-width: 22%;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    #menu-top nav .logo {
+        max-width: 18%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #menu-top nav .logo a {
+        left: 10%;
+        right: 0;
+        top: -50px;
+    }
+
+    #menu-top nav .collapse #btn-signin {
+        margin-left: 0;
+        width: 150px;
+        height: 40px;
+    }
+
+    .space-item {
+        display: none;
+    }
+
+    #menu-top nav #list-menu-top {
+        margin-top: 3%;
+        padding-left: 2%;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    #menu-top nav .logo a {
+        width: 60px;
+        height: 60px;
+    }
+
+    #menu-top nav #list-menu-top {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #menu-top #menu-recommend span {
+        font-size: 12px;
+    }
+
+    #menu-top nav .logo a {
+        width: 50px;
+        height: 50px;
+        top: -40px;
+    }
+}
+
+#wrapper {
+    margin-left: 0;
+    margin-right: 0;
+}

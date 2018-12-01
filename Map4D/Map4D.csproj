@@ -1875,6 +1875,7 @@
     <Content Include="Content\Client\bootstrap4.1.0\js\bootstrap.min.js" />
     <Content Include="Content\Client\css\CreateMobileApps.css" />
     <Content Include="Content\Client\css\styleFooter.css" />
+    <Content Include="Content\Client\css\styleMapbox.css" />
     <Content Include="Content\Client\css\styleMenu.css" />
     <Content Include="Content\Client\css\styleSlideHome.css" />
     <Content Include="Content\Client\img\icon-page-1_0000_footer-background.png" />
@@ -2113,6 +2114,8 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\footerScroll.js" />
+    <Content Include="Scripts\js\hover-mapbox.js" />
     <Content Include="Scripts\js\sticky-menu.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
@@ -2151,6 +2154,7 @@
     <Content Include="Views\Home\CreateMobileApps.cshtml" />
     <Content Include="Views\Home\Slide.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Home\Mapbox.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
