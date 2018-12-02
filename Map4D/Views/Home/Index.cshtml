@@ -7,12 +7,19 @@
     <link href="~/Content/Client/css/CreateMobileApps.css" rel="stylesheet" />
     <link href="~/Content/Client/css/DirectionThereFaster.css" rel="stylesheet" />
     <link href="~/Content/Client/css/BuildMap4D.css" rel="stylesheet" />
+    <link href="~/Content/Client/css/styleGetInTouch.css" rel="stylesheet" />
 }
 @RenderPage("Slide.cshtml")
 @RenderPage("Mapbox.cshtml")
 @RenderPage("CreateMobileApps.cshtml")
 @RenderPage("DirectionGetThereFaster.cshtml")
 @RenderPage("BuildWithMap4D.cshtml")
+@RenderPage("GetInTouch.cshtml")
 @section scripts{
     <script src="~/Scripts/js/hover-mapbox.js"></script>
+    <script>
+        $('#carouselExampleIndicators').carousel({
+            interval: 8000
+        });
+    </script>
 }

@@ -1876,6 +1876,7 @@
     <Content Include="Content\Client\css\BuildMap4D.css" />
     <Content Include="Content\Client\css\CreateMobileApps.css" />
     <Content Include="Content\Client\css\styleFooter.css" />
+    <Content Include="Content\Client\css\styleGetInTouch.css" />
     <Content Include="Content\Client\css\styleMapbox.css" />
     <Content Include="Content\Client\css\DirectionThereFaster.css" />
     <Content Include="Content\Client\css\styleMenu.css" />
@@ -2161,6 +2162,7 @@
     <Content Include="Views\Home\BuildWithMap4D.cshtml" />
     <Content Include="Views\Home\DirectionGetThereFaster.cshtml" />
     <Content Include="Views\Home\Mapbox.cshtml" />
+    <Content Include="Views\Home\GetInTouch.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
