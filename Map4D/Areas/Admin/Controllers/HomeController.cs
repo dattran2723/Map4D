@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace Map4D.Areas.Admin.Controllers
 {
-    public class AdminHomeController : Controller
+    public class HomeController : Controller
     {
-        // GET: Admin/AdminHome
-        public ActionResult AdminHome()
+        // GET: Admin/Home
+        public ActionResult Index()
         {
             return View();
         }

@@ -197,7 +197,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
-    <Compile Include="Areas\Admin\Controllers\AdminHomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -2049,7 +2049,7 @@
     <Content Include="Content\Admin\bower_components\jquery\dist\jquery.slim.min.map" />
     <Content Include="Content\Admin\dist\css\adminlte.css.map" />
     <Content Include="Content\Admin\dist\css\adminlte.min.css.map" />
-    <Content Include="Areas\Admin\Views\AdminHome\AdminHome.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <Content Include="Content\Admin\bower_components\font-awesome\less\brands.less" />
     <Content Include="Content\Admin\bower_components\font-awesome\less\fontawesome.less" />
     <Content Include="Content\Admin\bower_components\font-awesome\less\regular.less" />
