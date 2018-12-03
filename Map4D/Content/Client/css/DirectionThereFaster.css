@@ -2,16 +2,18 @@
     font-family: 'UTM Avo';
     src: url('../../../fonts/UTM Avo.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'MYRIADPRO-REGULAR';
     src: url('../../../fonts/MYRIADPRO-REGULAR.woff') format('woff');
 }
 
 .direction {
-    background-image: url("/Content/Client/img/icon-page-1_0004_Blue-Bg_Repair.png");
+    width: 100%;
+    background-image: url("/content/client/img/icon-page-1_0004_blue-bg_repair.png");
     margin: 0 auto;
     background-size: cover;
-    background-position: center;
+    background-position: 37%;
     background-repeat: no-repeat;
     border-bottom-left-radius: 50% 5%;
     border-bottom-right-radius: 50% 5%;
@@ -20,7 +22,7 @@
 
     .direction .right .content {
         padding-top: 58%;
-        padding-left: 7%;
+        padding-left: 14%;
         padding-bottom: 30%;
     }
 
@@ -29,7 +31,6 @@
             font-family: 'UTM Avo';
             font-size: 48px;
             padding-left: 6%;
-            margin-top: -6%;
         }
 
         .direction .right .content .gettherefaster {
@@ -37,7 +38,6 @@
             font-size: 48px;
             color: #fff;
             padding-left: 6%;
-            margin-top: -6%;
         }
 
         .direction .right .content .contrary {
@@ -74,30 +74,36 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .direction .right .content {
-        padding-left: 10%;
-        padding-top: 30%;
+    .direction {
+        background-position: center;
     }
 
-        .direction .right .content .direction1 {
-            font-size: 32px;
+        .direction .right .content {
+            padding-left: 0%;
+            padding-top: 30%;
         }
 
-        .direction .right .content .gettherefaster {
-            font-size: 32px;
-        }
+            .direction .right .content .direction1 {
+                font-size: 32px;
+                padding-right: 2%;
+                padding-left: 2%;
+            }
 
-        .direction .right .content .contrary {
-            font-size: 14px;
-        }
+            .direction .right .content .gettherefaster {
+                font-size: 32px;
+            }
 
-        .direction .right .content .img {
-            width: 33%;
-        }
+            .direction .right .content .contrary {
+                font-size: 14px;
+            }
 
-        .direction .right .content .contrary {
-            padding-right: 6%;
-        }
+            .direction .right .content .img {
+                width: 50%;
+            }
+
+            .direction .right .content .contrary {
+                padding-right: 6%;
+            }
 
     .direction {
         margin-top: -14%;
@@ -109,6 +115,18 @@
     .direction {
         margin-top: -22%;
     }
+
+        .direction .right .content .direction1 {
+            font-size: 20px;
+        }
+
+        .direction .right .content .gettherefaster {
+            font-size: 20px;
+        }
+
+        .direction .right .content .contrary {
+            font-size: 12px;
+        }
 }
 
 @media only screen and (max-width: 576px) {
@@ -121,36 +139,6 @@
     }
 
     .direction {
-        margin-top: -14%;
-    }
-
-        .direction .right .content .direction1 {
-            font-size: 18px;
-        }
-
-        .direction .right .content .gettherefaster {
-            font-size: 18px;
-        }
-
-        .direction .right .content .contrary {
-            font-size: 10px;
-        }
-}
-
-@media only screen and (max-width: 420px) {
-
-    .direction .right .content .direction1 {
-        font-size: 16px;
-        margin-top: -6%;
-    }
-
-    .direction .right .content .gettherefaster {
-        font-size: 16px;
-        margin-top: -16%;
-    }
-
-    .direction .right .content .contrary {
-        font-size: 8px;
-        margin-top: -9%;
+        margin-top: -22%;
     }
 }
