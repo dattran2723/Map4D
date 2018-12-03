@@ -40,6 +40,32 @@
     animation: none;
 }
 
+
+#footer {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    background-image: url('../img/icon-page-1_0024_header-notice-.png');
+}
+
+    #footer p, a {
+        font-family: 'Myriad Pro';
+        font-size: 22px;
+        color: #0b4f7a;
+    }
+
+@media only screen and (max-width: 1033px) {
+    #footer p, a {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #footer p, a {
+        font-size: 16px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .scroll-to-top {
         width: 35px;
@@ -48,15 +74,3 @@
         line-height: 35px;
     }
 }
-
-#footer {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    background-image: url('../img/icon-page-1_0024_header-notice-.png');
-}
-    #footer p,a {
-        font-family:'Myriad Pro';
-        font-size:22px;
-        color: #0b4f7a;
-    }
