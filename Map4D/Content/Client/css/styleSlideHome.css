@@ -10,7 +10,7 @@
 
 #wrap-slide {
     margin: auto 0;
-    background-image: url("/Content/Client/img/icon-page-1_0016_Header-Bg.png");
+    background-image: url("/Content/Client/img/Untitled-1_0000_Header-Bg.png");
     background-size: cover;
     padding-top: 16%;
     transition: 0.5s;
@@ -76,7 +76,7 @@
             align-items: center;
             justify-content: center;
             margin-top: 7%;
-            box-shadow: 0px 13px 20px 2px rgba(0, 0, 0, 0.21);
+            box-shadow: 0px 13px 40px 2px rgba(0, 0, 0, 0.21);
             transition: 0.5s
         }
         #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide a:hover {

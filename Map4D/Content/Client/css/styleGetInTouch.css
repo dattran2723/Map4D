@@ -1,6 +1,67 @@
 ﻿#get-in-touch {
-    margin: auto 0;
-    background-image: url("/Content/Client/img/icon-page-1_0000_footer-background.png");
-    background-repeat: no-repeat;
-    height:300px;
+    margin: -20% 0 auto 0;
+    padding-top: 20%;
+    padding-bottom: 10%;
+    background-image: url("/Content/Client/img/Untitled-1_0001_footer-background.png");
+    background-position: right;
+    background-size: cover;
+    /*height: 800px;*/
+}
+
+#get-in-touch-title h1 {
+    font-family: 'UTM Avo';
+    font-size: 51px;
+    color: white;
+}
+
+#get-in-touch-icon {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+    #get-in-touch-icon a label {
+        width: 20px;
+        height: 20px;
+        background: white;
+        border-radius: 50%;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+#get-in-touch-form input {
+    height: 72px;
+    padding: 20px;
+    border: 0.7px solid rgba(55, 55, 55, 0.09);
+}
+
+    #get-in-touch-form input#your-name {
+        border-top-left-radius: 20px;
+    }
+
+    #get-in-touch-form input#your-email {
+        border-top-right-radius: 20px;
+    }
+
+#get-in-touch-form textarea {
+    height: 150px;
+    padding: 20px;
+    border: 0.7px solid rgba(55, 55, 55, 0.09);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#get-in-touch-form #btn-submit {
+    margin-top: 3%;
+    background: #0df8c8;
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
+    font-family: 'Myriad Pro';
+    font-size: 18px;
+    line-height: 10px;
+    color: black;
+    box-shadow: 0px 13px 20px 2px rgba(0, 0, 0, 0.21);
+}
+#footer {
+    background-image: none;
+    margin-top:-4%;
 }

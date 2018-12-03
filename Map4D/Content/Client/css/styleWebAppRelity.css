@@ -1,0 +1,38 @@
+﻿#web-app-relity {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+    #web-app-relity #web-app-relity-content {
+        padding-left: 22%;
+    }
+
+        #web-app-relity #web-app-relity-content img {
+            padding-top: 42%;
+            width: 40%;
+        }
+
+        #web-app-relity #web-app-relity-content div {
+            margin-left: 5%;
+            margin-top: -5%;
+        }
+
+            #web-app-relity #web-app-relity-content div h3 {
+                font-family: 'UTM Avo';
+                font-size: 51px;
+                color: #1969d7;
+            }
+
+                #web-app-relity #web-app-relity-content div h3 span {
+                    color: black;
+                }
+
+            #web-app-relity #web-app-relity-content div p {
+                font-family: 'Myriad Pro';
+                font-size: 18px;
+                color: #909090;
+            }
+
+    #web-app-relity #web-app-relity-img img {
+        width: 90%;
+    }
