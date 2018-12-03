@@ -48,17 +48,19 @@ namespace Map4D.Models
 
     public class LoginViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "Vui lòng nhập email !")]
         [Display(Name = "Email")]
-        [EmailAddress]
+        [EmailAddress(ErrorMessage = "Email không hợp lệ")]
         public string Email { get; set; }
 
-        [Required]
-        [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Required(ErrorMessage = "Vui lòng nhập mật khẩu !")]
+        [StringLength(32, MinimumLength = 6,
+                   ErrorMessage = "Yêu cầu nhập tối thiểu 6 và tối đa 32 kí tự !"),
+                   DataType(DataType.Password),
+                   Display(Name = "Mật khẩu")]
         public string Password { get; set; }
 
-        [Display(Name = "Remember me?")]
+        [Display(Name = "Ghi nhớ?")]
         public bool RememberMe { get; set; }
     }
 

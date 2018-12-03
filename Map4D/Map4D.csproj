@@ -1809,6 +1809,7 @@
     <Content Include="Content\Admin\dist\css\alt\AdminLTE-select2.min.css" />
     <Content Include="Content\Admin\dist\css\alt\AdminLTE-without-plugins.css" />
     <Content Include="Content\Admin\dist\css\alt\AdminLTE-without-plugins.min.css" />
+    <Content Include="Content\Admin\dist\css\login.css" />
     <Content Include="Content\Admin\dist\css\skins\skin-black-light.css" />
     <Content Include="Content\Admin\dist\css\skins\skin-black-light.min.css" />
     <Content Include="Content\Admin\dist\css\skins\skin-black.css" />
@@ -1863,6 +1864,11 @@
     <Content Include="Content\Admin\dist\img\user8-128x128.jpg" />
     <Content Include="Content\Admin\dist\js\adminlte.js" />
     <Content Include="Content\Admin\dist\js\adminlte.min.js" />
+    <Content Include="Content\Admin\plugins\iCheck\icheck.js" />
+    <Content Include="Content\Admin\plugins\iCheck\icheck.min.js" />
+    <Content Include="Content\Admin\plugins\iCheck\InputIcheck.js" />
+    <Content Include="Content\Admin\plugins\iCheck\square\blue.css" />
+    <Content Include="Content\Admin\plugins\iCheck\square\blue.png" />
     <Content Include="Content\Client\bootstrap4.1.0\css\bootstrap-grid.css" />
     <Content Include="Content\Client\bootstrap4.1.0\css\bootstrap-grid.min.css" />
     <Content Include="Content\Client\bootstrap4.1.0\css\bootstrap-reboot.css" />
@@ -1913,6 +1919,7 @@
     <Content Include="Content\Client\img\icon-page-1_0023_continue-.png" />
     <Content Include="Content\Client\img\icon-page-1_0024_header-notice-.png" />
     <Content Include="Content\Client\img\left.png" />
+    <Content Include="Content\Client\img\LOGO MAP 4d-05.png" />
     <Content Include="Content\Client\img\logoMap4D.png" />
     <Content Include="Content\Client\img\Untitled-1_0000_Header-Bg.png" />
     <Content Include="Content\Client\img\Untitled-1_0001_footer-background.png" />
