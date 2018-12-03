@@ -16,7 +16,7 @@
 
 .createMobileApps {
     background-image: url("/Content/Client/img/icon-page-1_0006_Grey-Bg_Repair2.png");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
@@ -36,7 +36,6 @@
                 font-weight: normal;
                 color: #1a6ad9;
                 font-size: 48px;
-                margin-top: -6%;
             }
 
             .createMobileApps .left .content .mobileapps {
@@ -44,7 +43,6 @@
                 font-family: 'utm avo';
                 font-weight: normal;
                 font-size: 48px;
-                margin-top: -9%;
             }
 
             .createMobileApps .left .content .contrary {
@@ -58,7 +56,7 @@
 
     .createMobileApps .right .imgPhone {
         width: 100%;
-        margin-top: -37%;
+        margin-top: 4%;
         margin-bottom: 30%;
     }
 
@@ -90,78 +88,66 @@
 @media only screen and (max-width: 768px) {
     .createMobileApps .left .content {
         padding-left: 5%;
-        padding-top: 32%;
+        padding-top: 17%;
     }
 
         .createMobileApps .left .content .imgIP {
-            width: 33%;
+            width: 24%;
         }
 
         .createMobileApps .left .content .create {
             font-size: 32px;
+            padding-left: 0%;
+            text-align: center;
+            margin-top: 0%;
         }
 
         .createMobileApps .left .content .mobileapps {
             font-size: 32px;
+            margin-top: 0%;
+            padding-left: 0%;
+            text-align: center;
         }
 
         .createMobileApps .left .content .contrary {
             font-size: 14px;
+            padding-left: 5%;
+            text-align: center;
+            padding-right: 5%;
         }
-}
-
-@media only screen and (max-width: 576px) {
-    .createMobileApps .left {
-        width: 50%;
-    }
-
-    .createMobileApps .right {
-        width: 50%;
-    }
-
-    .createMobileApps .left {
-        padding-bottom: 5%;
-    }
-
-        .createMobileApps .left .content {
-            padding-left: 18%;
-            padding-top: 36%;
-        }
-
-            .createMobileApps .left .content .create {
-                font-size: 18px;
-                margin-top: -6%;
-            }
-
-            .createMobileApps .left .content .mobileapps {
-                font-size: 18px;
-                margin-top: -9%;
-            }
-
-            .createMobileApps .left .content .contrary {
-                font-size: 10px;
-            }
-}
-
-@media only screen and (max-width: 420px) {
 
     .createMobileApps .left .content {
-        padding-left: 10%;
-        padding-top: 30%;
+        text-align: center;
+        padding-left: 0%;
+        padding-right: 0%;
+        display: block;
     }
 
-        .createMobileApps .left .content .create {
-            font-size: 16px;
-            margin-top: -6%;
-        }
+    .createMobileApps .left {
+        padding-bottom: 0%;
+    }
 
-        .createMobileApps .left .content .mobileapps {
-            font-size: 16px;
-            margin-top: -16%;
-        }
+    .createMobileApps .right .imgPhone {
+        margin-bottom: 20%;
+        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
-        .createMobileApps .left .content .contrary {
-            font-size: 8px;
-            margin-top: -9%;
-        }
+
+
+@media only screen and (max-width: 635px) {
+    .createMobileApps .left .content .create {
+        font-size: 20px;
+    }
+
+    .createMobileApps .left .content .mobileapps {
+        font-size: 20px;
+    }
+
+    .createMobileApps .left .content .contrary {
+        font-size: 12px;
+    }
 }
