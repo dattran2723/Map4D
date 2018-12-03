@@ -87,7 +87,7 @@
 
                     .buildMap4D .rowbottom .boxBuild .img .content .ContentBottom .divNameRight {
                         float: right;
-                        padding-left: 3%;
+                        padding-left: 15px;
                     }
 
                         .buildMap4D .rowbottom .boxBuild .img .content .ContentBottom .divNameRight .nameTop {
@@ -98,6 +98,7 @@
 
                         .buildMap4D .rowbottom .boxBuild .img .content .ContentBottom .divNameRight .nameBottom {
                             font-family: 'MYRIADPRO-REGULAR';
+                            color: #dddddd;
                             font-size: 8.5px;
                         }
 
@@ -167,7 +168,7 @@
     }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 625px) {
     .buildMap4D .top .more {
         font-size: 20px;
     }
@@ -175,6 +176,9 @@
     .buildMap4D .top .build {
         font-size: 20px;
     }
+}
+
+@media only screen and (max-width: 576px) {
 
     .buildMap4D .rowbottom {
         width: 100%;
