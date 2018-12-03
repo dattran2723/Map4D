@@ -1868,6 +1868,7 @@
     <Content Include="Content\Admin\plugins\iCheck\icheck.min.js" />
     <Content Include="Content\Admin\plugins\iCheck\InputIcheck.js" />
     <Content Include="Content\Admin\plugins\iCheck\square\blue.css" />
+    <Content Include="Content\Admin\plugins\iCheck\square\blue.png" />
     <Content Include="Content\Client\bootstrap4.1.0\css\bootstrap-grid.css" />
     <Content Include="Content\Client\bootstrap4.1.0\css\bootstrap-grid.min.css" />
     <Content Include="Content\Client\bootstrap4.1.0\css\bootstrap-reboot.css" />
