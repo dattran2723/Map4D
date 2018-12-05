@@ -9,6 +9,11 @@
 }
 
 
+@font-face {
+    font-family: 'MyriadPro-BlackSemiCn';
+    src: url('../../../fonts/MyriadPro-BlackSemiCn.otf') format('opentype');
+}
+
 .createMobileApps {
     background-image: url("/Content/Client/img/icon-page-1_0006_Grey-Bg_Repair2.png");
     background-size: cover;
@@ -21,8 +26,8 @@
     }
 
         .createMobileApps .left .content {
-            padding-left: 25%;
-            padding-top: 47%;
+            padding-left: 35%;
+            padding-top: 59%;
         }
 
             .createMobileApps .left .content .create {

@@ -15,8 +15,8 @@
 }
 
     .buildMap4D .rowbottom {
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 9%;
+        padding-right: 9%;
         margin: 0 auto;
         padding-bottom: 30%;
         display: flex;
@@ -40,7 +40,6 @@
 
     .buildMap4D .rowbottom .boxBuild {
         display: flex;
-        margin-bottom: 10px;
     }
 
         .buildMap4D .rowbottom .boxBuild .img {
@@ -50,28 +49,58 @@
         }
 
             .buildMap4D .rowbottom .boxBuild .img .content {
-                padding: 10px 15px 12px 15px;
+                padding: 15%;
             }
 
-                .buildMap4D .rowbottom .boxBuild .img .content .divImg {
-                    border-radius: 5px;
-                    background-color: blue;
-                    width: 45px;
-                    height: 45px;
+                .buildMap4D .rowbottom .boxBuild .img .content .contenttop {
+                    color: #FFF;
+                    background-image: linear-gradient(to right, #1c80de, #7cd1f6);
+                    border-radius: 3px;
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    padding-bottom: 2%;
                 }
 
-                .buildMap4D .rowbottom .boxBuild .img .content .contentRight .name {
-                    font-size: 14.43px;
-                    font-family: MYRIADPRO-REGULAR;
+                .buildMap4D .rowbottom .boxBuild .img .content .chutren {
+                    font-family: 'MYRIADPRO-REGULAR';
+                    font-size: 22.68px;
+                    padding-top: 9%;
                 }
 
-                .buildMap4D .rowbottom .boxBuild .img .content .contentRight .cmt {
-                    font-size: 9.92px;
-                    font-family: MYRIADPRO-REGULAR;
-                    color: #c3c3c3;
+                .buildMap4D .rowbottom .boxBuild .img .content .chuduoi {
+                    font-family: 'MYRIADPRO-REGULAR';
+                    font-size: 15.59px;
+                    color: #b2b2b2;
                 }
 
+                .buildMap4D .rowbottom .boxBuild .img .content .ContentBottom {
+                    margin: 0 auto;
+                }
 
+                    .buildMap4D .rowbottom .boxBuild .img .content .ContentBottom .divimgTron {
+                        width: 41px;
+                        height: 41px;
+                        border-radius: 50%;
+                        background-color: beige;
+                        float: left;
+                    }
+
+                    .buildMap4D .rowbottom .boxBuild .img .content .ContentBottom .divNameRight {
+                        float: right;
+                        padding-left: 15px;
+                    }
+
+                        .buildMap4D .rowbottom .boxBuild .img .content .ContentBottom .divNameRight .nameTop {
+                            font-family: 'MYRIADPRO-REGULAR';
+                            font-size: 12.76px;
+                            margin-bottom: 2px;
+                        }
+
+                        .buildMap4D .rowbottom .boxBuild .img .content .ContentBottom .divNameRight .nameBottom {
+                            font-family: 'MYRIADPRO-REGULAR';
+                            color: #dddddd;
+                            font-size: 8.5px;
+                        }
 
 @media only screen and (max-width: 1276px) {
 }
@@ -98,6 +127,19 @@
     .buildMap4D .top .build {
         font-size: 32px;
     }
+
+    .buildMap4D .rowbottom .boxBuild .img .content .ContentBottom .divNameRight {
+        float: right;
+        padding-left: 2px;
+    }
+
+    .buildMap4D .rowbottom .boxBuild .img .content .chutren {
+        font-size: 18px;
+    }
+
+    .buildMap4D .rowbottom .boxBuild .img .content .chuduoi {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -108,6 +150,14 @@
     .buildMap4D .rowbottom {
         width: 80%;
     }
+
+        .buildMap4D .rowbottom .boxBuild .img .content .chutren {
+            font-size: 16px;
+        }
+
+        .buildMap4D .rowbottom .boxBuild .img .content .chuduoi {
+            font-size: 12px;
+        }
 
         .buildMap4D .rowbottom .boxBuild .img {
             margin: 0 auto;
@@ -134,3 +184,14 @@
         width: 100%;
     }
 }
+
+/*@media only screen and (max-width: 420px) {
+
+    .buildMap4D .rowbottom .boxBuild .img .content .chutren {
+        font-size: 16px;
+    }
+
+    .buildMap4D .rowbottom .boxBuild .img .content .chuduoi {
+        font-size: 12px;
+    }
+}*/
