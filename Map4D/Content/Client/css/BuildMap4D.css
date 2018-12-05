@@ -8,6 +8,11 @@
     src: url('../../../fonts/MYRIADPRO-REGULAR.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'MyriadPro-Light';
+    src: url('../../../fonts/MyriadPro-Light.woff') format('woff');
+}
+
 .buildMap4D {
     background-image: url("/Content/Client/img/icon-page-1_0006_Grey-Bg_Repair4.png");
     background-repeat: no-repeat;
@@ -15,27 +20,28 @@
 }
 
     .buildMap4D .rowbottom {
-        padding-left: 9%;
-        padding-right: 9%;
+        padding-left: 15%;
+        padding-right: 15%;
         margin: 0 auto;
-        padding-bottom: 30%;
+        padding-bottom: 19%;
         display: flex;
         padding-top: 2%;
     }
 
     .buildMap4D .top {
-        padding-top: 29%;
+        padding-top: 21%;
     }
 
         .buildMap4D .top .more {
             font-family: 'UTM Avo';
-            font-size: 48px;
+            font-size: 45.35px;
             color: #4882dc;
         }
 
         .buildMap4D .top .build {
-            font-family: 'UTM Avo';
-            font-size: 48px;
+            font-family: MYRIADPRO-REGULAR;
+            font-size: 18.43px;
+            color: #a0a0a0;
         }
 
     .buildMap4D .rowbottom .boxBuild {
@@ -43,66 +49,50 @@
     }
 
         .buildMap4D .rowbottom .boxBuild .img {
-            box-shadow: 0px 20px 50px 0px rgba(16, 25, 255, 0.20);
+            box-shadow: 0px 20px 50px 0px rgba(75, 118, 130, 0.2);
             background-color: #fff;
-            border-radius: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
         }
 
             .buildMap4D .rowbottom .boxBuild .img .content {
-                padding: 15%;
+                padding: 10px 15px 12px 15px;
             }
 
-                .buildMap4D .rowbottom .boxBuild .img .content .contenttop {
-                    color: #FFF;
-                    background-image: linear-gradient(to right, #1c80de, #7cd1f6);
-                    border-radius: 3px;
-                    padding-left: 5%;
-                    padding-right: 5%;
-                    padding-bottom: 2%;
+            .buildMap4D .rowbottom .boxBuild .img .col-2 {
+                /*display: flex;
+                align-items: center;*/
+            }
+
+            .buildMap4D .rowbottom .boxBuild .img .content .divImg {
+                height: 45px;
+                width: 45px;
+                border-radius: 5px;
+            }
+
+            .buildMap4D .rowbottom .boxBuild .img .content .contentRight {
+                padding-left: 22px;
+            }
+
+                .buildMap4D .rowbottom .boxBuild .img .content .contentRight .name {
+                    font-family: MYRIADPRO-REGULAR;
+                    font-size: 14.43px;
+                    margin-bottom: 0;
                 }
 
-                .buildMap4D .rowbottom .boxBuild .img .content .chutren {
-                    font-family: 'MYRIADPRO-REGULAR';
-                    font-size: 22.68px;
-                    padding-top: 9%;
+                .buildMap4D .rowbottom .boxBuild .img .content .contentRight .cmt {
+                    font-family: MYRIADPRO-REGULAR;
+                    font-size: 9.92px;
+                    color: #a0a0a0;
+                    margin-bottom: 0;
+                    text-align: justify;
                 }
-
-                .buildMap4D .rowbottom .boxBuild .img .content .chuduoi {
-                    font-family: 'MYRIADPRO-REGULAR';
-                    font-size: 15.59px;
-                    color: #b2b2b2;
-                }
-
-                .buildMap4D .rowbottom .boxBuild .img .content .ContentBottom {
-                    margin: 0 auto;
-                }
-
-                    .buildMap4D .rowbottom .boxBuild .img .content .ContentBottom .divimgTron {
-                        width: 41px;
-                        height: 41px;
-                        border-radius: 50%;
-                        background-color: beige;
-                        float: left;
-                    }
-
-                    .buildMap4D .rowbottom .boxBuild .img .content .ContentBottom .divNameRight {
-                        float: right;
-                        padding-left: 15px;
-                    }
-
-                        .buildMap4D .rowbottom .boxBuild .img .content .ContentBottom .divNameRight .nameTop {
-                            font-family: 'MYRIADPRO-REGULAR';
-                            font-size: 12.76px;
-                            margin-bottom: 2px;
-                        }
-
-                        .buildMap4D .rowbottom .boxBuild .img .content .ContentBottom .divNameRight .nameBottom {
-                            font-family: 'MYRIADPRO-REGULAR';
-                            color: #dddddd;
-                            font-size: 8.5px;
-                        }
 
 @media only screen and (max-width: 1276px) {
+    .buildMap4D .rowbottom {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
 
 @media only screen and (max-width: 1033px) {
@@ -110,35 +100,38 @@
         font-size: 40px;
     }
 
-    .buildMap4D .top .build {
-        font-size: 40px;
+    .buildMap4D .rowbottom {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+        .buildMap4D .rowbottom .boxBuild .img .content {
+            padding: 10%;
+        }
+}
+
+@media only screen and (max-width: 991px) {
+    .buildMap4D .rowbottom .boxBuild .img .content .col-md-12 {
+        text-align: center;
+    }
+
+    .buildMap4D .rowbottom .boxBuild .img .content .contentRight .cmt {
+        text-align: center;
+        font-size: 9px;
     }
 
     .buildMap4D .rowbottom .boxBuild .img .content {
-        padding: 10%;
+        padding: 3%;
     }
+
+        .buildMap4D .rowbottom .boxBuild .img .content .contentRight .name {
+            font-size: 13px;
+        }
 }
 
 @media only screen and (max-width: 860px) {
     .buildMap4D .top .more {
         font-size: 32px;
-    }
-
-    .buildMap4D .top .build {
-        font-size: 32px;
-    }
-
-    .buildMap4D .rowbottom .boxBuild .img .content .ContentBottom .divNameRight {
-        float: right;
-        padding-left: 2px;
-    }
-
-    .buildMap4D .rowbottom .boxBuild .img .content .chutren {
-        font-size: 18px;
-    }
-
-    .buildMap4D .rowbottom .boxBuild .img .content .chuduoi {
-        font-size: 14px;
     }
 }
 
@@ -149,15 +142,10 @@
 
     .buildMap4D .rowbottom {
         width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
-        .buildMap4D .rowbottom .boxBuild .img .content .chutren {
-            font-size: 16px;
-        }
-
-        .buildMap4D .rowbottom .boxBuild .img .content .chuduoi {
-            font-size: 12px;
-        }
 
         .buildMap4D .rowbottom .boxBuild .img {
             margin: 0 auto;
@@ -166,32 +154,75 @@
     .buildMap4D .top {
         padding-left: 1%;
     }
+
+        .buildMap4D .top .build {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+    .buildMap4D .rowbottom .boxBuild .img .content .col-md-12 {
+        text-align: start;
+    }
+
+    .buildMap4D .rowbottom .boxBuild .img .content .contentRight .cmt {
+        text-align: justify;
+    }
+
+    .buildMap4D .rowbottom .boxBuild .img .content {
+        padding: 3%;
+    }
+
+        .buildMap4D .rowbottom .boxBuild .img .content .contentRight {
+            padding-left: 0px;
+        }
+
+    .buildMap4D .rowbottom .boxBuild {
+        padding-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .buildMap4D .rowbottom .boxBuild .img .content .contentRight {
+        /*padding-left: 17px;*/
+    }
+
+    .buildMap4D .rowbottom {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 625px) {
     .buildMap4D .top .more {
-        font-size: 20px;
+        font-size: 25.52px;
     }
-
-    .buildMap4D .top .build {
-        font-size: 20px;
-    }
-}
-
-@media only screen and (max-width: 576px) {
 
     .buildMap4D .rowbottom {
         width: 100%;
     }
 }
 
-/*@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
+    .buildMap4D .rowbottom .boxBuild .img .content .contentRight {
+        padding-left: 15px;
+    }
+}
 
-    .buildMap4D .rowbottom .boxBuild .img .content .chutren {
-        font-size: 16px;
+@media only screen and (max-width: 435px) {
+    .buildMap4D .top .more {
+        font-size: 22px;
     }
 
-    .buildMap4D .rowbottom .boxBuild .img .content .chuduoi {
+    .buildMap4D .top .build {
         font-size: 12px;
     }
-}*/
+
+    .buildMap4D .rowbottom .boxBuild .img .content .contentRight .cmt {
+        font-family: MyriadPro-Light;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .buildMap4D .rowbottom .boxBuild .img .content .contentRight {
+        padding-left: 23px;
+    }
+}
