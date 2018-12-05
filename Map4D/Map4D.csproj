@@ -218,6 +218,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CustomerModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\GuestModels.cs" />
@@ -1856,6 +1857,8 @@
     <Content Include="Content\Admin\dist\css\alt\AdminLTE-select2.min.css" />
     <Content Include="Content\Admin\dist\css\alt\AdminLTE-without-plugins.css" />
     <Content Include="Content\Admin\dist\css\alt\AdminLTE-without-plugins.min.css" />
+    <Content Include="Content\Admin\dist\css\datatables\dataTables.bootstrap.css" />
+    <Content Include="Content\Admin\dist\css\datatables\responsive.bootstrap.css" />
     <Content Include="Content\Admin\dist\css\login.css" />
     <Content Include="Content\Admin\dist\css\skins\skin-black-light.css" />
     <Content Include="Content\Admin\dist\css\skins\skin-black-light.min.css" />
@@ -2170,8 +2173,13 @@
     <Content Include="fonts\MYRIADPRO-REGULAR.woff" />
     <Content Include="fonts\MYRIADPRO-SEMIBOLD.woff" />
     <Content Include="fonts\MYRIADPRO-SEMIBOLDIT.woff" />
-    <Content Include="Areas\Admin\Views\Home\GuestPost.cshtml" />
+    <Content Include="Content\Admin\dist\css\datatables\fixedHeader.bootstrap.css" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\datatable\dataTables.bootstrap.js" />
+    <Content Include="Scripts\datatable\dataTables.fixedHeader.js" />
+    <Content Include="Scripts\datatable\dataTables.responsive.js" />
+    <Content Include="Scripts\datatable\jquery.dataTables.js" />
+    <Content Include="Scripts\datatable\responsive.bootstrap.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
