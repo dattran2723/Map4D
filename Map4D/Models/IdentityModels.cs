@@ -29,5 +29,7 @@ namespace Map4D.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<Map4D.Models.GuestModels> GuestModels { get; set; }
     }
 }

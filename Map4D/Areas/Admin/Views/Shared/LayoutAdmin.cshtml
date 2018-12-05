@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="~/Content/Admin/dist/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins-->
     <link rel="stylesheet" href="~/Content/Admin/dist/css/skins/_all-skins.min.css">
+   
+
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
@@ -102,8 +104,12 @@
                         </a>
                         <ul class="treeview-menu">
                             <li><a href="#"><i class="fas fa-circle-notch"></i> Danh sách khách hàng</a></li>
+                            <li><a href="@Url.Action("GuestPost","Home")"><i class="fas fa-circle-notch"></i> Ý kiến khách hàng</a></li>
+
                         </ul>
+
                     </li>
+
                 </ul>
             </section>
             <!-- /.sidebar -->
@@ -136,5 +142,6 @@
     <script src="~/Content/Admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
     <script src="~/Content/Admin/dist/js/adminlte.min.js"></script>
+
 </body>
 </html>

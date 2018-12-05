@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Map4D.Models.GuestModels>
+@{
+    ViewBag.Title = "GuestPost";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+
+<h2>GuestPost</h2>
+<script src="~/Content/Admin/DataTables/datatables.min.js"></script>
+<link href="~/Content/Admin/DataTables/datatables.min.css" rel="stylesheet" />
+<table class="table" id="myTable">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GuestName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GuestEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GuestSubject)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Message)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.GuestName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GuestEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GuestSubject)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.IdGuest })
+            </td>
+        </tr>
+    }
+
+</table>
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable();
+    });
+</script>
