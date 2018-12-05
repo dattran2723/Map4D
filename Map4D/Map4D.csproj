@@ -203,6 +203,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\CustomersController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -222,9 +223,13 @@
     <Compile Include="Migrations\201812050945292_addCustomerModel2.Designer.cs">
       <DependentUpon>201812050945292_addCustomerModel2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812050950281_UpdateCustomerModel.cs" />
+    <Compile Include="Migrations\201812050950281_UpdateCustomerModel.Designer.cs">
+      <DependentUpon>201812050950281_UpdateCustomerModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\CustomerModels.cs" />
+    <Compile Include="Models\Customers.cs" />
     <Compile Include="Models\CustomerViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -1902,6 +1907,7 @@
     <Content Include="Content\Client\bootstrap4.1.0\js\bootstrap.bundle.min.js" />
     <Content Include="Content\Client\bootstrap4.1.0\js\bootstrap.js" />
     <Content Include="Content\Client\bootstrap4.1.0\js\bootstrap.min.js" />
+    <Content Include="Content\Client\css\3DTrucQuan.css" />
     <Content Include="Content\Client\css\BuildMap4D.css" />
     <Content Include="Content\Client\css\CreateMobileApps.css" />
     <Content Include="Content\Client\css\styleFooter.css" />
@@ -1941,6 +1947,9 @@
     <Content Include="Content\Client\img\icon-page-1_0022_logo-map-4d.png" />
     <Content Include="Content\Client\img\icon-page-1_0023_continue-.png" />
     <Content Include="Content\Client\img\icon-page-1_0024_header-notice-.png" />
+    <Content Include="Content\Client\img\icon_0000_Grey-Bg.png" />
+    <Content Include="Content\Client\img\icon_0001_icon.png" />
+    <Content Include="Content\Client\img\icon_0002_Group-1.png" />
     <Content Include="Content\Client\img\left.png" />
     <Content Include="Content\Client\img\LOGO MAP 4d-05.png" />
     <Content Include="Content\Client\img\logoMap4D.png" />
@@ -2149,6 +2158,11 @@
     <Content Include="fonts\MYRIADPRO-SEMIBOLDIT.woff" />
     <Content Include="Content\Admin\dist\css\datatables\fixedHeader.bootstrap.css" />
     <Content Include="Areas\Admin\Views\Home\demo.cshtml" />
+    <Content Include="Areas\Admin\Views\Customers\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Customers\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Customers\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Customers\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Customers\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\datatable\dataTables.bootstrap.min.js" />
     <Content Include="Scripts\datatable\dataTables.fixedHeader.min.js" />
@@ -2209,6 +2223,7 @@
     <Content Include="Views\Home\Mapbox.cshtml" />
     <Content Include="Views\Home\GetInTouch.cshtml" />
     <Content Include="Views\Home\WebAppRelity.cshtml" />
+    <Content Include="Views\Home\3DTrucQuan.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -2235,6 +2250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812050945292_addCustomerModel2.resx">
       <DependentUpon>201812050945292_addCustomerModel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812050950281_UpdateCustomerModel.resx">
+      <DependentUpon>201812050950281_UpdateCustomerModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

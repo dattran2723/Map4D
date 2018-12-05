@@ -15,8 +15,8 @@ namespace Map4D
         {
             AutoMapper.Mapper.Initialize(conf =>
             {
-                conf.CreateMap<CustomerListViewModels, CustomerModels>();
-                conf.CreateMap<CustomerRegisterViewModels, CustomerModels>();
+                conf.CreateMap<CustomerListViewModels, Customers>();
+                conf.CreateMap<CustomerRegisterViewModels, Customers>();
             });
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

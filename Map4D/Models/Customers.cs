@@ -7,7 +7,7 @@ using System.Web;
 
 namespace Map4D.Models
 {
-    public class CustomerModels
+    public class Customers
     {
         [Key]
         public string ID { get; set; }
