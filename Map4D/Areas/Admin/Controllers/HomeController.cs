@@ -14,5 +14,9 @@ namespace Map4D.Areas.Admin.Controllers
         {
             return View();
         }
+        public ActionResult demo()
+        {
+            return View();
+        }
     }
 }
