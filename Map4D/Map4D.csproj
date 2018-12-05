@@ -206,6 +206,7 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CustomerModels.cs" />
+    <Compile Include="Models\CustomerViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -1924,6 +1925,7 @@
     <Content Include="Content\Client\img\left.png" />
     <Content Include="Content\Client\img\LOGO MAP 4d-05.png" />
     <Content Include="Content\Client\img\logoMap4D.png" />
+    <Content Include="Content\Client\img\product2.jpg" />
     <Content Include="Content\Client\img\Untitled-1_0000_Header-Bg.png" />
     <Content Include="Content\Client\img\Untitled-1_0001_footer-background.png" />
     <Content Include="Content\Client\img\right.png" />
@@ -2128,11 +2130,11 @@
     <Content Include="fonts\MYRIADPRO-SEMIBOLDIT.woff" />
     <Content Include="Content\Admin\dist\css\datatables\fixedHeader.bootstrap.css" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Scripts\datatable\dataTables.bootstrap.js" />
-    <Content Include="Scripts\datatable\dataTables.fixedHeader.js" />
-    <Content Include="Scripts\datatable\dataTables.responsive.js" />
-    <Content Include="Scripts\datatable\jquery.dataTables.js" />
-    <Content Include="Scripts\datatable\responsive.bootstrap.js" />
+    <Content Include="Scripts\datatable\dataTables.bootstrap.min.js" />
+    <Content Include="Scripts\datatable\dataTables.fixedHeader.min.js" />
+    <Content Include="Scripts\datatable\dataTables.responsive.min.js" />
+    <Content Include="Scripts\datatable\jquery.dataTables.min.js" />
+    <Content Include="Scripts\datatable\responsive.bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -2142,6 +2144,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\CmtMap4D.js" />
     <Content Include="Scripts\js\footerScroll.js" />
     <Content Include="Scripts\js\hover-mapbox.js" />
     <Content Include="Scripts\js\sticky-menu.js" />
