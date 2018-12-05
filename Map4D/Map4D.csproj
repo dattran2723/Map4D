@@ -2174,6 +2174,7 @@
     <Content Include="fonts\MYRIADPRO-SEMIBOLD.woff" />
     <Content Include="fonts\MYRIADPRO-SEMIBOLDIT.woff" />
     <Content Include="Content\Admin\dist\css\datatables\fixedHeader.bootstrap.css" />
+    <Content Include="Areas\Admin\Views\Home\GuestPost.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\datatable\dataTables.bootstrap.js" />
     <Content Include="Scripts\datatable\dataTables.fixedHeader.js" />
