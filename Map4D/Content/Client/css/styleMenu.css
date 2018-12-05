@@ -1,6 +1,15 @@
 ﻿@font-face {
-    font-family: 'Myriad Pro';
-    src: url('/fonts/MyriadPro-Light.woff') format('woff');
+    font-family: 'Myriad Pro Light';
+    src: url('/fonts/MyriadPro-Light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'UTM Avo';
+    src: url('/fonts/UTM Avo.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Myriad pro';
+    src: url('/fonts/MYRIADPRO-REGULAR.OTF') format('opentype');
 }
 #menu-top {
     margin: auto 0;
@@ -37,7 +46,7 @@
         padding-left: 5%;
         color: white;
         transition: 0.5s;
-        font-family: 'Myriad Pro';
+        font-family: 'Myriad Pro Light';
         font-size: 18px;
     }
 

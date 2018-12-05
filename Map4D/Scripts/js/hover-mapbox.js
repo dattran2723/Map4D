@@ -1,18 +1,63 @@
 ﻿$(document).ready(function () {
-    $("#map-box #map-box-content .mapbox-left").mouseenter(function () {
-        $(this).addClass("active");
-        $(this).children("img").attr("src","/Content/Client/img/icon-page-1_0015_phone-icon-hover.png");
+    //hover box "3D trực quan"
+    $("#visual").mouseover(function () {
+        $(this).addClass("hover");
+    }).mouseout(function () {
+        $(this).removeClass("hover");
     });
-    $("#map-box #map-box-content .mapbox-left").mouseleave(function () {
-        $(this).removeClass("active");
-        $(this).children("img").attr("src","/Content/Client/img/icon-page-1_0014_phone.png");
+
+    //hover box "đa nền tảng"
+    $("#multi-platform").mouseover(function () {
+        $(this).addClass("hover");
+    }).mouseout(function () {
+        $(this).removeClass("hover");
     });
-    $("#map-box #map-box-content .mapbox-right").mouseenter(function () {
-        $(this).addClass("active");
-        $(this).children("img").attr("src","/Content/Client/img/icon-page-1_0012_website--hover-.png");
+
+    //hover box "chỉ đường"
+    $("#direct").mouseover(function () {
+        $(this).addClass("hover");
+    }).mouseout(function () {
+        $(this).removeClass("hover");
     });
-    $("#map-box #map-box-content .mapbox-right").mouseleave(function () {
-        $(this).removeClass("active");
-        $(this).children("img").attr("src","/Content/Client/img/icon-page-1_0011_website-.png");
+
+    //hover box "Tiện ích địa chỉ"
+    $("#utilities").mouseover(function () {
+        $(this).addClass("hover");
+    }).mouseout(function () {
+        $(this).removeClass("hover");
     });
+
+    //click box
+    $("#visual").click(function (e) {
+        e.preventDefault();
+        ChangeActive($(this));
+        goToByScroll($(this).attr("id"));
+    });
+    $("#multi-platform").click(function (e) {
+        e.preventDefault();
+        ChangeActive($(this));
+        goToByScroll($(this).attr("id"));
+    });
+    $("#direct").click(function (e) {
+        e.preventDefault();
+        ChangeActive($(this));
+        goToByScroll($(this).attr("id"));
+    });
+    $("#utilities").click(function (e) {
+        e.preventDefault();
+        ChangeActive($(this));
+        goToByScroll($(this).attr("id"));
+    });
+
+    function ChangeActive(id) {
+        $("#map-box-content div").children("a").removeClass("active");
+        $(id).addClass("active");
+    }
+
+    function goToByScroll(id) {
+        $('html,body').animate({
+            scrollTop: $("#scroll-"+id).offset().top
+        },
+            'slow');
+    }
 });
