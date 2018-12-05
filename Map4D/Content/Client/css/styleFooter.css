@@ -53,20 +53,20 @@
     background-image: url('../img/icon-page-1_0024_header-notice-.png');
 }
 
-    #footer p, a {
+    #footer p, #footer a {
         font-family: 'Myriad Pro';
         font-size: 22px;
         color: #0b4f7a;
     }
 
 @media only screen and (max-width: 1033px) {
-    #footer p, a {
+    #footer p, #footer a {
         font-size: 18px;
     }
 }
 
 @media only screen and (max-width: 860px) {
-    #footer p, a {
+    #footer p, #footer a {
         font-size: 16px;
     }
 }

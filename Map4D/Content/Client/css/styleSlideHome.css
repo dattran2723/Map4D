@@ -2,12 +2,6 @@
     font-family: 'UTM Avo';
     src: url('/fonts/UTM Avo.ttf') format('truetype');
 }
-
-@font-face {
-    font-family: 'Myriad Pro';
-    src: url('/fonts/MYRIADPRO-REGULAR.woff') format('woff');
-}
-
 #wrap-slide {
     margin: auto 0;
     background-image: url("/Content/Client/img/Untitled-1_0000_Header-Bg.png");
@@ -57,7 +51,7 @@
         #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide h1 {
             color: white;
             font-family: 'UTM Avo';
-            font-size: 48px;
+            font-size: 45px;
             transition: 0.5s;
         }
 
