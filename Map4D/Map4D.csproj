@@ -2159,16 +2159,6 @@
     <Content Include="fonts\MYRIADPRO-REGULAR.OTF" />
     <Content Include="fonts\MYRIADPRO-SEMIBOLD.OTF" />
     <Content Include="fonts\MYRIADPRO-SEMIBOLDIT.OTF" />
-    <Content Include="fonts\MYRIADPRO-BOLD.woff" />
-    <Content Include="fonts\MYRIADPRO-BOLDCOND.woff" />
-    <Content Include="fonts\MYRIADPRO-BOLDCONDIT.woff" />
-    <Content Include="fonts\MYRIADPRO-BOLDIT.woff" />
-    <Content Include="fonts\MYRIADPRO-COND.woff" />
-    <Content Include="fonts\MYRIADPRO-CONDIT.woff" />
-    <Content Include="fonts\MyriadPro-Light.woff" />
-    <Content Include="fonts\MYRIADPRO-REGULAR.woff" />
-    <Content Include="fonts\MYRIADPRO-SEMIBOLD.woff" />
-    <Content Include="fonts\MYRIADPRO-SEMIBOLDIT.woff" />
     <Content Include="Content\Admin\dist\css\datatables\fixedHeader.bootstrap.css" />
     <Content Include="Areas\Admin\Views\Home\demo.cshtml" />
     <Content Include="Areas\Admin\Views\Customers\Create.cshtml" />
