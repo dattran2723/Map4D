@@ -47,10 +47,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=8.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.8.0.0\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -204,8 +210,22 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812040440568_InitialCreate.cs" />
+    <Compile Include="Migrations\201812040440568_InitialCreate.Designer.cs">
+      <DependentUpon>201812040440568_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812050944095_addCustomerModel.cs" />
+    <Compile Include="Migrations\201812050944095_addCustomerModel.Designer.cs">
+      <DependentUpon>201812050944095_addCustomerModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812050945292_addCustomerModel2.cs" />
+    <Compile Include="Migrations\201812050945292_addCustomerModel2.Designer.cs">
+      <DependentUpon>201812050945292_addCustomerModel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CustomerModels.cs" />
+    <Compile Include="Models\CustomerViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -2205,6 +2225,17 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201812040440568_InitialCreate.resx">
+      <DependentUpon>201812040440568_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812050944095_addCustomerModel.resx">
+      <DependentUpon>201812050944095_addCustomerModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812050945292_addCustomerModel2.resx">
+      <DependentUpon>201812050945292_addCustomerModel2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
