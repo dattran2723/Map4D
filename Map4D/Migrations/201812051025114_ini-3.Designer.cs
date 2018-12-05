@@ -7,13 +7,13 @@ namespace Map4D.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class init1 : IMigrationMetadata
+    public sealed partial class ini3 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(init1));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(ini3));
         
         string IMigrationMetadata.Id
         {
-            get { return "201812040955464_init-1"; }
+            get { return "201812051025114_ini-3"; }
         }
         
         string IMigrationMetadata.Source

@@ -5,50 +5,51 @@
     ViewBag.Title = "GuestPost";
     Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
 }
-
-<h2>GuestPost</h2>
-<table class="table table-striped table-bordered nowrap" id="myTable" >
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.GuestName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GuestEmail)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GuestSubject)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Message)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-
-        @foreach (var item in Model)
-        {
+<div class="content">
+    <h2>GuestPost</h2>
+    <table class="table table-striped table-bordered nowrap" id="myTable">
+        <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.GuestName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.GuestEmail)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.GuestSubject)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Message)
-                </td>
-                <td>
-                    @Html.ActionLink("Details", "Details", new { id = item.IdGuest })
-                </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.GuestName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.GuestEmail)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.GuestSubject)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Message)
+                </th>
+                <th></th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.GuestName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.GuestEmail)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.GuestSubject)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Message)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Detail", "GuestDetail", new { id = item.IdGuest })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
 <script>
     $(document).ready(function () {
         var table = $('#myTable').DataTable({

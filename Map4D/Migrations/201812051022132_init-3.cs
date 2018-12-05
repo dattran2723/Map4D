@@ -7,12 +7,10 @@ namespace Map4D.Migrations
     {
         public override void Up()
         {
-            AlterColumn("dbo.GuestModels", "GuestName", c => c.String(nullable: false, maxLength: 255));
         }
         
         public override void Down()
         {
-            AlterColumn("dbo.GuestModels", "GuestName", c => c.String(nullable: false));
         }
     }
 }

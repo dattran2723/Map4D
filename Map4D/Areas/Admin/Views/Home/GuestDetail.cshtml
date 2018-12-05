@@ -1,0 +1,56 @@
+﻿@model Map4D.Models.GuestModels
+
+@{
+    ViewBag.Title = "GuestDetail";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+<div class="content">
+    <h4>GuestModels</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GuestName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GuestName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GuestEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GuestEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GuestSubject)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GuestSubject)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Message)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Message)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateUp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateUp)
+        </dd>
+
+    </dl>
+    <p>
+        @Html.ActionLink("Back to List", "GuestPost")
+    </p>
+</div>
+
