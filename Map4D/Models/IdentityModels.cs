@@ -29,6 +29,6 @@ namespace Map4D.Models
         {
             return new ApplicationDbContext();
         }
-        public System.Data.Entity.DbSet<Map4D.Models.Customers> CustomerModels { get; set; }
+        public virtual DbSet<Map4D.Models.Customers> Customers { get; set; }
     }
 }
