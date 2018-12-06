@@ -61,13 +61,13 @@
             }
 
                 .buildMap4D .rowbottom .boxBuild .img .content .contentRight .name {
-                    font-family: MYRIADPRO-REGULAR;
+                    font-family: 'Myriad Pro';
                     font-size: 14.43px;
                     margin-bottom: 0;
                 }
 
                 .buildMap4D .rowbottom .boxBuild .img .content .contentRight .cmt {
-                    font-family: MYRIADPRO-REGULAR;
+                    font-family: 'Myriad Pro';
                     font-size: 9.92px;
                     color: #a0a0a0;
                     margin-bottom: 0;
@@ -203,7 +203,7 @@
     }
 
     .buildMap4D .rowbottom .boxBuild .img .content .contentRight .cmt {
-        font-family: MyriadPro-Light;
+        font-family: 'Myriad Pro';
     }
 }
 
