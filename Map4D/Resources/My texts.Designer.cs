@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Map4D.Language {
+namespace Map4D.Resources {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Map4D.Language {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Resource {
+    public class My_texts {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resource() {
+        internal My_texts() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Map4D.Language {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Map4D.Language.Resource", typeof(Resource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Map4D.Resources.My texts", typeof(My_texts).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,47 +61,11 @@ namespace Map4D.Language {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Company.
+        ///   Looks up a localized string similar to Sản Phẩm.
         /// </summary>
-        public static string Company {
+        public static string SảnPhẩm {
             get {
-                return ResourceManager.GetString("Company", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Document.
-        /// </summary>
-        public static string Document {
-            get {
-                return ResourceManager.GetString("Document", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Product.
-        /// </summary>
-        public static string Product {
-            get {
-                return ResourceManager.GetString("Product", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Solution.
-        /// </summary>
-        public static string Solution {
-            get {
-                return ResourceManager.GetString("Solution", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TableValue.
-        /// </summary>
-        public static string TableValue {
-            get {
-                return ResourceManager.GetString("TableValue", resourceCulture);
+                return ResourceManager.GetString("SảnPhẩm", resourceCulture);
             }
         }
     }

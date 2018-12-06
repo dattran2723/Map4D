@@ -17,41 +17,22 @@
         @using (Html.BeginForm("GetInTouch", "Home", FormMethod.Post))
         {
             @Html.AntiForgeryToken()
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-            <span class="">
-                @Html.ValidationMessageFor(model => model.GuestName, "", new { @color = "green" })
-                <br />
-                @Html.ValidationMessageFor(model => model.GuestEmail, "", new { @class = "" })
-                <br />
-                @Html.ValidationMessageFor(model => model.GuestSubject, "", new { @class = "" })
-                <br />
-                @Html.ValidationMessageFor(model => model.Message, "", new { @class = "" })
-                <br />
-            </span>
 
             <div class="input-group col-12 col-sm-10 col-md-7 col-lg-5 mx-auto text-center">
                 @Html.EditorFor(model => model.GuestName, new { htmlAttributes = new { @class = "w-50", @id = "your-name",
-               @placeholder = "Your Name", @name = "name", @type = "text" ,@required="",@minlength="3"} })
+               @placeholder = "Họ & tên", @name = "name", @type = "text" ,@required="",@minlength="3"} })
 
-                @Html.EditorFor(model => model.GuestEmail, new { htmlAttributes = new { @class = "w-50", @id = "your-email", @placeholder = "Your Email", @name = "name", @type = "text" } })
+                @Html.EditorFor(model => model.GuestEmail, new { htmlAttributes = new { @class = "w-50", @id = "your-email", @placeholder = "Email", @name = "name", @type = "text" } })
 
-                @Html.EditorFor(model => model.GuestSubject, new { htmlAttributes = new { @class = "w-100", @id = "subject", @placeholder = "Your Subject", @name = "name", @type = "text" } })
+                @Html.EditorFor(model => model.GuestSubject, new { htmlAttributes = new { @class = "w-100", @id = "subject", @placeholder = "Tiêu đề", @name = "name", @type = "text" } })
 
-                @Html.TextAreaFor(model => model.Message, new { @class = "w-100", @placeholder = "Message", @name = "message", @id = "message" })
+                @Html.TextAreaFor(model => model.Message, new { @class = "w-100", @placeholder = "Tin nhắn", @name = "message", @id = "message" })
 
             </div>
-            <input type="submit" name="name" value="Send Now" class="btn btn-success" id="btn-submit" />
+            <input type="submit" name="name" value="Gửi ngay bây giờ" class="btn btn-success" id="btn-submit" />
         }
     </div>
 
 </div>
 
-        <div class="input-group col-12 col-sm-10 col-md-7 col-lg-5 mx-auto text-center">
-            <input type="text" name="name" value="" placeholder="Họ & tên" class="w-50" id="your-name"/>
-            <input type="text" name="name" value="" placeholder="Email"  class="w-50" id="your-email"/>
-            <input type="text" name="name" value="" placeholder="Tiêu đề"  class="w-100" id="subject"/>
-            <textarea name="message" placeholder="Tin nhắn" class="w-100"></textarea>
-        </div>
-        <input type="submit" name="name" value="Gửi ngay bây giờ" class="btn btn-success" id="btn-submit"/>
-    </div>    
-</div>
+        

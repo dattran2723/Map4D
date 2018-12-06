@@ -1,9 +1,11 @@
 ﻿using Map4D.Models;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Net.Mail;
 using System.Text;
+using System.Threading;
 using System.Web;
 using System.Web.Mvc;
 
@@ -15,8 +17,10 @@ namespace Map4D.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
         SmtpClient client = new SmtpClient();
 
-        public ActionResult Index()
+        public ActionResult Index(string language)
         {
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(language);
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
             return View();
         }
 
@@ -52,7 +56,8 @@ namespace Map4D.Controllers
                     SendMail(data.GuestEmail);
                     return RedirectToAction("Index");
                 }
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 ViewBag.Message = ex.Message;
             }

@@ -205,23 +205,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201812040440568_InitialCreate.cs" />
-    <Compile Include="Migrations\201812040440568_InitialCreate.Designer.cs">
-      <DependentUpon>201812040440568_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812050944095_addCustomerModel.cs" />
-    <Compile Include="Migrations\201812050944095_addCustomerModel.Designer.cs">
-      <DependentUpon>201812050944095_addCustomerModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812050945292_addCustomerModel2.cs" />
-    <Compile Include="Migrations\201812050945292_addCustomerModel2.Designer.cs">
-      <DependentUpon>201812050945292_addCustomerModel2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812050950281_UpdateCustomerModel.cs" />
-    <Compile Include="Migrations\201812050950281_UpdateCustomerModel.Designer.cs">
-      <DependentUpon>201812050950281_UpdateCustomerModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customers.cs" />
     <Compile Include="Models\CustomerViewModels.cs" />
@@ -230,6 +213,16 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\GuestModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\My texts.en.Designer.cs">
+      <DependentUpon>My texts.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\My texts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>My texts.resx</DependentUpon>
+    </Compile>
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -2282,17 +2275,13 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201812040440568_InitialCreate.resx">
-      <DependentUpon>201812040440568_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Resources\My texts.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>My texts.en.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812050944095_addCustomerModel.resx">
-      <DependentUpon>201812050944095_addCustomerModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812050945292_addCustomerModel2.resx">
-      <DependentUpon>201812050945292_addCustomerModel2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812050950281_UpdateCustomerModel.resx">
-      <DependentUpon>201812050950281_UpdateCustomerModel.cs</DependentUpon>
+    <EmbeddedResource Include="Resources\My texts.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>My texts.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
