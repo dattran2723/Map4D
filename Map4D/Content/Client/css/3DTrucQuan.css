@@ -1,0 +1,13 @@
+﻿.trucQuan {
+    margin: 0 auto;
+    background-image: url("/Content/Client/img/icon-page-1_0001_Grey-Bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.trucQuan .right {
+    margin: 0 auto;
+    background-image: url("/Content/Client/img/icon_0002_Group-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

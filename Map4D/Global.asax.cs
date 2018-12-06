@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Map4D.Models;
 
 namespace Map4D
 {
@@ -12,6 +13,11 @@ namespace Map4D
     {
         protected void Application_Start()
         {
+            AutoMapper.Mapper.Initialize(conf =>
+            {
+                conf.CreateMap<CustomerListViewModels, Customers>();
+                conf.CreateMap<CustomerRegisterViewModels, Customers>();
+            });
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

@@ -13,69 +13,62 @@
     background-image: url("/content/client/img/icon-page-1_0004_blue-bg_repair.png");
     margin: 0 auto;
     background-size: cover;
-    background-position: 37%;
+    background-position: 34%;
     background-repeat: no-repeat;
     border-bottom-left-radius: 50% 5%;
-    border-bottom-right-radius: 50% 5%;
+    border-bottom-right-radius: 47% 11%;
     margin-top: -19%;
 }
 
     .direction .right .content {
         padding-top: 58%;
-        padding-left: 14%;
-        padding-bottom: 30%;
+        padding-left: 28%;
+        padding-bottom: 51%;
     }
 
-        .direction .right .content .direction1 {
+        .direction .right .content .tittle {
             color: #fff;
             font-family: 'UTM Avo';
-            font-size: 48px;
+            font-size: 25.51px;
             padding-left: 6%;
+            padding-bottom: 2%;
         }
 
-        .direction .right .content .gettherefaster {
-            font-family: 'UTM Avo';
-            font-size: 48px;
-            color: #fff;
-            padding-left: 6%;
-        }
 
         .direction .right .content .contrary {
             font-family: 'MYRIADPRO-REGULAR';
-            font-size: 18px;
+            font-size: 15.59px;
             color: #fff;
             padding-left: 6%;
-            padding-right: 36%;
+            padding-right: 19%;
+            text-align: justify;
         }
 
 @media only screen and (max-width: 1200px) {
     .direction .right .content .contrary {
-        padding-right: 16%;
+        padding-right: 6%;
     }
 }
 
 @media only screen and (max-width: 992px) {
-
-    .direction .right .content .direction1 {
-        font-size: 40px;
-    }
-
-    .direction .right .content .gettherefaster {
-        font-size: 40px;
-    }
-
-    .direction .right .content .contrary {
-        font-size: 14px;
-    }
-
     .direction .right .content .img {
         width: 40%;
     }
+
+    .direction {
+        background-position: 50%;
+    }
+
+        .direction .right .content {
+            padding-left: 0%;
+        }
 }
 
 @media only screen and (max-width: 768px) {
     .direction {
         background-position: center;
+        border-bottom-left-radius: 50% 5%;
+        border-bottom-right-radius: 50% 5%;
     }
 
         .direction .right .content {
@@ -83,17 +76,7 @@
             padding-top: 30%;
         }
 
-            .direction .right .content .direction1 {
-                font-size: 32px;
-            }
 
-            .direction .right .content .gettherefaster {
-                font-size: 32px;
-            }
-
-            .direction .right .content .contrary {
-                font-size: 14px;
-            }
 
             .direction .right .content .img {
                 width: 50%;
@@ -104,7 +87,7 @@
             }
 
     .direction {
-        margin-top: -14%;
+        margin-top: -22%;
     }
 }
 
@@ -113,18 +96,6 @@
     .direction {
         margin-top: -22%;
     }
-
-        .direction .right .content .direction1 {
-            font-size: 20px;
-        }
-
-        .direction .right .content .gettherefaster {
-            font-size: 20px;
-        }
-
-        .direction .right .content .contrary {
-            font-size: 12px;
-        }
 }
 
 @media only screen and (max-width: 576px) {
@@ -138,5 +109,26 @@
 
     .direction {
         margin-top: -22%;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .direction .right .content .contrary {
+        text-align: start;
+        font-size: 12px;
+    }
+
+    .direction .right .content .tittle {
+        font-size: 22px;
+    }
+
+    .direction {
+        margin-top: -25%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .direction {
+        margin-top: -28%;
     }
 }

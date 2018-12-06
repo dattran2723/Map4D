@@ -1,14 +1,4 @@
-﻿@font-face {
-    font-family: 'UTM Avo';
-    src: url('/fonts/UTM Avo.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Myriad Pro';
-    src: url('/fonts/MYRIADPRO-REGULAR.woff') format('woff');
-}
-
-#wrap-slide {
+﻿#wrap-slide {
     margin: auto 0;
     background-image: url("/Content/Client/img/Untitled-1_0000_Header-Bg.png");
     background-size: cover;
@@ -48,8 +38,9 @@
     }
 
     #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide {
-        padding-top: 10%;
+        padding-top: 7%;
     }
+
         #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide > div {
             padding-bottom: 20%;
         }
@@ -57,11 +48,12 @@
         #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide h1 {
             color: white;
             font-family: 'UTM Avo';
-            font-size: 48px;
+            font-size: 45px;
             transition: 0.5s;
         }
 
         #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide p {
+            margin-top: 3%;
             color: #0b4f7a;
             font-family: 'Myriad Pro';
             font-size: 18px;
@@ -82,9 +74,10 @@
             margin-top: 7%;
             box-shadow: 0px 13px 45px 2px rgba(0, 0, 0, 0.21);
         }
-        #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide a:hover {
-            background: #00cda3;
-        }
+
+            #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide a:hover {
+                background: #00cda3;
+            }
 
         #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide .btn-arrow {
             margin-top: 17%;
@@ -135,31 +128,37 @@
     #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide p {
         font-size: 14px;
     }
+
     #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide a {
         width: 140px;
         height: 40px;
         font-size: 16px;
     }
+
     #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide .btn-arrow {
         width: 50px;
         height: 50px;
     }
 }
+
 @media only screen and (max-width: 710px) {
     #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide p {
         display: none;
     }
 }
+
 @media only screen and (max-width: 625px) {
     #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide h1 {
         font-size: 20px;
     }
+
     #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide a {
         width: 100px;
         height: 30px;
         font-size: 14px;
         box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.21);
     }
+
     #wrap-slide {
         padding-top: 25%;
     }
