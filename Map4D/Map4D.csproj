@@ -2302,8 +2302,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201812060439186_init-db.resx">
-      <DependentUpon>201812060439186_init-db.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201812060432168_update-customerModel.resx">
+      <DependentUpon>201812060432168_update-customerModel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\My texts.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

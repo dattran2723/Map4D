@@ -17,10 +17,8 @@ namespace Map4D.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
         SmtpClient client = new SmtpClient();
 
-        public ActionResult Index(string language)
+        public ActionResult Index()
         {
-            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(language);
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
             return View();
         }
 
@@ -74,7 +72,7 @@ namespace Map4D.Controllers
             Body.Append("</table>");
             MailMessage mail = new MailMessage();
             mail.To.Add(guestMail);
-            mail.From = new MailAddress("nguyendn112@gmail.com");
+            mail.From = new MailAddress("iotocteam123@gmail.com");
             mail.Subject = "Thư cảm ơn";
             mail.Body = Body.ToString();// phần thân của mail ở trên
             mail.IsBodyHtml = true;
