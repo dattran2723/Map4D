@@ -8,3 +8,7 @@
 /packages
 /Map4D/obj/Release
 /Map4D/App_Data
+/Map4D_Db/bin/Debug
+/Map4D_Db/obj/Debug
+/Map4D_Db/Map4D_Db.dbmdl
+/Map4D_Db/Map4D_Db.jfm
