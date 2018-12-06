@@ -16,7 +16,7 @@ namespace Map4D
                 name: "url_login",
                 url: "login",
                 defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional },
-                namespaces: new [] {"Map4D.Controllers"}
+                namespaces: new[] { "Map4D.Controllers" }
             );
             routes.MapRoute(
                 name: "Default",
