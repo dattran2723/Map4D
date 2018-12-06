@@ -1,20 +1,11 @@
-﻿@font-face {
-    font-family: 'UTM Avo';
-    src: url('../../../fonts/UTM Avo.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'MYRIADPRO-REGULAR';
-    src: url('../../../fonts/MYRIADPRO-REGULAR.woff') format('woff');
-}
-
-.trucQuan {
+﻿.trucQuan {
     width: 100%;
     margin: 0 auto;
     background-image: url("/Content/Client/img/icon_0000_Grey-Bg.png");
     background-color: #f6f6f8;
     background-size: 100%;
     background-repeat: no-repeat;
+    margin-top: -17%;
 }
 
     .trucQuan .right {
@@ -46,7 +37,7 @@
             }
 
             .trucQuan .right .content p {
-                font-family: MYRIADPRO-REGULAR;
+                font-family: 'Myriad Pro';
                 font-size: 15.59px;
             }
 
