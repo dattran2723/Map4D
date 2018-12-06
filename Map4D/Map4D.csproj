@@ -220,9 +220,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201812060439186_init-db.cs" />
-    <Compile Include="Migrations\201812060439186_init-db.Designer.cs">
-      <DependentUpon>201812060439186_init-db.cs</DependentUpon>
+    <Compile Include="Migrations\201812060454432_init-db.cs" />
+    <Compile Include="Migrations\201812060454432_init-db.Designer.cs">
+      <DependentUpon>201812060454432_init-db.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -2302,8 +2302,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201812060432168_update-customerModel.resx">
-      <DependentUpon>201812060432168_update-customerModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201812060454432_init-db.resx">
+      <DependentUpon>201812060454432_init-db.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\My texts.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
