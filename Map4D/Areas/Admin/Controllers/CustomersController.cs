@@ -18,7 +18,7 @@ namespace Map4D.Areas.Admin.Controllers
         // GET: Admin/Customers
         public async Task<ActionResult> Index()
         {
-            return View(await db.Customers.ToListAsync());
+            return View();
         }
 
         // GET: Admin/Customers/Details/5
@@ -33,29 +33,6 @@ namespace Map4D.Areas.Admin.Controllers
             {
                 return HttpNotFound();
             }
-            return View(customers);
-        }
-
-        // GET: Admin/Customers/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Admin/Customers/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "ID,Name,Company,Phone,Email,RegisterDate,Description,Status")] Customers customers)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Customers.Add(customers);
-                await db.SaveChangesAsync();
-                return RedirectToAction("Index");
-            }
-
             return View(customers);
         }
 

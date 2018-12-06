@@ -25,8 +25,8 @@ namespace Map4D.API
             return new DataTableResponse
             {
                 recordsTotal = customers.Count(),
-                recordsFiltered = 10,
-                data = customers.Take(10).ToArray()
+                recordsFiltered = customers.Count(),
+                data = customers.OrderByDescending(x => x.RegisterDate).ToArray(),
             };
         }
     }

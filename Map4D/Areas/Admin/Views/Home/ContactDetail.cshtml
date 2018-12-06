@@ -1,4 +1,4 @@
-﻿@model Map4D.Models.GuestModels
+﻿@model Map4D.Models.Contact
 
 @{
     ViewBag.Title = "GuestDetail";
@@ -9,27 +9,27 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.GuestName)
+            @Html.DisplayNameFor(model => model.Name)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.GuestName)
+            @Html.DisplayFor(model => model.Name)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.GuestEmail)
+            @Html.DisplayNameFor(model => model.Email)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.GuestEmail)
+            @Html.DisplayFor(model => model.Email)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.GuestSubject)
+            @Html.DisplayNameFor(model => model.Subject)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.GuestSubject)
+            @Html.DisplayFor(model => model.Subject)
         </dd>
 
         <dt>
@@ -41,16 +41,16 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.DateUp)
+            @Html.DisplayNameFor(model => model.CreatedDate)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.DateUp)
+            @Html.DisplayFor(model => model.CreatedDate)
         </dd>
 
     </dl>
     <p>
-        @Html.ActionLink("Back to List", "GuestPost")
+        @Html.ActionLink("Back to List", "ListContact")
     </p>
 </div>
 

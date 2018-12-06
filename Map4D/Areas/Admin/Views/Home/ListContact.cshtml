@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Map4D.Models.Contact>
+@{
+    /**/
+
+    ViewBag.Title = "GuestPost";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+<div class="box box-danger">
+    <div class="box-header">
+        <h2>Hộp thư liên hệ</h2>
+    </div>
+    <div class="box-body">
+        <table class="table table-striped table-bordered nowrap" id="list-contact">
+            <thead>
+                <tr class="bg-gray-active">
+                    <th>
+                        STT
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.Email)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.Subject)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.Message)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.CreatedDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(m => m.Status)
+                    </th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+@section scripts{
+    <script src="~/Scripts/js/GetListContact.js"></script>
+}

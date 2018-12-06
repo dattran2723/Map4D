@@ -83,33 +83,13 @@
                 </div>
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu" data-widget="tree">
-                    <li class="active treeview">
-                        <a href="#">
-                            <i class="far fa-user-circle"></i>
-                            <span>Quản lý tài khoản</span>
-                            <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="#"><i class="fas fa-circle-notch"></i> Danh sách tài khoản</a></li>
-                        </ul>
+                    
+                    <li>
+                        <a href="@Url.Action("","Home")"><i class="fas fa-envelope"></i> Quản lý khách hàng</a>
                     </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fas fa-tachometer-alt"></i>
-                            <span>Quản lý khách hàng</span>
-                            <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="#"><i class="fas fa-circle-notch"></i> Danh sách khách hàng</a></li>
-                            <li><a href="@Url.Action("GuestPost","Home")"><i class="fas fa-circle-notch"></i> Ý kiến khách hàng</a></li>
-
-                        </ul>
-
-                    </li>
+                    <li>
+                        <a href="@Url.Action("ListContact","Home")"><i class="fas fa-envelope"></i> Ý kiến khách hàng</a>
+                    </li>    
 
                 </ul>
             </section>
@@ -149,7 +129,6 @@
     <script src="~/Scripts/datatable/dataTables.fixedHeader.min.js"></script>
     <script src="~/Scripts/datatable/dataTables.responsive.min.js"></script>
     <script src="~/Scripts/datatable/responsive.bootstrap.min.js"></script>
-    <!-- Js responsive table -->
-    @*<script src="~/Scripts/js/responsiveTable.js"></script>*@
+    @RenderSection("scripts", required: false)
 </body>
 </html>

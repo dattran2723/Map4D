@@ -203,6 +203,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\ContactsController.cs" />
     <Compile Include="API\CustomersController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -231,8 +232,9 @@
     <Compile Include="Models\DataTableResponse\DataTableResponse.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Repository\IContactRepository.cs" />
     <Compile Include="Models\Repository\ICustomersRepository.cs" />
-    <Compile Include="Models\GuestModels.cs" />
+    <Compile Include="Models\Contact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\My texts.en.Designer.cs">
       <DependentUpon>My texts.en.resx</DependentUpon>
@@ -2211,9 +2213,8 @@
     <Content Include="fonts\MYRIADPRO-SEMIBOLDIT.woff" />
     <Content Include="Content\Admin\dist\css\datatables\fixedHeader.bootstrap.css" />
     <Content Include="Areas\Admin\Views\Home\demo.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\GuestPost.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\GuestDetail.cshtml" />
-    <Content Include="Areas\Admin\Views\Customers\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\ListContact.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\ContactDetail.cshtml" />
     <Content Include="Areas\Admin\Views\Customers\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\Customers\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Customers\Edit.cshtml" />
@@ -2234,6 +2235,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\js\footerScroll.js" />
+    <Content Include="Scripts\js\GetListContact.js" />
     <Content Include="Scripts\js\hover-mapbox.js" />
     <Content Include="Scripts\js\responsiveTable.js" />
     <Content Include="Scripts\js\sticky-menu.js" />
@@ -2302,9 +2304,6 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201812060447485_init-1.resx">
-      <DependentUpon>201812060447485_init-1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Resources\My texts.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>My texts.en.Designer.cs</LastGenOutput>

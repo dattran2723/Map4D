@@ -44,7 +44,7 @@ namespace Map4D.Controllers
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
         [HttpPost]
-        public ActionResult GetInTouch(GuestModels data)
+        public ActionResult GetInTouch(Contact data)
         {
             //var guest = (from u in db.GuestModels
             //             where u.GuestEmail == data.GuestEmail
@@ -57,10 +57,10 @@ namespace Map4D.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    data.DateUp = DateTime.Now;
-                    db.GuestModels.Add(data);
+                    data.CreatedDate = DateTime.Now;
+                    db.Contacts.Add(data);
                     db.SaveChanges();
-                    SendMail(data.GuestEmail);
+                    SendMail(data.Email);
                     return RedirectToAction("Index");
                 }
             }
