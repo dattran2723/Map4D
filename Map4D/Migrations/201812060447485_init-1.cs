@@ -3,7 +3,7 @@ namespace Map4D.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class updatecustomerModel : DbMigration
+    public partial class init1 : DbMigration
     {
         public override void Up()
         {
@@ -32,6 +32,7 @@ namespace Map4D.Migrations
                         GuestSubject = c.String(nullable: false),
                         Message = c.String(nullable: false),
                         DateUp = c.DateTime(nullable: false),
+                        Status = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.IdGuest);
             

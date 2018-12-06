@@ -117,7 +117,88 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Bảnggiá" xml:space="preserve">
+    <value>Price Table</value>
+  </data>
+  <data name="ChỉĐường" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+  <data name="CôngTy" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="GiảiPháp" xml:space="preserve">
+    <value>Solution</value>
+  </data>
+  <data name="GiớiThiệu1" xml:space="preserve">
+    <value>The only map in Vietnam showing 4D maps in real time. Built from multiple layers of data, ready to connect and navigate to a smart city online. It aims to integrate multiple applications into one place for state management, business production for businesses and people.</value>
+  </data>
+  <data name="GửiNgayBâyGiờ" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="HọvàTên" xml:space="preserve">
+    <value>Your name</value>
+  </data>
+  <data name="HỗTrợỨngDụng" xml:space="preserve">
+    <value>Support your applications on the mobile platform (Android &amp; iOS) and the web. With features: location search, find directions, view weather, view maps in 2D / 3D mode, view maps by time and space (4D)</value>
+  </data>
+  <data name="Khámphá" xml:space="preserve">
+    <value>Explore</value>
+  </data>
+  <data name="KhámPháDỊchVụ" xml:space="preserve">
+    <value>Explore nearby amenities</value>
+  </data>
+  <data name="KhôngChỉ" xml:space="preserve">
+    <value>Not only does it bring realistic imagery onto the 3D map, it also allows for interactive and customizable 3D objects</value>
+  </data>
+  <data name="LiênHệ" xml:space="preserve">
+    <value>Contact with us</value>
+  </data>
+  <data name="Map4DDuocdonnhan" xml:space="preserve">
+    <value>Map 4D is well received and trusted by hundreds of users around the world.</value>
+  </data>
+  <data name="MỗiĐiaiemBanToi" xml:space="preserve">
+    <value>Each location you visit has the necessary support services. Map 4D with a huge location data warehouse, full of utilities, makes it easy to find and explore.</value>
+  </data>
+  <data name="Ngônngữ" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="NềntảngMap4D" xml:space="preserve">
+    <value>4D Mapping Platform</value>
+  </data>
   <data name="SảnPhẩm" xml:space="preserve">
     <value>Product</value>
+  </data>
+  <data name="TinNhắn" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="Tiêuđề" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="TiệnÍchĐịaChỉ" xml:space="preserve">
+    <value>Address Extension</value>
+  </data>
+  <data name="Trảinghiệmcùngmap4D" xml:space="preserve">
+    <value>Experience with Map4D</value>
+  </data>
+  <data name="TrựcQuan3D" xml:space="preserve">
+    <value>3D Visualization</value>
+  </data>
+  <data name="TàiLiệu" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="TínhNăngDẫnĐường" xml:space="preserve">
+    <value>Navigation features help you get to where you are without having to know the exact location. Map 4D automatically calculates the shortest path between multiple points on the map, fully supports vehicles (walking, car pedals, motorcycles, cars).</value>
+  </data>
+  <data name="ĐaNềnTảng" xml:space="preserve">
+    <value>Multi-platform</value>
+  </data>
+  <data name="Đăngký" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="ĐếnMọiNơiThậtDễDàng" xml:space="preserve">
+    <value>It's easy to get anywhere</value>
+  </data>
+  <data name="Ứngdụng" xml:space="preserve">
+    <value>Application</value>
   </data>
 </root>
