@@ -18,7 +18,7 @@ namespace Map4D.Areas.Admin.Controllers
         // GET: Admin/Customers
         public async Task<ActionResult> Index()
         {
-            return View(await db.CustomerModels.ToListAsync());
+            return View(await db.Customers.ToListAsync());
         }
 
         // GET: Admin/Customers/Details/5
@@ -28,7 +28,7 @@ namespace Map4D.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Customers customers = await db.CustomerModels.FindAsync(id);
+            Customers customers = await db.Customers.FindAsync(id);
             if (customers == null)
             {
                 return HttpNotFound();
@@ -51,7 +51,7 @@ namespace Map4D.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.CustomerModels.Add(customers);
+                db.Customers.Add(customers);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
@@ -66,7 +66,7 @@ namespace Map4D.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Customers customers = await db.CustomerModels.FindAsync(id);
+            Customers customers = await db.Customers.FindAsync(id);
             if (customers == null)
             {
                 return HttpNotFound();
@@ -97,7 +97,7 @@ namespace Map4D.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Customers customers = await db.CustomerModels.FindAsync(id);
+            Customers customers = await db.Customers.FindAsync(id);
             if (customers == null)
             {
                 return HttpNotFound();
@@ -110,8 +110,8 @@ namespace Map4D.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(string id)
         {
-            Customers customers = await db.CustomerModels.FindAsync(id);
-            db.CustomerModels.Remove(customers);
+            Customers customers = await db.Customers.FindAsync(id);
+            db.Customers.Remove(customers);
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
         }
