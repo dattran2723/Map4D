@@ -2213,7 +2213,6 @@
     <Content Include="Areas\Admin\Views\Home\demo.cshtml" />
     <Content Include="Areas\Admin\Views\Home\GuestPost.cshtml" />
     <Content Include="Areas\Admin\Views\Home\GuestDetail.cshtml" />
-    <Content Include="Areas\Admin\Views\Customers\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Customers\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\Customers\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Customers\Edit.cshtml" />
