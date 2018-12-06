@@ -30,7 +30,7 @@
                     <img src="~/Content/Client/img/logoMap4D.png" class="img-responsive" />
                 </span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><b>Admin</b>Map4D</span>
+                <span class="logo-lg"><b>Admin - </b>Map4D</span>
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top">
@@ -117,7 +117,9 @@
         </aside>
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            @RenderBody()
+            <section class="content">
+                @RenderBody()
+            </section>
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
@@ -147,5 +149,7 @@
     <script src="~/Scripts/datatable/dataTables.fixedHeader.min.js"></script>
     <script src="~/Scripts/datatable/dataTables.responsive.min.js"></script>
     <script src="~/Scripts/datatable/responsive.bootstrap.min.js"></script>
+    <!-- Js responsive table -->
+    <script src="~/Scripts/js/responsiveTable.js"></script>
 </body>
 </html>
