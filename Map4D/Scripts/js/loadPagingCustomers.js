@@ -38,7 +38,9 @@ $(document).ready(function () {
             }
         ],
         rowCallback: function (row, data, index) {
-            console.log(data.ID);
+            $('td:eq(1)', row).html(
+                '<a href="/admin/customers/details?id=' + data.ID + '" >' + data.Name + '</a > '
+            );
             $('td:eq(7)', row).html(
                 '<a data-toggle="tooltip" title="Sửa" href="/admin/customers/edit?id=' + data.ID + '" > <i class="fas fa-edit"></i></a > ' + ' ' +
                 '<a data-toggle="tooltip" title="Chi tiết" href="/admin/customers/details?id=' + data.ID + '"><i class="fas fa-info-circle"></i></a>' + ' ' +

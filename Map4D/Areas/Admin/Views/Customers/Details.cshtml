@@ -1,13 +1,13 @@
 ﻿@model Map4D.Models.Customer
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Chi tiết khách hàng";
     Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
 }
 
 <div class="box box-primary">
     <div class="box-header">
-        <h2>Chi tiết khách hàng đăng ký sử dụng sản phẩm</h2>
+        <h2>Chi tiết khách hàng</h2>
     </div>
     <div class="box-body">
         <dl class="dl-horizontal">
@@ -67,6 +67,6 @@
                 @(Model.Status ? "Đã liên hệ" : "Chưa liên hệ")
             </dd>
         </dl>
-        <a href="/admin/customers/index" class="btn btn-default">Quay lại</a>
+        <a href="/admin/customers/index" class="btn btn-default"><i class="fas fa-reply"></i> Quay lại</a>
     </div>
 </div>

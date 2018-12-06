@@ -44,11 +44,12 @@ namespace Map4D.Areas.Admin.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Customer customers = await db.Customers.FindAsync(id);
+            var result = AutoMapper.Mapper.Map<CustomerEditViewModels>(customers);
             if (customers == null)
             {
                 return HttpNotFound();
             }
-            return View(customers);
+            return View(result);
         }
 
         // POST: Admin/Customers/Edit/5
@@ -56,15 +57,17 @@ namespace Map4D.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "ID,Name,Company,Phone,Email,RegisterDate,Description,Status")] Customer customers)
+        public async Task<ActionResult> Edit(CustomerEditViewModels model)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(customers).State = EntityState.Modified;
+                //db.Entry(customers).State = EntityState.Modified;
+                Customer customer = db.Customers.Find(model.ID);
+                AutoMapper.Mapper.Map(model, customer);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-            return View(customers);
+            return View(model);
         }
 
         // GET: Admin/Customers/Delete/5
@@ -100,6 +103,14 @@ namespace Map4D.Areas.Admin.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+        [HttpPost]
+        public JsonResult IsPhoneExist(string phone)
+        {
+            var isExist = db.Customers.Count(x => x.Phone == phone);
+            if (isExist > 0)
+                return Json(false);
+            return Json(true);
         }
     }
 }
