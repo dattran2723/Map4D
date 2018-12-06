@@ -13,11 +13,11 @@ namespace Map4D
     {
         protected void Application_Start()
         {
-            AutoMapper.Mapper.Initialize(conf =>
-            {
-                conf.CreateMap<CustomerListViewModels, Customers>();
-                conf.CreateMap<CustomerRegisterViewModels, Customers>();
-            });
+            //AutoMapper.Mapper.Initialize(conf =>
+            //{
+            //    conf.CreateMap<CustomerListViewModels, Customers>();
+            //    conf.CreateMap<CustomerRegisterViewModels, Customers>();
+            //});
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
@@ -39,7 +39,7 @@ namespace Map4D
                 Response.Cookies.Add(language);
             }
             System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(culture);
-            System.Threading.Thread.CurrentThread.CurrentUICulture = System.Threading.Thread.CurrentThread.CurrentUICulture;
+            System.Threading.Thread.CurrentThread.CurrentUICulture = System.Threading.Thread.CurrentThread.CurrentCulture;
         }
     }
 }

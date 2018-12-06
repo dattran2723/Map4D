@@ -199,30 +199,31 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ChangeLanguageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201812051014056_init-1.cs" />
-    <Compile Include="Migrations\201812051014056_init-1.Designer.cs">
-      <DependentUpon>201812051014056_init-1.cs</DependentUpon>
+    <Compile Include="Language\Resource.vi.Designer.cs">
+      <DependentUpon>Resource.vi.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Migrations\201812051018426_init-2.cs" />
-    <Compile Include="Migrations\201812051018426_init-2.Designer.cs">
-      <DependentUpon>201812051018426_init-2.cs</DependentUpon>
+    <Compile Include="Language\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201812051022132_init-3.cs" />
-    <Compile Include="Migrations\201812051022132_init-3.Designer.cs">
-      <DependentUpon>201812051022132_init-3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812051025114_ini-3.cs" />
-    <Compile Include="Migrations\201812051025114_ini-3.Designer.cs">
-      <DependentUpon>201812051025114_ini-3.cs</DependentUpon>
+    <Compile Include="Migrations\201812060130334_init-1.cs" />
+    <Compile Include="Migrations\201812060130334_init-1.Designer.cs">
+      <DependentUpon>201812060130334_init-1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\CustomerModels.cs" />
+    <Compile Include="Models\Customers.cs" />
+    <Compile Include="Models\CustomerViewModels.cs" />
+    <Compile Include="Models\HomeModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\GuestModels.cs" />
@@ -1933,6 +1934,7 @@
     <Content Include="Content\Client\bootstrap4.1.0\js\bootstrap.bundle.min.js" />
     <Content Include="Content\Client\bootstrap4.1.0\js\bootstrap.js" />
     <Content Include="Content\Client\bootstrap4.1.0\js\bootstrap.min.js" />
+    <Content Include="Content\Client\css\3DTrucQuan.css" />
     <Content Include="Content\Client\css\BuildMap4D.css" />
     <Content Include="Content\Client\css\CreateMobileApps.css" />
     <Content Include="Content\Client\css\styleFooter.css" />
@@ -2241,15 +2243,13 @@
     <Content Include="Views\Home\Mapbox.cshtml" />
     <Content Include="Views\Home\GetInTouch.cshtml" />
     <Content Include="Views\Home\WebAppRelity.cshtml" />
-    <Content Include="Views\GuestModels\Create.cshtml" />
-    <Content Include="Views\GuestModels\Delete.cshtml" />
-    <Content Include="Views\GuestModels\Details.cshtml" />
-    <Content Include="Views\GuestModels\Edit.cshtml" />
-    <Content Include="Views\GuestModels\Index.cshtml" />
+    <Content Include="Views\Home\3DTrucQuan.cshtml" />
+    <Content Include="Views\Language\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Views\ChangeLanguage\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -2264,17 +2264,16 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201812051014056_init-1.resx">
-      <DependentUpon>201812051014056_init-1.cs</DependentUpon>
+    <EmbeddedResource Include="Language\Resource.vi.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.vi.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812051018426_init-2.resx">
-      <DependentUpon>201812051018426_init-2.cs</DependentUpon>
+    <EmbeddedResource Include="Language\Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812051022132_init-3.resx">
-      <DependentUpon>201812051022132_init-3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812051025114_ini-3.resx">
-      <DependentUpon>201812051025114_ini-3.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201812060130334_init-1.resx">
+      <DependentUpon>201812060130334_init-1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
