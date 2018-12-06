@@ -1,13 +1,101 @@
-﻿.trucQuan {
+﻿@font-face {
+    font-family: 'UTM Avo';
+    src: url('../../../fonts/UTM Avo.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MYRIADPRO-REGULAR';
+    src: url('../../../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+.trucQuan {
+    width: 100%;
     margin: 0 auto;
-    background-image: url("/Content/Client/img/icon-page-1_0001_Grey-Bg.png");
-    background-size: cover;
+    background-image: url("/Content/Client/img/icon_0000_Grey-Bg.png");
+    background-color: #f6f6f8;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
-.trucQuan .right {
-    margin: 0 auto;
-    background-image: url("/Content/Client/img/icon_0002_Group-1.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    .trucQuan .right {
+        margin-top: 43% !important;
+        margin-bottom: 14% !important;
+        margin: 0 auto;
+        background-image: url("/Content/Client/img/icon_0002_Group-1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+        .trucQuan .right .imgRight {
+            padding-left: 9%;
+            padding-top: 5%;
+        }
+
+        .trucQuan .right .content {
+            padding-left: 15%;
+            color: #fff;
+            margin-top: -4%;
+            padding-right: 17%;
+            text-align: justify;
+            padding-bottom: 7%;
+        }
+
+            .trucQuan .right .content h4 {
+                font-family: 'UTM Avo';
+                font-size: 25.51px;
+            }
+
+            .trucQuan .right .content p {
+                font-family: MYRIADPRO-REGULAR;
+                font-size: 15.59px;
+            }
+
+@media only screen and (max-width: 1235px) {
+    .trucQuan .right {
+        margin-top: 38% !important;
+    }
+}
+
+@media only screen and (max-width: 1072px) {
+    .trucQuan .right {
+        margin-top: 33% !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .trucQuan .right .imgRight {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .trucQuan {
+        background-size: 128%;
+    }
+
+        .trucQuan .right {
+            margin-top: 77% !important;
+            background-position: 18%;
+            text-align: center;
+        }
+
+            .trucQuan .right .imgRight {
+                width: 25%;
+                padding-left: 0%;
+                padding-top: 0%;
+            }
+
+            .trucQuan .right .content {
+                text-align: center;
+            }
+}
+
+@media only screen and (max-width: 435px) {
+    .trucQuan .right .content h4 {
+        font-size: 22px;
+    }
+
+    .trucQuan .right .content p {
+        font-size: 12px;
+    }
 }

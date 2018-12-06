@@ -15,10 +15,11 @@
 }
 
 .createMobileApps {
-    background-image: url("/Content/Client/img/icon-page-1_0006_Grey-Bg_Repair2.png");
+    background-image: url("/Content/Client/img/icon-page-1_0006_Grey-Bg_Repair22.png");
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
+    background-position: 74%;
 }
 
     .createMobileApps .left {
@@ -27,7 +28,7 @@
 
         .createMobileApps .left .content {
             padding-left: 20%;
-            padding-top: 68%;
+            padding-top: 20%;
         }
 
             .createMobileApps .left .content .tittle {
@@ -61,14 +62,12 @@
 
     .createMobileApps .right .imgPhone {
         width: 93%;
-        margin-top: 46%;
         margin-bottom: 48%;
     }
 
 @media only screen and (max-width: 1200px) {
     .createMobileApps .left .content {
         padding-left: 20%;
-        padding-top: 45%;
     }
 }
 
@@ -82,8 +81,8 @@
 
 @media only screen and (max-width: 768px) {
     .createMobileApps .left .content {
+        padding-top: 0%;
         padding-left: 5%;
-        padding-top: 17%;
     }
 
         .createMobileApps .left .content .imgIP {
@@ -96,6 +95,13 @@
         padding-right: 0%;
         display: block;
     }
+
+        .createMobileApps .left .content .webmobile {
+            padding-left: 0%;
+        }
+        .createMobileApps .left .content .tittle {
+            padding-left: 0%;
+        }
 
     .createMobileApps .left {
         padding-bottom: 0%;
@@ -111,8 +117,13 @@
     }
 
     .createMobileApps .left .content .contrary {
-        padding-right: 0%;
+        padding-left: 13%;
+        padding-right: 15%;
         text-align: center;
+    }
+
+    .createMobileApps .left .content .webmobile {
+        padding-bottom: 1%;
     }
 }
 
