@@ -20,6 +20,12 @@ namespace Map4D
             );
             routes.MapRoute(
                 name: "Default",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional ,language="en-US"},
+                namespaces: new[] { "Map4D.Controllers" }
+            );
+            routes.MapRoute(
+                name: "language",
                 url: "{language}/{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional ,language="en-US"},
                 namespaces: new[] { "Map4D.Controllers" }
