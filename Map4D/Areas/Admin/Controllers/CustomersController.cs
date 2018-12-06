@@ -28,7 +28,7 @@ namespace Map4D.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Customers customers = await db.Customers.FindAsync(id);
+            Customer customers = await db.Customers.FindAsync(id);
             if (customers == null)
             {
                 return HttpNotFound();
@@ -43,7 +43,7 @@ namespace Map4D.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Customers customers = await db.Customers.FindAsync(id);
+            Customer customers = await db.Customers.FindAsync(id);
             if (customers == null)
             {
                 return HttpNotFound();
@@ -56,7 +56,7 @@ namespace Map4D.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "ID,Name,Company,Phone,Email,RegisterDate,Description,Status")] Customers customers)
+        public async Task<ActionResult> Edit([Bind(Include = "ID,Name,Company,Phone,Email,RegisterDate,Description,Status")] Customer customers)
         {
             if (ModelState.IsValid)
             {
@@ -74,7 +74,7 @@ namespace Map4D.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Customers customers = await db.Customers.FindAsync(id);
+            Customer customers = await db.Customers.FindAsync(id);
             if (customers == null)
             {
                 return HttpNotFound();
@@ -87,7 +87,7 @@ namespace Map4D.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(string id)
         {
-            Customers customers = await db.Customers.FindAsync(id);
+            Customer customers = await db.Customers.FindAsync(id);
             db.Customers.Remove(customers);
             await db.SaveChangesAsync();
             return RedirectToAction("Index");

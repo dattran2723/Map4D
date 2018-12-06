@@ -31,6 +31,6 @@ namespace Map4D.Models
         }
 
         public System.Data.Entity.DbSet<Map4D.Models.GuestModels> GuestModels { get; set; }
-        public virtual DbSet<Map4D.Models.Customers> Customers { get; set; }
+        public virtual DbSet<Map4D.Models.Customer> Customers { get; set; }
     }
 }
