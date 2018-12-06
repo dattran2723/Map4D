@@ -3,12 +3,12 @@ namespace Map4D.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class addCustomerModel2 : DbMigration
+    public partial class initdb : DbMigration
     {
         public override void Up()
         {
             CreateTable(
-                "dbo.CustomerModels",
+                "dbo.Customers",
                 c => new
                     {
                         ID = c.String(nullable: false, maxLength: 128),
@@ -26,7 +26,7 @@ namespace Map4D.Migrations
         
         public override void Down()
         {
-            DropTable("dbo.CustomerModels");
+            DropTable("dbo.Customers");
         }
     }
 }
