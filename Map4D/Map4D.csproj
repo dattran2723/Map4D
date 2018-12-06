@@ -47,9 +47,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper, Version=8.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoMapper.8.0.0\lib\net461\AutoMapper.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -214,9 +211,9 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
-    <Compile Include="Areas\Admin\Controllers\CustomersController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ChangeLanguageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -229,7 +226,18 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Repository\ICustomersRepository.cs" />
+    <Compile Include="Models\GuestModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\My texts.en.Designer.cs">
+      <DependentUpon>My texts.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\My texts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>My texts.resx</DependentUpon>
+    </Compile>
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1821,6 +1829,39 @@
     <Content Include="Content\Admin\bower_components\jquery\src\var\support.js" />
     <Content Include="Content\Admin\bower_components\jquery\src\var\toString.js" />
     <Content Include="Content\Admin\bower_components\jquery\src\wrap.js" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\css\dataTables.bootstrap.css" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\css\dataTables.bootstrap.min.css" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\css\dataTables.bootstrap4.css" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\css\dataTables.bootstrap4.min.css" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\css\dataTables.foundation.css" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\css\dataTables.foundation.min.css" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\css\dataTables.jqueryui.css" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\css\dataTables.jqueryui.min.css" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\css\dataTables.semanticui.css" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\css\dataTables.semanticui.min.css" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\css\jquery.dataTables.css" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\css\jquery.dataTables.min.css" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\images\sort_asc.png" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\images\sort_asc_disabled.png" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\images\sort_both.png" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\images\sort_desc.png" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\images\sort_desc_disabled.png" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\js\dataTables.bootstrap.js" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\js\dataTables.bootstrap.min.js" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\js\dataTables.bootstrap4.js" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\js\dataTables.bootstrap4.min.js" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\js\dataTables.foundation.js" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\js\dataTables.foundation.min.js" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\js\dataTables.jqueryui.js" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\js\dataTables.jqueryui.min.js" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\js\dataTables.semanticui.js" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\js\dataTables.semanticui.min.js" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\js\jquery.dataTables.js" />
+    <Content Include="Content\Admin\DataTables\DataTables-1.10.18\js\jquery.dataTables.min.js" />
+    <Content Include="Content\Admin\DataTables\datatables.css" />
+    <Content Include="Content\Admin\DataTables\datatables.js" />
+    <Content Include="Content\Admin\DataTables\datatables.min.css" />
+    <Content Include="Content\Admin\DataTables\datatables.min.js" />
     <Content Include="Content\Admin\dist\css\AdminLTE.css" />
     <Content Include="Content\Admin\dist\css\AdminLTE.min.css" />
     <Content Include="Content\Admin\dist\css\alt\AdminLTE-bootstrap-social.css" />
@@ -1914,7 +1955,6 @@
     <Content Include="Content\Client\css\styleSlideHome.css" />
     <Content Include="Content\Client\css\styleWebAppRelity.css" />
     <Content Include="Content\Client\img\Flag_of_the_United_States_%28Pantone%29.png" />
-    <Content Include="Content\Client\img\Flag_of_Vietnam.svg.png" />
     <Content Include="Content\Client\img\icon-page-1_0000_footer-background.png" />
     <Content Include="Content\Client\img\icon-page-1_0001_Grey-Bg.png" />
     <Content Include="Content\Client\img\icon-page-1_0002_Web-Apps-.png" />
@@ -1931,6 +1971,12 @@
     <Content Include="Content\Client\img\icon-page-1_0007_mockup-phone-route-Repair-.png" />
     <Content Include="Content\Client\img\icon-page-1_0008_phone-text-icon-.png" />
     <Content Include="Content\Client\img\icon-page-1_0009_icon-bg-.png" />
+    <Content Include="Content\Client\img\icon-page-1_0010_location_1068835.png" />
+    <Content Include="Content\Client\img\icon-page-1_0011_website-.png" />
+    <Content Include="Content\Client\img\icon-page-1_0012_website--hover-.png" />
+    <Content Include="Content\Client\img\icon-page-1_0013_location_hover-.png" />
+    <Content Include="Content\Client\img\icon-page-1_0014_phone.png" />
+    <Content Include="Content\Client\img\icon-page-1_0015_phone-icon-hover.png" />
     <Content Include="Content\Client\img\icon-page-1_0016_Header-Bg.png" />
     <Content Include="Content\Client\img\icon-page-1_0017_star-.png" />
     <Content Include="Content\Client\img\icon-page-1_0018_arrow.png" />
@@ -1951,11 +1997,9 @@
     <Content Include="Content\Client\img\icon_0000_Grey-Bg.png" />
     <Content Include="Content\Client\img\icon_0001_icon.png" />
     <Content Include="Content\Client\img\icon_0002_Group-1.png" />
-    <Content Include="Content\Client\img\imac.png" />
     <Content Include="Content\Client\img\left.png" />
     <Content Include="Content\Client\img\LOGO MAP 4d-05.png" />
     <Content Include="Content\Client\img\logoMap4D.png" />
-    <Content Include="Content\Client\img\man-one.jpg" />
     <Content Include="Content\Client\img\Untitled-1_0000_Header-Bg.png" />
     <Content Include="Content\Client\img\Untitled-1_0000_Mask-by-Mask.png" />
     <Content Include="Content\Client\img\Untitled-1_0001_footer-background.png" />
@@ -2149,23 +2193,20 @@
     <Content Include="fonts\UTM AvoBold.ttf" />
     <Content Include="fonts\UTM AvoBold_Italic.ttf" />
     <Content Include="fonts\UTM AvoItalic.ttf" />
-    <Content Include="fonts\MYRIADPRO-BOLD.OTF" />
-    <Content Include="fonts\MYRIADPRO-BOLDCOND.OTF" />
-    <Content Include="fonts\MYRIADPRO-BOLDCONDIT.OTF" />
-    <Content Include="fonts\MYRIADPRO-BOLDIT.OTF" />
-    <Content Include="fonts\MYRIADPRO-COND.OTF" />
-    <Content Include="fonts\MYRIADPRO-CONDIT.OTF" />
-    <Content Include="fonts\MyriadPro-Light.otf" />
-    <Content Include="fonts\MYRIADPRO-REGULAR.OTF" />
-    <Content Include="fonts\MYRIADPRO-SEMIBOLD.OTF" />
-    <Content Include="fonts\MYRIADPRO-SEMIBOLDIT.OTF" />
+    <Content Include="fonts\MYRIADPRO-BOLD.woff" />
+    <Content Include="fonts\MYRIADPRO-BOLDCOND.woff" />
+    <Content Include="fonts\MYRIADPRO-BOLDCONDIT.woff" />
+    <Content Include="fonts\MYRIADPRO-BOLDIT.woff" />
+    <Content Include="fonts\MYRIADPRO-COND.woff" />
+    <Content Include="fonts\MYRIADPRO-CONDIT.woff" />
+    <Content Include="fonts\MyriadPro-Light.woff" />
+    <Content Include="fonts\MYRIADPRO-REGULAR.woff" />
+    <Content Include="fonts\MYRIADPRO-SEMIBOLD.woff" />
+    <Content Include="fonts\MYRIADPRO-SEMIBOLDIT.woff" />
     <Content Include="Content\Admin\dist\css\datatables\fixedHeader.bootstrap.css" />
     <Content Include="Areas\Admin\Views\Home\demo.cshtml" />
-    <Content Include="Areas\Admin\Views\Customers\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\Customers\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\Customers\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\Customers\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\Customers\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\GuestPost.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\GuestDetail.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\datatable\dataTables.bootstrap.min.js" />
     <Content Include="Scripts\datatable\dataTables.fixedHeader.min.js" />
@@ -2230,10 +2271,12 @@
     <Content Include="Views\Home\GetInTouch.cshtml" />
     <Content Include="Views\Home\WebAppRelity.cshtml" />
     <Content Include="Views\Home\3DTrucQuan.cshtml" />
+    <Content Include="Views\Language\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Views\ChangeLanguage\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -2246,6 +2289,16 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\My texts.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>My texts.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\My texts.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>My texts.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
