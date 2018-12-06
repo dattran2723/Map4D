@@ -1,5 +1,6 @@
 ﻿#map-box {
     margin: 9% 0 5% 0;
+    z-index:10;
 }
 
     #map-box #map-box-title h1 {
