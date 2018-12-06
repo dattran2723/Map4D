@@ -1,8 +1,16 @@
 ﻿@font-face {
-    font-family: 'Myriad Pro';
-    src: url('/fonts/MYRIADPRO-REGULAR.woff') format('woff');
+    font-family: 'Myriad Pro Light';
+    src: url('/fonts/MyriadPro-Light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'UTM Avo';
+    src: url('/fonts/UTM Avo.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Myriad pro';
+    src: url('/fonts/MYRIADPRO-REGULAR.OTF') format('opentype');
+}
 #menu-top {
     margin: auto 0;
     position: fixed;
@@ -38,7 +46,7 @@
         padding-left: 5%;
         color: white;
         transition: 0.5s;
-        font-family: 'Myriad Pro';
+        font-family: 'Myriad Pro Light';
         font-size: 18px;
     }
 
@@ -75,6 +83,7 @@
 
         #menu-top nav #list-menu-top {
             transition: 0.5s;
+            margin-left:5%;
         }
 
         #menu-top nav button {
@@ -82,16 +91,16 @@
         }
 
         #menu-top nav .collapse ul .space-item {
-            margin: 2% 2% auto 2%;
+            margin: auto 2% auto 2%;
         }
 
 
-        #menu-top nav .collapse #btn-signin {
-            margin-left: 10%;
+        #menu-top nav .collapse ul li #btn-register {
             background: #0cf8c8;
+            font-family: 'Myriad pro';
             color: black;
-            width: 160px;
-            height: 50px;
+            width: 120px;
+            height: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -100,9 +109,58 @@
             transition: 0.5s
         }
 
-            #menu-top nav .collapse #btn-signin:hover {
+            #menu-top nav .collapse #btn-register:hover {
                 background: #00cda3;
             }
+#menu-language {
+    margin-top: 8px;
+    color: black;
+    margin-bottom:2%;
+}
+
+    #menu-language img {
+        width: 25px;
+        height: 15px;
+    }
+
+    #menu-language a {
+        margin-left: 10px;
+        color: black;
+    }
+
+#languages {
+    background: #409fe7;
+    border: 1px solid #cbcbcb;
+    box-shadow: 0px 13px 45px 2px rgba(0, 0, 0, 0.21);
+    max-height: 200px;
+    overflow: scroll;
+    overflow-x: auto
+}
+
+    #languages button:hover {
+        background: #8ac9f8;
+    }
+
+    #languages::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    #languages::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px white;
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    #languages::-webkit-scrollbar-thumb {
+        background: white;
+        border-radius: 10px;
+    }
+
+        /* Handle on hover */
+        #languages::-webkit-scrollbar-thumb:hover {
+            background: #AAAAAA;
+        }
 
 #btn-menu {
     border: 1px solid white;
@@ -115,11 +173,22 @@
         max-width: 22%;
     }
 }
+@media only screen and (max-width: 1190px) {
+
+    #menu-top nav #list-menu-top {
+        margin-left: 0;
+    }
+}
 
 @media only screen and (max-width: 1120px) {
     #menu-top nav .logo {
         max-width: 18%;
     }
+
+    #menu-top nav .collapse ul .space-item {
+        margin: auto;
+    }
+
 }
 
 @media only screen and (max-width: 991px) {
@@ -143,6 +212,10 @@
         margin-top: 3%;
         padding-left: 2%;
     }
+    #languages {
+        max-height: 140px;
+    }
+        
 }
 
 @media only screen and (max-width: 710px) {

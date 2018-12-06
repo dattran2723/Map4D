@@ -1,19 +1,4 @@
-﻿@font-face {
-    font-family: 'UTM Avo';
-    src: url('../../../fonts/UTM Avo.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'MYRIADPRO-REGULAR';
-    src: url('../../../fonts/MYRIADPRO-REGULAR.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'MyriadPro-Light';
-    src: url('../../../fonts/MyriadPro-Light.woff') format('woff');
-}
-
-.buildMap4D {
+﻿.buildMap4D {
     background-image: url("/Content/Client/img/icon-page-1_0006_Grey-Bg_Repair4.png");
     background-repeat: no-repeat;
     background-size: cover;

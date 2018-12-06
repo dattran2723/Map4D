@@ -1,92 +1,85 @@
-﻿#web-app-relity {
+﻿.web-app-relity {
     margin-left: 0;
     margin-right: 0;
     padding-top: 7%;
 }
 
-    #web-app-relity #web-app-relity-content {
-        padding-left: 22%;
+    .web-app-relity #web-app-relity-content {
+        padding-left: 15%;
     }
 
-        #web-app-relity #web-app-relity-content img {
+        .web-app-relity #web-app-relity-content img {
             padding-top: 42%;
-            width: 40%;
         }
 
-        #web-app-relity #web-app-relity-content div {
+        .web-app-relity #web-app-relity-content div {
             margin-left: 5%;
             margin-top: -5%;
         }
 
-            #web-app-relity #web-app-relity-content div h3 {
+            .web-app-relity #web-app-relity-content div h3 {
                 font-family: 'UTM Avo';
-                font-size: 48px;
+                font-size: 25.51px;
                 color: #1969d7;
             }
 
-                #web-app-relity #web-app-relity-content div h3 span {
+                .web-app-relity #web-app-relity-content div h3 span {
                     color: black;
                 }
 
-            #web-app-relity #web-app-relity-content div p {
+            .web-app-relity #web-app-relity-content div p {
                 font-family: 'Myriad Pro';
-                font-size: 18px;
+                font-size: 15.59px;
                 color: #909090;
+                text-align:justify;
             }
 
-    #web-app-relity #web-app-relity-img img {
-        width: 90%;
+    .web-app-relity #web-app-relity-img{
+        padding-right:0;
+    }
+    .web-app-relity #web-app-relity-img img {
+        width: 100%;
     }
 @media only screen and (max-width: 1240px){
-    #web-app-relity #web-app-relity-content {
+    .web-app-relity #web-app-relity-content {
         padding-left: 15%;
     }
-        #web-app-relity #web-app-relity-content img {
+        .web-app-relity #web-app-relity-content img {
             padding-top: 30%;
         }
 }
-@media only screen and (max-width: 1033px) {
-    #web-app-relity #web-app-relity-content div h3 {
-        font-size: 40px;
-    }
-
-    #web-app-relity #web-app-relity-content div p {
-        font-size: 16px;
+@media only screen and (max-width: 1100px){
+    .web-app-relity #web-app-relity-content div {
+        max-width:83%;
     }
 }
 @media only screen and (max-width: 995px) {
-    #web-app-relity #web-app-relity-content {
+    .web-app-relity #web-app-relity-content {
         padding-left: 10%;
     }
-        #web-app-relity #web-app-relity-content img {
+        .web-app-relity #web-app-relity-content img {
             padding-top: 15%;
         }
 }
-
-@media only screen and (max-width: 860px) {
-    #web-app-relity #web-app-relity-content div h3 {
-        font-size: 36px;
-    }
-    #web-app-relity #web-app-relity-content div p {
-        font-size: 14px;
-    }
-}
 @media only screen and (max-width: 767px) {
-    #web-app-relity #web-app-relity-content {
+    .web-app-relity #web-app-relity-content {
         padding-left: 0;
         text-align:center;
     }
-        #web-app-relity #web-app-relity-content img {
+        .web-app-relity #web-app-relity-content img {
             width: 24%;
         }
-        #web-app-relity #web-app-relity-content div {
+        .web-app-relity #web-app-relity-content div {
             margin: auto;
             margin-top: -5%;
         }
 
 }
-@media only screen and (max-width: 625px) {
-    #web-app-relity #web-app-relity-content div h3 {
-        font-size: 20px;
+@media only screen and (max-width: 435px) {
+    .web-app-relity #web-app-relity-content div h3 {
+        font-size: 22px;
+    }
+    .web-app-relity #web-app-relity-content div p {
+        font-size: 12px;
     }
 }

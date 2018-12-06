@@ -1,20 +1,4 @@
-﻿@font-face {
-    font-family: 'UTM Avo';
-    src: url('../../../fonts/UTM Avo.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'MYRIADPRO-REGULAR';
-    src: url('../../../fonts/MYRIADPRO-REGULAR.woff') format('woff');
-}
-
-
-@font-face {
-    font-family: 'MyriadPro-BlackSemiCn';
-    src: url('../../../fonts/MyriadPro-BlackSemiCn.otf') format('opentype');
-}
-
-.createMobileApps {
+﻿.createMobileApps {
     background-image: url("/Content/Client/img/icon-page-1_0006_Grey-Bg_Repair22.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,7 +37,7 @@
             .createMobileApps .left .content .contrary {
                 padding-left: 5%;
                 padding-right: 25%;
-                font-family: 'MYRIADPRO-REGULAR';
+                font-family: 'Myriad Pro';
                 font-size: 15.59px;
                 font-weight: normal;
                 color: #919191;
