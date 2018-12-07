@@ -76,30 +76,17 @@ namespace Map4D.Areas.Admin.Controllers
             return View(model);
         }
 
-        // GET: Admin/Customers/Delete/5
-        public async Task<ActionResult> Delete(string id)
+        [HttpGet]
+        public JsonResult Delete(string id)
         {
-            if (id == null)
+            Customer customers = db.Customers.Find(id);
+            if (customers != null)
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                db.Customers.Remove(customers);
+                db.SaveChanges();
+                return Json(true, JsonRequestBehavior.AllowGet);
             }
-            Customer customers = await db.Customers.FindAsync(id);
-            if (customers == null)
-            {
-                return HttpNotFound();
-            }
-            return View(customers);
-        }
-
-        // POST: Admin/Customers/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> DeleteConfirmed(string id)
-        {
-            Customer customers = await db.Customers.FindAsync(id);
-            db.Customers.Remove(customers);
-            await db.SaveChangesAsync();
-            return RedirectToAction("Index");
+            return Json(false, JsonRequestBehavior.AllowGet);
         }
 
         protected override void Dispose(bool disposing)

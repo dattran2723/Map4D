@@ -1,30 +1,30 @@
 ﻿$(document).ready(function () {
-    $("#list-contact").on('click', '.btn-delete', function () {
-        var id = $(this).attr("data-id");
+    $('#example').on('click', '.btnDelele', function () {
+        var idCustomer = $(this).attr("data-id");
         swal({
-            title: "Bạn có muốn xóa?",
-            text: "Khi xóa bạn sẽ không khôi phục lại được!",
-            type: "warning",
+            title: 'Bạn có chắc chắn muốn xóa?',
+            text: "Khách hàng .... !",
+            type: 'warning',
             showCancelButton: true,
             confirmButtonClass: "btn-danger",
-            confirmButtonText: "Có",
-            cancelButtonText: "Không",
+            confirmButtonText: 'Đồng ý',
+            cancelButtonText: 'Không',
             closeOnConfirm: false,
             closeOnCancel: true
         },
-            function (result) {
-                if (!result) {
+            function (isConfirm) {
+                if (isConfirm) {
                     $.ajax({
-                        url: "/Admin/Home/DeleteContact?id=" + id,
+                        url: "/Admin/Customers/Delete?id=" + idCustomer,
                         type: "get",
-                        success: function (json) {
-                            if (json) {
+                        success: function (data) {
+                            if (data) {
                                 swal({
-                                    title: "Xóa thành công",
-                                    text: "Tệp của bạn đã bị xóa.",
+                                    title: "Đã xóa thành công",
+                                    //text: "Tệp của bạn đã bị xóa.",
                                     type: "success",
                                     confirmButtonClass: "btn-primary",
-                                    confirmButtonText: "Xong",
+                                    confirmButtonText: "OK",
                                     closeOnConfirm: false
                                 }, function () {
                                     location.reload();
