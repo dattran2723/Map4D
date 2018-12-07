@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title - Map4D</title>
+    <title>Map4D - @ViewBag.Title</title>
     <link href="~/Content/Client/img/logoMap4D.png" type="image/png" rel="shortcut icon" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -85,8 +85,8 @@
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu" data-widget="tree">
 
-                    <li>
-                        <a href="@Url.Action("","Home")"><i class="fas fa-envelope"></i> Quản lý khách hàng</a>
+                    <li id="customers">
+                        <a href="@Url.Action("Index","Customers")"><i class="fas fa-tachometer-alt"></i> Quản lý khách hàng</a>
                     </li>
                     <li id="mailbox">
                         <a href="@Url.Action("ListContact","Home")"><i class="fas fa-envelope"></i> Hộp thư liên hệ</a>
