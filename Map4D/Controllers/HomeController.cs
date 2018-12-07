@@ -24,6 +24,14 @@ namespace Map4D.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ActionResult Products(string language)
+        {
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(language);
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
