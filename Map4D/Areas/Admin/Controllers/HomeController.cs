@@ -22,24 +22,24 @@ namespace Map4D.Areas.Admin.Controllers
         {
             return View();
         }
-        public ActionResult GuestPost(GuestModels data)
+        public ActionResult ListContact()
         {
-            var post = db.GuestModels.ToList();
+            var post = db.Contacts.ToList();
             return View(post);
         }
 
-        public ActionResult GuestDetail(int? id)
+        public ActionResult ContactDetail(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            GuestModels guestModels = db.GuestModels.Find(id);
-            if (guestModels == null)
+            Contact contact = db.Contacts.Find(id);
+            if (contact == null)
             {
                 return HttpNotFound();
             }
-            return View(guestModels);
+            return View(contact);
         }
 
 

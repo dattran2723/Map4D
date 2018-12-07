@@ -42,16 +42,16 @@ namespace Map4D.Controllers
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
         [HttpPost]
-        public ActionResult GetInTouch(GuestModels data)
+        public ActionResult GetInTouch(Contact data)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    data.DateUp = DateTime.Now;
-                    db.GuestModels.Add(data);
+                    data.CreatedDate = DateTime.Now;
+                    db.Contacts.Add(data);
                     db.SaveChanges();
-                    SendMail(data.GuestEmail);
+                    SendMail(data.Email);
                     return RedirectToAction("Index");
                 }
             }
