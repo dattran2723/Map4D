@@ -1,6 +1,5 @@
 ﻿//js add active for "Danhsachkhachhang"
-$('.treeview#customer').addClass("active");
-$('.treeview#customer #listcustomer').addClass("active");
+$('#customers').addClass("active");
 
 //js load paging with api
 var stt = 0;

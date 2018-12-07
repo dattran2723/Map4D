@@ -45,6 +45,7 @@ namespace Map4D.Areas.Admin.Controllers
             }
             Customer customers = await db.Customers.FindAsync(id);
             var result = AutoMapper.Mapper.Map<CustomerEditViewModels>(customers);
+            Session["phone"] = result.Phone;
             if (customers == null)
             {
                 return HttpNotFound();
@@ -107,6 +108,11 @@ namespace Map4D.Areas.Admin.Controllers
         [HttpPost]
         public JsonResult IsPhoneExist(string phone)
         {
+            var ssphone = Session["phone"];
+            if (ssphone.Equals(phone))
+            {
+                return Json(true);
+            }
             var isExist = db.Customers.Count(x => x.Phone == phone);
             if (isExist > 0)
                 return Json(false);

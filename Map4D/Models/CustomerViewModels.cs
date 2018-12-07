@@ -24,7 +24,7 @@ namespace Map4D.Models
         [DisplayName("Số điện thoại")]
         [Remote("IsPhoneExist", "Customers", "Admin", HttpMethod = "POST", ErrorMessage = "Số điện thoại đã tồn tại !")]
         [Required(ErrorMessage = "Vui lòng nhập số điện thoại liên hệ!")]
-        [RegularExpression("^0[0-9]+$", ErrorMessage = "Vui lòng nhập đúng định dạng!")]
+        [RegularExpression("[0-9]+$", ErrorMessage = "Vui lòng nhập đúng định dạng!")]
         [StringLength(13, ErrorMessage = "Số điên thoại gồm 6-13 ký tự số!", MinimumLength = 6)]
 
         public string Phone { get; set; }

@@ -13,7 +13,7 @@ namespace Map4D.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201812060653586_init"; }
+            get { return "201812060916016_init"; }
         }
         
         string IMigrationMetadata.Source
