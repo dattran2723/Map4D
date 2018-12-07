@@ -17,7 +17,8 @@ namespace Map4D.Areas.Admin
             context.MapRoute(
                 "Admin_url_admin",
                 "admin",
-                new { action = "index", controller = "home", id = UrlParameter.Optional }
+                new { action = "index", controller = "home", id = UrlParameter.Optional },
+                new string[] { "Map4D.Areas.Admin.Controllers" }
             );
             context.MapRoute(
                 "Admin_default",
