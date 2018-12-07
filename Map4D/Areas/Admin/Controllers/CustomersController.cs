@@ -77,12 +77,16 @@ namespace Map4D.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public int Delete(string id)
+        public JsonResult Delete(string id)
         {
             Customer customers = db.Customers.Find(id);
-            db.Customers.Remove(customers);
-            var result = db.SaveChanges();
-            return result;
+            if (customers != null)
+            {
+                db.Customers.Remove(customers);
+                db.SaveChanges();
+                return Json(true, JsonRequestBehavior.AllowGet);
+            }
+            return Json(false, JsonRequestBehavior.AllowGet);
         }
 
         protected override void Dispose(bool disposing)
