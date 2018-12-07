@@ -46,27 +46,18 @@ namespace Map4D.Controllers
         [HttpPost]
         public ActionResult GetInTouch(Contact data)
         {
-            //var guest = (from u in db.GuestModels
-            //             where u.GuestEmail == data.GuestEmail
-            //             select u).SingleOrDefault();
-            //if (guest != null)
-            //{
-            //    ViewBag.Message = "Email này đã tồn tại";
-            //}
-            try
+            if (ModelState.IsValid)
             {
-                if (ModelState.IsValid)
-                {
-                    data.CreatedDate = DateTime.Now;
-                    db.Contacts.Add(data);
-                    db.SaveChanges();
-                    SendMail(data.Email);
-                    return RedirectToAction("Index");
-                }
+                data.CreatedDate = DateTime.Now;
+                db.Contacts.Add(data);
+                db.SaveChanges();
+                SendMail(data.Email);
+                ViewBag.Check = true;
+                return RedirectToAction("Index");
             }
-            catch (Exception ex)
+            else
             {
-                ViewBag.Message = ex.Message;
+                ViewBag.Check = false;
             }
             return View("Index");
         }

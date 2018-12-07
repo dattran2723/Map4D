@@ -67,13 +67,19 @@
     #get-in-touch-form #btn-submit:hover {
         background: #00cda3;
     }
-.input-validation-error{
-    border: 2px solid red !important;
+
+.input-validation-error {
+    border: 1px solid red !important;
+    border-bottom: 1px solid red !important;
 }
+
+
 #footer {
     background-image: none;
     margin-top: -4%;
 }
+
+
 
 @media only screen and (max-width: 1033px) {
     #get-in-touch-title h1 {
@@ -110,11 +116,13 @@
         background-position: 71%;
     }
 }
+
 @media only screen and (max-width: 625px) {
     #get-in-touch {
         padding-top: 40%;
         background-position: 67%;
     }
+
     #get-in-touch-title h1 {
         font-size: 20px;
     }

@@ -37,11 +37,37 @@
                     <th>Hành động</th>
                 </tr>
             </thead>
-            <tbody>
-            </tbody>
+            <tbody></tbody>
         </table>
     </div>
 </div>
 @section scripts{
     <script src="~/Scripts/js/GetListContact.js"></script>
 }
+<script>
+    $(document).ready(function () {
+        // Xóa một khách hàng
+        $("#btnXoa").on('click', '.myBtn', function () {
+            $("#myModal").modal();
+            $("#cus-delete a").attr("data-id", $(this).attr("data-id"));
+        });
+        $("#cus-delete button#close").click(function () {
+            $("#cus-delete a").removeAttr("data-id");
+        });
+        $("#cus-delete a").click(function () {
+            var idCus = $(this).attr("data-id");
+            console.log(idCus);
+            $("#myModal").modal("hide");
+            $.ajax({
+                url: "/Admin/Customers/DeleteConfirmed?id=" + idCus,
+                type: "get",
+                success: function (result) {
+                    if (result > 0) {
+                        $("#myNotifySuccess").modal();
+                    } else {
+                        $("#myNotifyFail").modal();
+                    }
+                }
+            });
+        });
+</script>

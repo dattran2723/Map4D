@@ -37,7 +37,7 @@
             $('td:eq(7)', row).html(
                 '<a data-toggle="tooltip" title="Sửa" href="/admin/Home/edit?id=' + data.Id + '" > <i class="fas fa-edit"></i></a > ' + ' ' +
                 '<a data-toggle="tooltip" title="Chi tiết" href="/admin/Home/ContactDetail?id=' + data.Id + '"><i class="fas fa-info-circle"></i></a>' + ' ' +
-                '<a data-toggle="tooltip" class="btnXoa" title="Xóa" href="javascript:;" data-id="' + data.Id + '"><i class="fas fa-trash-alt text-danger"></i></a>'
+                '<a data-toggle="tooltip" class="btnXoa" title="Xóa" href="/admin/Home/Delete?id=' + data.Id + '"><i class="fas fa-trash-alt text-danger"></i></a>'
             );
         }
     });

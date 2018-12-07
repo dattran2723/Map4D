@@ -41,6 +41,22 @@ namespace Map4D.Areas.Admin.Controllers
             }
             return View(contact);
         }
+     
+        public ActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Contact contact = db.Contacts.Find(id);
+            if (contact == null)
+            {
+                return HttpNotFound();
+            }
+            db.Contacts.Remove(contact);
+            db.SaveChanges();
+            return RedirectToAction("ListContact", "Home");
+        }
 
 
     }
