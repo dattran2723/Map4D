@@ -67,8 +67,9 @@
     #get-in-touch-form #btn-submit:hover {
         background: #00cda3;
     }
-.input-validation-error{
-    border: 2px solid red !important;
+.input-validation-error {
+    border: 1px solid red !important;
+    background: #fff4f4;
 }
 #footer {
     background-image: none;

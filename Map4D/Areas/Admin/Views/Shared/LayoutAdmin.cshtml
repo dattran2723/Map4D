@@ -19,6 +19,7 @@
     <link href="~/Content/Admin/dist/css/datatables/responsive.bootstrap.css" rel="stylesheet" />
     <!-- Css list view index -->
     <link href="~/Content/Admin/dist/css/listIndex.css" rel="stylesheet" />
+    <link href="~/Content/sweetalert/css/sweetalert.min.css" rel="stylesheet" />
     <!-- jQuery 3 -->
     <script src="~/Content/Admin/bower_components/jquery/dist/jquery.min.js"></script>
 </head>
@@ -91,7 +92,7 @@
                     </li>
                     <li id="mailbox">
                         <a href="@Url.Action("ListContact","Home")"><i class="fas fa-envelope"></i> Hộp thư liên hệ</a>
-                    </li>    
+                    </li>
 
                 </ul>
             </section>
@@ -131,6 +132,7 @@
     <script src="~/Scripts/datatable/dataTables.fixedHeader.min.js"></script>
     <script src="~/Scripts/datatable/dataTables.responsive.min.js"></script>
     <script src="~/Scripts/datatable/responsive.bootstrap.min.js"></script>
+    <script src="~/Content/sweetalert/js/sweetalert.min.js"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

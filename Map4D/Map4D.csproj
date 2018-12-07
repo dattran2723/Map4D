@@ -2016,6 +2016,10 @@
     <Content Include="Content\Client\img\Untitled-1_0000_Mask-by-Mask.png" />
     <Content Include="Content\Client\img\Untitled-1_0001_footer-background.png" />
     <Content Include="Content\Client\img\right.png" />
+    <Content Include="Content\sweetalert\css\sweetalert.css" />
+    <Content Include="Content\sweetalert\js\sweetalert.js" />
+    <Content Include="Content\sweetalert\css\sweetalert.min.css" />
+    <Content Include="Content\sweetalert\js\sweetalert.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -2238,6 +2242,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\delete-contact.js" />
     <Content Include="Scripts\js\addContentBuildMap4D.js" />
     <Content Include="Scripts\js\footerScroll.js" />
     <Content Include="Scripts\js\GetListContact.js" />

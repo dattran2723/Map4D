@@ -42,6 +42,18 @@ namespace Map4D.Areas.Admin.Controllers
             return View(contact);
         }
 
+        public JsonResult DeleteContact(int id)
+        {
+            Contact contact = db.Contacts.Find(id);
+            if (contact != null)
+            {
+                db.Contacts.Remove(contact);
+                db.SaveChanges();
+                return Json(true, JsonRequestBehavior.AllowGet);
+            }
+            return Json(false, JsonRequestBehavior.AllowGet);
+        }
+
 
     }
 }
