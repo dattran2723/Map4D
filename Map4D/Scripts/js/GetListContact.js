@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    $("li#mailbox").addClass("active");
+    $("li#manage-mailbox,li#manage-mailbox #list-mailbox").addClass("active");
     var counter = 0;
     $('#list-contact').DataTable({
         responsive: true,
@@ -44,7 +44,7 @@
                 }
             }
         ],
-        rowCallback: function (row, data, index) {
+        rowCallback: function (row, data) {
             $('td:eq(1)', row).html(
                 '<a data-toggle="tooltip" title="Chi tiết" href="/admin/Home/ContactDetail?id=' + data.Id + '">' + data.Name + '</a>'
             );
