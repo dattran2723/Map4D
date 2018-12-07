@@ -41,6 +41,7 @@ namespace Map4D.Controllers
         {
             return View();
         }
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
         [HttpPost]
@@ -52,8 +53,9 @@ namespace Map4D.Controllers
                 db.Contacts.Add(data);
                 db.SaveChanges();
                 SendMail(data.Email);
-                ViewBag.Check = true;
+                Session["Check"] = 1;
                 return RedirectToAction("Index");
+
             }
             else
             {

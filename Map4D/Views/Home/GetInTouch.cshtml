@@ -38,19 +38,3 @@
         }
     </div>
 </div>
-@{
-    var isvalid = ViewBag.Check;
-    if (isvalid == true)
-    {
-        <script src="~/Scripts/sweetalert.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $("#btn-submit").click(function () {
-                    swal({
-                        icon: "success",
-                    });
-                });
-            });
-        </script>
-    }
-}

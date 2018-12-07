@@ -29,8 +29,30 @@
     </script>
     <script src="~/Scripts/jquery.validate.min.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    @{
+        if (Session["Check"] != null)
+        {
+            var session = Session["Check"];
+            if (session != null)
+            {
+                <script src="~/Scripts/sweetalert.min.js"></script>
+                <script>
+                    $(document).ready(function () {
+                            swal({
+                                icon: "success",
+                            });
+                    });
+                </script>
+            }
+            Session.Clear();
+        }
+        Session.Clear();
 
-   
+
+
+    }
+
+
 
 
 
