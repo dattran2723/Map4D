@@ -1885,6 +1885,7 @@
     <Content Include="Content\Admin\dist\css\alt\AdminLTE-without-plugins.min.css" />
     <Content Include="Content\Admin\dist\css\datatables\dataTables.bootstrap.css" />
     <Content Include="Content\Admin\dist\css\datatables\responsive.bootstrap.css" />
+    <Content Include="Content\Admin\dist\css\listIndex.css" />
     <Content Include="Content\Admin\dist\css\login.css" />
     <Content Include="Content\Admin\dist\css\skins\skin-black-light.css" />
     <Content Include="Content\Admin\dist\css\skins\skin-black-light.min.css" />
@@ -2218,7 +2219,6 @@
     <Content Include="Areas\Admin\Views\Home\demo.cshtml" />
     <Content Include="Areas\Admin\Views\Home\ListContact.cshtml" />
     <Content Include="Areas\Admin\Views\Home\ContactDetail.cshtml" />
-    <Content Include="Areas\Admin\Views\Customers\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\Customers\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Customers\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Customers\Index.cshtml" />
@@ -2228,6 +2228,7 @@
     <Content Include="Scripts\datatable\dataTables.responsive.min.js" />
     <Content Include="Scripts\datatable\jquery.dataTables.min.js" />
     <Content Include="Scripts\datatable\responsive.bootstrap.min.js" />
+    <Content Include="Scripts\deleteCustomer.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
