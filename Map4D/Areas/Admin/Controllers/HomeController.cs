@@ -54,6 +54,18 @@ namespace Map4D.Areas.Admin.Controllers
             return Json(false, JsonRequestBehavior.AllowGet);
         }
 
+        [HttpGet]
+        public ActionResult EditContact(int id)
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult EditContact(Contact contact)
+        {
+            return View();
+        }
 
     }
 }

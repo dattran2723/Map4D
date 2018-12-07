@@ -20,11 +20,11 @@
                         success: function (data) {
                             if (data) {
                                 swal({
-                                    title: "Đã xóa",
+                                    title: "Xóa thành công",
                                     text: "Tệp của bạn đã bị xóa.",
                                     type: "success",
                                     confirmButtonClass: "btn-primary",
-                                    confirmButtonText: "OK",
+                                    confirmButtonText: "Xong",
                                     closeOnConfirm: false
                                 }, function () {
                                     location.reload();
