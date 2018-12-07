@@ -14,7 +14,6 @@ namespace Map4D.Areas.Admin.Controllers
     public class CustomersController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
-
         // GET: Admin/Customers
         public async Task<ActionResult> Index()
         {
@@ -28,7 +27,7 @@ namespace Map4D.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Customers customers = await db.Customers.FindAsync(id);
+            Customer customers = await db.Customers.FindAsync(id);
             if (customers == null)
             {
                 return HttpNotFound();
@@ -37,18 +36,26 @@ namespace Map4D.Areas.Admin.Controllers
         }
 
         // GET: Admin/Customers/Edit/5
+        /// <summary>
+        /// using automapper
+        /// create var session["phone"] using check isExitPhone for view edit customer
+        /// </summary>
+        /// <param name="id">get id form id customer</param>
+        /// <returns></returns>
         public async Task<ActionResult> Edit(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Customers customers = await db.Customers.FindAsync(id);
+            Customer customers = await db.Customers.FindAsync(id);
+            var result = AutoMapper.Mapper.Map<CustomerEditViewModels>(customers);
+            Session["phone"] = result.Phone;
             if (customers == null)
             {
                 return HttpNotFound();
             }
-            return View(customers);
+            return View(result);
         }
 
         // POST: Admin/Customers/Edit/5
@@ -56,41 +63,30 @@ namespace Map4D.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "ID,Name,Company,Phone,Email,RegisterDate,Description,Status")] Customers customers)
+        public async Task<ActionResult> Edit(CustomerEditViewModels model)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(customers).State = EntityState.Modified;
+                //db.Entry(customers).State = EntityState.Modified;
+                Customer customer = db.Customers.Find(model.ID);
+                AutoMapper.Mapper.Map(model, customer);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-            return View(customers);
+            return View(model);
         }
 
-        // GET: Admin/Customers/Delete/5
-        public async Task<ActionResult> Delete(string id)
+        [HttpGet]
+        public JsonResult Delete(string id)
         {
-            if (id == null)
+            Customer customers = db.Customers.Find(id);
+            if (customers != null)
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                db.Customers.Remove(customers);
+                db.SaveChanges();
+                return Json(true, JsonRequestBehavior.AllowGet);
             }
-            Customers customers = await db.Customers.FindAsync(id);
-            if (customers == null)
-            {
-                return HttpNotFound();
-            }
-            return View(customers);
-        }
-
-        // POST: Admin/Customers/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> DeleteConfirmed(string id)
-        {
-            Customers customers = await db.Customers.FindAsync(id);
-            db.Customers.Remove(customers);
-            await db.SaveChangesAsync();
-            return RedirectToAction("Index");
+            return Json(false, JsonRequestBehavior.AllowGet);
         }
 
         protected override void Dispose(bool disposing)
@@ -100,6 +96,30 @@ namespace Map4D.Areas.Admin.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+        /// <summary>
+        /// true : no check is exist phone input
+        /// fasle : check is exist for phone input
+        /// check ssphone with session["phone"]
+        /// if 2 value == then return true
+        /// count value phone from db with phone input
+        /// if value > 0 then return fasle
+        /// else then return true
+        /// </summary>
+        /// <param name="phone">is value input when want to edit phone for customer</param>
+        /// <returns></returns>
+        [HttpPost]
+        public JsonResult IsPhoneExist(string phone)
+        {
+            var ssphone = Session["phone"];
+            if (ssphone.Equals(phone))
+            {
+                return Json(true);
+            }
+            var isExist = db.Customers.Count(x => x.Phone == phone);
+            if (isExist > 0)
+                return Json(false);
+            return Json(true);
         }
     }
 }

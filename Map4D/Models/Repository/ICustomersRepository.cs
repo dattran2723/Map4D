@@ -7,7 +7,7 @@ namespace Map4D.Models.Repository
 {
     public interface ICustomersRepository
     {
-        IQueryable<Customers> GetCustomers();
+        IQueryable<Customer> GetCustomers();
     }
     public class CustomersRepository : ICustomersRepository
     {
@@ -16,7 +16,7 @@ namespace Map4D.Models.Repository
         {
             this.db = db;
         }
-        public IQueryable<Customers> GetCustomers()
+        public IQueryable<Customer> GetCustomers()
         {
             return db.Customers;
         }

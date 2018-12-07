@@ -2,7 +2,7 @@
 @{
     /**/
 
-    ViewBag.Title = "GuestPost";
+    ViewBag.Title = "Hộp thư liên hệ";
     Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
 }
 <div class="box box-danger">
@@ -25,9 +25,9 @@
                     <th>
                         @Html.DisplayNameFor(m => m.Subject)
                     </th>
-                    <th>
-                        @Html.DisplayNameFor(m => m.Message)
-                    </th>
+                    @*<th>
+                            @Html.DisplayNameFor(m => m.Message)
+                        </th>*@
                     <th>
                         @Html.DisplayNameFor(m => m.CreatedDate)
                     </th>
@@ -43,31 +43,5 @@
 </div>
 @section scripts{
     <script src="~/Scripts/js/GetListContact.js"></script>
+    <script src="~/Scripts/js/delete-contact.js"></script>
 }
-<script>
-    $(document).ready(function () {
-        // Xóa một khách hàng
-        $("#btnXoa").on('click', '.myBtn', function () {
-            $("#myModal").modal();
-            $("#cus-delete a").attr("data-id", $(this).attr("data-id"));
-        });
-        $("#cus-delete button#close").click(function () {
-            $("#cus-delete a").removeAttr("data-id");
-        });
-        $("#cus-delete a").click(function () {
-            var idCus = $(this).attr("data-id");
-            console.log(idCus);
-            $("#myModal").modal("hide");
-            $.ajax({
-                url: "/Admin/Customers/DeleteConfirmed?id=" + idCus,
-                type: "get",
-                success: function (result) {
-                    if (result > 0) {
-                        $("#myNotifySuccess").modal();
-                    } else {
-                        $("#myNotifyFail").modal();
-                    }
-                }
-            });
-        });
-</script>

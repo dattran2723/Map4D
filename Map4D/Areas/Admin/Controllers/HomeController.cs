@@ -58,6 +58,30 @@ namespace Map4D.Areas.Admin.Controllers
             return RedirectToAction("ListContact", "Home");
         }
 
+        public JsonResult DeleteContact(int id)
+        {
+            Contact contact = db.Contacts.Find(id);
+            if (contact != null)
+            {
+                db.Contacts.Remove(contact);
+                db.SaveChanges();
+                return Json(true, JsonRequestBehavior.AllowGet);
+            }
+            return Json(false, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet]
+        public ActionResult EditContact(int id)
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult EditContact(Contact contact)
+        {
+            return View();
+        }
 
     }
 }

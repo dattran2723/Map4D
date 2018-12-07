@@ -16,11 +16,11 @@ namespace Map4D
         {
             GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             GlobalConfiguration.Configuration.Formatters.Remove(GlobalConfiguration.Configuration.Formatters.XmlFormatter);
-            //AutoMapper.Mapper.Initialize(conf =>
-            //{
-            //    conf.CreateMap<CustomerListViewModels, Customers>();
-            //    conf.CreateMap<CustomerRegisterViewModels, Customers>();
-            //});
+            AutoMapper.Mapper.Initialize(conf =>
+            {
+                conf.CreateMap<CustomerEditViewModels, Customer>();
+                conf.CreateMap<CustomerRegisterViewModels, Customer>();
+            });
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

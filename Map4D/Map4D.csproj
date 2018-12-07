@@ -47,6 +47,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=8.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.8.0.0\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -231,7 +234,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Customers.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\CustomerViewModels.cs" />
     <Compile Include="Models\DataTableResponse\DataTableResponse.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -1887,6 +1890,7 @@
     <Content Include="Content\Admin\dist\css\alt\AdminLTE-without-plugins.min.css" />
     <Content Include="Content\Admin\dist\css\datatables\dataTables.bootstrap.css" />
     <Content Include="Content\Admin\dist\css\datatables\responsive.bootstrap.css" />
+    <Content Include="Content\Admin\dist\css\listIndex.css" />
     <Content Include="Content\Admin\dist\css\login.css" />
     <Content Include="Content\Admin\dist\css\skins\skin-black-light.css" />
     <Content Include="Content\Admin\dist\css\skins\skin-black-light.min.css" />
@@ -1914,6 +1918,7 @@
     <Content Include="Content\Admin\dist\css\skins\skin-yellow.min.css" />
     <Content Include="Content\Admin\dist\css\skins\_all-skins.css" />
     <Content Include="Content\Admin\dist\css\skins\_all-skins.min.css" />
+    <Content Include="Content\Admin\dist\css\styleContactDetail.css" />
     <Content Include="Content\Admin\dist\img\avatar.png" />
     <Content Include="Content\Admin\dist\img\avatar04.png" />
     <Content Include="Content\Admin\dist\img\avatar2.png" />
@@ -2017,6 +2022,10 @@
     <Content Include="Content\Client\img\Untitled-1_0000_Mask-by-Mask.png" />
     <Content Include="Content\Client\img\Untitled-1_0001_footer-background.png" />
     <Content Include="Content\Client\img\right.png" />
+    <Content Include="Content\sweetalert\css\sweetalert.css" />
+    <Content Include="Content\sweetalert\js\sweetalert.js" />
+    <Content Include="Content\sweetalert\css\sweetalert.min.css" />
+    <Content Include="Content\sweetalert\js\sweetalert.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -2220,16 +2229,17 @@
     <Content Include="Areas\Admin\Views\Home\demo.cshtml" />
     <Content Include="Areas\Admin\Views\Home\ListContact.cshtml" />
     <Content Include="Areas\Admin\Views\Home\ContactDetail.cshtml" />
-    <Content Include="Areas\Admin\Views\Customers\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\Customers\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Customers\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Customers\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\EditContact.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\datatable\dataTables.bootstrap.min.js" />
     <Content Include="Scripts\datatable\dataTables.fixedHeader.min.js" />
     <Content Include="Scripts\datatable\dataTables.responsive.min.js" />
     <Content Include="Scripts\datatable\jquery.dataTables.min.js" />
     <Content Include="Scripts\datatable\responsive.bootstrap.min.js" />
+    <Content Include="Scripts\js\deleteCustomer.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -2239,10 +2249,11 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\delete-contact.js" />
+    <Content Include="Scripts\js\addContentBuildMap4D.js" />
     <Content Include="Scripts\js\footerScroll.js" />
     <Content Include="Scripts\js\GetListContact.js" />
     <Content Include="Scripts\js\hover-mapbox.js" />
-    <Content Include="Scripts\js\Notify.js" />
     <Content Include="Scripts\js\responsiveTable.js" />
     <Content Include="Scripts\js\sticky-menu.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
@@ -2310,12 +2321,6 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201812060914463_init-1.resx">
-      <DependentUpon>201812060914463_init-1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812070744469_init-2.resx">
-      <DependentUpon>201812070744469_init-2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Resources\My texts.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>My texts.en.Designer.cs</LastGenOutput>
