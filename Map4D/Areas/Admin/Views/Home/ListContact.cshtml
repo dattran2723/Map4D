@@ -2,7 +2,7 @@
 @{
     /**/
 
-    ViewBag.Title = "GuestPost";
+    ViewBag.Title = "Hộp thư liên hệ";
     Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
 }
 <div class="box box-danger">
@@ -25,9 +25,9 @@
                     <th>
                         @Html.DisplayNameFor(m => m.Subject)
                     </th>
-                    <th>
+                    @*<th>
                         @Html.DisplayNameFor(m => m.Message)
-                    </th>
+                    </th>*@
                     <th>
                         @Html.DisplayNameFor(m => m.CreatedDate)
                     </th>
