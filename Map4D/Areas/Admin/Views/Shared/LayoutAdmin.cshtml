@@ -30,10 +30,14 @@
             <a href="admin/adminhome/adminhome" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini">
-                    <img src="~/Content/Client/img/logoMap4D.png" class="img-responsive" />
+                    <img src="~/Content/Admin/dist/img/LOGO MAP 4d-06.png" class="img-responsive" />
                 </span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><b>Admin - </b>Map4D</span>
+                @*<span class="logo-lg"><b>Admin - </b>Map4D</span>*@
+                <span class="logo-lg">
+                    <img class="img-responsive logo-map4d" src="~/Content/Client/img/LOGO MAP 4d-05.png" />
+                </span>
+
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top">
@@ -86,14 +90,28 @@
                 </div>
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu" data-widget="tree">
-
-                    <li id="customers">
-                        <a href="@Url.Action("Index","Customers")"><i class="fas fa-tachometer-alt"></i> Quản lý khách hàng</a>
+                    <li class="treeview" id="customers">
+                        <a href="#">
+                            <i class="fas fa-tachometer-alt"></i> <span>Quản lý khách hàng</span>
+                            <span class="pull-right-container">
+                                <i class="fas fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li id="list-accounts"><a href="@Url.Action("Index","Customers")"><i class="fas fa-circle-notch"></i> Danh sách khách hàng</a></li>
+                        </ul>
                     </li>
-                    <li id="mailbox">
-                        <a href="@Url.Action("ListContact","Home")"><i class="fas fa-envelope"></i> Hộp thư liên hệ</a>
+                    <li class="treeview" id="mailbox">
+                        <a href="#">
+                            <i class="fas fa-envelope"></i> <span>Quản lý liên hê</span>
+                            <span class="pull-right-container">
+                                <i class="fas fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li id="list-accounts"><a href="@Url.Action("ListContact","Home")"><i class="fas fa-circle-notch"></i> Hộp thư liên hệ</a></li>
+                        </ul>
                     </li>
-
                 </ul>
             </section>
             <!-- /.sidebar -->

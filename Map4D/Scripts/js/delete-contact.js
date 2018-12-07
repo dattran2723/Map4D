@@ -13,7 +13,7 @@
             closeOnCancel: true
         },
             function (result) {
-                if (!result) {
+                if (result) {
                     $.ajax({
                         url: "/Admin/Home/DeleteContact?id=" + id,
                         type: "get",
