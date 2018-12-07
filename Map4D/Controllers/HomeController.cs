@@ -17,8 +17,10 @@ namespace Map4D.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
         SmtpClient client = new SmtpClient();
 
-        public ActionResult Index()
+        public ActionResult Index(string language)
         {
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(language);
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
             return View();
         }
 
@@ -44,6 +46,13 @@ namespace Map4D.Controllers
         [HttpPost]
         public ActionResult GetInTouch(Contact data)
         {
+            //var guest = (from u in db.GuestModels
+            //             where u.GuestEmail == data.GuestEmail
+            //             select u).SingleOrDefault();
+            //if (guest != null)
+            //{
+            //    ViewBag.Message = "Email này đã tồn tại";
+            //}
             try
             {
                 if (ModelState.IsValid)
@@ -72,7 +81,7 @@ namespace Map4D.Controllers
             Body.Append("</table>");
             MailMessage mail = new MailMessage();
             mail.To.Add(guestMail);
-            mail.From = new MailAddress("iotocteam123@gmail.com");
+            mail.From = new MailAddress("iotocteam123@gmail.com", "IOT team");
             mail.Subject = "Thư cảm ơn";
             mail.Body = Body.ToString();// phần thân của mail ở trên
             mail.IsBodyHtml = true;

@@ -18,16 +18,18 @@ namespace Map4D
                 defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional },
                 namespaces: new[] { "Map4D.Controllers" }
             );
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional ,language="en-US"},
-                namespaces: new[] { "Map4D.Controllers" }
-            );
+
             routes.MapRoute(
                 name: "language",
                 url: "{language}/{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional ,language="en-US"},
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional ,language="vn-Vi"},
+                namespaces: new[] { "Map4D.Controllers" }
+            );
+
+            routes.MapRoute(
+                name: "default",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional},
                 namespaces: new[] { "Map4D.Controllers" }
             );
         }

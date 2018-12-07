@@ -61,11 +61,254 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bảng giá.
+        /// </summary>
+        public static string Bảnggiá {
+            get {
+                return ResourceManager.GetString("Bảnggiá", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chỉ đường.
+        /// </summary>
+        public static string ChỉĐường {
+            get {
+                return ResourceManager.GetString("ChỉĐường", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Công ty.
+        /// </summary>
+        public static string CôngTy {
+            get {
+                return ResourceManager.GetString("CôngTy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Đa nền tảng.
+        /// </summary>
+        public static string ĐaNềnTảng {
+            get {
+                return ResourceManager.GetString("ĐaNềnTảng", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Đăng ký.
+        /// </summary>
+        public static string Đăngký {
+            get {
+                return ResourceManager.GetString("Đăngký", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Đến mọi nơi thật dễ dàng.
+        /// </summary>
+        public static string ĐếnMọiNơiThậtDễDàng {
+            get {
+                return ResourceManager.GetString("ĐếnMọiNơiThậtDễDàng", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Giải Pháp.
+        /// </summary>
+        public static string GiảiPháp {
+            get {
+                return ResourceManager.GetString("GiảiPháp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Là bản đồ duy nhất ở Việt Nam hiển thị bản đồ 4D theo thời gian thực. Được xây dựng từ nhiều lớp dữ liệu, sẵn sàng kết nối và hướng tới 1 thành phố thông minh trực tuyến. Hướng đến việc tích hợp nhiều ứng dụng vào một nơi cho việc quản lý nhà nước, phục vụ sản xuất kinh doanh cho doanh nghiệp và người dân..
+        /// </summary>
+        public static string GiớiThiệu1 {
+            get {
+                return ResourceManager.GetString("GiớiThiệu1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gửi ngay bây giờ.
+        /// </summary>
+        public static string GửiNgayBâyGiờ {
+            get {
+                return ResourceManager.GetString("GửiNgayBâyGiờ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hỗ trợ ứng dụng của bạn trên nền tảng mobile (Android &amp; iOS) và web.Với các tính năng: tìm kiếm địa điểm, tìm đường đi, xem thời tiết, xem bản đồ ở chế độ 2D/3D, xem bản đồ theo thời gian và không gian(4D).
+        /// </summary>
+        public static string HỗTrợỨngDụng {
+            get {
+                return ResourceManager.GetString("HỗTrợỨngDụng", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Họ và tên.
+        /// </summary>
+        public static string HọvàTên {
+            get {
+                return ResourceManager.GetString("HọvàTên", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Khám phá.
+        /// </summary>
+        public static string Khámphá {
+            get {
+                return ResourceManager.GetString("Khámphá", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Khám phá dịch vụ tiện ích xung quanh.
+        /// </summary>
+        public static string KhámPháDỊchVụ {
+            get {
+                return ResourceManager.GetString("KhámPháDỊchVụ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Không chỉ mang hình ảnh thực tế lên trên bản đồ 3D, ngoài ra còn cho phép tương tác và điều chỉnh các đối tượng 3D của bạn.
+        /// </summary>
+        public static string KhôngChỉ {
+            get {
+                return ResourceManager.GetString("KhôngChỉ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Liên hệ với chúng tôi.
+        /// </summary>
+        public static string LiênHệ {
+            get {
+                return ResourceManager.GetString("LiênHệ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Map 4D được đón nhận và tin cậy với hàng trăm người dùng trên toàn thế giới..
+        /// </summary>
+        public static string Map4DDuocdonnhan {
+            get {
+                return ResourceManager.GetString("Map4DDuocdonnhan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mỗi địa điểm bạn tới đều có những dịch vụ cần thiết được hỗ trợ. Map 4D với kho dữ liệu địa điểm khổng lồ, đầy đủ các tiện ích, giúp bạn dễ dàng tìm kiếm và khám phá..
+        /// </summary>
+        public static string MỗiĐiaiemBanToi {
+            get {
+                return ResourceManager.GetString("MỗiĐiaiemBanToi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nền tảng Map4D.
+        /// </summary>
+        public static string NềntảngMap4D {
+            get {
+                return ResourceManager.GetString("NềntảngMap4D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ngôn ngữ.
+        /// </summary>
+        public static string Ngônngữ {
+            get {
+                return ResourceManager.GetString("Ngônngữ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sản Phẩm.
         /// </summary>
         public static string SảnPhẩm {
             get {
                 return ResourceManager.GetString("SảnPhẩm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tài Liệu.
+        /// </summary>
+        public static string TàiLiệu {
+            get {
+                return ResourceManager.GetString("TàiLiệu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tiện ích địa chỉ.
+        /// </summary>
+        public static string TiệnÍchĐịaChỉ {
+            get {
+                return ResourceManager.GetString("TiệnÍchĐịaChỉ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tiêu đề.
+        /// </summary>
+        public static string Tiêuđề {
+            get {
+                return ResourceManager.GetString("Tiêuđề", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tính năng dẫn đường giúp bạn đến mọi nơi mà không cần phải biết chính xác địa điểm.Map 4D tự động tính toán tìm đường đi ngắn nhất giữa nhiều điểm trên bản đồ, hỗ trợ đầy đủ các loại phương tiện (đi bộ, xe đạp, xe máy, ô tô)..
+        /// </summary>
+        public static string TínhNăngDẫnĐường {
+            get {
+                return ResourceManager.GetString("TínhNăngDẫnĐường", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tin nhắn.
+        /// </summary>
+        public static string TinNhắn {
+            get {
+                return ResourceManager.GetString("TinNhắn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trải nghiệm cùng map 4D.
+        /// </summary>
+        public static string Trảinghiệmcùngmap4D {
+            get {
+                return ResourceManager.GetString("Trảinghiệmcùngmap4D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3D trực quan.
+        /// </summary>
+        public static string TrựcQuan3D {
+            get {
+                return ResourceManager.GetString("TrựcQuan3D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ứng dụng.
+        /// </summary>
+        public static string Ứngdụng {
+            get {
+                return ResourceManager.GetString("Ứngdụng", resourceCulture);
             }
         }
     }

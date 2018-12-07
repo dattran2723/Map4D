@@ -5,7 +5,7 @@
 
 <div class="row w-100 text-center" id="get-in-touch">
     <div class="col-md-12 text-center" id="get-in-touch-title">
-        <h1>Liên hệ với chúng tôi</h1>
+        <h1>@Map4D.Resources.My_texts.LiênHệ</h1>
     </div>
     <div class="col-md-12 text-center" id="get-in-touch-icon">
         <a href="#" class="mr-2" title="Facebook"><label><i class="fab fa-facebook-f"></i></label></a>
@@ -26,10 +26,10 @@
 
                 @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "w-100", @id = "subject", @placeholder = "Tiêu đề", @name = "name", @type = "text" } })
 
-                @Html.TextAreaFor(model => model.Message, new { @class = "w-100", @placeholder = "Tin nhắn", @name = "message", @id = "message" })
+                @Html.TextAreaFor(model => model.Message, new { @class = "w-100", @placeholder = Map4D.Resources.My_texts.TinNhắn, @name = "message", @id = "message" })
 
             </div>
-            <input type="submit" name="name" value="Gửi ngay bây giờ" class="btn btn-success" id="btn-submit" />
+            <input type="submit" name="name" value="@Map4D.Resources.My_texts.GửiNgayBâyGiờ" class="btn btn-success" id="btn-submit" />
         }
     </div>
 

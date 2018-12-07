@@ -1,4 +1,5 @@
 ﻿$(document).ready(function () {
+    $("li#mailbox").addClass("active");
     var counter = 0;
     $('#list-contact').DataTable({
         responsive: true,
@@ -13,8 +14,14 @@
             },
             { data: "Name" },
             { data: "Email" },
-            { data: "Subject" },
-            { data: "Message" },
+            {
+                data: "Subject",
+                render: function (data) {
+                    if (data.length > 20)
+                        return data.substr(0, 20)+'...';
+                    return data;
+                }
+            },
             {
                 data: "CreatedDate",
                 render: function (data) {
@@ -25,7 +32,7 @@
             {
                 data: "Status",
                 render: function (data) {
-                    return data ? "Đã liên hệ" : "Chưa liên hệ";
+                    return data ? "Đã phản hồi" : "Chưa phản hồi";
                 }
             },
             {
@@ -33,8 +40,10 @@
             }
         ],
         rowCallback: function (row, data, index) {
-            console.log(data.Id);
-            $('td:eq(7)', row).html(
+            $('td:eq(1)', row).html(
+                '<a data-toggle="tooltip" title="Chi tiết" href="/admin/Home/ContactDetail?id=' + data.Id + '">' + data.Name + '</a>'
+            );
+            $('td:eq(6)', row).html(
                 '<a data-toggle="tooltip" title="Sửa" href="/admin/Home/edit?id=' + data.Id + '" > <i class="fas fa-edit"></i></a > ' + ' ' +
                 '<a data-toggle="tooltip" title="Chi tiết" href="/admin/Home/ContactDetail?id=' + data.Id + '"><i class="fas fa-info-circle"></i></a>' + ' ' +
                 '<a data-toggle="tooltip" class="btnXoa" title="Xóa" href="javascript:;" data-id="' + data.Id + '"><i class="fas fa-trash-alt text-danger"></i></a>'
