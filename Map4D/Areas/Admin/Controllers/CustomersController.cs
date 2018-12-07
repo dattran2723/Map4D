@@ -14,7 +14,6 @@ namespace Map4D.Areas.Admin.Controllers
     public class CustomersController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
-
         // GET: Admin/Customers
         public async Task<ActionResult> Index()
         {
@@ -37,6 +36,12 @@ namespace Map4D.Areas.Admin.Controllers
         }
 
         // GET: Admin/Customers/Edit/5
+        /// <summary>
+        /// using automapper
+        /// create var session["phone"] using check isExitPhone for view edit customer
+        /// </summary>
+        /// <param name="id">get id form id customer</param>
+        /// <returns></returns>
         public async Task<ActionResult> Edit(string id)
         {
             if (id == null)
@@ -105,6 +110,17 @@ namespace Map4D.Areas.Admin.Controllers
             }
             base.Dispose(disposing);
         }
+        /// <summary>
+        /// true : no check is exist phone input
+        /// fasle : check is exist for phone input
+        /// check ssphone with session["phone"]
+        /// if 2 value == then return true
+        /// count value phone from db with phone input
+        /// if value > 0 then return fasle
+        /// else then return true
+        /// </summary>
+        /// <param name="phone">is value input when want to edit phone for customer</param>
+        /// <returns></returns>
         [HttpPost]
         public JsonResult IsPhoneExist(string phone)
         {
