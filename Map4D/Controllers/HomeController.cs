@@ -17,10 +17,11 @@ namespace Map4D.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
         SmtpClient client = new SmtpClient();
 
-        public ActionResult Index(string language)
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")] /// Xóa cache không cho điền lại form submit 
+        public ActionResult Index()
         {
-            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(language);
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
+            //Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(language);
+            //Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
             return View();
         }
 
@@ -41,7 +42,6 @@ namespace Map4D.Controllers
         {
             return View();
         }
-        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
         [HttpPost]
@@ -86,7 +86,11 @@ namespace Map4D.Controllers
             smtp.EnableSsl = true;
             smtp.Send(mail);
         }
+        public ActionResult Product()
+        {
 
+            return View();
+        }
 
     }
 }

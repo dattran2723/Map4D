@@ -218,8 +218,8 @@
     <Compile Include="Areas\Admin\Controllers\CustomersController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\ChangeLanguageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LanguageController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -2298,7 +2298,7 @@
     <Content Include="Views\Home\GetInTouch.cshtml" />
     <Content Include="Views\Home\WebAppRelity.cshtml" />
     <Content Include="Views\Home\3DTrucQuan.cshtml" />
-    <Content Include="Views\Language\Index.cshtml" />
+    <Content Include="Views\Home\Product.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

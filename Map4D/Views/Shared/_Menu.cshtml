@@ -47,12 +47,11 @@
                         <div class="dropdown-menu" id="languages">
                             <button class="dropdown-item" type="button">
                                 <img class="img-responsive" src="~/Content/Client/img/Flag_of_Vietnam.svg.png" />
-                                @Html.ActionLink("Tiếng Việt", ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), new { language = "vn" }, null)
-
+                                @Html.ActionLink("Viet Nam", "Change", "Language", new { LanguageAbbervation = "vn" }, null)
                             </button>
                             <button class="dropdown-item" type="button">
                                 <img class="img-responsive" src="~/Content/Client/img/Flag_of_the_United_States_(Pantone).png" />
-                                @Html.ActionLink("English", ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), new { language = "en" }, null)
+                                @Html.ActionLink("English", "Change", "Language", new { LanguageAbbervation = "en" }, null)
 
                             </button>
                         </div>
