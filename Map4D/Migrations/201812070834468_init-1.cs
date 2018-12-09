@@ -3,7 +3,7 @@ namespace Map4D.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class initdb : DbMigration
+    public partial class init1 : DbMigration
     {
         public override void Up()
         {

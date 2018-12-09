@@ -17,10 +17,11 @@ namespace Map4D.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
         SmtpClient client = new SmtpClient();
 
-        public ActionResult Index(string language)
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")] /// Xóa cache không cho điền lại form submit 
+        public ActionResult Index()
         {
-            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(language);
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
+            //Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(language);
+            //Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
             return View();
         }
 
@@ -54,27 +55,19 @@ namespace Map4D.Controllers
         [HttpPost]
         public ActionResult GetInTouch(Contact data)
         {
-            //var guest = (from u in db.GuestModels
-            //             where u.GuestEmail == data.GuestEmail
-            //             select u).SingleOrDefault();
-            //if (guest != null)
-            //{
-            //    ViewBag.Message = "Email này đã tồn tại";
-            //}
-            try
+            if (ModelState.IsValid)
             {
-                if (ModelState.IsValid)
-                {
-                    data.CreatedDate = DateTime.Now;
-                    db.Contacts.Add(data);
-                    db.SaveChanges();
-                    SendMail(data.Email);
-                    return RedirectToAction("Index");
-                }
+                data.CreatedDate = DateTime.Now;
+                db.Contacts.Add(data);
+                db.SaveChanges();
+                SendMail(data.Email);
+                Session["Check"] = 1;
+                return RedirectToAction("Index");
+
             }
-            catch (Exception ex)
+            else
             {
-                ViewBag.Message = ex.Message;
+                ViewBag.Check = false;
             }
             return View("Index");
         }
@@ -101,7 +94,11 @@ namespace Map4D.Controllers
             smtp.EnableSsl = true;
             smtp.Send(mail);
         }
+        public ActionResult Product()
+        {
 
+            return View();
+        }
 
     }
 }

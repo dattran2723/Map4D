@@ -1,7 +1,10 @@
 ﻿@model Map4D.Models.Contact
 @{
+    /**/
+
     Layout = null;
 }
+
 
 <div class="row w-100 text-center" id="get-in-touch">
     <div class="col-md-12 text-center" id="get-in-touch-title">
@@ -20,11 +23,13 @@
 
             <div class="input-group col-12 col-sm-10 col-md-7 col-lg-5 mx-auto text-center">
                 @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "w-50", @id = "your-name",
-               @placeholder = "Họ & tên", @name = "name", @type = "text" ,@required="",@minlength="3"} })
+               @placeholder = Map4D.Resources.My_texts.Hovaten, @name = "name", @type = "text" ,@required="",@minlength="3" , @title="abc",
+               @datatoggle = "tooltip"
+           } })
 
                 @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "w-50", @id = "your-email", @placeholder = "Email", @name = "name", @type = "text" } })
 
-                @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "w-100", @id = "subject", @placeholder = "Tiêu đề", @name = "name", @type = "text" } })
+                @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "w-100", @id = "subject", @placeholder = Map4D.Resources.My_texts.Tiêuđề, @name = "name", @type = "text" } })
 
                 @Html.TextAreaFor(model => model.Message, new { @class = "w-100", @placeholder = Map4D.Resources.My_texts.TinNhắn, @name = "message", @id = "message" })
 
@@ -32,7 +37,4 @@
             <input type="submit" name="name" value="@Map4D.Resources.My_texts.GửiNgayBâyGiờ" class="btn btn-success" id="btn-submit" />
         }
     </div>
-
 </div>
-
-        
