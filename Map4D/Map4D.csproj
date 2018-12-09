@@ -1961,6 +1961,7 @@
     <Content Include="Content\Client\css\3DTrucQuan.css" />
     <Content Include="Content\Client\css\BuildMap4D.css" />
     <Content Include="Content\Client\css\CreateMobileApps.css" />
+    <Content Include="Content\Client\css\products\styleSearch.css" />
     <Content Include="Content\Client\css\styleFooter.css" />
     <Content Include="Content\Client\css\styleGetInTouch.css" />
     <Content Include="Content\Client\css\styleMapbox.css" />
@@ -2305,11 +2306,11 @@
     <Content Include="Views\Home\3DTrucQuan.cshtml" />
     <Content Include="Views\Language\Index.cshtml" />
     <Content Include="Views\Home\Products.cshtml" />
+    <Content Include="Views\Home\ProductsSearch.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Content\Client\css\products\" />
     <Folder Include="Views\ChangeLanguage\" />
   </ItemGroup>
   <ItemGroup>
