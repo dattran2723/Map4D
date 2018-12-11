@@ -26,7 +26,7 @@ namespace Map4D.Controllers
         }
 
         [HttpGet]
-        public ActionResult Products(string language)
+        public ActionResult Products()
         {
             return View();
         }

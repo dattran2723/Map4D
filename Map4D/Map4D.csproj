@@ -224,9 +224,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201812070834468_init-1.cs" />
-    <Compile Include="Migrations\201812070834468_init-1.Designer.cs">
-      <DependentUpon>201812070834468_init-1.cs</DependentUpon>
+    <Compile Include="Migrations\201812090414356_init-db.cs" />
+    <Compile Include="Migrations\201812090414356_init-db.Designer.cs">
+      <DependentUpon>201812090414356_init-db.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -1964,6 +1964,7 @@
     <Content Include="Content\Client\css\CreateMobileApps.css" />
     <Content Include="Content\Client\css\products\MobileApp.css" />
     <Content Include="Content\Client\css\products\SlideMap.css" />
+    <Content Include="Content\Client\css\products\styleSearchGeoDirect.css" />
     <Content Include="Content\Client\css\styleFooter.css" />
     <Content Include="Content\Client\css\styleGetInTouch.css" />
     <Content Include="Content\Client\css\styleMapbox.css" />
@@ -2329,8 +2330,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201812070834468_init-1.resx">
-      <DependentUpon>201812070834468_init-1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201812090414356_init-db.resx">
+      <DependentUpon>201812090414356_init-db.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\My texts.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
