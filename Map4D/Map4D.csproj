@@ -2315,8 +2315,8 @@
     <Content Include="Views\Language\Index.cshtml" />
     <Content Include="Views\Home\Products.cshtml" />
     <Content Include="Views\Home\ProductSlideMap.cshtml" />
-    <Content Include="Views\Home\ProductMobileApps.cshtml" />
     <Content Include="Views\Home\ProductsSearchGeoDirect.cshtml" />
+    <Content Include="Views\Home\ProductMobileApps.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

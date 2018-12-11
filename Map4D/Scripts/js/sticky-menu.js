@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 150) {
+        if ($(this).scrollTop() > 80) {
             $("#menu-top nav").css("background", "#3597e4");
             $("#menu-top nav .logo").addClass("sticky");
             $("#menu-top").css("top", "-55px");
