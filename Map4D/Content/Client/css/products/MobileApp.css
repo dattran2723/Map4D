@@ -1,0 +1,80 @@
+﻿.mobileApp {
+    background-color: #f4f4f4;
+    margin: 0 auto;
+}
+
+    .mobileApp .left {
+        padding-top: 5%;
+        padding-bottom: 6%;
+    }
+
+    .mobileApp .right {
+        padding-top: 12%;
+    }
+
+        .mobileApp .right .content {
+            padding-left: 4%;
+        }
+
+            .mobileApp .right .content h3 {
+                font-size: 45.35px;
+                font-family: 'UTM Avo';
+            }
+
+            .mobileApp .right .content p {
+                font-size: 14px;
+                font-family: 'Myanmar Text';
+                padding-right: 26%;
+            }
+
+@media only screen and (max-width: 1033px) {
+    .mobileApp .right .content h3 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 875px) {
+    .mobileApp .right .content h3 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .mobileApp .right {
+        text-align: center;
+    }
+
+        .mobileApp .right .content {
+            padding-left: 0%;
+        }
+
+            .mobileApp .right .content p {
+                padding-right: 5%;
+                padding-left: 5%;
+            }
+
+        .mobileApp .right img {
+            width: 22%;
+        }
+
+    .mobileApp .left {
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .mobileApp .right .content h3 {
+        font-size: 25px;
+    }
+
+    .mobileApp .right .content p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .mobileApp .right .content h3 {
+        font-size: 22px;
+    }
+}
