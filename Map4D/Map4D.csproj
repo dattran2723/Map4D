@@ -1962,6 +1962,7 @@
     <Content Include="Content\Client\css\3DTrucQuan.css" />
     <Content Include="Content\Client\css\BuildMap4D.css" />
     <Content Include="Content\Client\css\CreateMobileApps.css" />
+    <Content Include="Content\Client\css\products\MobileApp.css" />
     <Content Include="Content\Client\css\products\SlideMap.css" />
     <Content Include="Content\Client\css\products\styleSearchGeoDirect.css" />
     <Content Include="Content\Client\css\styleFooter.css" />
@@ -2258,6 +2259,8 @@
     <Content Include="Scripts\js\footerScroll.js" />
     <Content Include="Scripts\js\GetListContact.js" />
     <Content Include="Scripts\js\hover-mapbox.js" />
+    <Content Include="Scripts\js\loadPagingCustomers.js" />
+    <Content Include="Scripts\js\Notify.js" />
     <Content Include="Scripts\js\responsiveTable.js" />
     <Content Include="Scripts\js\sticky-menu.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
@@ -2309,6 +2312,7 @@
     <Content Include="Views\Language\Index.cshtml" />
     <Content Include="Views\Home\Products.cshtml" />
     <Content Include="Views\Home\ProductSlideMap.cshtml" />
+    <Content Include="Views\Home\ProductMobileApps.cshtml" />
     <Content Include="Views\Home\ProductsSearchGeoDirect.cshtml" />
   </ItemGroup>
   <ItemGroup>
