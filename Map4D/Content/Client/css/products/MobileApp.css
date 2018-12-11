@@ -10,6 +10,7 @@
 
     .mobileApp .right {
         padding-top: 12%;
+        padding-left: 0%;
     }
 
         .mobileApp .right .content {
@@ -90,6 +91,7 @@
 
     .mobileApp .right {
         text-align: center;
+        padding-top: 0%;
         padding-right: 0%;
         max-width: 100% !important;
     }
@@ -99,7 +101,7 @@
         }
 
         .mobileApp .right .content p {
-            padding-left: 10%;
-            padding-right: 10%;
+            padding-left: 12%;
+            padding-right: 12%;
         }
 }

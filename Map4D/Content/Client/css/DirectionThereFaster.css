@@ -1,12 +1,12 @@
 ﻿.direction {
     width: 100%;
-    background-image: url("/content/client/img/icon-page-1_0004_blue-bg_repair.png");
+    background-image: url("/content/client/img/icon-page-1_0004_blue-bg_repair4.png");
     margin: 0 auto;
     background-size: cover;
     background-position: 34%;
     background-repeat: no-repeat;
-    border-bottom-left-radius: 50% 1cm;
-    border-bottom-right-radius: 47% 2cm;
+    /*border-bottom-left-radius: 50% 1cm;
+    border-bottom-right-radius: 47% 2cm;*/
     margin-top: -19%;
 }
 
