@@ -1,0 +1,125 @@
+﻿@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url('../../../fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+.registerUser {
+    background-image: url('../img/Dang ky.png');
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    padding-top: 14%;
+    padding-bottom: 24%;
+}
+
+    .registerUser h2 {
+        color: #fff;
+        font-family: 'UTM Avo';
+        font-size: 45.35px;
+        padding-bottom: 4%;
+    }
+
+    .registerUser .boxRegister {
+        margin: auto;
+    }
+
+        .registerUser .boxRegister input {
+            margin-bottom: 8% !important;
+            line-height: 45px;
+            border-radius: 8px;
+            width: 85%;
+            margin: auto;
+        }
+
+    .registerUser .divBottom {
+        margin: auto;
+        width: 85%;
+    }
+
+        .registerUser .divBottom a {
+            padding-left: 0%;
+            color: #0df8c8;
+            font-size: 15px;
+            text-decoration: underline;
+            font-family: SourceSansPro-Regular;
+        }
+
+        .registerUser .divBottom button {
+            background-color: #0df8c8;
+            border-radius: 20px;
+        }
+
+#footer {
+    background-image: none;
+    margin-top: -7%;
+}
+
+#menu-top nav .collapse ul li #btn-register {
+    display: none;
+}
+
+@media only screen and (max-width: 1033px ) {
+    .registerUser h2 {
+        font-size: 40px;
+    }
+
+    .registerUser .boxRegister input {
+        margin-bottom: 5% !important;
+        line-height: 40px;
+        font-size: 18px;
+    }
+
+    #footer {
+        margin-top: -12%;
+    }
+}
+
+@media only screen and (max-width: 860px ) {
+    .registerUser {
+        padding-bottom: 40%;
+    }
+
+        .registerUser h2 {
+            font-size: 32px;
+        }
+
+        .registerUser .boxRegister input {
+            margin-bottom: 3% !important;
+            line-height: 35px;
+        }
+}
+
+@media only screen and (max-width: 600px ) {
+    .registerUser {
+        padding-top: 27%;
+    }
+
+        .registerUser h2 {
+            font-size: 28px;
+        }
+
+        .registerUser .boxRegister input {
+            line-height: 20px;
+            font-size: 13px;
+        }
+}
+
+@media only screen and (max-width: 530px ) {
+    .registerUser {
+        padding-bottom: 60%;
+    }
+
+    #footer {
+        margin-top: -22%;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .registerUser .divBottom a {
+        font-size: 13px;
+    }
+
+    .registerUser .divBottom button {
+        font-size: 13px;
+    }
+}
