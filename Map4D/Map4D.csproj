@@ -2308,6 +2308,8 @@
     <Content Include="Views\Home\3DTrucQuan.cshtml" />
     <Content Include="Views\Language\Index.cshtml" />
     <Content Include="Views\Home\Products.cshtml" />
+    <Content Include="Views\Home\ProductSlideMap.cshtml" />
+    <Content Include="Views\Home\ProductsSearchGeoDirect.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
