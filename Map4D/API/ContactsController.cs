@@ -19,13 +19,6 @@ namespace Map4D.API
         }
 
         [HttpGet]
-        [Route("api/contacts")]
-        public List<Contact> GetContact()
-        {
-            return contactRepository.GetContacts().ToList();
-        }
-
-        [HttpGet]
         [Route("api/contact")]
         public DataTableResponse GetContacts()
         {
