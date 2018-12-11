@@ -225,9 +225,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201812070834468_init-1.cs" />
-    <Compile Include="Migrations\201812070834468_init-1.Designer.cs">
-      <DependentUpon>201812070834468_init-1.cs</DependentUpon>
+    <Compile Include="Migrations\201812090414356_init-db.cs" />
+    <Compile Include="Migrations\201812090414356_init-db.Designer.cs">
+      <DependentUpon>201812090414356_init-db.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -1930,6 +1930,7 @@
     <Content Include="Content\Admin\dist\img\credit\visa.png" />
     <Content Include="Content\Admin\dist\img\default-50x50.gif" />
     <Content Include="Content\Admin\dist\img\icons.png" />
+    <Content Include="Content\Admin\dist\img\LOGO MAP 4d-06.png" />
     <Content Include="Content\Admin\dist\img\photo1.png" />
     <Content Include="Content\Admin\dist\img\photo2.png" />
     <Content Include="Content\Admin\dist\img\photo3.jpg" />
@@ -1962,7 +1963,6 @@
     <Content Include="Content\Client\css\3DTrucQuan.css" />
     <Content Include="Content\Client\css\BuildMap4D.css" />
     <Content Include="Content\Client\css\CreateMobileApps.css" />
-    <Content Include="Content\Client\css\productWebApp.css" />
     <Content Include="Content\Client\css\styleFooter.css" />
     <Content Include="Content\Client\css\styleGetInTouch.css" />
     <Content Include="Content\Client\css\styleMapbox.css" />
@@ -1971,6 +1971,7 @@
     <Content Include="Content\Client\css\styleSlideHome.css" />
     <Content Include="Content\Client\css\styleWebAppRelity.css" />
     <Content Include="Content\Client\img\Flag_of_the_United_States_%28Pantone%29.png" />
+    <Content Include="Content\Client\img\Flag_of_Vietnam.svg.png" />
     <Content Include="Content\Client\img\icon-page-1_0000_footer-background.png" />
     <Content Include="Content\Client\img\icon-page-1_0001_Grey-Bg.png" />
     <Content Include="Content\Client\img\icon-page-1_0002_Web-Apps-.png" />
@@ -1987,12 +1988,6 @@
     <Content Include="Content\Client\img\icon-page-1_0007_mockup-phone-route-Repair-.png" />
     <Content Include="Content\Client\img\icon-page-1_0008_phone-text-icon-.png" />
     <Content Include="Content\Client\img\icon-page-1_0009_icon-bg-.png" />
-    <Content Include="Content\Client\img\icon-page-1_0010_location_1068835.png" />
-    <Content Include="Content\Client\img\icon-page-1_0011_website-.png" />
-    <Content Include="Content\Client\img\icon-page-1_0012_website--hover-.png" />
-    <Content Include="Content\Client\img\icon-page-1_0013_location_hover-.png" />
-    <Content Include="Content\Client\img\icon-page-1_0014_phone.png" />
-    <Content Include="Content\Client\img\icon-page-1_0015_phone-icon-hover.png" />
     <Content Include="Content\Client\img\icon-page-1_0016_Header-Bg.png" />
     <Content Include="Content\Client\img\icon-page-1_0017_star-.png" />
     <Content Include="Content\Client\img\icon-page-1_0018_arrow.png" />
@@ -2013,10 +2008,10 @@
     <Content Include="Content\Client\img\icon_0000_Grey-Bg.png" />
     <Content Include="Content\Client\img\icon_0001_icon.png" />
     <Content Include="Content\Client\img\icon_0002_Group-1.png" />
+    <Content Include="Content\Client\img\imac.png" />
     <Content Include="Content\Client\img\left.png" />
     <Content Include="Content\Client\img\LOGO MAP 4d-05.png" />
     <Content Include="Content\Client\img\logoMap4D.png" />
-    <Content Include="Content\Client\img\page-2_0000_Layer-3.png" />
     <Content Include="Content\Client\img\Untitled-1_0000_Header-Bg.png" />
     <Content Include="Content\Client\img\Untitled-1_0000_Mask-by-Mask.png" />
     <Content Include="Content\Client\img\Untitled-1_0001_footer-background.png" />
@@ -2214,16 +2209,6 @@
     <Content Include="fonts\UTM AvoBold.ttf" />
     <Content Include="fonts\UTM AvoBold_Italic.ttf" />
     <Content Include="fonts\UTM AvoItalic.ttf" />
-    <Content Include="fonts\MYRIADPRO-BOLD.woff" />
-    <Content Include="fonts\MYRIADPRO-BOLDCOND.woff" />
-    <Content Include="fonts\MYRIADPRO-BOLDCONDIT.woff" />
-    <Content Include="fonts\MYRIADPRO-BOLDIT.woff" />
-    <Content Include="fonts\MYRIADPRO-COND.woff" />
-    <Content Include="fonts\MYRIADPRO-CONDIT.woff" />
-    <Content Include="fonts\MyriadPro-Light.woff" />
-    <Content Include="fonts\MYRIADPRO-REGULAR.woff" />
-    <Content Include="fonts\MYRIADPRO-SEMIBOLD.woff" />
-    <Content Include="fonts\MYRIADPRO-SEMIBOLDIT.woff" />
     <Content Include="Content\Admin\dist\css\datatables\fixedHeader.bootstrap.css" />
     <Content Include="Areas\Admin\Views\Home\demo.cshtml" />
     <Content Include="Areas\Admin\Views\Home\ListContact.cshtml" />
@@ -2232,6 +2217,16 @@
     <Content Include="Areas\Admin\Views\Customers\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Customers\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Home\EditContact.cshtml" />
+    <Content Include="fonts\MYRIADPRO-BOLD.OTF" />
+    <Content Include="fonts\MYRIADPRO-BOLDCOND.OTF" />
+    <Content Include="fonts\MYRIADPRO-BOLDCONDIT.OTF" />
+    <Content Include="fonts\MYRIADPRO-BOLDIT.OTF" />
+    <Content Include="fonts\MYRIADPRO-COND.OTF" />
+    <Content Include="fonts\MYRIADPRO-CONDIT.OTF" />
+    <Content Include="fonts\MyriadPro-Light.otf" />
+    <Content Include="fonts\MYRIADPRO-REGULAR.OTF" />
+    <Content Include="fonts\MYRIADPRO-SEMIBOLD.OTF" />
+    <Content Include="fonts\MYRIADPRO-SEMIBOLDIT.OTF" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\datatable\dataTables.bootstrap.min.js" />
     <Content Include="Scripts\datatable\dataTables.fixedHeader.min.js" />
@@ -2302,14 +2297,11 @@
     <Content Include="Views\Home\WebAppRelity.cshtml" />
     <Content Include="Views\Home\3DTrucQuan.cshtml" />
     <Content Include="Views\Home\Product.cshtml" />
-    <Content Include="Views\Product\WebApp.cshtml" />
-    <Content Include="Views\Product\Index.cshtml" />
-    <Content Include="Views\Product\Slide.cshtml" />
-    <Content Include="Views\Product\CreateMobileApps.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Views\ChangeLanguage\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -2324,8 +2316,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201812070834468_init-1.resx">
-      <DependentUpon>201812070834468_init-1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201812090414356_init-db.resx">
+      <DependentUpon>201812090414356_init-db.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\My texts.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

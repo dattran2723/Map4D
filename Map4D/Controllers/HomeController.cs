@@ -25,6 +25,12 @@ namespace Map4D.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ActionResult Products()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
