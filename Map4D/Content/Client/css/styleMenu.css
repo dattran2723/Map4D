@@ -2,6 +2,7 @@
     font-family: 'Myriad Pro Light';
     src: url('/fonts/MyriadPro-Light.otf') format('opentype');
 }
+
 @font-face {
     font-family: 'UTM Avo';
     src: url('/fonts/UTM Avo.ttf') format('truetype');
@@ -11,6 +12,7 @@
     font-family: 'Myriad pro';
     src: url('/fonts/MYRIADPRO-REGULAR.OTF') format('opentype');
 }
+
 #menu-top {
     margin: auto 0;
     position: fixed;
@@ -83,7 +85,7 @@
 
         #menu-top nav #list-menu-top {
             transition: 0.5s;
-            margin-left:5%;
+            margin-left: 5%;
         }
 
         #menu-top nav button {
@@ -91,7 +93,7 @@
         }
 
         #menu-top nav .collapse ul .space-item {
-            margin: auto;
+            margin: 5px 2% auto 2%;
         }
 
 
@@ -109,13 +111,14 @@
             transition: 0.5s
         }
 
-            #menu-top nav .collapse #btn-register:hover {
-                background: #00cda3;
-            }
+        #menu-top nav .collapse #btn-register:hover {
+            background: #00cda3;
+        }
+
 #menu-language {
     margin-top: 8px;
     color: black;
-    margin-bottom:2%;
+    margin-bottom: 2%;
 }
 
     #menu-language img {
@@ -173,10 +176,15 @@
         max-width: 22%;
     }
 }
-@media only screen and (max-width: 1190px) {
+
+@media only screen and (max-width: 1240px) {
 
     #menu-top nav #list-menu-top {
         margin-left: 0;
+    }
+
+    #menu-top nav .collapse ul .space-item {
+        margin: auto;
     }
 }
 
@@ -184,11 +192,6 @@
     #menu-top nav .logo {
         max-width: 18%;
     }
-
-    #menu-top nav .collapse ul .space-item {
-        margin: auto;
-    }
-
 }
 
 @media only screen and (max-width: 991px) {
@@ -212,10 +215,10 @@
         margin-top: 3%;
         padding-left: 2%;
     }
+
     #languages {
         max-height: 140px;
     }
-        
 }
 
 @media only screen and (max-width: 710px) {
@@ -240,6 +243,7 @@
         top: -40px;
     }
 }
+
 @media only screen and (max-width: 590px) {
     #btn-menu {
         padding-top: 2%;
