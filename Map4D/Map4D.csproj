@@ -2301,11 +2301,15 @@
     <Content Include="Views\Product\Index.cshtml" />
     <Content Include="Views\Product\Slide.cshtml" />
     <Content Include="Views\Product\WebApp.cshtml" />
+    <Content Include="Views\Home\Products.cshtml" />
+    <Content Include="Views\Home\ProductSlideMap.cshtml" />
+    <Content Include="Views\Home\ProductsSearchGeoDirect.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Views\ChangeLanguage\" />
+    <Folder Include="Views\Language\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
