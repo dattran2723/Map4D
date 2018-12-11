@@ -47,6 +47,13 @@ namespace Map4D
         //}
         protected void Application_BeginRequest(object sender, EventArgs e)
         {
+            //start code of TranDat
+            //disable the cache for the entire application
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+            Response.Cache.SetExpires(DateTime.UtcNow.AddHours(-1));
+            Response.Cache.SetNoStore();
+            //end code of TranDat
+
             HttpCookie cookie = HttpContext.Current.Request.Cookies["Language"];
             if (cookie != null && cookie.Value != null)
             {
