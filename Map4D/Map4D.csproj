@@ -1962,6 +1962,7 @@
     <Content Include="Content\Client\css\3DTrucQuan.css" />
     <Content Include="Content\Client\css\BuildMap4D.css" />
     <Content Include="Content\Client\css\CreateMobileApps.css" />
+    <Content Include="Content\Client\css\products\SlideMap.css" />
     <Content Include="Content\Client\css\products\styleSearchGeoDirect.css" />
     <Content Include="Content\Client\css\styleFooter.css" />
     <Content Include="Content\Client\css\styleGetInTouch.css" />
@@ -2307,7 +2308,6 @@
     <Content Include="Views\Home\3DTrucQuan.cshtml" />
     <Content Include="Views\Language\Index.cshtml" />
     <Content Include="Views\Home\Products.cshtml" />
-    <Content Include="Views\Home\ProductsSearchGeoDirect.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
