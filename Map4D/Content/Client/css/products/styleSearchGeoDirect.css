@@ -53,12 +53,13 @@
 }
 
     #direction div.direct-img {
-        padding-left:0;
-        padding-right:0;
+        padding-left: 0;
+        padding-right: 0;
     }
-    #direction div.direct-img img {
-        width: 100%;
-    }
+
+        #direction div.direct-img img {
+            width: 100%;
+        }
 
     #direction div.content img {
         padding-top: 25%;

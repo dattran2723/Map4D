@@ -31,41 +31,25 @@
     .mobileApp .right .content h3 {
         font-size: 40px;
     }
+
+    .mobileApp .right .content p {
+        padding-right: 6%;
+    }
+
+    .mobileApp .right img {
+        width: 40%;
+    }
 }
 
-@media only screen and (max-width: 875px) {
+@media only screen and (max-width: 891px) {
+    .mobileApp .right .content h3 {
+        font-size: 38px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
     .mobileApp .right .content h3 {
         font-size: 32px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .mobileApp .right {
-        text-align: center;
-    }
-
-        .mobileApp .right .content {
-            padding-left: 0%;
-        }
-
-            .mobileApp .right .content p {
-                padding-right: 5%;
-                padding-left: 5%;
-            }
-
-        .mobileApp .right img {
-            width: 22%;
-        }
-
-    .mobileApp .left {
-        padding-top: 0%;
-        padding-bottom: 0%;
-    }
-}
-
-@media only screen and (max-width: 625px) {
-    .mobileApp .right .content h3 {
-        font-size: 25px;
     }
 
     .mobileApp .right .content p {
@@ -73,8 +57,49 @@
     }
 }
 
-@media only screen and (max-width: 435px) {
-    .mobileApp .right .content h3 {
-        font-size: 22px;
+@media only screen and (max-width: 767px) {
+    .mobileApp .left {
+        max-width: 60% !important;
     }
+
+    .mobileApp .right {
+        margin-left: 0%;
+        padding-left: 0%;
+        max-width: 40% !important;
+    }
+
+        .mobileApp .right .content {
+            padding-left: 0%;
+        }
+}
+
+@media only screen and (max-width: 625px) {
+    .mobileApp .right .content h3 {
+        font-size: 20px;
+    }
+
+    .mobileApp .right .content p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .mobileApp .left {
+        max-width: 100% !important;
+    }
+
+    .mobileApp .right {
+        text-align: center;
+        padding-right: 0%;
+        max-width: 100% !important;
+    }
+
+        .mobileApp .right img {
+            width: 26%;
+        }
+
+        .mobileApp .right .content p {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
 }

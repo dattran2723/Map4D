@@ -118,6 +118,14 @@
         margin-right: 15%;
         margin-left: 15%;
     }
+
+    #slideMap .divTop .content h3 {
+        font-size: 25px;
+    }
+
+    #slideMap .divTop .content p {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -125,6 +133,7 @@
         margin-top: 20% !important;
     }
 }
+
 @media only screen and (max-width: 500px) {
     #slideMap .divTop .content {
         margin-top: 26% !important;
