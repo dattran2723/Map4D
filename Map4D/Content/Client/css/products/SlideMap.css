@@ -1,0 +1,132 @@
+﻿#slideMap {
+    margin: 0 auto;
+    background-image: url('../../img/products/page-2_0005_H3-Slider-1-copy.png');
+    background-size: cover;
+}
+
+#carouselExampleIndicators {
+    margin: 0 auto;
+}
+
+#slideMap .divTop {
+    margin: 0 auto;
+}
+
+    #slideMap .divTop .content {
+        text-align: center;
+        margin-top: 13% !important;
+    }
+
+        #slideMap .divTop .content h3 {
+            font-family: 'UTM Avo';
+            font-size: 45.35px;
+            color: #fff;
+        }
+
+        #slideMap .divTop .content p {
+            font-family: 'Myanmar Text';
+            font-size: 22.68px;
+            color: black;
+            margin-right: 30%;
+            margin-left: 30%;
+        }
+
+#slideMap .divBottom {
+    margin: 0 auto;
+    display: block;
+}
+
+    #slideMap .divBottom .imgKinhLup {
+        position: absolute;
+        height: auto;
+        width: 23%;
+        margin-left: 17%;
+    }
+
+    #slideMap .divBottom .imgDt {
+        margin: 0 auto;
+        margin-top: 4%;
+        margin-left: 24%;
+        padding-bottom: 2%;
+        height: auto;
+        width: 62%;
+    }
+
+#slideMap #carouselExampleIndicators .carousel-indicators {
+    display: block;
+}
+
+#carouselExampleIndicators ol {
+    bottom: 60%;
+    left: 75%;
+    top: 60%;
+}
+
+
+#carouselExampleIndicators .carousel-indicators li {
+    border-radius: 10px;
+    height: 10px;
+    width: 10px;
+    padding-bottom: 5%;
+}
+
+#carouselExampleIndicators .carousel-indicators li {
+    display: block;
+    margin-top: 5px;
+}
+
+#slideMap #carouselExampleIndicators .carousel-inner .carousel-control-prev, #slideMap #carouselExampleIndicators .carousel-inner .carousel-control-next {
+    display: none;
+}
+
+@media only screen and (max-width: 1033px) {
+    #slideMap .divTop .content h3 {
+        font-size: 40px;
+    }
+
+    #slideMap .divTop .content p {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #slideMap .divTop .content h3 {
+        font-size: 32px;
+    }
+
+    #slideMap .divTop .content p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    #slideMap #carouselExampleIndicators .carousel-indicators {
+        display: none;
+    }
+
+    #slideMap #carouselExampleIndicators .carousel-inner .carousel-control-prev, #slideMap #carouselExampleIndicators .carousel-inner .carousel-control-next {
+        display: flex;
+    }
+
+    #slideMap .divTop .content {
+        margin-top: 16% !important;
+    }
+}
+
+@media only screen and (max-width : 667px) {
+    #slideMap .divTop .content p {
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #slideMap .divTop .content {
+        margin-top: 20% !important;
+    }
+}
+@media only screen and (max-width: 500px) {
+    #slideMap .divTop .content {
+        margin-top: 26% !important;
+    }
+}
