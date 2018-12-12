@@ -1966,13 +1966,16 @@
     <Content Include="Content\Client\css\products\MobileApp.css" />
     <Content Include="Content\Client\css\products\SlideMap.css" />
     <Content Include="Content\Client\css\products\styleSearchGeoDirect.css" />
+    <Content Include="Content\Client\css\register.css" />
     <Content Include="Content\Client\css\styleFooter.css" />
     <Content Include="Content\Client\css\styleGetInTouch.css" />
+    <Content Include="Content\Client\css\styleLogin.css" />
     <Content Include="Content\Client\css\styleMapbox.css" />
     <Content Include="Content\Client\css\DirectionThereFaster.css" />
     <Content Include="Content\Client\css\styleMenu.css" />
     <Content Include="Content\Client\css\styleSlideHome.css" />
     <Content Include="Content\Client\css\styleWebAppRelity.css" />
+    <Content Include="Content\Client\img\Dang ky.png" />
     <Content Include="Content\Client\img\Flag_of_the_United_States_%28Pantone%29.png" />
     <Content Include="Content\Client\img\Flag_of_Vietnam.svg.png" />
     <Content Include="Content\Client\img\icon-page-1_0000_footer-background.png" />
@@ -1981,6 +1984,9 @@
     <Content Include="Content\Client\img\icon-page-1_0003_Left.png" />
     <Content Include="Content\Client\img\icon-page-1_0004_Blue-Bg.png" />
     <Content Include="Content\Client\img\icon-page-1_0004_Blue-Bg_Repair.png" />
+    <Content Include="Content\Client\img\icon-page-1_0004_Blue-Bg_Repair2.png" />
+    <Content Include="Content\Client\img\icon-page-1_0004_Blue-Bg_Repair3.png" />
+    <Content Include="Content\Client\img\icon-page-1_0004_Blue-Bg_Repair4.png" />
     <Content Include="Content\Client\img\icon-page-1_0005_location-text-icon-.png" />
     <Content Include="Content\Client\img\icon-page-1_0006_Grey-Bg.png" />
     <Content Include="Content\Client\img\icon-page-1_0006_Grey-Bg_Repair2.png" />
@@ -2230,6 +2236,7 @@
     <Content Include="fonts\MYRIADPRO-REGULAR.OTF" />
     <Content Include="fonts\MYRIADPRO-SEMIBOLD.OTF" />
     <Content Include="fonts\MYRIADPRO-SEMIBOLDIT.OTF" />
+    <Content Include="fonts\SourceSansPro-Regular.ttf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\datatable\dataTables.bootstrap.min.js" />
     <Content Include="Scripts\datatable\dataTables.fixedHeader.min.js" />
@@ -2305,6 +2312,8 @@
     <Content Include="Views\Home\Products.cshtml" />
     <Content Include="Views\Home\ProductSlideMap.cshtml" />
     <Content Include="Views\Home\ProductsSearchGeoDirect.cshtml" />
+    <Content Include="Views\Home\ProductMobileApps.cshtml" />
+    <Content Include="Views\Home\Register.cshtml" />
     <Content Include="Views\Home\ProductMobileApps.cshtml" />
   </ItemGroup>
   <ItemGroup>

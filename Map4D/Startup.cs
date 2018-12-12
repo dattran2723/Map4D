@@ -15,6 +15,11 @@ namespace Map4D
             CreateAccountDefault();
         }
 
+
+        /// <summary>
+        /// when running the application will create a account default with Username = admin@gmail.com and password: admin123
+        /// </summary>
+        /// <returns></returns>
         public void CreateAccountDefault()
         {
             ApplicationDbContext db = new ApplicationDbContext();
