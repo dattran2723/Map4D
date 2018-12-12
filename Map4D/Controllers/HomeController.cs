@@ -20,8 +20,6 @@ namespace Map4D.Controllers
         [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")] /// Xóa cache không cho điền lại form submit 
         public ActionResult Index()
         {
-            //Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(language);
-            //Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
             return View();
         }
 

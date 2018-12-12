@@ -8,7 +8,7 @@
     </div>
     <nav class="navbar navbar-expand-lg col-md-12  navbar-fixed-top">
         <div class="col-md-2 logo text-right">
-            <a class="navbar-brand" href="@Url.Action("Index","Home")" id="logo-map4d" title="Map4D">
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")" id="logo-map4d" title="Map4D">
                 <img class="img-responsive w-75" src="~/Content/Client/img/icon-page-1_0022_logo-map-4d.png" />
             </a>
         </div>
@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse showMenu" id="list-menu-top">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-100">
                 <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Products","Home")">@Map4D.Resources.My_texts.SảnPhẩm</a>
+                    <a class="nav-link" href="@Url.Action("Products", "Home")">@Map4D.Resources.My_texts.SảnPhẩm</a>
                 </li>
                 <li class="space-item">|</li>
                 <li class="nav-item">
@@ -44,14 +44,15 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img class="img-responsive" src="~/Content/Client/img/Flag_of_Vietnam.svg.png" />
                         </a>
+
                         <div class="dropdown-menu" id="languages">
                             <button class="dropdown-item" type="button">
                                 <img class="img-responsive" src="~/Content/Client/img/Flag_of_Vietnam.svg.png" />
-                                @Html.ActionLink("Viet Nam", "Change", "Language", new { LanguageAbbervation = "vn" }, null)
+                                @Html.ActionLink("Viet Nam", ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), new { language = "vn" }, null)
                             </button>
                             <button class="dropdown-item" type="button">
                                 <img class="img-responsive" src="~/Content/Client/img/Flag_of_the_United_States_(Pantone).png" />
-                                @Html.ActionLink("English", "Change", "Language", new { LanguageAbbervation = "en" }, null)
+                                @Html.ActionLink("English", ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), new { language = "en" }, null)
 
                             </button>
                         </div>

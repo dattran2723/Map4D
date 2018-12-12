@@ -1,0 +1,130 @@
+﻿.webApp {
+    background-image: url("/Content/Client/img/page-2_0000_Layer-3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.webApp .content   {
+    margin-left:20px;
+}
+
+    .webApp .left {
+        /*padding-bottom: 28%;*/
+        
+    }
+        
+        .webApp .left .content {
+            padding-left: 20%;
+            padding-top: 20%;
+        }
+
+            .webApp .left .content .tittle {
+                font-family: 'utm avo';
+                padding-left: 5%;
+                font-weight: normal;
+                color: #ffffff;
+                font-size: 25.51px;
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+            }
+
+            .webApp .left .content .webmobile {
+                font-family: 'utm avo';
+                padding-left: 5%;
+                font-weight: normal;
+                color: #1a6ad9;
+                font-size: 25.51px;
+                padding-bottom: 4%;
+            }
+
+            .webApp .left .content .contrary {
+                padding-left: 5%;
+                padding-right: 25%;
+                font-family: 'Myriad Pro';
+                font-size: 15.59px;
+                font-weight: normal;
+                color: #ffffff;
+                text-align: justify;
+            }
+
+    .webApp .right .imgPhone {
+        width: 93%;
+        margin-bottom: 48%;
+    }
+
+@media only screen and (max-width: 1200px) {
+    .webApp .left .content {
+        padding-left: 20%;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .webApp .left .content .imgIP {
+        width: 40%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .webApp .left .content {
+        padding-top: 0%;
+        padding-left: 5%;
+    }
+
+        .webApp .left .content .imgIP {
+            width: 24%;
+        }
+
+    .webApp .left .content {
+        text-align: center;
+        padding-left: 0%;
+        padding-right: 0%;
+        display: block;
+    }
+
+        .webApp .left .content .webmobile {
+            padding-left: 0%;
+        }
+
+        .webApp .left .content .tittle {
+            padding-left: 0%;
+        }
+
+    .webApp .left {
+        padding-bottom: 0%;
+    }
+
+    .webApp .right .imgPhone {
+        margin-bottom: 22%;
+        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0%;
+    }
+
+    .webApp .left .content .contrary {
+        padding-left: 13%;
+        padding-right: 15%;
+        text-align: center;
+    }
+
+    .webApp .left .content .webmobile {
+        padding-bottom: 1%;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .webApp .left .content .contrary {
+        font-size: 12px;
+    }
+
+    .webApp .left .content .tittle {
+        font-size: 22px;
+    }
+
+    .webApp .left .content .webmobile {
+        font-size: 22px;
+    }
+}

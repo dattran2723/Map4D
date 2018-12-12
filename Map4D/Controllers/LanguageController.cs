@@ -16,8 +16,9 @@ namespace Map4D.Controllers
         {
             return View();
         }
-        public ActionResult Change(string LanguageAbbervation)
+        public ActionResult Change(string LanguageAbbervation, string currentController, string currentAction)
         {
+
             if (LanguageAbbervation != null)
             {
                 Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(LanguageAbbervation);
@@ -26,6 +27,8 @@ namespace Map4D.Controllers
             HttpCookie cookie = new HttpCookie("Language");
             cookie.Value = LanguageAbbervation;
             Response.Cookies.Add(cookie);
+            //string url = "~/Views/" + currentController + "/" + currentAction + ".cshtml";
+            //return View(url);
             return View("~/Views/Home/Index.cshtml");
         }
     }

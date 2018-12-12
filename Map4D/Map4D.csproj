@@ -234,6 +234,7 @@
     <Compile Include="Models\CustomerViewModels.cs" />
     <Compile Include="Models\DataTableResponse\DataTableResponse.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\LanguageRoute.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\NoCache.cs" />
     <Compile Include="Models\Repository\IContactRepository.cs" />
@@ -2020,15 +2021,6 @@
     <Content Include="Content\Client\img\left.png" />
     <Content Include="Content\Client\img\LOGO MAP 4d-05.png" />
     <Content Include="Content\Client\img\logoMap4D.png" />
-    <Content Include="Content\Client\img\man-one.jpg" />
-    <Content Include="Content\Client\img\products\page-2_0000_Layer-3.png" />
-    <Content Include="Content\Client\img\products\page-2_0001_Content-Slider-A-15-copy-3.png" />
-    <Content Include="Content\Client\img\products\page-2_0002_Content-Slider-A-15-copy-3.png" />
-    <Content Include="Content\Client\img\products\page-2_0003_Layer-2.png" />
-    <Content Include="Content\Client\img\products\page-2_0004_bg-laptop-.png" />
-    <Content Include="Content\Client\img\products\page-2_0005_H3-Slider-1-copy.png" />
-    <Content Include="Content\Client\img\products\page-2_0006_Bg.png" />
-    <Content Include="Content\Client\img\products\page-2_0007_kinh-lup.png" />
     <Content Include="Content\Client\img\Untitled-1_0000_Header-Bg.png" />
     <Content Include="Content\Client\img\Untitled-1_0000_Mask-by-Mask.png" />
     <Content Include="Content\Client\img\Untitled-1_0001_footer-background.png" />
@@ -2316,17 +2308,19 @@
     <Content Include="Views\Home\GetInTouch.cshtml" />
     <Content Include="Views\Home\WebAppRelity.cshtml" />
     <Content Include="Views\Home\3DTrucQuan.cshtml" />
-    <Content Include="Views\Language\Index.cshtml" />
+    <Content Include="Views\Home\ProductsWebApp.cshtml" />
     <Content Include="Views\Home\Products.cshtml" />
     <Content Include="Views\Home\ProductSlideMap.cshtml" />
     <Content Include="Views\Home\ProductsSearchGeoDirect.cshtml" />
     <Content Include="Views\Home\ProductMobileApps.cshtml" />
     <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\Home\ProductMobileApps.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Views\ChangeLanguage\" />
+    <Folder Include="Views\Language\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
