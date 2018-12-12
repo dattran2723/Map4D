@@ -389,9 +389,6 @@ namespace Map4D.Controllers
         // GET: /Account/LogOff
         public ActionResult LogOff()
         {
-            Response.Cache.SetExpires(DateTime.UtcNow.AddMinutes(-1));
-            Response.Cache.SetCacheability(HttpCacheability.NoCache);
-            Response.Cache.SetNoStore();
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
             return RedirectToAction("Login", "Account");
         }
