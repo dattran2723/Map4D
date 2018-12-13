@@ -2,8 +2,10 @@
 @{
     ViewBag.Title = "Đăng ký";
 }
-
-<link href="~/Content/Client/css/register.css" rel="stylesheet" />
+@section css{
+    <link href="~/Content/Client/css/register.css" rel="stylesheet" />
+    <link href="~/Content/sweetalert/css/sweetalert.min.css" rel="stylesheet" />
+}
 @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "w-100" }))
 {
     @Html.AntiForgeryToken()
@@ -31,32 +33,34 @@
         </div>
     </div>
 }
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
     <script src="~/Scripts/jquery.validate.min.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Content/sweetalert/js/sweetalert.min.js"></script>
     <script>
         $(document).ready(function () {
-            //$('[name="Email"]').on('change', function () {
-            //    var email = $(this).val();
-            //    $.get("http://localhost:64096/api/Account/ExistEmail?email=" + email, function (data) {
-            //        if (data) {
-            //            $(this).addClass("input-validation-error");
-            //            $('[data-valmsg-for="Email"]').html("Email ton tai");
-            //        }
+            var APILink = "@ViewBag.APIRegister";
 
-            //    });
-            //});
-            $('#txtEmail').on('change', function () {
-                var email = $(this).val();
-                console.log(email);
-                $.get("http://localhost:64096/api/Account/ExistEmail?email=" + email, function (data) {
-                    if (data) {
-                        $('#txtEmail').addClass("input-validation-error");
-                        $('[data-valmsg-for="Email"]').html("Email ton tai");
-                    }
-                });
-            });
             $('form').submit(function (e) {
                 e.preventDefault();
 
@@ -64,7 +68,7 @@
                 if (!attr) {
                     $.ajax({
                         type: "post",
-                        url: 'http://localhost:64096/api/Account/Register',
+                        url: APILink + 'api/Account/Register',
                         dataType: "json",
                         data: {
                             UserName: $("#txtUserName").val(),
@@ -75,11 +79,19 @@
                         crossDomain: true,
                         processData: true,
                         success: function (data) {
-                            //alert("Oke");
-                            console.log(data);
-                        },
-                        error: function (XMLHttpRequest, textStatus, errorThrown) {
-                            alert("error");
+                            if (data) {
+
+                                swal({
+                                    title: "Đăng ký thành công",
+                                    text: "Vui lòng xác nhận Email",
+                                    type: "success",
+                                    confirmButtonClass: "btn-primary",
+                                    confirmButtonText: "Xong",
+                                    closeOnConfirm: false
+                                }, function () {
+                                    location.reload();
+                                    });
+                            }
                         }
                     });
                 }

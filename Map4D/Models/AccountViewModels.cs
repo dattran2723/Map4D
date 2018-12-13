@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace Map4D.Models
 {
@@ -70,6 +71,7 @@ namespace Map4D.Models
         public string UserName { get; set; }
         [Required(ErrorMessage = "Email là bắt buộc !")]
         [EmailAddress(ErrorMessage = "Email không đúng định dạng")]
+        [Remote("checkExistEmail", HttpMethod = "POST",ErrorMessage ="Email đã tồn tại")]
         public string Email { get; set; }
         [Required(ErrorMessage = "Mật khẩu là bắt buộc !")]
         [StringLength(32, MinimumLength = 6,
@@ -94,7 +96,7 @@ namespace Map4D.Models
 
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [System.ComponentModel.DataAnnotations.Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
         public string Code { get; set; }

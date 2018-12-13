@@ -53,7 +53,7 @@ namespace Map4D
             // Configure validation logic for passwords
             manager.PasswordValidator = new PasswordValidator
             {
-                RequiredLength = 1,
+                RequiredLength = 6,
                 //RequireNonLetterOrDigit = true,
                 //RequireDigit = true,
                 //RequireLowercase = true,
