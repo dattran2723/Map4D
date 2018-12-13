@@ -23,17 +23,17 @@
         margin: auto;
     }
 
-        .registerUser .boxRegister input {
-            margin-bottom: 8% !important;
+        .registerUser .boxRegister .input {
+            /*margin-bottom: 8% !important;*/
             line-height: 45px;
             border-radius: 8px;
-            width: 85%;
+            /*width: 85%;*/
             margin: auto;
         }
 
     .registerUser .divBottom {
         margin: auto;
-        width: 85%;
+        width: 100%;
     }
 
         .registerUser .divBottom a {
@@ -49,6 +49,10 @@
             border-radius: 20px;
         }
 
+            .registerUser .divBottom button:hover {
+                background-color: #00cfa5;
+            }
+
 #footer {
     background-image: none;
     margin-top: -7%;
@@ -63,7 +67,7 @@
         font-size: 40px;
     }
 
-    .registerUser .boxRegister input {
+    .registerUser .boxRegister .input {
         margin-bottom: 5% !important;
         line-height: 40px;
         font-size: 18px;
@@ -83,8 +87,8 @@
             font-size: 32px;
         }
 
-        .registerUser .boxRegister input {
-            margin-bottom: 3% !important;
+        .registerUser .boxRegister .input {
+            /*margin-bottom: 3% !important;*/
             line-height: 35px;
         }
 }
@@ -98,7 +102,7 @@
             font-size: 28px;
         }
 
-        .registerUser .boxRegister input {
+        .registerUser .boxRegister .input {
             line-height: 20px;
             font-size: 13px;
         }
