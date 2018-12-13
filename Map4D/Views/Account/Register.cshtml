@@ -4,56 +4,86 @@
 }
 
 <link href="~/Content/Client/css/register.css" rel="stylesheet" />
-<div class="row registerUser">
-    <h2 class="col-12 text-center">Đăng ký</h2>
-    <div class="boxRegister col-lg-5 col-xl-4 col-md-6 col-sm-9 col-9">
-        <div class="form-group">
-            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control input", @id = "txtUserName", @placeholder = "Tên đăng nhập" })
-            @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
-        </div>
-        <div class="form-group">
-            @Html.TextBoxFor(m => m.Email, new { @class = "form-control input", @id = "txtEmail", @placeholder = "Email" })
-            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
-        </div>
-        <div class="form-group">
-            @Html.TextBoxFor(m => m.Password, new { @class = "form-control input", @id = "txtPassword", @placeholder = "Mật khẩu", @type = "password" })
-            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
-        </div>
-        <div class="form-group">
-            <div class="divBottom">
-                <a class="col-6" href="/account/login">Đã có tài khoản</a>
-                <button type="submit" id="btnRegister" class="col-4 float-right btn">Đăng ký</button>
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "w-100" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row registerUser">
+        <h2 class="col-12 text-center">Đăng ký</h2>
+        <div class="boxRegister col-lg-5 col-xl-4 col-md-6 col-sm-9 col-9">
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.UserName, new { @class = "form-control input", @id = "txtUserName", @placeholder = "Tên đăng nhập" })
+                @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control input", @id = "txtEmail", @placeholder = "Email" })
+                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.Password, new { @class = "form-control input", @id = "txtPassword", @placeholder = "Mật khẩu", @type = "password" })
+                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <div class="divBottom">
+                    <a class="col-6" href="/account/login">Đã có tài khoản</a>
+                    <button type="submit" id="btnRegister" class="col-4 float-right btn">Đăng ký</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
+}
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
     <script src="~/Scripts/jquery.validate.min.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#btnRegister').click(function () {
-                $.ajax({
-                    type: "post",
-                    url: 'http://localhost:64096/api/Account/Register',
-                    dataType: "json",
-                    data: {
-                        UserName: $("#txtUserName").val(),
-                        Email: $("#txtEmail").val(),
-                        Password: $("#txtPassword").val(),
-                    },
-                    cache: false,
-                    crossDomain: true,
-                    processData: true,
-                    success: function (data) {
-                        alert("Oke");
-                    },
-                    error: function (XMLHttpRequest, textStatus, errorThrown) {
-                        alert("error");
+            //$('[name="Email"]').on('change', function () {
+            //    var email = $(this).val();
+            //    $.get("http://localhost:64096/api/Account/ExistEmail?email=" + email, function (data) {
+            //        if (data) {
+            //            $(this).addClass("input-validation-error");
+            //            $('[data-valmsg-for="Email"]').html("Email ton tai");
+            //        }
+
+            //    });
+            //});
+            $('#txtEmail').on('change', function () {
+                var email = $(this).val();
+                console.log(email);
+                $.get("http://localhost:64096/api/Account/ExistEmail?email=" + email, function (data) {
+                    if (data) {
+                        $('#txtEmail').addClass("input-validation-error");
+                        $('[data-valmsg-for="Email"]').html("Email ton tai");
                     }
                 });
+            });
+            $('form').submit(function (e) {
+                e.preventDefault();
+
+                var attr = $('form input').hasClass("input-validation-error");
+                if (!attr) {
+                    $.ajax({
+                        type: "post",
+                        url: 'http://localhost:64096/api/Account/Register',
+                        dataType: "json",
+                        data: {
+                            UserName: $("#txtUserName").val(),
+                            Email: $("#txtEmail").val(),
+                            Password: $("#txtPassword").val(),
+                        },
+                        cache: false,
+                        crossDomain: true,
+                        processData: true,
+                        success: function (data) {
+                            //alert("Oke");
+                            console.log(data);
+                        },
+                        error: function (XMLHttpRequest, textStatus, errorThrown) {
+                            alert("error");
+                        }
+                    });
+                }
+
             });
         })
     </script>
