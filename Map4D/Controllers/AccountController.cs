@@ -150,7 +150,7 @@ namespace Map4D.Controllers
         public async Task<ActionResult> CheckExistEmail(string email)
         {
             var host = System.Configuration.ConfigurationManager.AppSettings["APIRegister"];
-            var url = host + "/api/Account/ExistEmail?email="+email;
+            var url = host + "/api/Account/ExistEmail?email=" + email;
             HttpClient client = new HttpClient();
             HttpResponseMessage responseMessage = await client.GetAsync(url);
             if (responseMessage.IsSuccessStatusCode)
@@ -158,6 +158,20 @@ namespace Map4D.Controllers
                 return Json(false);
             }
             return Json(true);
+        }
+        [AllowAnonymous]
+        [HttpGet]
+        public async Task<ActionResult> CheckExistUserName(string userName)
+        {
+            var host = System.Configuration.ConfigurationManager.AppSettings["APIRegister"];
+            var url = host + "/api/Account/ExistUserName?userName=" + userName;
+            HttpClient client = new HttpClient();
+            HttpResponseMessage responseMessage = await client.GetAsync(url);
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                return Json(false, JsonRequestBehavior.AllowGet);
+            }
+            return Json(true, JsonRequestBehavior.AllowGet);
         }
 
         //

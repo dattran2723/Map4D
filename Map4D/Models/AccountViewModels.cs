@@ -68,10 +68,11 @@ namespace Map4D.Models
     public class RegisterViewModel
     {
         [Required(ErrorMessage = "Tên đăng nhập là bắt buộc !")]
+        [Remote("CheckExistUserName", HttpMethod = "get", ErrorMessage = "Tên đăng nhập đã tồn tại!")]
         public string UserName { get; set; }
         [Required(ErrorMessage = "Email là bắt buộc !")]
         [EmailAddress(ErrorMessage = "Email không đúng định dạng")]
-        [Remote("checkExistEmail", HttpMethod = "POST",ErrorMessage ="Email đã tồn tại")]
+        [Remote("checkExistEmail", HttpMethod = "POST", ErrorMessage = "Email đã tồn tại!")]
         public string Email { get; set; }
         [Required(ErrorMessage = "Mật khẩu là bắt buộc !")]
         [StringLength(32, MinimumLength = 6,
