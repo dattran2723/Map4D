@@ -152,8 +152,8 @@ namespace Map4D.Controllers
             var host = System.Configuration.ConfigurationManager.AppSettings["APIRegister"];
             var url = host + "/api/Account/ExistEmail?email=" + email;
             HttpClient client = new HttpClient();
-            HttpResponseMessage responseMessage = await client.GetAsync(url);
-            if (responseMessage.IsSuccessStatusCode)
+            HttpResponseMessage response = await client.GetAsync(url);
+            if (response.IsSuccessStatusCode)
             {
                 return Json(false);
             }
