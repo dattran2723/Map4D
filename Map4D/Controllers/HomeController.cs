@@ -92,7 +92,6 @@ namespace Map4D.Controllers
         }
         public ActionResult Product()
         {
-
             return View();
         }
         public ActionResult Register()
