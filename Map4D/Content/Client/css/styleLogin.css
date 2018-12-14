@@ -20,7 +20,6 @@
 
 .login {
     margin: 15% 0 auto 0;
-    text-align: center;
 }
 
     .login .login-title h1 {
@@ -28,6 +27,7 @@
         font-size: 45px;
         color: white;
         margin-bottom: 4%;
+    text-align: center;
     }
 
     .login .login-content #btn-submit {
@@ -57,9 +57,12 @@
     .login .login-content #btn-submit:hover {
         background: #00cda3;
     }
+.validation-summary-errors ul{
+    list-style: none;
+}
 
 #remember-me {
-    margin-top:5%;
+    margin-top: 5%;
     color: #324e89;
     font-family: 'Myriad Pro';
     font-size: 15px;
