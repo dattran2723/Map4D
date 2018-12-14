@@ -8,6 +8,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin.Security;
+using Map4D.Models;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace Map4D.Controllers
 {
@@ -141,7 +147,37 @@ namespace Map4D.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
+            ViewBag.APIRegister = System.Configuration.ConfigurationManager.AppSettings["APIRegister"];
             return View();
+        }
+
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<ActionResult> CheckExistEmail(string email)
+        {
+            var host = System.Configuration.ConfigurationManager.AppSettings["APIRegister"];
+            var url = host + "/api/Account/ExistEmail?email=" + email;
+            HttpClient client = new HttpClient();
+            HttpResponseMessage responseMessage = await client.GetAsync(url);
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                return Json(false);
+            }
+            return Json(true);
+        }
+        [AllowAnonymous]
+        [HttpGet]
+        public async Task<ActionResult> CheckExistUserName(string userName)
+        {
+            var host = System.Configuration.ConfigurationManager.AppSettings["APIRegister"];
+            var url = host + "/api/Account/ExistUserName?userName=" + userName;
+            HttpClient client = new HttpClient();
+            HttpResponseMessage responseMessage = await client.GetAsync(url);
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                return Json(false, JsonRequestBehavior.AllowGet);
+            }
+            return Json(true, JsonRequestBehavior.AllowGet);
         }
 
         //
@@ -391,9 +427,6 @@ namespace Map4D.Controllers
         // GET: /Account/LogOff
         public ActionResult LogOff()
         {
-            Response.Cache.SetExpires(DateTime.UtcNow.AddMinutes(-1));
-            Response.Cache.SetCacheability(HttpCacheability.NoCache);
-            Response.Cache.SetNoStore();
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
             return RedirectToAction("Login", "Account");
         }

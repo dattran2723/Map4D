@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace Map4D.Models
 {
@@ -66,21 +67,19 @@ namespace Map4D.Models
 
     public class RegisterViewModel
     {
-        [Required]
-        [EmailAddress]
-        [Display(Name = "Email")]
+        [Required(ErrorMessage = "Tên đăng nhập là bắt buộc !")]
+        [Remote("CheckExistUserName", HttpMethod = "get", ErrorMessage = "Tên đăng nhập đã tồn tại!")]
+        public string UserName { get; set; }
+        [Required(ErrorMessage = "Email là bắt buộc !")]
+        [EmailAddress(ErrorMessage = "Email không đúng định dạng")]
+        [Remote("checkExistEmail", HttpMethod = "POST", ErrorMessage = "Email đã tồn tại!")]
         public string Email { get; set; }
-
-        [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
-        [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Required(ErrorMessage = "Mật khẩu là bắt buộc !")]
+        [StringLength(32, MinimumLength = 6,
+                   ErrorMessage = "Yêu cầu nhập tối thiểu 6 và tối đa 32 kí tự !"),
+                   DataType(DataType.Password),
+            ]
         public string Password { get; set; }
-
-        [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
-        public string ConfirmPassword { get; set; }
     }
 
     public class ResetPasswordViewModel
@@ -98,7 +97,7 @@ namespace Map4D.Models
 
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [System.ComponentModel.DataAnnotations.Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
         public string Code { get; set; }

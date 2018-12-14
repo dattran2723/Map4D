@@ -45,6 +45,13 @@ namespace Map4D
 
         protected void Application_BeginRequest(object sender, EventArgs e)
         {
+            //start code of TranDat
+            //disable the cache for the entire application
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+            Response.Cache.SetExpires(DateTime.UtcNow.AddHours(-1));
+            Response.Cache.SetNoStore();
+            //end code of TranDat
+
             string culture = "vi";
             var httpCookie = Request.Cookies["language"];
             if (httpCookie != null)

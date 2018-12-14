@@ -18,6 +18,24 @@ namespace Map4D
                 defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional },
                 namespaces: new[] { "Map4D.Controllers" }
             );
+            routes.MapRoute(
+                 name: "url_register",
+                 url: "register",
+                 defaults: new { controller = "Account", action = "Register", id = UrlParameter.Optional },
+                 namespaces: new[] { "Map4D.Controllers" }
+             );
+            routes.MapRoute(
+                name: "CheckExistUserName",
+                url: "CheckExistUserName",
+                defaults: new { controller = "Account", action = "CheckExistUserName", id = UrlParameter.Optional },
+                namespaces: new[] { "Map4D.Controllers" }
+            );
+            routes.MapRoute(
+                name: "checkExistEmail",
+                url: "checkExistEmail",
+                defaults: new { controller = "Account", action = "CheckExistEmail", id = UrlParameter.Optional },
+                namespaces: new[] { "Map4D.Controllers" }
+            );
 
             routes.MapRoute(
                 name: "language",
