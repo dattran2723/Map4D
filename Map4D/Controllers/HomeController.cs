@@ -59,7 +59,6 @@ namespace Map4D.Controllers
                 SendMail(data.Email);
                 Session["Check"] = 1;
                 return RedirectToAction("Index");
-
             }
             else
             {

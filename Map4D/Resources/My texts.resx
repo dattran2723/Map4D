@@ -249,4 +249,7 @@
   <data name="ĐăngNhập" xml:space="preserve">
     <value>Đăng nhập</value>
   </data>
+  <data name="CảmƠnGópÝ" xml:space="preserve">
+    <value>Cảm ơn bạn đã gửi ý kiến cho chúng tôi !</value>
+  </data>
 </root>

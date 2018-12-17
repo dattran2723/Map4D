@@ -79,6 +79,15 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cảm ơn bạn đã gửi ý kiến cho chúng tôi !.
+        /// </summary>
+        public static string CảmƠnGópÝ {
+            get {
+                return ResourceManager.GetString("CảmƠnGópÝ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Chỉ đường.
         /// </summary>
         public static string ChỉĐường {
