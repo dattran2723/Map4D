@@ -44,6 +44,10 @@
 
             $('form').submit(function (e) {
                 e.preventDefault();
+                var Register = new Object();
+                Register.UserName = $("#txtUserName").val();
+                Register.Email = $("#txtEmail").val();
+                Register.Password = $("#txtPassword").val();
 
                 var attr = $('form input').hasClass("input-validation-error");
                 if (!attr) {
@@ -51,11 +55,7 @@
                         type: "post",
                         url: APILink + 'api/Account/Register',
                         dataType: "json",
-                        data: {
-                            UserName: $("#txtUserName").val(),
-                            Email: $("#txtEmail").val(),
-                            Password: $("#txtPassword").val(),
-                        },
+                        data: Register,
                         cache: false,
                         crossDomain: true,
                         processData: true,
@@ -71,7 +71,17 @@
                                     closeOnConfirm: false
                                 }, function () {
                                     location.reload();
-                                    });
+                                });
+                            }
+                            else {
+                                swal({
+                                    title: "Đăng ký thất bại",
+                                    text: "Vui lòng thử lại",
+                                    type: "Error",
+                                    confirmButtonClass: "btn-primary",
+                                    confirmButtonText: "Xong",
+                                    closeOnConfirm: false
+                                });
                             }
                         }
                     });
