@@ -11,6 +11,7 @@ using Microsoft.Owin.Security;
 using Map4D.Models;
 using System.Net.Http;
 using Newtonsoft.Json;
+using System.Net.Http.Headers;
 
 namespace Map4D.Controllers
 {
@@ -141,7 +142,6 @@ namespace Map4D.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
-            ViewBag.APIRegister = System.Configuration.ConfigurationManager.AppSettings["APIRegister"];
             return View();
         }
 
@@ -174,8 +174,6 @@ namespace Map4D.Controllers
             return Json(true, JsonRequestBehavior.AllowGet);
         }
 
-        //
-        // POST: /Account/Register
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -183,26 +181,25 @@ namespace Map4D.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
-                var result = await UserManager.CreateAsync(user, model.Password);
-                if (result.Succeeded)
+                HttpClient client = new HttpClient();
+                string host = System.Configuration.ConfigurationManager.AppSettings["APIRegister"];
+                client.BaseAddress = new Uri(host);
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                client.DefaultRequestHeaders.Accept.Clear();
+
+                HttpResponseMessage response = await client.PostAsJsonAsync("api/account/register", model);
+
+                if (response.IsSuccessStatusCode == true)
                 {
-                    await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
-
-                    // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
-                    // Send an email with this link
-                    string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
-                    var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
-                    await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
-
-                    return RedirectToAction("Index", "Home");
+                    ViewBag.Message = "success";
+                    return View();
                 }
-                AddErrors(result);
+                ModelState.AddModelError("", "Đăng ký không thành công!");
+                return View(model);
             }
-
-            // If we got this far, something failed, redisplay form
             return View(model);
         }
+        
 
         //
         // GET: /Account/ConfirmEmail

@@ -12,6 +12,7 @@
     <div class="row registerUser">
         <h2 class="col-12 text-center">Đăng ký</h2>
         <div class="boxRegister col-lg-5 col-xl-4 col-md-6 col-sm-9 col-9">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
             <div class="form-group">
                 @Html.TextBoxFor(m => m.UserName, new { @class = "form-control input", @id = "txtUserName", @placeholder = "Tên đăng nhập" })
                 @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
@@ -38,56 +39,76 @@
     <script src="~/Scripts/jquery.validate.min.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/Content/sweetalert/js/sweetalert.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            var APILink = "@ViewBag.APIRegister";
-
-            $('form').submit(function (e) {
-                e.preventDefault();
-                var Register = new Object();
-                Register.UserName = $("#txtUserName").val();
-                Register.Email = $("#txtEmail").val();
-                Register.Password = $("#txtPassword").val();
-
-                var attr = $('form input').hasClass("input-validation-error");
-                if (!attr) {
-                    $.ajax({
-                        type: "post",
-                        url: APILink + 'api/Account/Register',
-                        dataType: "json",
-                        data: Register,
-                        cache: false,
-                        crossDomain: true,
-                        processData: true,
-                        success: function (data) {
-                            if (data) {
-
-                                swal({
-                                    title: "Đăng ký thành công",
-                                    text: "Vui lòng xác nhận Email",
-                                    type: "success",
-                                    confirmButtonClass: "btn-primary",
-                                    confirmButtonText: "Xong",
-                                    closeOnConfirm: false
-                                }, function () {
-                                    location.reload();
-                                });
-                            }
-                            else {
-                                swal({
-                                    title: "Đăng ký thất bại",
-                                    text: "Vui lòng thử lại",
-                                    type: "Error",
-                                    confirmButtonClass: "btn-primary",
-                                    confirmButtonText: "Xong",
-                                    closeOnConfirm: false
-                                });
-                            }
-                        }
+    @if (ViewBag.Message != null)
+    {
+        <script>
+            $(document).ready(function () {
+                var message = "@ViewBag.Message";
+                if (message == "success") {
+                    swal({
+                        title: "Đăng ký thành công",
+                        text: "Vui lòng xác nhận Email",
+                        type: "success",
+                        confirmButtonClass: "btn-primary",
+                        confirmButtonText: "Xong",
+                        closeOnConfirm: false
+                    }, function () {
+                        location.replace("/register");
                     });
                 }
-
             });
-        })
-    </script>
+        </script>
+    }
+    @*<script>
+            $(document).ready(function () {
+                var APILink = "@ViewBag.APIRegister";
+
+                $('form').submit(function (e) {
+                    e.preventDefault();
+                    var Register = new Object();
+                    Register.UserName = $("#txtUserName").val();
+                    Register.Email = $("#txtEmail").val();
+                    Register.Password = $("#txtPassword").val();
+
+                    var attr = $('form input').hasClass("input-validation-error");
+                    if (!attr) {
+                        $.ajax({
+                            type: "post",
+                            url: APILink + 'api/Account/Register',
+                            dataType: "json",
+                            data: Register,
+                            cache: false,
+                            crossDomain: true,
+                            processData: true,
+                            success: function (data) {
+                                if (data) {
+
+                                    swal({
+                                        title: "Đăng ký thành công",
+                                        text: "Vui lòng xác nhận Email",
+                                        type: "success",
+                                        confirmButtonClass: "btn-primary",
+                                        confirmButtonText: "Xong",
+                                        closeOnConfirm: false
+                                    }, function () {
+                                        location.reload();
+                                    });
+                                }
+                                else {
+                                    swal({
+                                        title: "Đăng ký thất bại",
+                                        text: "Vui lòng thử lại",
+                                        type: "Error",
+                                        confirmButtonClass: "btn-primary",
+                                        confirmButtonText: "Xong",
+                                        closeOnConfirm: false
+                                    });
+                                }
+                            }
+                        });
+                    }
+
+                });
+            })
+        </script>*@
 }
