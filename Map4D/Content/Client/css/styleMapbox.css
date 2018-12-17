@@ -1,6 +1,6 @@
 ﻿#map-box {
     margin: 9% 0 5% 0;
-    z-index:10;
+    z-index: 10;
 }
 
     #map-box #map-box-title h1 {
@@ -50,19 +50,19 @@
             color: #1c80df;
         }
 
-        #map-box #map-box-content .hover#visual img, #map-box #map-box-content .active#visual img {
+        #map-box #map-box-content .active#visual img {
             content: url("/Content/Client/img/icon_0006_3d-Icon-copy.png");
         }
 
-        #map-box #map-box-content .hover#multi-platform img, #map-box #map-box-content .active#multi-platform img {
+        #map-box #map-box-content .active#multi-platform img {
             content: url("/Content/Client/img/icon_0004_website--copy-3.png");
         }
 
-        #map-box #map-box-content .hover#direct img, #map-box #map-box-content .active#direct img {
+        #map-box #map-box-content .active#direct img {
             content: url("/Content/Client/img/icon_0002_location-copy.png");
         }
 
-        #map-box #map-box-content .hover#utilities img, #map-box #map-box-content .active#utilities img {
+        #map-box #map-box-content .active#utilities img {
             content: url("/Content/Client/img/icon_0000_Tiện-ích-địa-điểm-copy.png");
         }
 
