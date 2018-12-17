@@ -2025,6 +2025,16 @@
     <Content Include="Content\Client\img\left.png" />
     <Content Include="Content\Client\img\LOGO MAP 4d-05.png" />
     <Content Include="Content\Client\img\logoMap4D.png" />
+    <Content Include="Content\Client\img\products\page-2_0000_Layer-3.png" />
+    <Content Include="Content\Client\img\products\page-2_0001_Content-Slider-A-15-copy-3.png" />
+    <Content Include="Content\Client\img\products\page-2_0002_Content-Slider-A-15-copy-3.png" />
+    <Content Include="Content\Client\img\products\page-2_0003_Layer-2.png" />
+    <Content Include="Content\Client\img\products\page-2_0004_bg-laptop-.png" />
+    <Content Include="Content\Client\img\products\page-2_0005_H3-Slider-1-copy.png" />
+    <Content Include="Content\Client\img\products\page-2_0006_Bg.png" />
+    <Content Include="Content\Client\img\products\page-2_0007_kinh-lup-khong-nen.png" />
+    <Content Include="Content\Client\img\products\page-2_0007_kinh-lup-khong-nen2.png" />
+    <Content Include="Content\Client\img\products\page-2_0007_kinh-lup.png" />
     <Content Include="Content\Client\img\Untitled-1_0000_Header-Bg.png" />
     <Content Include="Content\Client\img\Untitled-1_0000_Mask-by-Mask.png" />
     <Content Include="Content\Client\img\Untitled-1_0001_footer-background.png" />
@@ -2266,6 +2276,7 @@
     <Content Include="Scripts\js\Notify.js" />
     <Content Include="Scripts\js\responsiveTable.js" />
     <Content Include="Scripts\js\sticky-menu.js" />
+    <Content Include="Scripts\js\zoomImgSlideMap.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\sweetalert.min.js" />
     <Content Include="Web.config">

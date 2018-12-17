@@ -17,7 +17,7 @@
     {
         img: "/content/client/img/man-one.jpg",
         name: "Nguyễn Thanh Hương",
-        cmt: "Map4d thể hiện đầy đủ các công nghệ hiện đại từ không gian ảo tới hình ảnh thực tế được xây dựng trên nền tảng 3d"
+        cmt: 'Map4d thể hiện đầy đủ các công nghệ hiện đại từ không gian ảo tới hình ảnh thực tế được xây dựng trên nền tảng 3d'
     },
     {
         img: "/content/client/img/man-one.jpg",

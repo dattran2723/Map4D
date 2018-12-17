@@ -92,27 +92,14 @@
     }
 
         .buildMap4D .rowbottom .boxBuild .img .content {
-            padding: 10%;
+            padding: 3%;
         }
 }
 
 @media only screen and (max-width: 991px) {
-    .buildMap4D .rowbottom .boxBuild .img .content .col-md-12 {
-        text-align: center;
+    .buildMap4D .rowbottom .boxBuild .img .content .contentRight {
+        padding-left: 10px;
     }
-
-    .buildMap4D .rowbottom .boxBuild .img .content .contentRight .cmt {
-        text-align: center;
-        font-size: 9px;
-    }
-
-    .buildMap4D .rowbottom .boxBuild .img .content {
-        padding: 3%;
-    }
-
-        .buildMap4D .rowbottom .boxBuild .img .content .contentRight .name {
-            font-size: 13px;
-        }
 }
 
 @media only screen and (max-width: 860px) {

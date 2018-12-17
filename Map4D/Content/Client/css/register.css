@@ -3,9 +3,11 @@
     src: url('../../../fonts/SourceSansPro-Regular.ttf') format('truetype');
 }
 
-.registerUser {
+body {
     background-image: url('../img/Dang ky.png');
-    background-size: cover;
+}
+
+.registerUser {
     width: 100%;
     margin: auto;
     padding-top: 14%;
@@ -24,10 +26,8 @@
     }
 
         .registerUser .boxRegister .input {
-            /*margin-bottom: 8% !important;*/
-            line-height: 45px;
+            line-height: 36px;
             border-radius: 8px;
-            /*width: 85%;*/
             margin: auto;
         }
 
@@ -69,7 +69,7 @@
 
     .registerUser .boxRegister .input {
         margin-bottom: 5% !important;
-        line-height: 40px;
+        /*line-height: 40px;*/
         font-size: 18px;
     }
 
@@ -80,7 +80,7 @@
 
 @media only screen and (max-width: 860px ) {
     .registerUser {
-        padding-bottom: 40%;
+        padding-bottom: 38%;
     }
 
         .registerUser h2 {
@@ -88,10 +88,10 @@
         }
 
         .registerUser .boxRegister .input {
-            /*margin-bottom: 3% !important;*/
-            line-height: 35px;
+            line-height: 24px;
         }
 }
+
 
 @media only screen and (max-width: 600px ) {
     .registerUser {
@@ -110,20 +110,28 @@
 
 @media only screen and (max-width: 530px ) {
     .registerUser {
-        padding-bottom: 60%;
+        padding-bottom: 55%;
     }
 
     #footer {
         margin-top: -22%;
     }
+
+    .registerUser .divBottom a {
+        font-size: 12px;
+    }
+
+    .registerUser .divBottom button {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 376px) {
     .registerUser .divBottom a {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .registerUser .divBottom button {
-        font-size: 13px;
+        font-size: 11px;
     }
 }
