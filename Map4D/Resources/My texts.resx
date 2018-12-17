@@ -252,4 +252,10 @@
   <data name="CảmƠnGópÝ" xml:space="preserve">
     <value>Cảm ơn bạn đã gửi ý kiến cho chúng tôi !</value>
   </data>
+  <data name="Bảnquyền" xml:space="preserve">
+    <value>Bản quyền năm 2018 từ</value>
+  </data>
+  <data name="CôngtyIOTLink" xml:space="preserve">
+    <value>Công ty IOTLink</value>
+  </data>
 </root>
