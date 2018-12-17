@@ -14,14 +14,14 @@ namespace Map4D
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.MapRoute(
                 name: "url_login",
-                url: "login",
-                defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional },
+                url: "{language}/login",
+                defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional , language = "vn-vi" },
                 namespaces: new[] { "Map4D.Controllers" }
             );
             routes.MapRoute(
                  name: "url_register",
-                 url: "register",
-                 defaults: new { controller = "Account", action = "Register", id = UrlParameter.Optional },
+                 url: "{language}/register",
+                 defaults: new { controller = "Account", action = "Register", id = UrlParameter.Optional,language="vn-vi" },
                  namespaces: new[] { "Map4D.Controllers" }
              );
             routes.MapRoute(

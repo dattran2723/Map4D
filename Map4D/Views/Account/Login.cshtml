@@ -9,7 +9,7 @@
 }
 <div class="login row w-100">
     <div class="login-title col-12">
-        <h1>Đăng nhập</h1>
+        <h1>@Map4D.Resources.My_texts.ĐăngNhập</h1>
     </div>
     <!-- /.login-logo -->
     <div class="login-content col-12">
@@ -19,25 +19,25 @@
                 @Html.AntiForgeryToken()
                 @Html.ValidationSummary(true,"", new { @class = "text-danger" })
                 <div class="form-group">
-                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Tên đăng nhập" })
-                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger text-left" })
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = Map4D.Resources.My_texts.TênĐăngNhập })
+                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
                 </div>
                 <div class="form-group">
-                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Mật khẩu" })
-                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger text-left" })
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = Map4D.Resources.My_texts.MậtKhẩu })
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
                 </div>
                 <div class="row">
                     <div class="col-6 text-left">
                         <div class="checkbox icheck">
                             <label id="remember-me">
                                 @Html.CheckBoxFor(m => m.RememberMe, new { @class = "checkbox" })
-                                Ghi nhớ mật khẩu
+                                @Map4D.Resources.My_texts.GhiNhớMậtKhẩu
                             </label>
                         </div>
                     </div>
                     <!-- /.col -->
                     <div class="col-6 text-right">
-                        <input type="submit" name="name" class="btn btn-block float-right" id="btn-submit" value="Đăng nhập" />
+                        <input type="submit" name="name" class="btn btn-block float-right" id="btn-submit" value="@Map4D.Resources.My_texts.ĐăngNhập" />
                     </div>
                     <!-- /.col -->
                 </div>

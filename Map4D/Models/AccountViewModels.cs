@@ -49,34 +49,48 @@ namespace Map4D.Models
 
     public class LoginViewModel
     {
-        [Required(ErrorMessage = "Vui lòng nhập email !")]
+        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts),
+            ErrorMessageResourceName = "EmailLàBắtBuộc")]
         [Display(Name = "Email")]
-        [EmailAddress(ErrorMessage = "Email không hợp lệ")]
+        [EmailAddress(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts),
+            ErrorMessageResourceName = "EmailDinhDang")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Vui lòng nhập mật khẩu !")]
+        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts)
+            , ErrorMessageResourceName = "MatKhauBatBuoc")]
         [StringLength(32, MinimumLength = 6,
-                   ErrorMessage = "Yêu cầu nhập tối thiểu 6 và tối đa 32 kí tự !"),
+            ErrorMessageResourceType = typeof(Map4D.Resources.My_texts),
+                   ErrorMessageResourceName = "ToiThieu"),
                    DataType(DataType.Password),
-                   Display(Name = "Mật khẩu")]
+            ]
         public string Password { get; set; }
 
-        [Display(Name = "Ghi nhớ?")]
+        [Display(Name = "GhiNhớMậtKhẩu", ResourceType =typeof(Map4D.Resources.My_texts))]
         public bool RememberMe { get; set; }
     }
 
     public class RegisterViewModel
     {
-        [Required(ErrorMessage = "Tên đăng nhập là bắt buộc !")]
-        [Remote("CheckExistUserName", HttpMethod = "get", ErrorMessage = "Tên đăng nhập đã tồn tại!")]
+
+        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts),
+            ErrorMessageResourceName = "TênĐăngNhậpLàBắtBuộc")]
+        [Remote("CheckExistUserName", HttpMethod = "get",
+            ErrorMessageResourceType = typeof(Map4D.Resources.My_texts),
+            ErrorMessageResourceName = "Tênđăngnhậpđãtồntại")]
         public string UserName { get; set; }
-        [Required(ErrorMessage = "Email là bắt buộc !")]
-        [EmailAddress(ErrorMessage = "Email không đúng định dạng")]
-        [Remote("checkExistEmail", HttpMethod = "POST", ErrorMessage = "Email đã tồn tại!")]
+        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts),
+            ErrorMessageResourceName = "EmailLàBắtBuộc")]
+        [EmailAddress(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts),
+            ErrorMessageResourceName = "EmailDinhDang")]
+        [Remote("checkExistEmail", HttpMethod = "POST",
+            ErrorMessageResourceType = typeof(Map4D.Resources.My_texts),
+            ErrorMessageResourceName = "EmailTontai")]
         public string Email { get; set; }
-        [Required(ErrorMessage = "Mật khẩu là bắt buộc !")]
+        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts)
+            , ErrorMessageResourceName = "MatKhauBatBuoc")]
         [StringLength(32, MinimumLength = 6,
-                   ErrorMessage = "Yêu cầu nhập tối thiểu 6 và tối đa 32 kí tự !"),
+            ErrorMessageResourceType = typeof(Map4D.Resources.My_texts),
+                   ErrorMessageResourceName = "ToiThieu"),
                    DataType(DataType.Password),
             ]
         public string Password { get; set; }

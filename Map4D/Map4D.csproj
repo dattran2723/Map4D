@@ -219,7 +219,6 @@
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LanguageController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -227,6 +226,10 @@
     <Compile Include="Migrations\201812090414356_init-db.cs" />
     <Compile Include="Migrations\201812090414356_init-db.Designer.cs">
       <DependentUpon>201812090414356_init-db.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812140312372_init-1.cs" />
+    <Compile Include="Migrations\201812140312372_init-1.Designer.cs">
+      <DependentUpon>201812140312372_init-1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -2349,6 +2352,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201812090414356_init-db.resx">
       <DependentUpon>201812090414356_init-db.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812140312372_init-1.resx">
+      <DependentUpon>201812140312372_init-1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\My texts.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
