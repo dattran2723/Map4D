@@ -58,57 +58,5 @@
                 }
             });
         </script>
-    }
-    @*<script>
-            $(document).ready(function () {
-                var APILink = "@ViewBag.APIRegister";
-
-                $('form').submit(function (e) {
-                    e.preventDefault();
-                    var Register = new Object();
-                    Register.UserName = $("#txtUserName").val();
-                    Register.Email = $("#txtEmail").val();
-                    Register.Password = $("#txtPassword").val();
-
-                    var attr = $('form input').hasClass("input-validation-error");
-                    if (!attr) {
-                        $.ajax({
-                            type: "post",
-                            url: APILink + 'api/Account/Register',
-                            dataType: "json",
-                            data: Register,
-                            cache: false,
-                            crossDomain: true,
-                            processData: true,
-                            success: function (data) {
-                                if (data) {
-
-                                    swal({
-                                        title: "Đăng ký thành công",
-                                        text: "Vui lòng xác nhận Email",
-                                        type: "success",
-                                        confirmButtonClass: "btn-primary",
-                                        confirmButtonText: "Xong",
-                                        closeOnConfirm: false
-                                    }, function () {
-                                        location.reload();
-                                    });
-                                }
-                                else {
-                                    swal({
-                                        title: "Đăng ký thất bại",
-                                        text: "Vui lòng thử lại",
-                                        type: "Error",
-                                        confirmButtonClass: "btn-primary",
-                                        confirmButtonText: "Xong",
-                                        closeOnConfirm: false
-                                    });
-                                }
-                            }
-                        });
-                    }
-
-                });
-            })
-        </script>*@
+    }    
 }
