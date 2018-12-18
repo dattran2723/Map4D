@@ -214,13 +214,13 @@
     <value>Email invalidate</value>
   </data>
   <data name="EmailLàBắtBuộc" xml:space="preserve">
-    <value>You have to fill in email blank !</value>
+    <value>You have to fill in email!</value>
   </data>
   <data name="EmailTontai" xml:space="preserve">
     <value>Email already exist</value>
   </data>
   <data name="GhiNhớMậtKhẩu" xml:space="preserve">
-    <value>Remember me ?</value>
+    <value>Remember me?</value>
   </data>
   <data name="MatKhauBatBuoc" xml:space="preserve">
     <value>You have to fill in password !</value>
@@ -232,13 +232,13 @@
     <value>Minimum 6 and up to 32 characters are required!</value>
   </data>
   <data name="TênĐăngNhập" xml:space="preserve">
-    <value>Register name</value>
+    <value>User name</value>
   </data>
   <data name="TênĐăngNhậpLàBắtBuộc" xml:space="preserve">
-    <value>You have to fill in register name !</value>
+    <value>You have to fill in register name!</value>
   </data>
   <data name="Tênđăngnhậpđãtồntại" xml:space="preserve">
-    <value>Username already exist</value>
+    <value>User name already exist</value>
   </data>
   <data name="ĐãCóTàiKhoản" xml:space="preserve">
     <value>Have account ?</value>
@@ -275,5 +275,14 @@
   </data>
   <data name="TrangChu" xml:space="preserve">
     <value>Home</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="FlagLanguage" xml:space="preserve">
+    <value>/Content/Client/img/Flag_of_the_United_States_(Pantone).png</value>
+  </data>
+  <data name="VietNam" xml:space="preserve">
+    <value>Vietnamese</value>
   </data>
 </root>
