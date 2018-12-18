@@ -44,6 +44,8 @@
             if (x < 0) { x = 0; }
             if (y > img.height - lens.offsetHeight) { y = img.height - lens.offsetHeight; }
             if (y < 0) { y = 0; }
+            console.log(x + "--" + y);
+      
             /*set the position of the lens:*/
             lens.style.left = x + "px";
             lens.style.top = y + "px";

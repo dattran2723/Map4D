@@ -70,6 +70,15 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bản quyền năm 2018 từ.
+        /// </summary>
+        public static string Bảnquyền {
+            get {
+                return ResourceManager.GetString("Bảnquyền", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cảm ơn quý khách đã góp ý cho chúng tôi.
         /// </summary>
         public static string CảmƠn {
@@ -102,6 +111,15 @@ namespace Map4D.Resources {
         public static string CôngTy {
             get {
                 return ResourceManager.GetString("CôngTy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Công ty IOTLink.
+        /// </summary>
+        public static string CôngtyIOTLink {
+            get {
+                return ResourceManager.GetString("CôngtyIOTLink", resourceCulture);
             }
         }
         
