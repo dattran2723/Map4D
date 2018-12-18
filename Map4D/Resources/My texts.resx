@@ -258,4 +258,10 @@
   <data name="CôngtyIOTLink" xml:space="preserve">
     <value>Công ty IOTLink</value>
   </data>
+  <data name="SanPham" xml:space="preserve">
+    <value>Sản phẩm</value>
+  </data>
+  <data name="TrangChu" xml:space="preserve">
+    <value>Trang chủ</value>
+  </data>
 </root>

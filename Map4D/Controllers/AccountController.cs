@@ -61,11 +61,9 @@ namespace Map4D.Controllers
         //
         // GET: /Account/Login
         [AllowAnonymous]
-        public ActionResult Login(string returnUrl,LoginViewModel loginModel)
+        [HttpGet]
+        public ActionResult Login(string returnUrl)
         {
-
-            string configvalue = ConfigurationManager.AppSettings["ManagementSite"];
-            ViewBag.configvalue = configvalue;
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
@@ -205,7 +203,7 @@ namespace Map4D.Controllers
             }
             return View(model);
         }
-        
+
 
         //
         // GET: /Account/ConfirmEmail

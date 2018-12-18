@@ -367,6 +367,15 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sản phẩm.
+        /// </summary>
+        public static string SanPham {
+            get {
+                return ResourceManager.GetString("SanPham", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sản Phẩm.
         /// </summary>
         public static string SảnPhẩm {
@@ -462,6 +471,15 @@ namespace Map4D.Resources {
         public static string Trảinghiệmcùngmap4D {
             get {
                 return ResourceManager.GetString("Trảinghiệmcùngmap4D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trang chủ.
+        /// </summary>
+        public static string TrangChu {
+            get {
+                return ResourceManager.GetString("TrangChu", resourceCulture);
             }
         }
         
