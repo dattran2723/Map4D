@@ -127,7 +127,6 @@
     }
 
     #menu-language a {
-        margin-left: 10px;
         color: black;
     }
 
@@ -140,8 +139,8 @@
     overflow-x: auto
 }
 
-    #languages button:hover {
-        background: #8ac9f8;
+    #languages a:hover {
+        background: #88cffe;
     }
 
     #languages::-webkit-scrollbar {

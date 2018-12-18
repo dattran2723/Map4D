@@ -45,8 +45,8 @@ namespace Map4D
             }
             else
             {
-                Thread.CurrentThread.CurrentCulture = new CultureInfo("vn");
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo("vn");
+                Thread.CurrentThread.CurrentCulture = new CultureInfo("vi");
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("vi");
             }
         }
     }
