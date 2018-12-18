@@ -9,6 +9,10 @@ body {
     background-size: cover;
 }
 
+#menu-top #menu-recommend {
+    visibility: hidden;
+}
+
 .registerUser {
     width: 100%;
     margin: auto;

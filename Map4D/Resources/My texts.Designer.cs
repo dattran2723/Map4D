@@ -88,7 +88,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cảm ơn bạn đã gửi ý kiến cho chúng tôi !.
+        ///   Looks up a localized string similar to Cảm ơn bạn đã gửi ý kiến cho chúng tôi!.
         /// </summary>
         public static string CảmƠnGópÝ {
             get {
@@ -124,7 +124,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Đã có tài khoản.
+        ///   Looks up a localized string similar to Đã có tài khoản?.
         /// </summary>
         public static string ĐãCóTàiKhoản {
             get {
@@ -187,7 +187,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email là bắt buộc !.
+        ///   Looks up a localized string similar to Email là bắt buộc!.
         /// </summary>
         public static string EmailLàBắtBuộc {
             get {
@@ -358,7 +358,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mật khẩu là bắt buộc !.
+        ///   Looks up a localized string similar to Mật khẩu là bắt buộc!.
         /// </summary>
         public static string MatKhauBatBuoc {
             get {
@@ -430,6 +430,15 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sản phẩm.
+        /// </summary>
+        public static string SanPham {
+            get {
+                return ResourceManager.GetString("SanPham", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sản Phẩm.
         /// </summary>
         public static string SảnPhẩm {
@@ -457,7 +466,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tên đăng nhập đã tồn tại !.
+        ///   Looks up a localized string similar to Tên đăng nhập đã tồn tại!.
         /// </summary>
         public static string Tênđăngnhậpđãtồntại {
             get {
@@ -466,7 +475,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tên đăng nhập là bắt buộc !.
+        ///   Looks up a localized string similar to Tên đăng nhập là bắt buộc!.
         /// </summary>
         public static string TênĐăngNhậpLàBắtBuộc {
             get {
@@ -511,7 +520,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Yêu cầu nhập tối thiểu 6 và tối đa 32 kí tự !.
+        ///   Looks up a localized string similar to Yêu cầu nhập tối thiểu 6 và tối đa 32 kí tự!.
         /// </summary>
         public static string ToiThieu {
             get {

@@ -17,7 +17,7 @@
             @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
             {
                 @Html.AntiForgeryToken()
-                @Html.ValidationSummary("", new { @class = "text-danger" })
+                @Html.ValidationSummary(true,"", new { @class = "text-danger" })
                 <div class="form-group">
                     @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = Map4D.Resources.My_texts.TênĐăngNhập })
                     @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })

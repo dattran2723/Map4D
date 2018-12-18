@@ -34,7 +34,7 @@ namespace Map4D
                 user.Email = "admin@gmail.com";
                 string password = "admin123";
 
-                var newUser = userManager.Create(user, password);
+                userManager.Create(user, password);
             }
         }
     }
