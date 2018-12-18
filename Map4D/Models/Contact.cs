@@ -15,8 +15,7 @@ namespace Map4D.Models
         public int Id { get; set; }
 
         [DisplayName("Họ & tên")]
-        [Required(ErrorMessage = "Vui lòng nhập vào tên của bạn")]
-        [MinLength(4, ErrorMessage = "Ít nhất 4 ký tự")]
+        [Required(ErrorMessage = "Vui lòng nhập vào tên của bạn")]        
         [MaxLength(255)]
         public string Name { get; set; }
 

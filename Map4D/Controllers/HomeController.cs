@@ -48,6 +48,7 @@ namespace Map4D.Controllers
         {
             return View();
         }
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
         [HttpPost]

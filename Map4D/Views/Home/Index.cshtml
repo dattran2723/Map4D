@@ -24,6 +24,7 @@
 @RenderPage("GetInTouch.cshtml")
 
 @section scripts{
+    <script src="~/Content/sweetalert/js/sweetalert.js"></script>
     <script src="~/Scripts/js/hover-mapbox.js"></script>
     <script src="~/Scripts/jquery.validate.min.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
@@ -32,7 +33,6 @@
 
         if (Session["Check"] != null)
         {
-            
             var session = Session["Check"];
             if (session != null)
             {
@@ -47,9 +47,8 @@
                     });
                 </script>
             }
-            
+            Session.Clear();
         }
-        
     }
     @*js add content for view Build Map4D*@
     <script src="~/Scripts/js/addContentBuildMap4D.js"></script>

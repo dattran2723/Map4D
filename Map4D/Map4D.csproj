@@ -220,6 +220,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SweetController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2042,10 +2043,14 @@
     <Content Include="Content\Client\img\Untitled-1_0000_Mask-by-Mask.png" />
     <Content Include="Content\Client\img\Untitled-1_0001_footer-background.png" />
     <Content Include="Content\Client\img\right.png" />
+    <Content Include="Content\sweetalert\bootstrap-sweetalert.png" />
     <Content Include="Content\sweetalert\css\sweetalert.css" />
+    <Content Include="Content\sweetalert\docs.css" />
     <Content Include="Content\sweetalert\js\sweetalert.js" />
     <Content Include="Content\sweetalert\css\sweetalert.min.css" />
     <Content Include="Content\sweetalert\js\sweetalert.min.js" />
+    <Content Include="Content\sweetalert\sweet-alert.css" />
+    <Content Include="Content\sweetalert\thumbs-up.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -2255,6 +2260,11 @@
     <Content Include="fonts\MYRIADPRO-SEMIBOLDIT.OTF" />
     <Content Include="fonts\SourceSansPro-Regular.ttf" />
     <Content Include="fonts\Montserrat-Bold.ttf" />
+    <Content Include="Content\sweetalert\sweet-alert.less" />
+    <Content Include="Content\sweetalert\sweet-alert-combine.less" />
+    <Content Include="Content\sweetalert\sweet-alert-animations.less" />
+    <Content Include="Content\bootstrap\variables.less" />
+    <Content Include="Content\bootstrap\mixins.less" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\datatable\dataTables.bootstrap.min.js" />
     <Content Include="Scripts\datatable\dataTables.fixedHeader.min.js" />
@@ -2335,6 +2345,7 @@
     <Content Include="Views\Home\Register.cshtml" />
     <Content Include="Views\Home\ProductMobileApps.cshtml" />
     <Content Include="Views\Home\CommingSoon.cshtml" />
+    <Content Include="Views\Sweet\Alert.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

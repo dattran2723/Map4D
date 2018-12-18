@@ -33,7 +33,7 @@
         color: white;
         font-family: 'Montserrat-Bold';
         font-weight: bold;
-        padding-top:12%;
+        padding-top: 12%;
     }
 
 
@@ -45,52 +45,72 @@
     }
 
 @media only screen and (max-width:1244px) {
-    
-    .bg .p3{
-        margin-top:-20%;
+    .bg .p3 {
+        margin-top: -20%;
     }
 }
-@media only screen and (max-width:1149px){
-    .bg .p2{
-        font-size:88px;
-        margin-top:-8%;
-    }
-    .bg .p3{
-        margin-top:-20%;
-        font-size:20px;
-    }
-}
-@media only screen and (max-width:1122px){
-    .bg .p{
-        font-size:10px;
-    }
-    .bg .p2{
-        font-size:80px;
-        margin-top:-2%;
-    }
-    .bg .p3{
-        margin-top:-25%;
-        font-size:15px;
-    }
-}
-@media only screen and (max-width:1021px){
-    .bg .p2{
-        font-size:70px;
-        margin-top:-5%;
-    }
-}
-@media only screen and (max-width:690px){
-    .bg .p{
-        font-size:13px;
-        margin-top:-15%;
 
+@media only screen and (max-width:1149px) {
+    .bg .p2 {
+        font-size: 88px;
+        margin-top: -8%;
     }
-    .bg .p2{
-        font-size:44px;
-        margin-top:3%;
+
+    .bg .p3 {
+        margin-top: -20%;
+        font-size: 20px;
     }
-    .bg .p3{
-        font-size:16px;
-        margin-top:-30%;
+}
+
+@media only screen and (max-width:1122px) {
+    .bg .p {
+        font-size: 10px;
+    }
+
+    .bg .p2 {
+        font-size: 80px;
+        margin-top: -2%;
+    }
+
+    .bg .p3 {
+        margin-top: -25%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:1021px) {
+    .bg .p2 {
+        font-size: 70px;
+        margin-top: -5%;
+    }
+}
+
+@media only screen and (max-width:690px) {
+    .bg p {
+        font-size: 16px;
+    }
+
+    .bg .p2 {
+        font-size: 44px;
+        margin-top: 10%;
+    }
+
+    .bg .p3 {
+        font-size: 16px;
+        margin-top: -45%;
+    }
+}
+
+@media only screen and (max-width:415px) {
+    .bg .p {
+        font-size: 15px;
+    }
+
+    .bg .p2 {
+        margin-top: 18%;
+    }
+
+    .bg .p3 {
+        margin-top: -45%;
     }
 }
