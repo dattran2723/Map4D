@@ -273,4 +273,13 @@
   <data name="CôngtyIOTLink" xml:space="preserve">
     <value>Công ty IOTLink</value>
   </data>
+  <data name="English" xml:space="preserve">
+    <value>Tiếng Anh</value>
+  </data>
+  <data name="FlagLanguage" xml:space="preserve">
+    <value>/Content/Client/img/Flag_of_Vietnam.svg.png</value>
+  </data>
+  <data name="VietNam" xml:space="preserve">
+    <value>Tiếng Việt</value>
+  </data>
 </root>

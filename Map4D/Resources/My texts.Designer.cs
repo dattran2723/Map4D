@@ -205,6 +205,24 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tiếng Anh.
+        /// </summary>
+        public static string English {
+            get {
+                return ResourceManager.GetString("English", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /Content/Client/img/Flag_of_Vietnam.svg.png.
+        /// </summary>
+        public static string FlagLanguage {
+            get {
+                return ResourceManager.GetString("FlagLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
         public static string GhiNhớ {
@@ -525,6 +543,15 @@ namespace Map4D.Resources {
         public static string Ứngdụng {
             get {
                 return ResourceManager.GetString("Ứngdụng", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tiếng Việt.
+        /// </summary>
+        public static string VietNam {
+            get {
+                return ResourceManager.GetString("VietNam", resourceCulture);
             }
         }
     }

@@ -42,17 +42,17 @@
                     <div class="btn-group" id="menu-language">
                         <span>@Map4D.Resources.My_texts.Ngônngữ</span>
                         <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="img-responsive" src="~/Content/Client/img/Flag_of_Vietnam.svg.png" />
+                            <img class="img-responsive" src="@Map4D.Resources.My_texts.FlagLanguage" />
                         </a>
 
                         <div class="dropdown-menu" id="languages">
                             <button class="dropdown-item" type="button">
                                 <img class="img-responsive" src="~/Content/Client/img/Flag_of_Vietnam.svg.png" />
-                                @Html.ActionLink("Viet Nam", ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), new { language = "vn" }, null)
+                                @Html.ActionLink(Map4D.Resources.My_texts.VietNam, ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), new { language = "vn" }, null)
                             </button>
                             <button class="dropdown-item" type="button">
                                 <img class="img-responsive" src="~/Content/Client/img/Flag_of_the_United_States_(Pantone).png" />
-                                @Html.ActionLink("English", ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), new { language = "en" }, null)
+                                @Html.ActionLink(Map4D.Resources.My_texts.English, ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), new { language = "en" }, null)
 
                             </button>
                         </div>
