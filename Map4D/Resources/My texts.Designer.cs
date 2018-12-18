@@ -529,6 +529,15 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Trang chủ.
+        /// </summary>
+        public static string TrangChu {
+            get {
+                return ResourceManager.GetString("TrangChu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 3D trực quan.
         /// </summary>
         public static string TrựcQuan3D {

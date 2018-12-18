@@ -270,6 +270,12 @@
   <data name="CôngtyIOTLink" xml:space="preserve">
     <value>IOTLink</value>
   </data>
+  <data name="SanPham" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="TrangChu" xml:space="preserve">
+    <value>Home</value>
+  </data>
   <data name="English" xml:space="preserve">
     <value>English</value>
   </data>
