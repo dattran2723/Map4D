@@ -252,6 +252,42 @@
   <data name="Camongopy" xml:space="preserve">
     <value>Cảm ơn bạn đã gửi ý kiến cho chúng tôi !</value>
   </data>
+  <data name="notifyRegisterButtonPopup" xml:space="preserve">
+    <value>Xong</value>
+  </data>
+  <data name="notifyRegisterConfirmMail" xml:space="preserve">
+    <value>Vui lòng xác nhận email</value>
+  </data>
+  <data name="notifyRegisterFail" xml:space="preserve">
+    <value>Đăng ký thất bại</value>
+  </data>
+  <data name="notifyRegisterSuccess" xml:space="preserve">
+    <value>Đăng ký thành công</value>
+  </data>
+  <data name="LoginFail" xml:space="preserve">
+    <value>Đăng nhập không hợp lệ.</value>
+  </data>
+  <data name="Bảnquyền" xml:space="preserve">
+    <value>Bản quyền năm 2018 từ</value>
+  </data>
+  <data name="CôngtyIOTLink" xml:space="preserve">
+    <value>Công ty IOTLink</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Tiếng Anh</value>
+  </data>
+  <data name="FlagLanguage" xml:space="preserve">
+    <value>/Content/Client/img/Flag_of_Vietnam.svg.png</value>
+  </data>
+  <data name="VietNam" xml:space="preserve">
+    <value>Tiếng Việt</value>
+  </data>
+  <data name="SanPham" xml:space="preserve">
+    <value>Sản phẩm</value>
+  </data>
+  <data name="TrangChu" xml:space="preserve">
+    <value>Trang chủ</value>
+  </data>
   <data name="Camondaquantam" xml:space="preserve">
     <value>Cảm ơn bạn đã quan tâm, chúng tôi đang xây dựng nội dung và sẽ trở lại sớm.</value>
   </data>

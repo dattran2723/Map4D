@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Threading;
+﻿using Map4D.Models;
+using System;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using Map4D.Models;
 
 namespace Map4D
 {
@@ -29,8 +25,6 @@ namespace Map4D
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
-        protected void Application_AcquireRequestState(Object sender, EventArgs e)
-        {
 
             if (HttpContext.Current.Request.RequestContext.RouteData.Values.ContainsKey("language"))
             {

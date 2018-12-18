@@ -1,11 +1,7 @@
 ﻿using Map4D.Models;
 using Map4D.Models.DataTableResponse;
 using Map4D.Models.Repository;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 
 namespace Map4D.API

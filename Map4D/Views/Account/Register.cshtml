@@ -1,6 +1,6 @@
 ﻿@model Map4D.Models.RegisterViewModel
 @{
-    ViewBag.Title = "Đăng ký";
+    ViewBag.Title =  Map4D.Resources.My_texts.Đăngký;
 }
 @section css{
     <link href="~/Content/Client/css/register.css" rel="stylesheet" />
@@ -41,19 +41,20 @@
     <script src="~/Content/sweetalert/js/sweetalert.min.js"></script>
     @if (ViewBag.Message != null)
     {
-        <script>
+        <script charset="UTF-8">
             $(document).ready(function () {
                 var message = "@ViewBag.Message";
                 if (message == "success") {
                     swal({
-                        title: "Đăng ký thành công",
-                        text: "Vui lòng xác nhận Email",
+                        title: "@Html.Raw(Map4D.Resources.My_texts.notifyRegisterSuccess)",
+                        text: "@Html.Raw(Map4D.Resources.My_texts.notifyRegisterConfirmMail)",
                         type: "success",
                         confirmButtonClass: "btn-primary",
-                        confirmButtonText: "Xong",
+                        confirmButtonText: "@Html.Raw(Map4D.Resources.My_texts.notifyRegisterButtonPopup)",
                         closeOnConfirm: false
                     }, function () {
-                        location.replace("/register");
+                        var url = '@Url.Action("Register","Account")';
+                        window.location.href = url.replace();
                     });
                 }
             });

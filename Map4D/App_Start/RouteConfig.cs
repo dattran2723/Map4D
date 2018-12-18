@@ -14,16 +14,10 @@ namespace Map4D
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.MapRoute(
                 name: "url_login",
-                url: "{language}/login",
-                defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional , language = "vn-vi" },
+                url: "login",
+                defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional },
                 namespaces: new[] { "Map4D.Controllers" }
             );
-            routes.MapRoute(
-                 name: "url_register",
-                 url: "{language}/register",
-                 defaults: new { controller = "Account", action = "Register", id = UrlParameter.Optional,language="vn-vi" },
-                 namespaces: new[] { "Map4D.Controllers" }
-             );
             routes.MapRoute(
                 name: "CheckExistUserName",
                 url: "CheckExistUserName",
@@ -44,6 +38,12 @@ namespace Map4D
                 namespaces: new[] { "map4d.controllers" }
             );
 
+            //routes.MapRoute(
+            //    name: "default",
+            //    url: "{controller}/{action}/{id}",
+            //    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional},
+            //    namespaces: new[] { "Map4D.Controllers" }
+            //);
         }
     }
 }

@@ -214,13 +214,13 @@
     <value>Email invalidate</value>
   </data>
   <data name="EmailLàBắtBuộc" xml:space="preserve">
-    <value>You have to fill in email blank !</value>
+    <value>You have to fill in email!</value>
   </data>
   <data name="EmailTontai" xml:space="preserve">
     <value>Email already exist</value>
   </data>
   <data name="GhiNhớMậtKhẩu" xml:space="preserve">
-    <value>Remember me ?</value>
+    <value>Remember me?</value>
   </data>
   <data name="MatKhauBatBuoc" xml:space="preserve">
     <value>You have to fill in password !</value>
@@ -232,13 +232,13 @@
     <value>Minimum 6 and up to 32 characters are required!</value>
   </data>
   <data name="TênĐăngNhập" xml:space="preserve">
-    <value>Register name</value>
+    <value>User name</value>
   </data>
   <data name="TênĐăngNhậpLàBắtBuộc" xml:space="preserve">
-    <value>You have to fill in register name !</value>
+    <value>You have to fill in register name!</value>
   </data>
   <data name="Tênđăngnhậpđãtồntại" xml:space="preserve">
-    <value>Username already exist</value>
+    <value>User name already exist</value>
   </data>
   <data name="ĐãCóTàiKhoản" xml:space="preserve">
     <value>Have account ?</value>
@@ -248,6 +248,42 @@
   </data>
   <data name="Camongopy" xml:space="preserve">
     <value>Thank you for sending us your comments!</value>
+  </data>
+  <data name="notifyRegisterButtonPopup" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="notifyRegisterConfirmMail" xml:space="preserve">
+    <value>Please confirm email</value>
+  </data>
+  <data name="notifyRegisterFail" xml:space="preserve">
+    <value>Registration failed</value>
+  </data>
+  <data name="notifyRegisterSuccess" xml:space="preserve">
+    <value>Registration successed</value>
+  </data>
+  <data name="LoginFail" xml:space="preserve">
+    <value>Invalid login.</value>
+  </data>
+  <data name="Bảnquyền" xml:space="preserve">
+    <value>Copyright 2018 by</value>
+  </data>
+  <data name="CôngtyIOTLink" xml:space="preserve">
+    <value>IOTLink</value>
+  </data>
+  <data name="SanPham" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="TrangChu" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="FlagLanguage" xml:space="preserve">
+    <value>/Content/Client/img/Flag_of_the_United_States_(Pantone).png</value>
+  </data>
+  <data name="VietNam" xml:space="preserve">
+    <value>Vietnamese</value>
   </data>
   <data name="Camondaquantam" xml:space="preserve">
     <value>Thank you for being patient. We are doing some work on the site and will be back shortly</value>

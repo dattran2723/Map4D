@@ -3,18 +3,12 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using System;
-using System.Configuration;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
-using Microsoft.Owin.Security;
-using Map4D.Models;
-using System.Net.Http;
-using Newtonsoft.Json;
-using System.Net.Http.Headers;
 
 namespace Map4D.Controllers
 {
@@ -92,7 +86,7 @@ namespace Map4D.Controllers
                     return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "Đăng nhập không hợp lệ.");
+                    ModelState.AddModelError("",Map4D.Resources.My_texts.LoginFail);
                     return View(model);
             }
         }
@@ -197,7 +191,7 @@ namespace Map4D.Controllers
                     ViewBag.Message = "success";
                     return View();
                 }
-                ModelState.AddModelError("", "Đăng ký không thành công!");
+                ModelState.AddModelError("", Map4D.Resources.My_texts.notifyRegisterFail);
                 return View(model);
             }
             return View(model);

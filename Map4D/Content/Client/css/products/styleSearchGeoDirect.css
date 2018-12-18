@@ -44,7 +44,6 @@
         #geocoding div.content p {
             font-family: 'Myriad Pro';
             font-size: 18px;
-            width: 60%;
         }
 
 #direction {
@@ -127,6 +126,12 @@
     }
 }
 
+@media only screen and (max-width: 767px) {
+
+    #geocoding div.content p {
+        width: 60%;
+    }
+}
 @media only screen and (max-width: 625px) {
     #search div.text-up h1, #geocoding div.content h1, #direction div.content h1 {
         font-size: 20px;

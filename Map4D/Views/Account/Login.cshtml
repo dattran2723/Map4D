@@ -1,7 +1,7 @@
 ﻿@using Map4D.Models
 @model LoginViewModel
 @{
-    ViewBag.Title = "Map4D - Đăng nhập";
+    ViewBag.Title = Map4D.Resources.My_texts.ĐăngNhập;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @section css{
@@ -17,7 +17,7 @@
             @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal"}))
             {
                 @Html.AntiForgeryToken()
-                @Html.ValidationSummary(true,"", new { @class = "text-danger" })
+                @Html.ValidationSummary("", new { @class = "text-danger" })
                 <div class="form-group">
                     @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = Map4D.Resources.My_texts.TênĐăngNhập })
                     @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })

@@ -2332,9 +2332,9 @@
     <Content Include="Views\Home\ProductSlideMap.cshtml" />
     <Content Include="Views\Home\ProductsSearchGeoDirect.cshtml" />
     <Content Include="Views\Home\ProductMobileApps.cshtml" />
-    <Content Include="Views\Home\Register.cshtml" />
     <Content Include="Views\Home\ProductMobileApps.cshtml" />
     <Content Include="Views\Home\CommingSoon.cshtml" />
+    <Content Include="Views\Home\Document.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
