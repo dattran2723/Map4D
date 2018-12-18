@@ -47,12 +47,12 @@
                         <div class="dropdown-menu" id="languages">
                             <button class="dropdown-item" type="button">
                                 <img class="img-responsive" src="~/Content/Client/img/Flag_of_Vietnam.svg.png" />
-                                @Html.ActionLink("Viet Nam", "Change", "Home", new { LanguageAbbrevation = "vn", returnUrl = Request.Url.AbsolutePath.ToString() }, null)
+                                @Html.ActionLink("Viet Nam", "Change", "Home", new { LanguageAbbreviation = "vn", url = Request.Url.AbsolutePath.ToString() }, null)
                               
                             </button>
                             <button class="dropdown-item" type="button">
                                 <img class="img-responsive" src="~/Content/Client/img/Flag_of_the_United_States_(Pantone).png" />
-                                @Html.ActionLink("English", "Change", "Home", new { LanguageAbbrevation = "en", returnUrl = Request.Url.AbsolutePath.ToString() }, null)
+                                @Html.ActionLink("English", "Change", "Home", new { LanguageAbbreviation = "en", url = Request.Url.AbsolutePath.ToString() }, null)
                                
                             </button>
                         </div>

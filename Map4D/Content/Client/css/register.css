@@ -7,6 +7,10 @@ body {
     background-image: url('../img/Dang ky.png');
 }
 
+#menu-top #menu-recommend {
+    visibility: hidden;
+}
+
 .registerUser {
     width: 100%;
     margin: auto;

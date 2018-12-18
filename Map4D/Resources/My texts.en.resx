@@ -211,7 +211,7 @@
     <value>Thank you for giving us advice</value>
   </data>
   <data name="EmailDinhDang" xml:space="preserve">
-    <value>Email invalidate</value>
+    <value>Email invalid</value>
   </data>
   <data name="EmailLàBắtBuộc" xml:space="preserve">
     <value>You have to fill in email!</value>
@@ -223,7 +223,7 @@
     <value>Remember me?</value>
   </data>
   <data name="MatKhauBatBuoc" xml:space="preserve">
-    <value>You have to fill in password !</value>
+    <value>You have to fill in password!</value>
   </data>
   <data name="MậtKhẩu" xml:space="preserve">
     <value>Password</value>
@@ -235,13 +235,13 @@
     <value>User name</value>
   </data>
   <data name="TênĐăngNhậpLàBắtBuộc" xml:space="preserve">
-    <value>You have to fill in register name!</value>
+    <value>You have to fill in user name!</value>
   </data>
   <data name="Tênđăngnhậpđãtồntại" xml:space="preserve">
     <value>User name already exist</value>
   </data>
   <data name="ĐãCóTàiKhoản" xml:space="preserve">
-    <value>Have account ?</value>
+    <value>Have account?</value>
   </data>
   <data name="ĐăngNhập" xml:space="preserve">
     <value>Login</value>

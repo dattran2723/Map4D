@@ -1,5 +1,7 @@
 ﻿using Map4D.Models;
 using System;
+using System.Globalization;
+using System.Threading;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
@@ -35,16 +37,16 @@ namespace Map4D
             Response.Cache.SetNoStore();
             //end code of TranDat
 
-            HttpCookie cookie = HttpContext.Current.Request.Cookies["Language1"];
+            HttpCookie cookie = HttpContext.Current.Request.Cookies["ChangeLanguage"];
             if (cookie != null && cookie.Value != null)
             {
-                System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(cookie.Value);
-                System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(cookie.Value);
+                Thread.CurrentThread.CurrentCulture = new CultureInfo(cookie.Value);
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo(cookie.Value);
             }
             else
             {
-                System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("vn");
-                System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vn");
+                Thread.CurrentThread.CurrentCulture = new CultureInfo("vn");
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("vn");
             }
         }
     }
