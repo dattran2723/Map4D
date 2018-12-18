@@ -20,13 +20,13 @@
 
         .buildMap4D .top .more {
             font-family: 'UTM Avo';
-            font-size: 45.35px;
+            font-size: 44px;
             color: #4882dc;
         }
 
         .buildMap4D .top .build {
             font-family: 'Myriad Pro';
-            font-size: 18.43px;
+            font-size: 18px;
             color: #a0a0a0;
         }
 
@@ -62,13 +62,13 @@
 
                 .buildMap4D .rowbottom .boxBuild .img .content .contentRight .name {
                     font-family: 'Myriad Pro';
-                    font-size: 14.43px;
+                    font-size: 14px;
                     margin-bottom: 0;
                 }
 
                 .buildMap4D .rowbottom .boxBuild .img .content .contentRight .cmt {
                     font-family: 'Myriad Pro';
-                    font-size: 9.92px;
+                    font-size: 12px;
                     color: #a0a0a0;
                     margin-bottom: 0;
                     text-align: justify;
@@ -155,9 +155,6 @@
 }
 
 @media only screen and (max-width: 675px) {
-    .buildMap4D .rowbottom .boxBuild .img .content .contentRight {
-        /*padding-left: 17px;*/
-    }
 
     .buildMap4D .rowbottom {
         width: 90%;
@@ -166,7 +163,7 @@
 
 @media only screen and (max-width: 625px) {
     .buildMap4D .top .more {
-        font-size: 25.52px;
+        font-size: 25px;
     }
 
     .buildMap4D .rowbottom {
@@ -182,11 +179,11 @@
 
 @media only screen and (max-width: 435px) {
     .buildMap4D .top .more {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .buildMap4D .top .build {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .buildMap4D .rowbottom .boxBuild .img .content .contentRight .cmt {
@@ -196,6 +193,6 @@
 
 @media only screen and (max-width: 380px) {
     .buildMap4D .rowbottom .boxBuild .img .content .contentRight {
-        padding-left: 23px;
+        padding-left: 24px;
     }
 }
