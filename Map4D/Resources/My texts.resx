@@ -214,7 +214,7 @@
     <value>Email không đúng định dạng</value>
   </data>
   <data name="EmailLàBắtBuộc" xml:space="preserve">
-    <value>Email là bắt buộc !</value>
+    <value>Email là bắt buộc!</value>
   </data>
   <data name="EmailTontai" xml:space="preserve">
     <value>Email đã tồn tại!</value>
@@ -226,25 +226,25 @@
     <value>Ghi nhớ mật khẩu</value>
   </data>
   <data name="MatKhauBatBuoc" xml:space="preserve">
-    <value>Mật khẩu là bắt buộc !</value>
+    <value>Mật khẩu là bắt buộc!</value>
   </data>
   <data name="MậtKhẩu" xml:space="preserve">
     <value>Mật khẩu</value>
   </data>
   <data name="ToiThieu" xml:space="preserve">
-    <value>Yêu cầu nhập tối thiểu 6 và tối đa 32 kí tự !</value>
+    <value>Yêu cầu nhập tối thiểu 6 và tối đa 32 kí tự!</value>
   </data>
   <data name="TênĐăngNhập" xml:space="preserve">
     <value>Tên đăng nhập</value>
   </data>
   <data name="TênĐăngNhậpLàBắtBuộc" xml:space="preserve">
-    <value>Tên đăng nhập là bắt buộc !</value>
+    <value>Tên đăng nhập là bắt buộc!</value>
   </data>
   <data name="Tênđăngnhậpđãtồntại" xml:space="preserve">
-    <value>Tên đăng nhập đã tồn tại !</value>
+    <value>Tên đăng nhập đã tồn tại!</value>
   </data>
   <data name="ĐãCóTàiKhoản" xml:space="preserve">
-    <value>Đã có tài khoản</value>
+    <value>Đã có tài khoản?</value>
   </data>
   <data name="ĐăngNhập" xml:space="preserve">
     <value>Đăng nhập</value>

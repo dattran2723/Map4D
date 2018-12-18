@@ -20,17 +20,17 @@ namespace Map4D.Controllers
         {
             return View();
         }
-        public ActionResult Change(String LanguageAbbrevation, string returnUrl)
+        public ActionResult Change(String LanguageAbbreviation, string url)
         {
-            if (LanguageAbbrevation != null)
+            if (LanguageAbbreviation != null)
             {
-                Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(LanguageAbbrevation);
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo(LanguageAbbrevation);
+                Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(LanguageAbbreviation);
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo(LanguageAbbreviation);
             }
-            HttpCookie cookie = new HttpCookie("Language1");
-            cookie.Value = LanguageAbbrevation;
+            HttpCookie cookie = new HttpCookie("ChangeLanguage");
+            cookie.Value = LanguageAbbreviation;
             Response.Cookies.Add(cookie);
-            return Redirect(returnUrl);
+            return Redirect(url);
         }
 
         [HttpGet]

@@ -1,5 +1,7 @@
 ﻿using Map4D.Models;
 using System;
+using System.Globalization;
+using System.Threading;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
@@ -26,14 +28,25 @@ namespace Map4D
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
 
-            if (HttpContext.Current.Request.RequestContext.RouteData.Values.ContainsKey("language"))
+        protected void Application_BeginRequest(object sender, EventArgs e)
+        {
+            //start code of TranDat
+            //disable the cache for the entire application
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+            Response.Cache.SetExpires(DateTime.UtcNow.AddHours(-1));
+            Response.Cache.SetNoStore();
+            //end code of TranDat
+
+            HttpCookie cookie = HttpContext.Current.Request.Cookies["ChangeLanguage"];
+            if (cookie != null && cookie.Value != null)
             {
-                var language = (string)HttpContext.Current.Request.RequestContext.RouteData.Values["language"];
-                if (language != null)
-                {
-                    Thread.CurrentThread.CurrentCulture = new CultureInfo(language);
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
-                }
+                Thread.CurrentThread.CurrentCulture = new CultureInfo(cookie.Value);
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo(cookie.Value);
+            }
+            else
+            {
+                Thread.CurrentThread.CurrentCulture = new CultureInfo("vn");
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("vn");
             }
         }
 
