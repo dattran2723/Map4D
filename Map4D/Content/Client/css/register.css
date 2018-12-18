@@ -17,7 +17,7 @@ body {
     width: 100%;
     margin: auto;
     padding-top: 14%;
-    padding-bottom: 24%;
+    padding-bottom: 8%;
 }
 
     .registerUser h2 {
@@ -61,7 +61,6 @@ body {
 
 #footer {
     background-image: none;
-    margin-top: -7%;
 }
 
 #menu-top nav .collapse ul li #btn-register {
@@ -90,17 +89,14 @@ body {
 }
 
 @media only screen and (max-width: 860px ) {
-    .registerUser {
-        padding-bottom: 38%;
+
+    .registerUser h2 {
+        font-size: 32px;
     }
 
-        .registerUser h2 {
-            font-size: 32px;
-        }
-
-        .registerUser .boxRegister .input {
-            line-height: 24px;
-        }
+    .registerUser .boxRegister .input {
+        line-height: 24px;
+    }
 }
 
 
@@ -121,20 +117,16 @@ body {
 
 @media only screen and (max-width: 530px ) {
     .registerUser {
-        padding-bottom: 55%;
+        padding-bottom: 10%;
     }
 
-    #footer {
-        margin-top: -22%;
-    }
+        .registerUser .divBottom a {
+            font-size: 12px;
+        }
 
-    .registerUser .divBottom a {
-        font-size: 12px;
-    }
-
-    .registerUser .divBottom button {
-        font-size: 12px;
-    }
+        .registerUser .divBottom button {
+            font-size: 12px;
+        }
 }
 
 @media only screen and (max-width: 376px) {
