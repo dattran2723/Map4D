@@ -25,8 +25,8 @@
                 font-weight: normal;
                 color: #ffffff;
                 font-size: 25.51px;
-                padding-bottom: 0px;
-                margin-bottom: 0px;
+                padding-bottom: 8%;
+                
             }
 
             .webApp .left .content .webmobile {
@@ -63,11 +63,11 @@
 
 @media only screen and (max-width: 992px) {
     .webApp .left .content .imgIP {
-        width: 20%;
+        width: 33%;
     }
 
     .webApp {
-        background-size: 992px;
+        background-size: cover;
     }
 
         .webApp .left .content .imgIP {
@@ -88,11 +88,13 @@
     }
 
         .webApp .left .content .imgIP {
-            width: 24%;
+            width: 35%;
+            padding-left:4%;
+            /*margin-right: 380px;*/
         }
 
     .webApp .left .content {
-        text-align: center;
+        /*text-align: center;*/
         padding-left: 0%;
         padding-right: 0%;
         display: block;
@@ -103,7 +105,8 @@
         }
 
         .webApp .left .content .tittle {
-            padding-left: 0%;
+            padding-left: 5%;
+            /*margin-right: 380px;*/
         }
 
     .webApp .left {
@@ -120,8 +123,7 @@
     }
 
     .webApp .left .content .contrary {
-        padding-left: 13%;
-        padding-right: 15%;
+        padding-right: 40%;
         text-align: left;
     }
 
