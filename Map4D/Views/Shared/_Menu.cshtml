@@ -20,6 +20,7 @@
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-100">
                 <li class="nav-item">
                     <a class="nav-link" href="@Url.Action("Products", "Home")">@Map4D.Resources.My_texts.SảnPhẩm</a>
+
                 </li>
                 <li class="space-item">|</li>
                 <li class="nav-item">
@@ -31,7 +32,7 @@
                 </li>
                 <li class="space-item">|</li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">@Map4D.Resources.My_texts.CôngTy</a>
+                    <a class="nav-link" href="http://www.iotlink.com.vn/">@Map4D.Resources.My_texts.CôngTy</a>
                 </li>
                 <li class="space-item">|</li>
                 <li class="nav-item">
@@ -48,11 +49,13 @@
                         <div class="dropdown-menu" id="languages">
                             <button class="dropdown-item" type="button">
                                 <img class="img-responsive" src="~/Content/Client/img/Flag_of_Vietnam.svg.png" />
-                                @Html.ActionLink("Viet Nam", ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), new { language = "vn" }, null)
+                                @Html.ActionLink("Viet Nam", "Change", "Home", new { LanguageAbbrevation = "vn", returnUrl = Request.Url.AbsolutePath.ToString() }, null)
+                              
                             </button>
                             <button class="dropdown-item" type="button">
                                 <img class="img-responsive" src="~/Content/Client/img/Flag_of_the_United_States_(Pantone).png" />
-                                @Html.ActionLink("English", ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), new { language = "en" }, null)
+                                @Html.ActionLink("English", "Change", "Home", new { LanguageAbbrevation = "en", returnUrl = Request.Url.AbsolutePath.ToString() }, null)
+                                @*@Html.ActionLink("English", ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), new { language = "en" }, null)*@
 
                             </button>
                         </div>

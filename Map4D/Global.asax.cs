@@ -32,15 +32,6 @@ namespace Map4D
         protected void Application_AcquireRequestState(Object sender, EventArgs e)
         {
 
-            if (HttpContext.Current.Request.RequestContext.RouteData.Values.ContainsKey("language"))
-            {
-                var language = (string)HttpContext.Current.Request.RequestContext.RouteData.Values["language"];
-                if (language != null)
-                {
-                    Thread.CurrentThread.CurrentCulture = new CultureInfo(language);
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
-                }
-            }
         }
 
         protected void Application_BeginRequest(object sender, EventArgs e)
@@ -52,21 +43,17 @@ namespace Map4D
             Response.Cache.SetNoStore();
             //end code of TranDat
 
-            string culture = "vi";
-            var httpCookie = Request.Cookies["language"];
-            if (httpCookie != null)
+            HttpCookie cookie = HttpContext.Current.Request.Cookies["Language1"];
+            if (cookie != null && cookie.Value != null)
             {
-                culture = httpCookie.Value;
+                System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(cookie.Value);
+                System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(cookie.Value);
             }
             else
             {
-                HttpCookie language = new HttpCookie("language");
-                language.Value = culture;
-                language.Expires = DateTime.Now.AddDays(1);
-                Response.Cookies.Add(language);
+                System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("vn");
+                System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vn");
             }
-            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(culture);
-            System.Threading.Thread.CurrentThread.CurrentUICulture = System.Threading.Thread.CurrentThread.CurrentCulture;
         }
         //protected void Application_BeginRequest(object sender, EventArgs e)
         //{

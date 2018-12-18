@@ -22,6 +22,18 @@ namespace Map4D.Controllers
         {
             return View();
         }
+        public ActionResult Change(String LanguageAbbrevation, string returnUrl)
+        {
+            if (LanguageAbbrevation != null)
+            {
+                Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(LanguageAbbrevation);
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo(LanguageAbbrevation);
+            }
+            HttpCookie cookie = new HttpCookie("Language1");
+            cookie.Value = LanguageAbbrevation;
+            Response.Cookies.Add(cookie);
+            return Redirect(returnUrl);
+        }
 
         [HttpGet]
         public ActionResult Products()

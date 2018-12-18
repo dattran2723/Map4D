@@ -3,18 +3,12 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using System;
-using System.Configuration;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
-using Microsoft.Owin.Security;
-using Map4D.Models;
-using System.Net.Http;
-using Newtonsoft.Json;
-using System.Net.Http.Headers;
 
 namespace Map4D.Controllers
 {
