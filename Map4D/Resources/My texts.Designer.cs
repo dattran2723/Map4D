@@ -295,6 +295,15 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Đăng nhập không hợp lệ..
+        /// </summary>
+        public static string LoginFail {
+            get {
+                return ResourceManager.GetString("LoginFail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Map 4D được đón nhận và tin cậy với hàng trăm người dùng trên toàn thế giới..
         /// </summary>
         public static string Map4DDuocdonnhan {
@@ -345,6 +354,42 @@ namespace Map4D.Resources {
         public static string Ngônngữ {
             get {
                 return ResourceManager.GetString("Ngônngữ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Xong.
+        /// </summary>
+        public static string notifyRegisterButtonPopup {
+            get {
+                return ResourceManager.GetString("notifyRegisterButtonPopup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vui lòng xác nhận email.
+        /// </summary>
+        public static string notifyRegisterConfirmMail {
+            get {
+                return ResourceManager.GetString("notifyRegisterConfirmMail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Đăng ký thất bại.
+        /// </summary>
+        public static string notifyRegisterFail {
+            get {
+                return ResourceManager.GetString("notifyRegisterFail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Đăng ký thành công.
+        /// </summary>
+        public static string notifyRegisterSuccess {
+            get {
+                return ResourceManager.GetString("notifyRegisterSuccess", resourceCulture);
             }
         }
         
