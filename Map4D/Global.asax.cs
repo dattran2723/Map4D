@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Threading;
+﻿using Map4D.Models;
+using System;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using Map4D.Models;
 
 namespace Map4D
 {
@@ -28,10 +24,6 @@ namespace Map4D
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-        }
-        protected void Application_AcquireRequestState(Object sender, EventArgs e)
-        {
-
         }
 
         protected void Application_BeginRequest(object sender, EventArgs e)
@@ -55,14 +47,5 @@ namespace Map4D
                 System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vn");
             }
         }
-        //protected void Application_BeginRequest(object sender, EventArgs e)
-        //{
-        //    HttpCookie cookie = HttpContext.Current.Request.Cookies["Language"];
-        //    if (cookie != null && cookie.Value != null)
-        //    {
-        //        System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("vn");
-        //        System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vn");
-        //    }
-        //}
     }
 }
