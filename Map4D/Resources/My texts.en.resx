@@ -249,6 +249,21 @@
   <data name="CảmƠnGópÝ" xml:space="preserve">
     <value>Thank you for sending us your comments!</value>
   </data>
+  <data name="notifyRegisterButtonPopup" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="notifyRegisterConfirmMail" xml:space="preserve">
+    <value>Please confirm email</value>
+  </data>
+  <data name="notifyRegisterFail" xml:space="preserve">
+    <value>Registration failed</value>
+  </data>
+  <data name="notifyRegisterSuccess" xml:space="preserve">
+    <value>Registration successed</value>
+  </data>
+  <data name="LoginFail" xml:space="preserve">
+    <value>Invalid login.</value>
+  </data>
   <data name="Bảnquyền" xml:space="preserve">
     <value>Copyright 2018 by</value>
   </data>

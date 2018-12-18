@@ -252,6 +252,21 @@
   <data name="CảmƠnGópÝ" xml:space="preserve">
     <value>Cảm ơn bạn đã gửi ý kiến cho chúng tôi !</value>
   </data>
+  <data name="notifyRegisterButtonPopup" xml:space="preserve">
+    <value>Xong</value>
+  </data>
+  <data name="notifyRegisterConfirmMail" xml:space="preserve">
+    <value>Vui lòng xác nhận email</value>
+  </data>
+  <data name="notifyRegisterFail" xml:space="preserve">
+    <value>Đăng ký thất bại</value>
+  </data>
+  <data name="notifyRegisterSuccess" xml:space="preserve">
+    <value>Đăng ký thành công</value>
+  </data>
+  <data name="LoginFail" xml:space="preserve">
+    <value>Đăng nhập không hợp lệ.</value>
+  </data>
   <data name="Bảnquyền" xml:space="preserve">
     <value>Bản quyền năm 2018 từ</value>
   </data>

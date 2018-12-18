@@ -61,7 +61,6 @@ namespace Map4D.Controllers
         //
         // GET: /Account/Login
         [AllowAnonymous]
-        [HttpGet]
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
@@ -93,7 +92,7 @@ namespace Map4D.Controllers
                     return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "Đăng nhập không hợp lệ.");
+                    ModelState.AddModelError("",Map4D.Resources.My_texts.LoginFail);
                     return View(model);
             }
         }
@@ -198,7 +197,7 @@ namespace Map4D.Controllers
                     ViewBag.Message = "success";
                     return View();
                 }
-                ModelState.AddModelError("", "Đăng ký không thành công!");
+                ModelState.AddModelError("", Map4D.Resources.My_texts.notifyRegisterFail);
                 return View(model);
             }
             return View(model);
