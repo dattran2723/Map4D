@@ -1965,6 +1965,7 @@
     <Content Include="Content\Client\bootstrap4.1.0\js\bootstrap.min.js" />
     <Content Include="Content\Client\css\3DTrucQuan.css" />
     <Content Include="Content\Client\css\BuildMap4D.css" />
+    <Content Include="Content\Client\css\Commingsoon.css" />
     <Content Include="Content\Client\css\CreateMobileApps.css" />
     <Content Include="Content\Client\css\products\MobileApp.css" />
     <Content Include="Content\Client\css\products\SlideMap.css" />
@@ -1979,6 +1980,7 @@
     <Content Include="Content\Client\css\styleMenu.css" />
     <Content Include="Content\Client\css\styleSlideHome.css" />
     <Content Include="Content\Client\css\styleWebAppRelity.css" />
+    <Content Include="Content\Client\img\bg.jpg" />
     <Content Include="Content\Client\img\Dang ky.png" />
     <Content Include="Content\Client\img\Flag_of_the_United_States_%28Pantone%29.png" />
     <Content Include="Content\Client\img\Flag_of_Vietnam.svg.png" />
@@ -2035,6 +2037,7 @@
     <Content Include="Content\Client\img\products\page-2_0007_kinh-lup-khong-nen.png" />
     <Content Include="Content\Client\img\products\page-2_0007_kinh-lup-khong-nen2.png" />
     <Content Include="Content\Client\img\products\page-2_0007_kinh-lup.png" />
+    <Content Include="Content\Client\img\under contruction page.jpg" />
     <Content Include="Content\Client\img\Untitled-1_0000_Header-Bg.png" />
     <Content Include="Content\Client\img\Untitled-1_0000_Mask-by-Mask.png" />
     <Content Include="Content\Client\img\Untitled-1_0001_footer-background.png" />
@@ -2251,6 +2254,7 @@
     <Content Include="fonts\MYRIADPRO-SEMIBOLD.OTF" />
     <Content Include="fonts\MYRIADPRO-SEMIBOLDIT.OTF" />
     <Content Include="fonts\SourceSansPro-Regular.ttf" />
+    <Content Include="fonts\Montserrat-Bold.ttf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\datatable\dataTables.bootstrap.min.js" />
     <Content Include="Scripts\datatable\dataTables.fixedHeader.min.js" />
@@ -2330,6 +2334,7 @@
     <Content Include="Views\Home\ProductMobileApps.cshtml" />
     <Content Include="Views\Home\Register.cshtml" />
     <Content Include="Views\Home\ProductMobileApps.cshtml" />
+    <Content Include="Views\Home\CommingSoon.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

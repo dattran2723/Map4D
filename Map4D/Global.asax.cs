@@ -43,39 +43,31 @@ namespace Map4D
             }
         }
 
-        protected void Application_BeginRequest(object sender, EventArgs e)
-        {
-            //start code of TranDat
-            //disable the cache for the entire application
-            Response.Cache.SetCacheability(HttpCacheability.NoCache);
-            Response.Cache.SetExpires(DateTime.UtcNow.AddHours(-1));
-            Response.Cache.SetNoStore();
-            //end code of TranDat
-
-            string culture = "vi";
-            var httpCookie = Request.Cookies["language"];
-            if (httpCookie != null)
-            {
-                culture = httpCookie.Value;
-            }
-            else
-            {
-                HttpCookie language = new HttpCookie("language");
-                language.Value = culture;
-                language.Expires = DateTime.Now.AddDays(1);
-                Response.Cookies.Add(language);
-            }
-            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(culture);
-            System.Threading.Thread.CurrentThread.CurrentUICulture = System.Threading.Thread.CurrentThread.CurrentCulture;
-        }
         //protected void Application_BeginRequest(object sender, EventArgs e)
         //{
-        //    HttpCookie cookie = HttpContext.Current.Request.Cookies["Language"];
-        //    if (cookie != null && cookie.Value != null)
+        //    //start code of TranDat
+        //    //disable the cache for the entire application
+        //    Response.Cache.SetCacheability(HttpCacheability.NoCache);
+        //    Response.Cache.SetExpires(DateTime.UtcNow.AddHours(-1));
+        //    Response.Cache.SetNoStore();
+        //    //end code of TranDat
+
+        //    string culture = "vi";
+        //    var httpCookie = Request.Cookies["language"];
+        //    if (httpCookie != null)
         //    {
-        //        System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("vn");
-        //        System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vn");
+        //        culture = httpCookie.Value;
         //    }
+        //    else
+        //    {
+        //        HttpCookie language = new HttpCookie("language");
+        //        language.Value = culture;
+        //        language.Expires = DateTime.Now.AddDays(1);
+        //        Response.Cookies.Add(language);
+        //    }
+        //    System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(culture);
+        //    System.Threading.Thread.CurrentThread.CurrentUICulture = System.Threading.Thread.CurrentThread.CurrentCulture;
         //}
+        
     }
 }

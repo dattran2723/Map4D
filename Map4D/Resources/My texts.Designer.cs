@@ -79,11 +79,20 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cảm ơn bạn đã quan tâm, chúng tôi đang xây dựng nội dung và sẽ trở lại sớm..
+        /// </summary>
+        public static string Camondaquantam {
+            get {
+                return ResourceManager.GetString("Camondaquantam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cảm ơn bạn đã gửi ý kiến cho chúng tôi !.
         /// </summary>
-        public static string CảmƠnGópÝ {
+        public static string Camongopy {
             get {
-                return ResourceManager.GetString("CảmƠnGópÝ", resourceCulture);
+                return ResourceManager.GetString("Camongopy", resourceCulture);
             }
         }
         
@@ -147,6 +156,15 @@ namespace Map4D.Resources {
         public static string ĐăngNhập {
             get {
                 return ResourceManager.GetString("ĐăngNhập", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Đang xây dựng.
+        /// </summary>
+        public static string Dangxaydung {
+            get {
+                return ResourceManager.GetString("Dangxaydung", resourceCulture);
             }
         }
         
@@ -390,6 +408,15 @@ namespace Map4D.Resources {
         public static string TênĐăngNhậpLàBắtBuộc {
             get {
                 return ResourceManager.GetString("TênĐăngNhậpLàBắtBuộc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thông cảm, chúng tôi đang xây dựng trang này.
+        /// </summary>
+        public static string ThôngCảm {
+            get {
+                return ResourceManager.GetString("ThôngCảm", resourceCulture);
             }
         }
         
