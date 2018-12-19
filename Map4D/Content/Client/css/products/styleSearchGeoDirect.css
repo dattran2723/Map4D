@@ -11,7 +11,7 @@
 
         #search div.text-up h1 {
             font-family: "UTM Avo";
-            font-size: 45px;
+            font-size: 44px;
             color: white;
             padding-top: 20%;
             padding-left: 29%;
@@ -38,7 +38,7 @@
 
         #geocoding div.content h1 {
             font-family: 'UTM Avo';
-            font-size: 45px;
+            font-size: 44px;
         }
 
         #geocoding div.content p {
@@ -67,7 +67,7 @@
 
     #direction div.content h1 {
         font-family: 'UTM Avo';
-        font-size: 45px;
+        font-size: 44px;
         color: #495d77;
         padding-top: -3%;
     }
@@ -76,7 +76,8 @@
         font-family: 'Myriad Pro';
         font-size: 14px;
         color: #495d77;
-        width: 80%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
 @media only screen and (max-width: 1100px) {
@@ -96,7 +97,7 @@
     }
 
     #search div.text-down p {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     #geocoding div.content p {
@@ -114,7 +115,7 @@
     }
 
     #search div.text-down p {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     #geocoding div.content p {
@@ -122,7 +123,7 @@
     }
 
     #direction div.content p {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -132,9 +133,10 @@
         width: 60%;
     }
 }
+
 @media only screen and (max-width: 625px) {
     #search div.text-up h1, #geocoding div.content h1, #direction div.content h1 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     #search div.text-down p {

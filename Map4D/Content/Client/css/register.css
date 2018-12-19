@@ -5,6 +5,8 @@
 
 body {
     background-image: url('../img/Dang ky.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #menu-top #menu-recommend {
@@ -15,13 +17,13 @@ body {
     width: 100%;
     margin: auto;
     padding-top: 14%;
-    padding-bottom: 24%;
+    padding-bottom: 8%;
 }
 
     .registerUser h2 {
         color: #fff;
         font-family: 'UTM Avo';
-        font-size: 45.35px;
+        font-size: 44px;
         padding-bottom: 4%;
     }
 
@@ -43,7 +45,7 @@ body {
         .registerUser .divBottom a {
             padding-left: 0%;
             color: #0df8c8;
-            font-size: 15px;
+            font-size: 16px;
             text-decoration: underline;
             font-family: SourceSansPro-Regular;
         }
@@ -59,7 +61,6 @@ body {
 
 #footer {
     background-image: none;
-    margin-top: -7%;
 }
 
 #menu-top nav .collapse ul li #btn-register {
@@ -80,20 +81,22 @@ body {
     #footer {
         margin-top: -12%;
     }
+
+    body {
+        background-size: auto;
+        background-repeat: repeat;
+    }
 }
 
 @media only screen and (max-width: 860px ) {
-    .registerUser {
-        padding-bottom: 38%;
+
+    .registerUser h2 {
+        font-size: 32px;
     }
 
-        .registerUser h2 {
-            font-size: 32px;
-        }
-
-        .registerUser .boxRegister .input {
-            line-height: 24px;
-        }
+    .registerUser .boxRegister .input {
+        line-height: 24px;
+    }
 }
 
 
@@ -108,34 +111,30 @@ body {
 
         .registerUser .boxRegister .input {
             line-height: 20px;
-            font-size: 13px;
+            font-size: 14px;
         }
 }
 
 @media only screen and (max-width: 530px ) {
     .registerUser {
-        padding-bottom: 55%;
+        padding-bottom: 10%;
     }
 
-    #footer {
-        margin-top: -22%;
-    }
+        .registerUser .divBottom a {
+            font-size: 12px;
+        }
 
-    .registerUser .divBottom a {
-        font-size: 12px;
-    }
-
-    .registerUser .divBottom button {
-        font-size: 12px;
-    }
+        .registerUser .divBottom button {
+            font-size: 12px;
+        }
 }
 
 @media only screen and (max-width: 376px) {
     .registerUser .divBottom a {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .registerUser .divBottom button {
-        font-size: 11px;
+        font-size: 12px;
     }
 }

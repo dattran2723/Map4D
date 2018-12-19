@@ -20,7 +20,7 @@
                 padding-left: 5%;
                 font-weight: normal;
                 color: #1a6ad9;
-                font-size: 25.51px;
+                font-size: 26px;
                 padding-bottom: 0px;
                 margin-bottom: 0px;
             }
@@ -30,7 +30,7 @@
                 padding-left: 5%;
                 font-weight: normal;
                 color: #1a6ad9;
-                font-size: 25.51px;
+                font-size: 26px;
                 padding-bottom: 4%;
             }
 
@@ -38,7 +38,7 @@
                 padding-left: 5%;
                 padding-right: 25%;
                 font-family: 'Myriad Pro';
-                font-size: 15.59px;
+                font-size: 16px;
                 font-weight: normal;
                 color: #919191;
                 text-align: justify;
@@ -83,6 +83,7 @@
         .createMobileApps .left .content .webmobile {
             padding-left: 0%;
         }
+
         .createMobileApps .left .content .tittle {
             padding-left: 0%;
         }
@@ -101,7 +102,7 @@
     }
 
     .createMobileApps .left .content .contrary {
-        padding-left: 13%;
+        padding-left: 15%;
         padding-right: 15%;
         text-align: center;
     }
@@ -111,16 +112,23 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .createMobileApps .left .content .contrary {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
 @media only screen and (max-width: 435px) {
     .createMobileApps .left .content .contrary {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .createMobileApps .left .content .tittle {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .createMobileApps .left .content .webmobile {
-        font-size: 22px;
+        font-size: 24px;
     }
 }

@@ -1961,6 +1961,7 @@
     <Content Include="Content\Client\bootstrap4.1.0\js\bootstrap.min.js" />
     <Content Include="Content\Client\css\3DTrucQuan.css" />
     <Content Include="Content\Client\css\BuildMap4D.css" />
+    <Content Include="Content\Client\css\Commingsoon.css" />
     <Content Include="Content\Client\css\CreateMobileApps.css" />
     <Content Include="Content\Client\css\products\MobileApp.css" />
     <Content Include="Content\Client\css\products\SlideMap.css" />
@@ -1975,6 +1976,7 @@
     <Content Include="Content\Client\css\styleMenu.css" />
     <Content Include="Content\Client\css\styleSlideHome.css" />
     <Content Include="Content\Client\css\styleWebAppRelity.css" />
+    <Content Include="Content\Client\img\bg.jpg" />
     <Content Include="Content\Client\img\Dang ky.png" />
     <Content Include="Content\Client\img\Flag_of_the_United_States_%28Pantone%29.png" />
     <Content Include="Content\Client\img\Flag_of_Vietnam.svg.png" />
@@ -2021,6 +2023,9 @@
     <Content Include="Content\Client\img\left.png" />
     <Content Include="Content\Client\img\LOGO MAP 4d-05.png" />
     <Content Include="Content\Client\img\logoMap4D.png" />
+    <Content Include="Content\Client\img\man-one.jpg" />
+    <Content Include="Content\Client\img\page-2_0000_Layer-3 - Copy.png" />
+    <Content Include="Content\Client\img\page-2_0000_Layer-3.png" />
     <Content Include="Content\Client\img\products\page-2_0000_Layer-3.png" />
     <Content Include="Content\Client\img\products\page-2_0001_Content-Slider-A-15-copy-3.png" />
     <Content Include="Content\Client\img\products\page-2_0002_Content-Slider-A-15-copy-3.png" />
@@ -2031,14 +2036,20 @@
     <Content Include="Content\Client\img\products\page-2_0007_kinh-lup-khong-nen.png" />
     <Content Include="Content\Client\img\products\page-2_0007_kinh-lup-khong-nen2.png" />
     <Content Include="Content\Client\img\products\page-2_0007_kinh-lup.png" />
+    <Content Include="Content\Client\img\under contruction page.jpg" />
     <Content Include="Content\Client\img\Untitled-1_0000_Header-Bg.png" />
     <Content Include="Content\Client\img\Untitled-1_0000_Mask-by-Mask.png" />
     <Content Include="Content\Client\img\Untitled-1_0001_footer-background.png" />
     <Content Include="Content\Client\img\right.png" />
+    <Content Include="Content\Client\img\Untitled.png" />
+    <Content Include="Content\sweetalert\bootstrap-sweetalert.png" />
     <Content Include="Content\sweetalert\css\sweetalert.css" />
+    <Content Include="Content\sweetalert\docs.css" />
     <Content Include="Content\sweetalert\js\sweetalert.js" />
     <Content Include="Content\sweetalert\css\sweetalert.min.css" />
     <Content Include="Content\sweetalert\js\sweetalert.min.js" />
+    <Content Include="Content\sweetalert\sweet-alert.css" />
+    <Content Include="Content\sweetalert\thumbs-up.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -2247,6 +2258,12 @@
     <Content Include="fonts\MYRIADPRO-SEMIBOLD.OTF" />
     <Content Include="fonts\MYRIADPRO-SEMIBOLDIT.OTF" />
     <Content Include="fonts\SourceSansPro-Regular.ttf" />
+    <Content Include="fonts\Montserrat-Bold.ttf" />
+    <Content Include="Content\sweetalert\sweet-alert.less" />
+    <Content Include="Content\sweetalert\sweet-alert-combine.less" />
+    <Content Include="Content\sweetalert\sweet-alert-animations.less" />
+    <Content Include="Content\bootstrap\variables.less" />
+    <Content Include="Content\bootstrap\mixins.less" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\datatable\dataTables.bootstrap.min.js" />
@@ -2267,6 +2284,7 @@
     <Content Include="Scripts\js\delete-contact.js" />
     <Content Include="Scripts\js\addContentBuildMap4D.js" />
     <Content Include="Scripts\js\footerScroll.js" />
+    <Content Include="Scripts\js\GetInTouch.js" />
     <Content Include="Scripts\js\GetListContact.js" />
     <Content Include="Scripts\js\hover-mapbox.js" />
     <Content Include="Scripts\js\loadPagingCustomers.js" />
@@ -2326,7 +2344,9 @@
     <Content Include="Views\Home\ProductsSearchGeoDirect.cshtml" />
     <Content Include="Views\Home\ProductMobileApps.cshtml" />
     <Content Include="Views\Home\ProductMobileApps.cshtml" />
+    <Content Include="Views\Home\CommingSoon.cshtml" />
     <Content Include="Views\Home\Document.cshtml" />
+    <Content Include="Views\Sweet\Alert.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

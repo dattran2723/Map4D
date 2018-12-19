@@ -31,6 +31,13 @@ namespace Map4D
                 namespaces: new[] { "Map4D.Controllers" }
             );
 
+            //routes.MapRoute(
+            //    name: "language",
+            //    url: "{language}/{controller}/{action}/{id}",
+            //    defaults: new { controller = "home", action = "index", id = UrlParameter.Optional, language = "vn" },
+            //    namespaces: new[] { "map4d.controllers" }
+            //);
+
             routes.MapRoute(
                 name: "default",
                 url: "{controller}/{action}/{id}",

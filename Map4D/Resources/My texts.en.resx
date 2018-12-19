@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Bảnggiá" xml:space="preserve">
+  <data name="PriceTable" xml:space="preserve">
     <value>Price Table</value>
   </data>
   <data name="ChỉĐường" xml:space="preserve">
@@ -126,7 +126,7 @@
   <data name="CôngTy" xml:space="preserve">
     <value>Company</value>
   </data>
-  <data name="GiảiPháp" xml:space="preserve">
+  <data name="Solution" xml:space="preserve">
     <value>Solution</value>
   </data>
   <data name="GiớiThiệu1" xml:space="preserve">
@@ -183,7 +183,7 @@
   <data name="TrựcQuan3D" xml:space="preserve">
     <value>3D Visualization</value>
   </data>
-  <data name="TàiLiệu" xml:space="preserve">
+  <data name="Document" xml:space="preserve">
     <value>Document</value>
   </data>
   <data name="TínhNăngDẫnĐường" xml:space="preserve">
@@ -211,7 +211,7 @@
     <value>Thank you for giving us advice</value>
   </data>
   <data name="EmailDinhDang" xml:space="preserve">
-    <value>Email invalid</value>
+    <value>Email invalid!</value>
   </data>
   <data name="EmailLàBắtBuộc" xml:space="preserve">
     <value>You have to fill in email!</value>
@@ -246,7 +246,7 @@
   <data name="ĐăngNhập" xml:space="preserve">
     <value>Login</value>
   </data>
-  <data name="CảmƠnGópÝ" xml:space="preserve">
+  <data name="Camongopy" xml:space="preserve">
     <value>Thank you for sending us your comments!</value>
   </data>
   <data name="notifyRegisterButtonPopup" xml:space="preserve">
@@ -284,5 +284,26 @@
   </data>
   <data name="VietNam" xml:space="preserve">
     <value>Vietnamese</value>
+  </data>
+  <data name="ContactEnterEmail" xml:space="preserve">
+    <value>Please enter your email!</value>
+  </data>
+  <data name="ContactEnterMessage" xml:space="preserve">
+    <value>Please enter message!</value>
+  </data>
+  <data name="ContactEnterName" xml:space="preserve">
+    <value>Please enter your name!</value>
+  </data>
+  <data name="ContactEnterSubject" xml:space="preserve">
+    <value>Please enter subject!</value>
+  </data>
+  <data name="Camondaquantam" xml:space="preserve">
+    <value>Thank you for being patient. We are doing some work on the site and will be back shortly</value>
+  </data>
+  <data name="Dangxaydung" xml:space="preserve">
+    <value>UNDER CONSTRUCTION</value>
+  </data>
+  <data name="ThôngCảm" xml:space="preserve">
+    <value>Sorry, we’re doing some work on the site</value>
   </data>
 </root>

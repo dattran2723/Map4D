@@ -48,7 +48,7 @@
         #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide h1 {
             color: white;
             font-family: 'UTM Avo';
-            font-size: 45px;
+            font-size: 44px;
             transition: 0.5s;
         }
 
@@ -149,7 +149,7 @@
 
 @media only screen and (max-width: 625px) {
     #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide h1 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide a {

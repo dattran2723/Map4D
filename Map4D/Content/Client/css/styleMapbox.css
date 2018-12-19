@@ -5,7 +5,7 @@
 
     #map-box #map-box-title h1 {
         font-family: 'UTM Avo';
-        font-size: 45px;
+        font-size: 44px;
     }
 
     #map-box #map-box-content {
@@ -97,6 +97,6 @@
 
 @media only screen and (max-width: 625px) {
     #map-box #map-box-title h1 {
-        font-size: 20px;
+        font-size: 24px;
     }
 }
