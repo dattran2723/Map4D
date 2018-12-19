@@ -295,7 +295,7 @@
     <value>Vui lòng nhập tin nhắn!</value>
   </data>
   <data name="ContactEnterName" xml:space="preserve">
-    <value>Vui lòng nhập vào tên của bạn!</value>
+    <value>Vui lòng nhập tên của bạn!</value>
   </data>
   <data name="ContactEnterSubject" xml:space="preserve">
     <value>Vui lòng nhập chủ đề!</value>
