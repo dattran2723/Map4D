@@ -75,10 +75,10 @@ namespace Map4D.Controllers
 
             return View();
         }
-        public ActionResult GetInTouch()
-        {
-            return View();
-        }
+        //public ActionResult GetInTouch()
+        //{
+        //    return View();
+        //}
         [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -91,8 +91,8 @@ namespace Map4D.Controllers
                 db.Contacts.Add(data);
                 db.SaveChanges();
                 SendMail(data.Email);
-                Session["Check"] = 1;
-                return RedirectToAction("Index");
+                ViewBag.Message = "success";
+                return View("Index");
             }
             if (!ModelState.IsValid)
             {

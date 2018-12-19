@@ -24,33 +24,31 @@
 @RenderPage("WebAppRelity.cshtml")
 @RenderPage("BuildWithMap4D.cshtml")
 @RenderPage("GetInTouch.cshtml")
-
 @section scripts{
     <script src="~/Content/sweetalert/js/sweetalert.js"></script>
     <script src="~/Scripts/js/hover-mapbox.js"></script>
     <script src="~/Scripts/jquery.validate.min.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
     @{
-        /**/
-
-        if (Session["Check"] != null)
+        var message = ViewBag.Message;
+        if (message != null)
         {
-            var session = Session["Check"];
-            if (session != null)
-            {
-                <script src="~/Scripts/sweetalert.min.js"></script>
-                <script>
-                    $(document).ready(function () {
-                        debugger
-                        swal({
-                            icon: "success",
-                            title:"@Html.Raw(Map4D.Resources.My_texts.Camongopy)"
-                        });
+            <script>
+                $(document).ready(function () {
+                    swal({
+                        title: "@Html.Raw(Map4D.Resources.My_texts.Camongopy)",
+                        type: "success",
+                        confirmButtonClass: "btn-primary",
+                        confirmButtonText: "OK",
+                        closeOnConfirm: false
+                    }, function () {
+                        var url = '@Url.Action("Index")';
+                        window.location.href = url.replace();
                     });
-                </script>
-            }
-            Session.Clear();
+                });
+            </script>
         }
+
     }
     @*js add content for view Build Map4D*@
     <script src="~/Scripts/js/addContentBuildMap4D.js"></script>
