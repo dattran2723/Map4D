@@ -124,6 +124,42 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Vui lòng nhập Email!.
+        /// </summary>
+        public static string ContactEnterEmail {
+            get {
+                return ResourceManager.GetString("ContactEnterEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vui lòng nhập tin nhắn!.
+        /// </summary>
+        public static string ContactEnterMessage {
+            get {
+                return ResourceManager.GetString("ContactEnterMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vui lòng nhập vào tên của bạn!.
+        /// </summary>
+        public static string ContactEnterName {
+            get {
+                return ResourceManager.GetString("ContactEnterName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vui lòng nhập chủ đề!.
+        /// </summary>
+        public static string ContactEnterSubject {
+            get {
+                return ResourceManager.GetString("ContactEnterSubject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Đã có tài khoản?.
         /// </summary>
         public static string ĐãCóTàiKhoản {
@@ -178,7 +214,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email không đúng định dạng.
+        ///   Looks up a localized string similar to Email không đúng định dạng!.
         /// </summary>
         public static string EmailDinhDang {
             get {

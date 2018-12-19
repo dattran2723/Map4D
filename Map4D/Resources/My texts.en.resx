@@ -211,7 +211,7 @@
     <value>Thank you for giving us advice</value>
   </data>
   <data name="EmailDinhDang" xml:space="preserve">
-    <value>Email invalid</value>
+    <value>Email invalid!</value>
   </data>
   <data name="EmailLàBắtBuộc" xml:space="preserve">
     <value>You have to fill in email!</value>
@@ -284,5 +284,17 @@
   </data>
   <data name="VietNam" xml:space="preserve">
     <value>Vietnamese</value>
+  </data>
+  <data name="ContactEnterEmail" xml:space="preserve">
+    <value>Please enter your email!</value>
+  </data>
+  <data name="ContactEnterMessage" xml:space="preserve">
+    <value>Please enter message!</value>
+  </data>
+  <data name="ContactEnterName" xml:space="preserve">
+    <value>Please enter your name!</value>
+  </data>
+  <data name="ContactEnterSubject" xml:space="preserve">
+    <value>Please enter subject!</value>
   </data>
 </root>
