@@ -2347,11 +2347,11 @@
     <Content Include="Views\Home\CommingSoon.cshtml" />
     <Content Include="Views\Home\Document.cshtml" />
     <Content Include="Views\Sweet\Alert.cshtml" />
+    <Content Include="Views\Home\ProductValue.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Views\ChangeLanguage\" />
     <Folder Include="Views\Language\" />
   </ItemGroup>
   <ItemGroup>
