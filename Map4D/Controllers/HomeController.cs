@@ -34,7 +34,10 @@ namespace Map4D.Controllers
             Response.Cookies.Add(cookie);
             return Redirect(url);
         }
-
+        public ActionResult ProductValue()
+        {
+            return View();
+        }
         [HttpGet]
         public ActionResult Products()
         {
