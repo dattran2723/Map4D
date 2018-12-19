@@ -1,6 +1,7 @@
 ﻿using Map4D.Models;
 using System;
 using System.Globalization;
+using System.Linq;
 using System.Net.Mail;
 using System.Text;
 using System.Threading;
@@ -75,9 +76,10 @@ namespace Map4D.Controllers
             }
             else
             {
-                ViewBag.Check = false;
+
             }
             return View("Index");
+            
         }
 
 
