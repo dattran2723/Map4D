@@ -2,6 +2,7 @@
 using System;
 using System.Globalization;
 using System.Linq;
+using System.Net;
 using System.Net.Mail;
 using System.Text;
 using System.Threading;
@@ -74,12 +75,13 @@ namespace Map4D.Controllers
                 Session["Check"] = 1;
                 return RedirectToAction("Index");
             }
-            else
+            if (!ModelState.IsValid)
             {
-
+                var message = string.Join(" | ", ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage));
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest, message);
             }
             return View("Index");
-            
+
         }
 
 
