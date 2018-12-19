@@ -10,29 +10,33 @@
     margin-top: -19%;
 }
 
-    .direction .right .content {
-        padding-top: 58%;
-        padding-left: 28%;
-        padding-bottom: 51%;
+    .direction .right {
+        padding-left: 0%;
     }
 
-        .direction .right .content .tittle {
-            color: #fff;
-            font-family: 'UTM Avo';
-            font-size: 25.51px;
-            padding-left: 6%;
-            padding-bottom: 2%;
+        .direction .right .content {
+            padding-top: 58%;
+            padding-left: 28%;
+            padding-bottom: 51%;
         }
 
+            .direction .right .content .tittle {
+                color: #fff;
+                font-family: 'UTM Avo';
+                font-size: 26px;
+                padding-left: 6%;
+                padding-bottom: 2%;
+            }
 
-        .direction .right .content .contrary {
-            font-family: 'Myriad Pro';
-            font-size: 15.59px;
-            color: #fff;
-            padding-left: 6%;
-            padding-right: 19%;
-            text-align: justify;
-        }
+
+            .direction .right .content .contrary {
+                font-family: 'Myriad Pro';
+                font-size: 16px;
+                color: #fff;
+                padding-left: 6%;
+                padding-right: 19%;
+                text-align: justify;
+            }
 
 @media only screen and (max-width: 1200px) {
     .direction .right .content .contrary {
@@ -105,11 +109,11 @@
 @media only screen and (max-width: 435px) {
     .direction .right .content .contrary {
         text-align: start;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .direction .right .content .tittle {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .direction {

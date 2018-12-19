@@ -1,8 +1,8 @@
 ﻿<div id="menu-top" class="row">
     <div class="text-center col-md-12" id="menu-recommend">
-            <img src="~/Content/Client/img/icon-page-1_0017_star-.png" />
-            <span>@Map4D.Resources.My_texts.Đăngkýngaybâygiờ</span>
-            <img src="~/Content/Client/img/icon-page-1_0023_continue-.png" />
+        <img src="~/Content/Client/img/icon-page-1_0017_star-.png" />
+        <span>@Map4D.Resources.My_texts.Đăngkýngaybâygiờ</span>
+        <img src="~/Content/Client/img/icon-page-1_0023_continue-.png" />
     </div>
     <nav class="navbar navbar-expand-lg col-md-12  navbar-fixed-top">
         <div class="col-md-2 logo text-right">
@@ -39,22 +39,22 @@
                 <li class="space-item"></li>
                 <li class="nav-item">
                     <div class="btn-group" id="menu-language">
-                        <span>@Map4D.Resources.My_texts.Ngônngữ</span>
                         <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img class="img-responsive" src="@Map4D.Resources.My_texts.FlagLanguage" />
                         </a>
 
                         <div class="dropdown-menu" id="languages">
-                            <button class="dropdown-item" type="button">
+                            <a class="dropdown-item btn" href="@Url.Action("ChangeLanguage", "Home", new { LanguageAbbreviation = "vi", url = Request.Url.AbsolutePath.ToString() })">
                                 <img class="img-responsive" src="~/Content/Client/img/Flag_of_Vietnam.svg.png" />
-                                @Html.ActionLink("Viet Nam", "Change", "Home", new { LanguageAbbreviation = "vn", url = Request.Url.AbsolutePath.ToString() }, null)
-                              
-                            </button>
-                            <button class="dropdown-item" type="button">
+                                <span>@Map4D.Resources.My_texts.VietNam</span>
+
+                            </a>
+
+                            <a class="dropdown-item btn" href="@Url.Action("ChangeLanguage", "Home", new { LanguageAbbreviation = "en-US", url = Request.Url.AbsolutePath.ToString() })">
                                 <img class="img-responsive" src="~/Content/Client/img/Flag_of_the_United_States_(Pantone).png" />
-                                @Html.ActionLink("English", "Change", "Home", new { LanguageAbbreviation = "en", url = Request.Url.AbsolutePath.ToString() }, null)
-                               
-                            </button>
+                                <span>@Map4D.Resources.My_texts.English</span>
+
+                            </a>
                         </div>
                     </div>
                 </li>

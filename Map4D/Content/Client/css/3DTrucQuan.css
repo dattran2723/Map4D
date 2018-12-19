@@ -34,12 +34,12 @@
 
             .trucQuan .right .content h4 {
                 font-family: 'UTM Avo';
-                font-size: 25.51px;
+                font-size: 26px;
             }
 
             .trucQuan .right .content p {
                 font-family: 'Myriad Pro';
-                font-size: 15.59px;
+                font-size: 16px;
             }
 
 
@@ -83,15 +83,24 @@
             .trucQuan .right .content {
                 text-align: center;
                 display: block;
+                padding-right: 15%;
             }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .trucQuan .right .content {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
 }
 
 @media only screen and (max-width: 435px) {
     .trucQuan .right .content h4 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .trucQuan .right .content p {
-        font-size: 12px;
+        font-size: 14px;
     }
 }

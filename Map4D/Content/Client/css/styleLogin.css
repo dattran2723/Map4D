@@ -24,7 +24,7 @@
 
     .login .login-title h1 {
         font-family: 'UTM Avo';
-        font-size: 45px;
+        font-size: 44px;
         color: white;
         margin-bottom: 4%;
         text-align: center;
@@ -66,7 +66,7 @@
     margin-top: 5%;
     color: #324e89;
     font-family: 'Myriad Pro';
-    font-size: 15px;
+    font-size: 16px;
 }
 
 #footer {
@@ -90,7 +90,7 @@
         }
 
     #remember-me {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 
@@ -152,6 +152,6 @@
         }
 
     #remember-me {
-        font-size: 9px;
+        font-size: 10px;
     }
 }

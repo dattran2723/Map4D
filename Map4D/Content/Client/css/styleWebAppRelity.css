@@ -29,58 +29,72 @@
 
             .web-app-relity #web-app-relity-content div p {
                 font-family: 'Myriad Pro';
-                font-size: 15.59px;
+                font-size: 16px;
                 color: #909090;
-                text-align:justify;
+                text-align: justify;
             }
 
-    .web-app-relity #web-app-relity-img{
-        padding-right:0;
+    .web-app-relity #web-app-relity-img {
+        padding-right: 0;
     }
-    .web-app-relity #web-app-relity-img img {
-        width: 100%;
-    }
-@media only screen and (max-width: 1240px){
+
+        .web-app-relity #web-app-relity-img img {
+            width: 100%;
+        }
+
+@media only screen and (max-width: 1240px) {
     .web-app-relity #web-app-relity-content {
         padding-left: 15%;
     }
+
         .web-app-relity #web-app-relity-content img {
             padding-top: 30%;
         }
 }
-@media only screen and (max-width: 1100px){
+
+@media only screen and (max-width: 1100px) {
     .web-app-relity #web-app-relity-content div {
-        max-width:83%;
+        max-width: 83%;
     }
 }
+
 @media only screen and (max-width: 995px) {
     .web-app-relity #web-app-relity-content {
         padding-left: 10%;
     }
+
         .web-app-relity #web-app-relity-content img {
             padding-top: 15%;
         }
 }
+
 @media only screen and (max-width: 767px) {
     .web-app-relity #web-app-relity-content {
         padding-left: 0;
-        text-align:center;
+        text-align: center;
     }
+
         .web-app-relity #web-app-relity-content img {
             width: 24%;
         }
+
         .web-app-relity #web-app-relity-content div {
             margin: auto;
             margin-top: -5%;
         }
 
+            .web-app-relity #web-app-relity-content div p {
+                text-align: center;
+            }
 }
+
 @media only screen and (max-width: 435px) {
     .web-app-relity #web-app-relity-content div h3 {
-        font-size: 22px;
+        font-size: 24px;
     }
+
     .web-app-relity #web-app-relity-content div p {
-        font-size: 12px;
-        text-align:center;
+        font-size: 14px;
+        text-align: center;
     }
 }

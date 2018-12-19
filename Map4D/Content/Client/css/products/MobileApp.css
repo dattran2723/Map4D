@@ -18,7 +18,7 @@
         }
 
             .mobileApp .right .content h3 {
-                font-size: 45.35px;
+                font-size: 44px;
                 font-family: 'UTM Avo';
             }
 
@@ -38,7 +38,7 @@
     }
 
     .mobileApp .right img {
-        width: 40%;
+        width: 48%;
     }
 }
 
@@ -54,7 +54,7 @@
     }
 
     .mobileApp .right .content p {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -76,11 +76,11 @@
 
 @media only screen and (max-width: 625px) {
     .mobileApp .right .content h3 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .mobileApp .right .content p {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -101,7 +101,7 @@
         }
 
         .mobileApp .right .content p {
-            padding-left: 12%;
-            padding-right: 12%;
+            padding-left: 5%;
+            padding-right: 5%;
         }
 }
