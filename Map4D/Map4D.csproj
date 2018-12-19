@@ -2293,6 +2293,7 @@
     <Content Include="Scripts\js\loadPagingCustomers.js" />
     <Content Include="Scripts\js\Notify.js" />
     <Content Include="Scripts\js\responsiveTable.js" />
+    <Content Include="Scripts\js\slideMap.js" />
     <Content Include="Scripts\js\sticky-menu.js" />
     <Content Include="Scripts\js\zoomImgSlideMap.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
