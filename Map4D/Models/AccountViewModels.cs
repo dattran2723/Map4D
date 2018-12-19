@@ -49,49 +49,31 @@ namespace Map4D.Models
 
     public class LoginViewModel
     {
-        [Required(ErrorMessage ="Mời nhập vào")]
+        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "EnterEmail")]
         [Display(Name = "Email")]
-        [EmailAddress(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts),
-            ErrorMessageResourceName = "EmailDinhDang")]
+        [EmailAddress(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "EmailDinhDang")]
         public string Email { get; set; }
 
-        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts)
-            , ErrorMessageResourceName = "MatKhauBatBuoc")]
-        [StringLength(32, MinimumLength = 6,
-            ErrorMessageResourceType = typeof(Map4D.Resources.My_texts),
-                   ErrorMessageResourceName = "ToiThieu"),
-                   DataType(DataType.Password),
-            ]
+        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "EnterPassword")]
+        [StringLength(32, MinimumLength = 6, ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "ToiThieu"), DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Display(Name = "GhiNhớMậtKhẩu", ResourceType =typeof(Map4D.Resources.My_texts))]
+        [Display(Name = "GhiNhớMậtKhẩu", ResourceType = typeof(Map4D.Resources.My_texts))]
         public bool RememberMe { get; set; }
     }
 
     public class RegisterViewModel
     {
 
-        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts),
-            ErrorMessageResourceName = "TênĐăngNhậpLàBắtBuộc")]
-        [Remote("CheckExistUserName", HttpMethod = "get",
-            ErrorMessageResourceType = typeof(Map4D.Resources.My_texts),
-            ErrorMessageResourceName = "Tênđăngnhậpđãtồntại")]
+        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "RegisterEnterUserName")]
+        [Remote("CheckExistUserName", HttpMethod = "get", ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "RegisterExistUserName")]
         public string UserName { get; set; }
-        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts),
-            ErrorMessageResourceName = "EmailLàBắtBuộc")]
-        [EmailAddress(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts),
-            ErrorMessageResourceName = "EmailDinhDang")]
-        [Remote("checkExistEmail", HttpMethod = "POST",
-            ErrorMessageResourceType = typeof(Map4D.Resources.My_texts),
-            ErrorMessageResourceName = "EmailTontai")]
+        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "EnterEmail")]
+        [EmailAddress(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "EmailDinhDang")]
+        [Remote("checkExistEmail", HttpMethod = "POST", ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "EmailTontai")]
         public string Email { get; set; }
-        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts)
-            , ErrorMessageResourceName = "MatKhauBatBuoc")]
-        [StringLength(32, MinimumLength = 6,
-            ErrorMessageResourceType = typeof(Map4D.Resources.My_texts),
-                   ErrorMessageResourceName = "ToiThieu"),
-                   DataType(DataType.Password),
-            ]
+        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "EnterPassword")]
+        [StringLength(32, MinimumLength = 6, ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "ToiThieu"), DataType(DataType.Password)]
         public string Password { get; set; }
     }
 

@@ -8,7 +8,9 @@
                     if (arrayError[i] != "")
                         showError = showError + arrayError[i] + "\n";
                 }
-                swal("",showError,"warning");
+                if (showError != "") {
+                    swal("", showError, "warning");
+                }
             }
         }, 100);
     });

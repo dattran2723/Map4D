@@ -77,7 +77,7 @@
 
 #carouselExampleIndicators .carousel-indicators li {
     display: block;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 #slideMap #carouselExampleIndicators .carousel-inner .carousel-control-prev, #slideMap #carouselExampleIndicators .carousel-inner .carousel-control-next {
