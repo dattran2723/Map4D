@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Bảnggiá" xml:space="preserve">
+  <data name="PriceTable" xml:space="preserve">
     <value>Price Table</value>
   </data>
   <data name="ChỉĐường" xml:space="preserve">
@@ -126,7 +126,7 @@
   <data name="CôngTy" xml:space="preserve">
     <value>Company</value>
   </data>
-  <data name="GiảiPháp" xml:space="preserve">
+  <data name="Solution" xml:space="preserve">
     <value>Solution</value>
   </data>
   <data name="GiớiThiệu1" xml:space="preserve">
@@ -183,7 +183,7 @@
   <data name="TrựcQuan3D" xml:space="preserve">
     <value>3D Visualization</value>
   </data>
-  <data name="TàiLiệu" xml:space="preserve">
+  <data name="Document" xml:space="preserve">
     <value>Document</value>
   </data>
   <data name="TínhNăngDẫnĐường" xml:space="preserve">
@@ -222,8 +222,8 @@
   <data name="GhiNhớMậtKhẩu" xml:space="preserve">
     <value>Remember me?</value>
   </data>
-  <data name="MatKhauBatBuoc" xml:space="preserve">
-    <value>You have to fill in password!</value>
+  <data name="EnterPassword" xml:space="preserve">
+    <value>Please enter your password!</value>
   </data>
   <data name="MậtKhẩu" xml:space="preserve">
     <value>Password</value>
@@ -234,11 +234,11 @@
   <data name="TênĐăngNhập" xml:space="preserve">
     <value>User name</value>
   </data>
-  <data name="TênĐăngNhậpLàBắtBuộc" xml:space="preserve">
-    <value>You have to fill in user name!</value>
+  <data name="RegisterEnterUserName" xml:space="preserve">
+    <value>Please enter user name!</value>
   </data>
-  <data name="Tênđăngnhậpđãtồntại" xml:space="preserve">
-    <value>User name already exist</value>
+  <data name="RegisterExistUserName" xml:space="preserve">
+    <value>User name already exist!</value>
   </data>
   <data name="ĐãCóTàiKhoản" xml:space="preserve">
     <value>Have account?</value>
@@ -247,7 +247,7 @@
     <value>Login</value>
   </data>
   <data name="Camongopy" xml:space="preserve">
-    <value>Thank you for sending us your comments!</value>
+    <value>Thank you for contacting us!</value>
   </data>
   <data name="notifyRegisterButtonPopup" xml:space="preserve">
     <value>Ok</value>
@@ -285,7 +285,7 @@
   <data name="VietNam" xml:space="preserve">
     <value>Vietnamese</value>
   </data>
-  <data name="ContactEnterEmail" xml:space="preserve">
+  <data name="EnterEmail" xml:space="preserve">
     <value>Please enter your email!</value>
   </data>
   <data name="ContactEnterMessage" xml:space="preserve">

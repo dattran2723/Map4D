@@ -30,7 +30,7 @@
 
         #carouselExampleIndicators .carousel-indicators li {
             display: block;
-            margin-top: 5px;
+            margin-top: 10px;
         }
 
     #carouselExampleIndicators .carousel-inner .carousel-item .row .image-slide {

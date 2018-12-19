@@ -61,15 +61,6 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bảng giá.
-        /// </summary>
-        public static string Bảnggiá {
-            get {
-                return ResourceManager.GetString("Bảnggiá", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Bản quyền năm 2018 từ.
         /// </summary>
         public static string Bảnquyền {
@@ -97,8 +88,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cảm ơn bạn đã gửi ý kiến cho chúng tôi !.
-        ///   Looks up a localized string similar to Cảm ơn bạn đã gửi ý kiến cho chúng tôi!.
+        ///   Looks up a localized string similar to Cảm ơn bạn đã liên hệ với chúng tôi!.
         /// </summary>
         public static string Camongopy {
             get {
@@ -130,15 +120,6 @@ namespace Map4D.Resources {
         public static string CôngtyIOTLink {
             get {
                 return ResourceManager.GetString("CôngtyIOTLink", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Vui lòng nhập Email!.
-        /// </summary>
-        public static string ContactEnterEmail {
-            get {
-                return ResourceManager.GetString("ContactEnterEmail", resourceCulture);
             }
         }
         
@@ -233,6 +214,15 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tài Liệu.
+        /// </summary>
+        public static string Document {
+            get {
+                return ResourceManager.GetString("Document", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Email không đúng định dạng!.
         /// </summary>
         public static string EmailDinhDang {
@@ -269,6 +259,24 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Vui lòng nhập Email!.
+        /// </summary>
+        public static string EnterEmail {
+            get {
+                return ResourceManager.GetString("EnterEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vui lòng nhập mật khẩu!.
+        /// </summary>
+        public static string EnterPassword {
+            get {
+                return ResourceManager.GetString("EnterPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to /Content/Client/img/Flag_of_Vietnam.svg.png.
         /// </summary>
         public static string FlagLanguage {
@@ -296,15 +304,6 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Giải Pháp.
-        /// </summary>
-        public static string GiảiPháp {
-            get {
-                return ResourceManager.GetString("GiảiPháp", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Là bản đồ duy nhất ở Việt Nam hiển thị bản đồ 4D theo thời gian thực. Được xây dựng từ nhiều lớp dữ liệu, sẵn sàng kết nối và hướng tới 1 thành phố thông minh trực tuyến. Hướng đến việc tích hợp nhiều ứng dụng vào một nơi cho việc quản lý nhà nước, phục vụ sản xuất kinh doanh cho doanh nghiệp và người dân..
         /// </summary>
         public static string GiớiThiệu1 {
@@ -314,7 +313,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gửi ngay bây giờ.
+        ///   Looks up a localized string similar to Gửi ngay.
         /// </summary>
         public static string GửiNgayBâyGiờ {
             get {
@@ -413,15 +412,6 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mật khẩu là bắt buộc!.
-        /// </summary>
-        public static string MatKhauBatBuoc {
-            get {
-                return ResourceManager.GetString("MatKhauBatBuoc", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Mỗi địa điểm bạn tới đều có những dịch vụ cần thiết được hỗ trợ. Map 4D với kho dữ liệu địa điểm khổng lồ, đầy đủ các tiện ích, giúp bạn dễ dàng tìm kiếm và khám phá..
         /// </summary>
         public static string MỗiĐiaiemBanToi {
@@ -485,6 +475,33 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bảng giá.
+        /// </summary>
+        public static string PriceTable {
+            get {
+                return ResourceManager.GetString("PriceTable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vui lòng nhập tên đăng nhập!.
+        /// </summary>
+        public static string RegisterEnterUserName {
+            get {
+                return ResourceManager.GetString("RegisterEnterUserName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tên đăng nhập đã tồn tại!.
+        /// </summary>
+        public static string RegisterExistUserName {
+            get {
+                return ResourceManager.GetString("RegisterExistUserName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sản phẩm.
         /// </summary>
         public static string SanPham {
@@ -503,11 +520,20 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tài Liệu.
+        ///   Looks up a localized string similar to Giải Pháp.
         /// </summary>
-        public static string TàiLiệu {
+        public static string Solution {
             get {
-                return ResourceManager.GetString("TàiLiệu", resourceCulture);
+                return ResourceManager.GetString("Solution", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string String1 {
+            get {
+                return ResourceManager.GetString("String1", resourceCulture);
             }
         }
         
@@ -517,24 +543,6 @@ namespace Map4D.Resources {
         public static string TênĐăngNhập {
             get {
                 return ResourceManager.GetString("TênĐăngNhập", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Tên đăng nhập đã tồn tại!.
-        /// </summary>
-        public static string Tênđăngnhậpđãtồntại {
-            get {
-                return ResourceManager.GetString("Tênđăngnhậpđãtồntại", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Tên đăng nhập là bắt buộc!.
-        /// </summary>
-        public static string TênĐăngNhậpLàBắtBuộc {
-            get {
-                return ResourceManager.GetString("TênĐăngNhậpLàBắtBuộc", resourceCulture);
             }
         }
         

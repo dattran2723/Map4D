@@ -9,29 +9,26 @@
         <h1>@Map4D.Resources.My_texts.LiênHệ</h1>
     </div>
     <div class="col-md-12 text-center" id="get-in-touch-icon">
-        <a href="#" class="mr-2" title="Facebook"><label><i class="fab fa-facebook-f"></i></label></a>
-        <a href="#" title="Twitter"><label><i class="fab fa-twitter"></i></label></a>
-        <a href="#" class="ml-2" title="Pinterest"><label><i class="fab fa-pinterest-p"></i></label></a>
+        <a href="" class="mr-2" title="Facebook"><label><i class="fab fa-facebook-f"></i></label></a>
+        <a href="" title="Twitter"><label><i class="fab fa-twitter"></i></label></a>
+        <a href="" class="ml-2" title="Pinterest"><label><i class="fab fa-pinterest-p"></i></label></a>
     </div>
     <div class="col-12 text-center" id="get-in-touch-form">
         @using (Html.BeginForm("GetInTouch", "Home", FormMethod.Post, new { @class = "getintouch" }))
         {
             @Html.AntiForgeryToken()
-            @Html.ValidationSummary(true, "", new { @class = "text-danger errorTotal" })
+            @Html.ValidationSummary(true, "", new { @class = "text-danger errorTotal d-none" })
 
         <div class="input-group col-12 col-sm-10 col-md-7 col-lg-5 mx-auto text-center input-form">
-            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "w-50", @id = "your-name",
-           @placeholder = Map4D.Resources.My_texts.Hovaten, @name = "name", @type = "text" ,@required="", 
-           @datatoggle = "tooltip"
-       } })
+            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "w-50", @id = "your-name", @placeholder = Map4D.Resources.My_texts.Hovaten} })
 
             @Html.ValidationMessageFor(model => model.Name, "", new { @class = "d-none" })
 
-            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "w-50", @id = "your-email", @placeholder = "Email", @name = "name", @type = "text" } })
+            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "w-50", @id = "your-email", @placeholder = "Email"} })
 
             @Html.ValidationMessageFor(model => model.Email, "", new { @class = "d-none" })
 
-            @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "w-100", @id = "subject", @placeholder = Map4D.Resources.My_texts.Tiêuđề, @name = "name", @type = "text" } })
+            @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "w-100", @id = "subject", @placeholder = Map4D.Resources.My_texts.Tiêuđề } })
 
             @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "d-none" })
 
