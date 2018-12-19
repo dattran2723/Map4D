@@ -44,6 +44,22 @@ namespace Map4D.Controllers
         {
             return View();
         }
+        public ActionResult Solution()
+        {
+            ViewBag.Title = Map4D.Resources.My_texts.Solution;
+            return View("CommingSoon");
+        }
+        public ActionResult Document()
+        {
+            ViewBag.Title = Map4D.Resources.My_texts.Document;
+            return View("CommingSoon");
+        }
+        public ActionResult PriceTable()
+        {
+            ViewBag.Title = Map4D.Resources.My_texts.PriceTable;
+            return View("CommingSoon");
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
