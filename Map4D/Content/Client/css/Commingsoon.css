@@ -23,9 +23,8 @@
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
         font-size: 26px;
-        padding-top: 20%;
+        padding-top: 14%;
         color: #154695;
-        margin-top: -5%;
     }
 
     .bg .p2 {
@@ -33,23 +32,23 @@
         color: white;
         font-family: 'Montserrat-Bold';
         font-weight: bold;
-        padding-top: 8%;
+        padding-top: 4%;
     }
 
 
     .bg .p3 {
-        margin-top: -20%;
         font-family: 'UTM Avo';
         font-size: 25px;
         color: #363732;
+        padding-top: 0%;
     }
 
 @media only screen and (max-width:1374px) {
     .bg p{
-        padding-top:20%;
+        padding-top:25%;
     }
     .bg .p2{
-        padding-top:15%;
+        padding-top:8%;
         font-size:80px;
     }
     .bg .p3{
@@ -60,18 +59,15 @@
 
 @media only screen and (max-width:1244px) {
     .bg .p3 {
-        margin-top: -20%;
     }
 }
 
 @media only screen and (max-width:1149px) {
     .bg .p2 {
         font-size: 88px;
-        margin-top: -8%;
     }
 
     .bg .p3 {
-        margin-top: -20%;
         font-size: 20px;
     }
 }
@@ -83,11 +79,9 @@
 
     .bg .p2 {
         font-size: 80px;
-        margin-top: -2%;
     }
 
     .bg .p3 {
-        margin-top: -13%;
         font-size: 20px;
     }
 }
@@ -95,37 +89,36 @@
 @media only screen and (max-width:1021px) {
     .bg .p2 {
         font-size: 70px;
-        margin-top: -5%;
     }
 }
 
 @media only screen and (max-width:690px) {
     .bg p {
         font-size: 16px;
-        margin-top:20%;
+        padding-top:50%;
     }
 
     .bg .p2 {
         font-size: 44px;
-        margin-top: 12%;
     }
 
     .bg .p3 {
         font-size: 16px;
-        margin-top: -20%;
     }
 }
 
-@media only screen and (max-width:415px) {
-    .bg .p {
+@media only screen and (max-width:447px) {
+    .bg p {
         font-size: 15px;
+        padding-top:70%;
     }
 
     .bg .p2 {
-        margin-top: 18%;
     }
 
     .bg .p3 {
-        margin-top: -45%;
     }
+}
+@media only screen and (max-width:380px){
+    .bg 
 }
