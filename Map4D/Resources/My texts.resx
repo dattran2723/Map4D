@@ -249,8 +249,8 @@
   <data name="ĐăngNhập" xml:space="preserve">
     <value>Đăng nhập</value>
   </data>
-  <data name="CảmƠnGópÝ" xml:space="preserve">
-    <value>Cảm ơn bạn đã gửi ý kiến cho chúng tôi!</value>
+  <data name="Camongopy" xml:space="preserve">
+    <value>Cảm ơn bạn đã gửi ý kiến cho chúng tôi !</value>
   </data>
   <data name="notifyRegisterButtonPopup" xml:space="preserve">
     <value>Xong</value>
@@ -299,5 +299,14 @@
   </data>
   <data name="ContactEnterSubject" xml:space="preserve">
     <value>Vui lòng nhập chủ đề!</value>
+  </data>
+  <data name="Camondaquantam" xml:space="preserve">
+    <value>Cảm ơn bạn đã quan tâm, chúng tôi đang xây dựng nội dung và sẽ trở lại sớm.</value>
+  </data>
+  <data name="Dangxaydung" xml:space="preserve">
+    <value>Đang xây dựng</value>
+  </data>
+  <data name="ThôngCảm" xml:space="preserve">
+    <value>Thông cảm, chúng tôi đang xây dựng trang này</value>
   </data>
 </root>

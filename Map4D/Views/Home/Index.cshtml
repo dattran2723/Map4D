@@ -13,6 +13,7 @@
     <link href="~/Content/Client/css/styleWebAppRelity.css" rel="stylesheet" />
     <link href="~/Content/Client/css/BuildMap4D.css" rel="stylesheet" />
     <link href="~/Content/Client/css/styleGetInTouch.css" rel="stylesheet" />
+    <link href="~/Content/sweetalert/css/sweetalert.min.css" rel="stylesheet" />
 }
 @RenderPage("Slide.cshtml")
 @RenderPage("Mapbox.cshtml")
@@ -22,7 +23,9 @@
 @RenderPage("WebAppRelity.cshtml")
 @RenderPage("BuildWithMap4D.cshtml")
 @RenderPage("GetInTouch.cshtml")
+
 @section scripts{
+    <script src="~/Content/sweetalert/js/sweetalert.js"></script>
     <script src="~/Scripts/js/hover-mapbox.js"></script>
     <script src="~/Scripts/jquery.validate.min.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
@@ -37,16 +40,16 @@
                 <script src="~/Scripts/sweetalert.min.js"></script>
                 <script>
                     $(document).ready(function () {
+                        debugger
                         swal({
                             icon: "success",
-                            title: "@Map4D.Resources.My_texts.CảmƠnGópÝ",
+                            title:"@Html.Raw(Map4D.Resources.My_texts.Camongopy)"
                         });
                     });
                 </script>
             }
             Session.Clear();
         }
-        Session.Clear();
     }
     @*js add content for view Build Map4D*@
     <script src="~/Scripts/js/addContentBuildMap4D.js"></script>
