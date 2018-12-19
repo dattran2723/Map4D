@@ -44,6 +44,20 @@
         color: #363732;
     }
 
+@media only screen and (max-width:1374px) {
+    .bg p{
+        padding-top:200px;
+    }
+    .bg .p2{
+        padding-top:15%;
+        font-size:80px;
+    }
+    .bg .p3{
+        padding-top:-16%;
+    }
+
+}
+
 @media only screen and (max-width:1244px) {
     .bg .p3 {
         margin-top: -20%;
@@ -73,7 +87,7 @@
     }
 
     .bg .p3 {
-        margin-top: -25%;
+        margin-top: -13%;
         font-size: 20px;
     }
 }
@@ -97,7 +111,7 @@
 
     .bg .p3 {
         font-size: 16px;
-        margin-top: -45%;
+        margin-top: -20%;
     }
 }
 
