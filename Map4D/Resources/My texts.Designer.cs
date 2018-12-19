@@ -142,7 +142,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vui lòng nhập chủ đề!.
+        ///   Looks up a localized string similar to Vui lòng nhập tiêu đề!.
         /// </summary>
         public static string ContactEnterSubject {
             get {
