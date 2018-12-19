@@ -14,7 +14,7 @@
     <!-- /.login-logo -->
     <div class="login-content col-12">
         <div class="col-11 col-sm-6 col-md-4 mx-auto form-login">
-            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal"}))
             {
                 @Html.AntiForgeryToken()
                 @Html.ValidationSummary(true,"", new { @class = "text-danger" })

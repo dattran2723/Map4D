@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Bảnggiá" xml:space="preserve">
+  <data name="PriceTable" xml:space="preserve">
     <value>Bảng giá</value>
   </data>
   <data name="ChỉĐường" xml:space="preserve">
@@ -126,7 +126,7 @@
   <data name="CôngTy" xml:space="preserve">
     <value>Công ty</value>
   </data>
-  <data name="GiảiPháp" xml:space="preserve">
+  <data name="Solution" xml:space="preserve">
     <value>Giải Pháp</value>
   </data>
   <data name="GiớiThiệu1" xml:space="preserve">
@@ -183,7 +183,7 @@
   <data name="TrựcQuan3D" xml:space="preserve">
     <value>3D trực quan</value>
   </data>
-  <data name="TàiLiệu" xml:space="preserve">
+  <data name="Document" xml:space="preserve">
     <value>Tài Liệu</value>
   </data>
   <data name="TínhNăngDẫnĐường" xml:space="preserve">
@@ -211,7 +211,7 @@
     <value>Cảm ơn quý khách đã góp ý cho chúng tôi</value>
   </data>
   <data name="EmailDinhDang" xml:space="preserve">
-    <value>Email không đúng định dạng</value>
+    <value>Email không đúng định dạng!</value>
   </data>
   <data name="EmailLàBắtBuộc" xml:space="preserve">
     <value>Email là bắt buộc!</value>
@@ -249,8 +249,8 @@
   <data name="ĐăngNhập" xml:space="preserve">
     <value>Đăng nhập</value>
   </data>
-  <data name="CảmƠnGópÝ" xml:space="preserve">
-    <value>Cảm ơn bạn đã gửi ý kiến cho chúng tôi!</value>
+  <data name="Camongopy" xml:space="preserve">
+    <value>Cảm ơn bạn đã gửi ý kiến cho chúng tôi !</value>
   </data>
   <data name="notifyRegisterButtonPopup" xml:space="preserve">
     <value>Xong</value>
@@ -287,5 +287,29 @@
   </data>
   <data name="TrangChu" xml:space="preserve">
     <value>Trang chủ</value>
+  </data>
+  <data name="ContactEnterEmail" xml:space="preserve">
+    <value>Vui lòng nhập Email!</value>
+  </data>
+  <data name="ContactEnterMessage" xml:space="preserve">
+    <value>Vui lòng nhập tin nhắn!</value>
+  </data>
+  <data name="ContactEnterName" xml:space="preserve">
+    <value>Vui lòng nhập tên của bạn!</value>
+  </data>
+  <data name="ContactEnterSubject" xml:space="preserve">
+    <value>Vui lòng nhập chủ đề!</value>
+  </data>
+  <data name="Camondaquantam" xml:space="preserve">
+    <value>Cảm ơn bạn đã quan tâm, chúng tôi đang xây dựng nội dung và sẽ trở lại sớm.</value>
+  </data>
+  <data name="Dangxaydung" xml:space="preserve">
+    <value>Đang xây dựng</value>
+  </data>
+  <data name="ThôngCảm" xml:space="preserve">
+    <value>Thông cảm, chúng tôi đang xây dựng trang này</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
   </data>
 </root>

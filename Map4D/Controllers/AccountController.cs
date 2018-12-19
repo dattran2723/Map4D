@@ -56,7 +56,7 @@ namespace Map4D.Controllers
         // GET: /Account/Login
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
-        {
+        {           
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
@@ -195,8 +195,8 @@ namespace Map4D.Controllers
                 return View(model);
             }
             return View(model);
-        }
-
+        }   
+        
 
         //
         // GET: /Account/ConfirmEmail
@@ -311,6 +311,7 @@ namespace Map4D.Controllers
         //
         // GET: /Account/SendCode
         [AllowAnonymous]
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         public async Task<ActionResult> SendCode(string returnUrl, bool rememberMe)
         {
             var userId = await SignInManager.GetVerifiedUserIdAsync();

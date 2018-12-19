@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../../../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UTM Avo';
+    src: url('../../../fonts/UTM Avo.ttf') format('truetype');
+}
+
+.bg {
+    background-image: url("/Content/Client/img/bg.jpg");
+    height: 735px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 2px;
+}
+
+    .bg p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        padding-top: 250px;
+        color: #154695;
+        margin-top: -5%;
+    }
+
+    .bg .p2 {
+        font-size: 110px;
+        color: white;
+        font-family: 'Montserrat-Bold';
+        font-weight: bold;
+        padding-top: 12%;
+    }
+
+
+    .bg .p3 {
+        margin-top: -18%;
+        font-family: 'UTM Avo';
+        font-size: 30px;
+        color: #363732;
+    }
+
+@media only screen and (max-width:1374px) {
+    .bg p{
+        padding-top:200px;
+    }
+    .bg .p2{
+        padding-top:15%;
+        font-size:80px;
+    }
+    .bg .p3{
+        padding-top:-16%;
+    }
+
+}
+
+@media only screen and (max-width:1244px) {
+    .bg .p3 {
+        margin-top: -20%;
+    }
+}
+
+@media only screen and (max-width:1149px) {
+    .bg .p2 {
+        font-size: 88px;
+        margin-top: -8%;
+    }
+
+    .bg .p3 {
+        margin-top: -20%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:1122px) {
+    .bg .p {
+        font-size: 10px;
+    }
+
+    .bg .p2 {
+        font-size: 80px;
+        margin-top: -2%;
+    }
+
+    .bg .p3 {
+        margin-top: -13%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:1021px) {
+    .bg .p2 {
+        font-size: 70px;
+        margin-top: -5%;
+    }
+}
+
+@media only screen and (max-width:690px) {
+    .bg p {
+        font-size: 16px;
+    }
+
+    .bg .p2 {
+        font-size: 44px;
+        margin-top: 10%;
+    }
+
+    .bg .p3 {
+        font-size: 16px;
+        margin-top: -20%;
+    }
+}
+
+@media only screen and (max-width:415px) {
+    .bg .p {
+        font-size: 15px;
+    }
+
+    .bg .p2 {
+        margin-top: 18%;
+    }
+
+    .bg .p3 {
+        margin-top: -45%;
+    }
+}

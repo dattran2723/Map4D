@@ -1,6 +1,8 @@
 ﻿using Map4D.Models;
 using System;
 using System.Globalization;
+using System.Linq;
+using System.Net;
 using System.Net.Mail;
 using System.Text;
 using System.Threading;
@@ -38,11 +40,29 @@ namespace Map4D.Controllers
         {
             return View();
         }
+        public ActionResult CommingSoon()
+        {
+            return View();
+        }
+        public ActionResult Solution()
+        {
+            ViewBag.Title = Map4D.Resources.My_texts.Solution;
+            return View("CommingSoon");
+        }
+        public ActionResult Document()
+        {
+            ViewBag.Title = Map4D.Resources.My_texts.Document;
+            return View("CommingSoon");
+        }
+        public ActionResult PriceTable()
+        {
+            ViewBag.Title = Map4D.Resources.My_texts.PriceTable;
+            return View("CommingSoon");
+        }
 
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
@@ -56,6 +76,7 @@ namespace Map4D.Controllers
         {
             return View();
         }
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
         [HttpPost]
@@ -70,11 +91,13 @@ namespace Map4D.Controllers
                 Session["Check"] = 1;
                 return RedirectToAction("Index");
             }
-            else
+            if (!ModelState.IsValid)
             {
-                ViewBag.Check = false;
+                var message = string.Join(" | ", ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage));
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest, message);
             }
             return View("Index");
+
         }
 
 
