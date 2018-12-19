@@ -289,7 +289,7 @@
     <value>Trang chủ</value>
   </data>
   <data name="EnterEmail" xml:space="preserve">
-    <value>Vui lòng nhập Email!</value>
+    <value>Vui lòng nhập email!</value>
   </data>
   <data name="ContactEnterMessage" xml:space="preserve">
     <value>Vui lòng nhập tin nhắn!</value>
