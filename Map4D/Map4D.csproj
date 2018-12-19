@@ -2027,6 +2027,9 @@
     <Content Include="Content\Client\img\left.png" />
     <Content Include="Content\Client\img\LOGO MAP 4d-05.png" />
     <Content Include="Content\Client\img\logoMap4D.png" />
+    <Content Include="Content\Client\img\man-one.jpg" />
+    <Content Include="Content\Client\img\page-2_0000_Layer-3 - Copy.png" />
+    <Content Include="Content\Client\img\page-2_0000_Layer-3.png" />
     <Content Include="Content\Client\img\products\page-2_0000_Layer-3.png" />
     <Content Include="Content\Client\img\products\page-2_0001_Content-Slider-A-15-copy-3.png" />
     <Content Include="Content\Client\img\products\page-2_0002_Content-Slider-A-15-copy-3.png" />
@@ -2042,6 +2045,7 @@
     <Content Include="Content\Client\img\Untitled-1_0000_Mask-by-Mask.png" />
     <Content Include="Content\Client\img\Untitled-1_0001_footer-background.png" />
     <Content Include="Content\Client\img\right.png" />
+    <Content Include="Content\Client\img\Untitled.png" />
     <Content Include="Content\sweetalert\bootstrap-sweetalert.png" />
     <Content Include="Content\sweetalert\css\sweetalert.css" />
     <Content Include="Content\sweetalert\docs.css" />
