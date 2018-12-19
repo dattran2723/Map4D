@@ -149,7 +149,7 @@
 
 @media only screen and (max-width: 625px) {
     #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide a {

@@ -29,7 +29,7 @@
     }
 
 #get-in-touch-form input {
-    height: 72px;
+    height: 60px;
     padding: 20px;
     border: 0.7px solid rgba(55, 55, 55, 0.09);
 }
@@ -43,7 +43,7 @@
     }
 
 #get-in-touch-form textarea {
-    height: 150px;
+    height: 140px;
     padding: 20px;
     border: 0.7px solid rgba(55, 55, 55, 0.09);
     border-bottom-left-radius: 20px;
