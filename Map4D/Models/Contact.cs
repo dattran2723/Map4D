@@ -15,21 +15,21 @@ namespace Map4D.Models
         public int Id { get; set; }
 
         [DisplayName("Họ & tên")]
-        [Required(ErrorMessage = "Vui lòng nhập vào tên của bạn")]        
+        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "ContactEnterName")]
         [MaxLength(255)]
         public string Name { get; set; }
 
         [DisplayName("Email")]
-        [Required(ErrorMessage = "Vui lòng nhập Email!")]
-        [EmailAddress(ErrorMessage = "Bạn hãy nhập chính xác địa chỉ email của mình")]
+        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "ContactEnterEmail")]
+        [EmailAddress(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "EmailDinhDang")]
         public string Email { get; set; }
 
         [DisplayName("Tiêu đề")]
-        [Required(ErrorMessage = "Mời nhập vào tiêu đề")]
+        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "ContactEnterSubject")]
         public string Subject { get; set; }
 
         [DisplayName("Tin nhắn")]
-        [Required(ErrorMessage = "Mời bạn nhập vào ý kiến của mình")]
+        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "ContactEnterMessage")]
         public string Message { get; set; }
 
         [DisplayName("Ngày tạo")]

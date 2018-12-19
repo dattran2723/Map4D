@@ -211,7 +211,7 @@
     <value>Cảm ơn quý khách đã góp ý cho chúng tôi</value>
   </data>
   <data name="EmailDinhDang" xml:space="preserve">
-    <value>Email không đúng định dạng</value>
+    <value>Email không đúng định dạng!</value>
   </data>
   <data name="EmailLàBắtBuộc" xml:space="preserve">
     <value>Email là bắt buộc!</value>
@@ -287,6 +287,18 @@
   </data>
   <data name="TrangChu" xml:space="preserve">
     <value>Trang chủ</value>
+  </data>
+  <data name="ContactEnterEmail" xml:space="preserve">
+    <value>Vui lòng nhập Email!</value>
+  </data>
+  <data name="ContactEnterMessage" xml:space="preserve">
+    <value>Vui lòng nhập tin nhắn!</value>
+  </data>
+  <data name="ContactEnterName" xml:space="preserve">
+    <value>Vui lòng nhập tên của bạn!</value>
+  </data>
+  <data name="ContactEnterSubject" xml:space="preserve">
+    <value>Vui lòng nhập chủ đề!</value>
   </data>
   <data name="Camondaquantam" xml:space="preserve">
     <value>Cảm ơn bạn đã quan tâm, chúng tôi đang xây dựng nội dung và sẽ trở lại sớm.</value>
