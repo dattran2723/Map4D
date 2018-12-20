@@ -43,6 +43,10 @@ namespace Map4D.Controllers
         {
             return View();
         }
+        public ActionResult ProductValue()
+        {
+            return View();
+        }
         public ActionResult CommingSoon()
         {
             return View();
