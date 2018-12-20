@@ -108,9 +108,9 @@ namespace Map4D.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Công ty.
         /// </summary>
-        public static string CôngTy {
+        public static string Company {
             get {
-                return ResourceManager.GetString("CôngTy", resourceCulture);
+                return ResourceManager.GetString("Company", resourceCulture);
             }
         }
         
@@ -484,6 +484,15 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sản phẩm.
+        /// </summary>
+        public static string Product {
+            get {
+                return ResourceManager.GetString("Product", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Vui lòng nhập tên đăng nhập!.
         /// </summary>
         public static string RegisterEnterUserName {
@@ -498,24 +507,6 @@ namespace Map4D.Resources {
         public static string RegisterExistUserName {
             get {
                 return ResourceManager.GetString("RegisterExistUserName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sản phẩm.
-        /// </summary>
-        public static string SanPham {
-            get {
-                return ResourceManager.GetString("SanPham", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sản Phẩm.
-        /// </summary>
-        public static string SảnPhẩm {
-            get {
-                return ResourceManager.GetString("SảnPhẩm", resourceCulture);
             }
         }
         

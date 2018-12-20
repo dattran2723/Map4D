@@ -123,7 +123,7 @@
   <data name="ChỉĐường" xml:space="preserve">
     <value>Chỉ đường</value>
   </data>
-  <data name="CôngTy" xml:space="preserve">
+  <data name="Company" xml:space="preserve">
     <value>Công ty</value>
   </data>
   <data name="Solution" xml:space="preserve">
@@ -164,9 +164,6 @@
   </data>
   <data name="NềntảngMap4D" xml:space="preserve">
     <value>Nền tảng Map4D</value>
-  </data>
-  <data name="SảnPhẩm" xml:space="preserve">
-    <value>Sản Phẩm</value>
   </data>
   <data name="TinNhắn" xml:space="preserve">
     <value>Tin nhắn</value>
@@ -282,7 +279,7 @@
   <data name="VietNam" xml:space="preserve">
     <value>Tiếng Việt</value>
   </data>
-  <data name="SanPham" xml:space="preserve">
+  <data name="Product" xml:space="preserve">
     <value>Sản phẩm</value>
   </data>
   <data name="TrangChu" xml:space="preserve">
