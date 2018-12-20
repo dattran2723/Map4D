@@ -20,7 +20,7 @@ namespace Map4D.Models
         public string Name { get; set; }
 
         [DisplayName("Email")]
-        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "ContactEnterEmail")]
+        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "EnterEmail")]
         [EmailAddress(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "EmailDinhDang")]
         public string Email { get; set; }
 

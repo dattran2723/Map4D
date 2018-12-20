@@ -1,13 +1,13 @@
 ﻿<div id="menu-top" class="row">
     <div class="text-center col-md-12" id="menu-recommend">
-        <img src="~/Content/Client/img/icon-page-1_0017_star-.png" />
+        <img src="~/Content/Client/img/icon-page-1_0017_star-.png" alt="" />
         <span>@Map4D.Resources.My_texts.Đăngkýngaybâygiờ</span>
-        <img src="~/Content/Client/img/icon-page-1_0023_continue-.png" />
+        <img src="~/Content/Client/img/icon-page-1_0023_continue-.png" alt="" />
     </div>
     <nav class="navbar navbar-expand-lg col-md-12  navbar-fixed-top">
         <div class="col-md-2 logo text-right">
             <a class="navbar-brand" href="@Url.Action("Index", "Home")" id="logo-map4d" title="Map4D">
-                <img class="img-responsive w-75" src="~/Content/Client/img/icon-page-1_0022_logo-map-4d.png" />
+                <img class="img-responsive w-75" src="~/Content/Client/img/icon-page-1_0022_logo-map-4d.png" alt="" />
             </a>
         </div>
         <button class="navbar-toggler text-right" id="btn-menu" type="button" data-toggle="collapse" data-target=".showMenu" aria-controls="showMenu">
@@ -17,7 +17,7 @@
         <div class="collapse navbar-collapse showMenu" id="list-menu-top">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-100">
                 <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Products", "Home")">@Map4D.Resources.My_texts.SảnPhẩm</a>
+                    <a class="nav-link" href="@Url.Action("Products", "Home")">@Map4D.Resources.My_texts.Product</a>
 
                 </li>
                 <li class="space-item">|</li>
@@ -30,7 +30,7 @@
                 </li>
                 <li class="space-item">|</li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://www.iotlink.com.vn/">@Map4D.Resources.My_texts.CôngTy</a>
+                    <a class="nav-link" href="http://www.iotlink.com.vn/">@Map4D.Resources.My_texts.Company</a>
                 </li>
                 <li class="space-item">|</li>
                 <li class="nav-item">
@@ -40,18 +40,18 @@
                 <li class="nav-item">
                     <div class="btn-group" id="menu-language">
                         <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="img-responsive" src="@Map4D.Resources.My_texts.FlagLanguage" />
+                            <img class="img-responsive" src="@Map4D.Resources.My_texts.FlagLanguage" alt="" />
                         </a>
 
                         <div class="dropdown-menu" id="languages">
                             <a class="dropdown-item btn" href="@Url.Action("ChangeLanguage", "Home", new { LanguageAbbreviation = "vi", url = Request.Url.AbsolutePath.ToString() })">
-                                <img class="img-responsive" src="~/Content/Client/img/Flag_of_Vietnam.svg.png" />
+                                <img class="img-responsive" src="~/Content/Client/img/Flag_of_Vietnam.svg.png" alt="" />
                                 <span>@Map4D.Resources.My_texts.VietNam</span>
 
                             </a>
 
                             <a class="dropdown-item btn" href="@Url.Action("ChangeLanguage", "Home", new { LanguageAbbreviation = "en-US", url = Request.Url.AbsolutePath.ToString() })">
-                                <img class="img-responsive" src="~/Content/Client/img/Flag_of_the_United_States_(Pantone).png" />
+                                <img class="img-responsive" src="~/Content/Client/img/Flag_of_the_United_States_(Pantone).png"  alt=""/>
                                 <span>@Map4D.Resources.My_texts.English</span>
 
                             </a>

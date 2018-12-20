@@ -34,7 +34,10 @@ namespace Map4D.Controllers
             Response.Cookies.Add(cookie);
             return Redirect(url);
         }
-
+        public ActionResult ProductValue()
+        {
+            return View();
+        }
         [HttpGet]
         public ActionResult Products()
         {
@@ -57,9 +60,8 @@ namespace Map4D.Controllers
         public ActionResult PriceTable()
         {
             ViewBag.Title = Map4D.Resources.My_texts.PriceTable;
-            return View("CommingSoon");
+            return View();
         }
-
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -72,10 +74,10 @@ namespace Map4D.Controllers
 
             return View();
         }
-        public ActionResult GetInTouch()
-        {
-            return View();
-        }
+        //public ActionResult GetInTouch()
+        //{
+        //    return View();
+        //}
         [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -88,8 +90,8 @@ namespace Map4D.Controllers
                 db.Contacts.Add(data);
                 db.SaveChanges();
                 SendMail(data.Email);
-                Session["Check"] = 1;
-                return RedirectToAction("Index");
+                ViewBag.Message = "success";
+                return View("Index");
             }
             if (!ModelState.IsValid)
             {

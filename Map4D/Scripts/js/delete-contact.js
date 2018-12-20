@@ -21,7 +21,7 @@
                             if (json) {
                                 swal({
                                     title: "Xóa thành công",
-                                    text: "Tệp của bạn đã bị xóa.",
+                                    text: "Dữ liệu của bạn đã bị xóa.",
                                     type: "success",
                                     confirmButtonClass: "btn-primary",
                                     confirmButtonText: "Xong",

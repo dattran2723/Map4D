@@ -1,0 +1,120 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section css{
+    <link href="~/Content/Client/css/PriceTable.css" rel="stylesheet" />
+}
+<div class="row w-100" id="pricing">
+    <div class="row w-100 pricing-title text-center">
+        <h2 class="w-100">Plans &amp; Pricing</h2>
+        <p class="w-100">Flexible options that move with you</p>
+    </div>
+    <div class="row w-100 prircing-content container mx-auto">
+        <div class="col-md-8" id="pay">
+            <div class="title text-center col-12">
+                <P>PAY AS YOU GO</P>
+            </div>
+            <div class="box-price w-100 row container">
+                <div class="price col-md-3" id="free">
+                    <h5>Free to start</h5>
+                    <h3>$ 0 <small>up to</small></h3>
+                    <p>/ 60.000 requests</p>
+                </div>
+                <div class="descript col-md-6 responsive-hidden">
+                    <h5>Public plan <br /> <small>(Web application --> Web SDK)</small></h5>
+                    <label>Map Views:</label>
+                    <ul>
+                        <li>Web map views</li>
+                        <li>Moblie map views</li>
+                        <li>+ 2D, 3D data</li>
+                        <li>+ Weather, real time</li>
+                    </ul>
+                </div>
+                <div class="service col-md-3 responsive-hidden">
+                    <h5>Map services</h5>
+                    <label>Search:</label>
+                    <ul>
+                        <li>+ Places</li>
+                        <li>+ Places type</li>
+                        <li>+ Near by</li>
+                        <li>+ Optimize result</li>
+                    </ul>
+                    <label>Geocoding:</label>
+                    <ul>
+                        <li>+ Reverse geocoding</li>
+                    </ul>
+                    <label>Routing:</label>
+                    <ul>
+                        <li>+ Direction</li>
+                        <li>+ Multi-directions</li>
+                        <li>+ Optimzie results</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="responsive-hidden" />
+            <div class="box-price w-100 row container">
+                <div class="price col-md-3" id="have-pay">
+                    <h3>$ 0.35 <small>plus</small></h3>
+                    <p>/ 1000 requests</p>
+                </div>
+                <div class="descript col-md-6">
+                    <h5>Public plan <br /> <small>(Web application --> Web SDK)</small></h5>
+                    <label>Map Views:</label>
+                    <ul>
+                        <li>Web map views</li>
+                        <li>Moblie map views</li>
+                        <li>+ 2D, 3D data</li>
+                        <li>+ Weather, real time</li>
+                    </ul>
+                </div>
+                <div class="service col-md-3">
+                    <h5>Map services</h5>
+                    <label>Search:</label>
+                    <ul>
+                        <li>+ Places</li>
+                        <li>+ Places type</li>
+                        <li>+ Near by</li>
+                        <li>+ Optimize result</li>
+                    </ul>
+                    <label>Geocoding:</label>
+                    <ul>
+                        <li>+ Reverse geocoding</li>
+                    </ul>
+                    <label>Routing:</label>
+                    <ul>
+                        <li>+ Direction</li>
+                        <li>+ Multi-directions</li>
+                        <li>+ Optimzie results</li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div class="box-price w-100 row container last">
+                <div class="price col-md-3">
+                    <h3>$ 20</h3>
+                    <p>/ 1 hour</p>
+                </div>
+                <div class="descript col-md-6">
+                    <h5>Support service</h5>
+                </div>
+                <div class="service col-md-3">
+                    <h5>Orther service</h5>
+                    <label>
+                        Search <br />
+                        Geocoding <br />
+                        Routing
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" id="behind">
+            <div class="title text-center w-100">
+                <P>BEHIND A PAYWALL?</P>
+            </div>
+            <div class="w-100 text-center behind-content">
+                <p>If you're using Mapbox maps behind a login, firewall, or paywall, please</p>
+                <a href="#">contact us here.</a>
+            </div>
+        </div>
+    </div>
+</div>

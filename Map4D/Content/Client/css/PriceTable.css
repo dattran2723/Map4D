@@ -1,0 +1,244 @@
+﻿@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UTM AvoBold';
+    src: url('/fonts/UTM AvoBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('/fonts/Roboto-Light.ttf') format('truetype');
+}
+
+#menu-top nav {
+    background: #3597e4;
+}
+
+#pricing {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 12%;
+    padding-bottom: 5%;
+}
+
+    #pricing .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #pricing .pricing-title {
+        margin-bottom: 2%;
+    }
+
+        #pricing .pricing-title h2 {
+            font-family: 'UTM Avo';
+            font-size: 46px;
+            color: #20338a;
+        }
+
+        #pricing .pricing-title p {
+            font-family: Roboto-Regular;
+            font-size: 20px;
+        }
+
+    #pricing .prircing-content #pay {
+        box-shadow: 0px 13px 45px 2px rgba(0, 0, 0, 0.21);
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #pricing .prircing-content #behind {
+        max-width: 30%;
+        margin-left: 3%;
+        box-shadow: 0px 13px 45px 2px rgba(0, 0, 0, 0.21);
+        padding-left: 0;
+        padding-right: 0;
+        background-image: url("/Content/Client/img/pbg.jpg");
+        background-position-y: bottom;
+    }
+
+.prircing-content .title {
+    background: #4264fb;
+    color: white;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .prircing-content .title p {
+        font-family: 'Myriad Pro';
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+.box-price {
+    margin-top: 4%;
+}
+
+    .box-price .price {
+        padding-left: 4%;
+    }
+
+        .box-price .price h5 {
+            font-family: Roboto-Regular;
+            font-size: 20px;
+            color: #092a3f;
+        }
+
+        .box-price .price h3 {
+            font-family: 'UTM AvoBold';
+            font-size: 30px;
+            color: #274cf2;
+        }
+
+        .box-price .price small, .box-price .price p {
+            font-family: Roboto-Light;
+            font-size: 14px;
+            color: #0b4f7a;
+        }
+
+    .box-price .descript {
+        padding-left: 4%;
+        font-family: Roboto-Regular;
+        color: #0b4f7a;
+    }
+
+        .box-price .descript h5 {
+            font-size: 20px;
+        }
+
+        .box-price .descript label, .box-price .service label {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+
+        .box-price .descript span {
+            font-size: 14px;
+        }
+
+        .box-price .descript ul, .box-price .service ul {
+            list-style: none;
+            padding-top: 1%;
+            padding-left: 5%;
+            font-size: 14px;
+        }
+
+    .box-price .service {
+        font-family: Roboto-Regular;
+        color: #0b4f7a;
+    }
+
+        .box-price .service h5 {
+            font-size: 20px;
+            margin-bottom: 22%;
+        }
+
+    .box-price.last {
+        padding-bottom:10%;
+    }
+
+#pay hr {
+    width: 80%;
+    float: right;
+    margin-bottom: 2rem;
+}
+
+#behind .behind-content p {
+    margin: auto;
+    margin-top: 25%;
+    margin-bottom: 0;
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0b4f7a;
+    max-width: 80%;
+}
+
+#behind .behind-content a {
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4264fb;
+}
+
+@media only screen and (max-width: 1033px) {
+
+    #pricing {
+        padding-top: 18%;
+    }
+    #pricing .pricing-title h2 {
+        font-size: 40px;
+    }
+
+    #pricing .pricing-title p, .box-price .price h5, .box-price .descript h5, .box-price .service h5 {
+        font-size: 18px;
+    }
+    .box-price .price h3{
+        font-size:28px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    #pay {
+        max-width: 100%;
+        flex: auto;
+    }
+
+    #behind {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #pricing .pricing-title h2 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    #pricing {
+        padding-top: 24%;
+    }
+    /*.prircing-content .title{
+        height:4%;
+    }*/
+    #pay hr {
+        width: 100%;
+        /*float: right;
+        margin-bottom: 2rem;*/
+    }
+    .box-price .price{
+        text-align:center;
+
+    }
+    .box-price .descript, .box-price .service {
+        padding-left: 32%;
+    }
+    .box-price .service h5 {
+        margin-bottom: 1%;
+    }
+    .responsive-hidden{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+
+    #pricing {
+        padding-top: 30%;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+
+    #pricing {
+        padding-top: 38%;
+    }
+    .box-price .descript, .box-price .service {
+        padding-left: 26%;
+    }
+}

@@ -75,8 +75,9 @@
         }
 
         .webApp .left .content .contrary {
-            font-size: 12px;
+            font-size: 14px;
             padding-bottom: 16%;
+            padding-right:0%;
         }
 }
 
@@ -137,7 +138,7 @@
 
 @media only screen and (max-width: 435px) {
     .webApp .left .content .contrary {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .webApp .left .content .tittle {

@@ -30,7 +30,7 @@
 
         #carouselExampleIndicators .carousel-indicators li {
             display: block;
-            margin-top: 5px;
+            margin-top: 10px;
         }
 
     #carouselExampleIndicators .carousel-inner .carousel-item .row .image-slide {
@@ -149,7 +149,7 @@
 
 @media only screen and (max-width: 625px) {
     #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide a {

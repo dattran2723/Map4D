@@ -123,7 +123,7 @@
   <data name="ChỉĐường" xml:space="preserve">
     <value>Chỉ đường</value>
   </data>
-  <data name="CôngTy" xml:space="preserve">
+  <data name="Company" xml:space="preserve">
     <value>Công ty</value>
   </data>
   <data name="Solution" xml:space="preserve">
@@ -133,7 +133,7 @@
     <value>Là bản đồ duy nhất ở Việt Nam hiển thị bản đồ 4D theo thời gian thực. Được xây dựng từ nhiều lớp dữ liệu, sẵn sàng kết nối và hướng tới 1 thành phố thông minh trực tuyến. Hướng đến việc tích hợp nhiều ứng dụng vào một nơi cho việc quản lý nhà nước, phục vụ sản xuất kinh doanh cho doanh nghiệp và người dân.</value>
   </data>
   <data name="GửiNgayBâyGiờ" xml:space="preserve">
-    <value>Gửi ngay bây giờ</value>
+    <value>Gửi ngay</value>
   </data>
   <data name="HọvàTên" xml:space="preserve">
     <value>Họ và tên</value>
@@ -164,9 +164,6 @@
   </data>
   <data name="NềntảngMap4D" xml:space="preserve">
     <value>Nền tảng Map4D</value>
-  </data>
-  <data name="SảnPhẩm" xml:space="preserve">
-    <value>Sản Phẩm</value>
   </data>
   <data name="TinNhắn" xml:space="preserve">
     <value>Tin nhắn</value>
@@ -225,8 +222,8 @@
   <data name="GhiNhớMậtKhẩu" xml:space="preserve">
     <value>Ghi nhớ mật khẩu</value>
   </data>
-  <data name="MatKhauBatBuoc" xml:space="preserve">
-    <value>Mật khẩu là bắt buộc!</value>
+  <data name="EnterPassword" xml:space="preserve">
+    <value>Vui lòng nhập mật khẩu!</value>
   </data>
   <data name="MậtKhẩu" xml:space="preserve">
     <value>Mật khẩu</value>
@@ -237,10 +234,10 @@
   <data name="TênĐăngNhập" xml:space="preserve">
     <value>Tên đăng nhập</value>
   </data>
-  <data name="TênĐăngNhậpLàBắtBuộc" xml:space="preserve">
-    <value>Tên đăng nhập là bắt buộc!</value>
+  <data name="RegisterEnterUserName" xml:space="preserve">
+    <value>Vui lòng nhập tên đăng nhập!</value>
   </data>
-  <data name="Tênđăngnhậpđãtồntại" xml:space="preserve">
+  <data name="RegisterExistUserName" xml:space="preserve">
     <value>Tên đăng nhập đã tồn tại!</value>
   </data>
   <data name="ĐãCóTàiKhoản" xml:space="preserve">
@@ -250,7 +247,7 @@
     <value>Đăng nhập</value>
   </data>
   <data name="Camongopy" xml:space="preserve">
-    <value>Cảm ơn bạn đã gửi ý kiến cho chúng tôi !</value>
+    <value>Cảm ơn bạn đã liên hệ với chúng tôi!</value>
   </data>
   <data name="notifyRegisterButtonPopup" xml:space="preserve">
     <value>Xong</value>
@@ -282,14 +279,14 @@
   <data name="VietNam" xml:space="preserve">
     <value>Tiếng Việt</value>
   </data>
-  <data name="SanPham" xml:space="preserve">
+  <data name="Product" xml:space="preserve">
     <value>Sản phẩm</value>
   </data>
   <data name="TrangChu" xml:space="preserve">
     <value>Trang chủ</value>
   </data>
-  <data name="ContactEnterEmail" xml:space="preserve">
-    <value>Vui lòng nhập Email!</value>
+  <data name="EnterEmail" xml:space="preserve">
+    <value>Vui lòng nhập email!</value>
   </data>
   <data name="ContactEnterMessage" xml:space="preserve">
     <value>Vui lòng nhập tin nhắn!</value>
@@ -298,7 +295,7 @@
     <value>Vui lòng nhập tên của bạn!</value>
   </data>
   <data name="ContactEnterSubject" xml:space="preserve">
-    <value>Vui lòng nhập chủ đề!</value>
+    <value>Vui lòng nhập tiêu đề!</value>
   </data>
   <data name="Camondaquantam" xml:space="preserve">
     <value>Cảm ơn bạn đã quan tâm, chúng tôi đang xây dựng nội dung và sẽ trở lại sớm.</value>
