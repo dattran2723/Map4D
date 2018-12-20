@@ -1967,6 +1967,7 @@
     <Content Include="Content\Client\css\BuildMap4D.css" />
     <Content Include="Content\Client\css\Commingsoon.css" />
     <Content Include="Content\Client\css\CreateMobileApps.css" />
+    <Content Include="Content\Client\css\PriceTable.css" />
     <Content Include="Content\Client\css\products\MobileApp.css" />
     <Content Include="Content\Client\css\products\SlideMap.css" />
     <Content Include="Content\Client\css\products\styleSearchGeoDirect.css" />
@@ -2030,6 +2031,7 @@
     <Content Include="Content\Client\img\man-one.jpg" />
     <Content Include="Content\Client\img\page-2_0000_Layer-3 - Copy.png" />
     <Content Include="Content\Client\img\page-2_0000_Layer-3.png" />
+    <Content Include="Content\Client\img\pbg.jpg" />
     <Content Include="Content\Client\img\products\page-2_0000_Layer-3.png" />
     <Content Include="Content\Client\img\products\page-2_0001_Content-Slider-A-15-copy-3.png" />
     <Content Include="Content\Client\img\products\page-2_0002_Content-Slider-A-15-copy-3.png" />
@@ -2268,6 +2270,18 @@
     <Content Include="Content\sweetalert\sweet-alert-animations.less" />
     <Content Include="Content\bootstrap\variables.less" />
     <Content Include="Content\bootstrap\mixins.less" />
+    <Content Include="fonts\Roboto-Black.ttf" />
+    <Content Include="fonts\Roboto-BlackItalic.ttf" />
+    <Content Include="fonts\Roboto-Bold.ttf" />
+    <Content Include="fonts\Roboto-BoldItalic.ttf" />
+    <Content Include="fonts\Roboto-Italic.ttf" />
+    <Content Include="fonts\Roboto-Light.ttf" />
+    <Content Include="fonts\Roboto-LightItalic.ttf" />
+    <Content Include="fonts\Roboto-Medium.ttf" />
+    <Content Include="fonts\Roboto-MediumItalic.ttf" />
+    <Content Include="fonts\Roboto-Regular.ttf" />
+    <Content Include="fonts\Roboto-Thin.ttf" />
+    <Content Include="fonts\Roboto-ThinItalic.ttf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\datatable\dataTables.bootstrap.min.js" />
     <Content Include="Scripts\datatable\dataTables.fixedHeader.min.js" />
@@ -2352,6 +2366,7 @@
     <Content Include="Views\Home\Document.cshtml" />
     <Content Include="Views\Sweet\Alert.cshtml" />
     <Content Include="Views\Home\ProductValue.cshtml" />
+    <Content Include="Views\Home\PriceTable.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

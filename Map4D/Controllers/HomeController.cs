@@ -60,9 +60,8 @@ namespace Map4D.Controllers
         public ActionResult PriceTable()
         {
             ViewBag.Title = Map4D.Resources.My_texts.PriceTable;
-            return View("CommingSoon");
+            return View();
         }
-
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
