@@ -1,6 +1,6 @@
 ﻿var array = [
     {
-        img: "/Content/Client/img/man-one.jpg",
+        img: "/Content/Client/img/product2.jpg",
         name: "Nguyễn Văn Linh",
         cmt: "Tính năng rất hữu ích và tiện dụng đối với tài xế chúng tôi"
     },
