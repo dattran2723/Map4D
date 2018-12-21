@@ -309,4 +309,10 @@
   <data name="String1" xml:space="preserve">
     <value />
   </data>
+  <data name="ThuCamOn" xml:space="preserve">
+    <value>Cảm ơn quý khách đã liên hệ với chúng tôi, chúng tôi sẽ phản hồi lại quý khách trong thời gian sớm nhất</value>
+  </data>
+  <data name="TieuDeMail" xml:space="preserve">
+    <value>Thư cảm ơn</value>
+  </data>
 </root>
