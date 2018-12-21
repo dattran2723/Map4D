@@ -178,6 +178,33 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 0.35 $.
+        /// </summary>
+        public static string ChiPhiCongThem {
+            get {
+                return ResourceManager.GetString("ChiPhiCongThem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 0 $.
+        /// </summary>
+        public static string ChiPhiDauTien {
+            get {
+                return ResourceManager.GetString("ChiPhiDauTien", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 20 $.
+        /// </summary>
+        public static string ChiPhiTheoGio {
+            get {
+                return ResourceManager.GetString("ChiPhiTheoGio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Chúng tôi cung cấp gói tùy chọn cho doanh nghiệp.
         /// </summary>
         public static string ChungToiCungCapGoiDichVu {
@@ -502,7 +529,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gói cơ bản giá theo từng lượt truy cập.
+        ///   Looks up a localized string similar to GÓI CƠ BẢN GIÁ THEO TỪNG LƯỢT TRUY CẬP.
         /// </summary>
         public static string GoiCoBanTheoTungLuotTruyCap {
             get {
@@ -736,7 +763,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Phí xem nội dung.
+        ///   Looks up a localized string similar to PHÍ XEM NỘI DUNG.
         /// </summary>
         public static string PhiXemNoiDung {
             get {

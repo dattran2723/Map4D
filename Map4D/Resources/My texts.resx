@@ -373,7 +373,7 @@
     <value>Gói cơ bản</value>
   </data>
   <data name="GoiCoBanTheoTungLuotTruyCap" xml:space="preserve">
-    <value>Gói cơ bản giá theo từng lượt truy cập</value>
+    <value>GÓI CƠ BẢN GIÁ THEO TỪNG LƯỢT TRUY CẬP</value>
   </data>
   <data name="GoiDichVu" xml:space="preserve">
     <value>Gói dịch vụ &amp; Bảng giá</value>
@@ -397,7 +397,7 @@
     <value>Người dùng tự tải các đối tượng 3D lên bản đồ</value>
   </data>
   <data name="PhiXemNoiDung" xml:space="preserve">
-    <value>Phí xem nội dung</value>
+    <value>PHÍ XEM NỘI DUNG</value>
   </data>
   <data name="Plus" xml:space="preserve">
     <value />
@@ -422,5 +422,14 @@
   </data>
   <data name="XayDungDoiTuong3D" xml:space="preserve">
     <value>Xây dựng đối tượng 3D</value>
+  </data>
+  <data name="ChiPhiCongThem" xml:space="preserve">
+    <value>0.35 $</value>
+  </data>
+  <data name="ChiPhiDauTien" xml:space="preserve">
+    <value>0 $</value>
+  </data>
+  <data name="ChiPhiTheoGio" xml:space="preserve">
+    <value>20 $</value>
   </data>
 </root>

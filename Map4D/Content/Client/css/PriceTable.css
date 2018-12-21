@@ -133,6 +133,9 @@
             padding-left: 5%;
             font-size: 14px;
         }
+        .box-price li::before {
+            content: "+ ";
+        }
 
     .box-price .service {
         font-family: Roboto-Regular;

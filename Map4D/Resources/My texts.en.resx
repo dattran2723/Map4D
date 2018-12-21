@@ -417,4 +417,13 @@
   <data name="XayDungDoiTuong3D" xml:space="preserve">
     <value>Build 3D object</value>
   </data>
+  <data name="ChiPhiCongThem" xml:space="preserve">
+    <value>$ 0.35</value>
+  </data>
+  <data name="ChiPhiDauTien" xml:space="preserve">
+    <value>$ 0</value>
+  </data>
+  <data name="ChiPhiTheoGio" xml:space="preserve">
+    <value>$ 20</value>
+  </data>
 </root>
