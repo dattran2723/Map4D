@@ -417,4 +417,10 @@
   <data name="XayDungDoiTuong3D" xml:space="preserve">
     <value>Build 3D object</value>
   </data>
+  <data name="ThuCamOn" xml:space="preserve">
+    <value>Thank you for contacting us, we will respond to you in the shortest time</value>
+  </data>
+  <data name="TieuDeMail" xml:space="preserve">
+    <value>Thank you letter</value>
+  </data>
 </root>

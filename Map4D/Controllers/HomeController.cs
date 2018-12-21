@@ -106,14 +106,14 @@ namespace Map4D.Controllers
         public void SendMail(string guestMail)
         {
             StringBuilder Body = new StringBuilder();
-            Body.Append("<p>Cảm ơn quý khách đã sử dụng sản phẩm của chúng tôi, chúng tôi sẽ liên lạc lại cho quý khách trong thời gian sớm nhất:</p>");
+            Body.Append("<p>" + Map4D.Resources.My_texts.ThuCamOn +"</p>");
             Body.Append("<table>");
             Body.Append("<tr><td> from IOT Company </td>");
             Body.Append("</table>");
             MailMessage mail = new MailMessage();
             mail.To.Add(guestMail);
             mail.From = new MailAddress("iotocteam123@gmail.com", "IOT team");
-            mail.Subject = "Thư cảm ơn";
+            mail.Subject = Map4D.Resources.My_texts.TieuDeMail;
             mail.Body = Body.ToString();// phần thân của mail ở trên
             mail.IsBodyHtml = true;
             SmtpClient smtp = new SmtpClient();
