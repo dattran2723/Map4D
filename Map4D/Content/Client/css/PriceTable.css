@@ -46,7 +46,7 @@
         }
 
             #pricing .pricing-title p.small {
-                color: red;
+                color: #f72758;
                 font-size: 16px;
             }
 
@@ -171,7 +171,12 @@
     font-weight: bold;
     color: #4264fb;
 }
-
+#footer{
+    background: none;
+}
+    #footer p, #footer a {
+        color: #4563f5;
+    }
 @media only screen and (max-width: 1033px) {
 
     #pricing {
