@@ -277,7 +277,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to /Content/Client/img/Flag_of_Vietnam.svg.png.
+        ///   Looks up a localized string similar to /Content/Client/img/Flag_viet_nam.png.
         /// </summary>
         public static string FlagLanguage {
             get {
