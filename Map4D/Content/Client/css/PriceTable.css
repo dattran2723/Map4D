@@ -101,7 +101,7 @@
             color: #274cf2;
         }
 
-        .box-price .price small, .box-price .price p {
+        .box-price .price small, .box-price .price p, .box-price .price span {
             font-family: Roboto-Light;
             font-size: 14px;
             color: #0b4f7a;
@@ -141,7 +141,7 @@
 
         .box-price .service h5 {
             font-size: 20px;
-            margin-bottom: 22%;
+            margin-bottom: 15%;
         }
 
     .box-price.last {
@@ -232,7 +232,7 @@
     }
 
     .box-price .descript, .box-price .service {
-        padding-left: 32%;
+        padding-left: 24%;
     }
 
         .box-price .service h5 {
@@ -258,6 +258,6 @@
     }
 
     .box-price .descript, .box-price .service {
-        padding-left: 26%;
+        padding-left: 15%;
     }
 }
