@@ -30,7 +30,7 @@
     }
 
     #pricing .pricing-title {
-        margin-bottom: 2%;
+        margin-bottom: 3%;
     }
 
         #pricing .pricing-title h2 {
@@ -42,7 +42,13 @@
         #pricing .pricing-title p {
             font-family: Roboto-Regular;
             font-size: 20px;
+            margin-bottom: 0;
         }
+
+            #pricing .pricing-title p.small {
+                color: #f72758;
+                font-size: 16px;
+            }
 
     #pricing .prircing-content #pay {
         box-shadow: 0px 13px 45px 2px rgba(0, 0, 0, 0.21);
@@ -95,10 +101,11 @@
             color: #274cf2;
         }
 
-        .box-price .price small, .box-price .price p {
+        .box-price .price small, .box-price .price p, .box-price .price span {
             font-family: Roboto-Light;
             font-size: 14px;
             color: #0b4f7a;
+            font-style: italic;
         }
 
     .box-price .descript {
@@ -126,6 +133,9 @@
             padding-left: 5%;
             font-size: 14px;
         }
+        .box-price li::before {
+            content: "+ ";
+        }
 
     .box-price .service {
         font-family: Roboto-Regular;
@@ -134,11 +144,11 @@
 
         .box-price .service h5 {
             font-size: 20px;
-            margin-bottom: 22%;
+            margin-bottom: 15%;
         }
 
     .box-price.last {
-        padding-bottom:10%;
+        padding-bottom: 10%;
     }
 
 #pay hr {
@@ -164,23 +174,31 @@
     font-weight: bold;
     color: #4264fb;
 }
-
+#footer{
+    background: none;
+}
+    #footer p, #footer a {
+        color: #4563f5;
+    }
 @media only screen and (max-width: 1033px) {
 
     #pricing {
         padding-top: 18%;
     }
-    #pricing .pricing-title h2 {
-        font-size: 40px;
-    }
 
-    #pricing .pricing-title p, .box-price .price h5, .box-price .descript h5, .box-price .service h5 {
-        font-size: 18px;
-    }
-    .box-price .price h3{
-        font-size:28px;
+        #pricing .pricing-title h2 {
+            font-size: 40px;
+        }
+
+        #pricing .pricing-title p, .box-price .price h5, .box-price .descript h5, .box-price .service h5 {
+            font-size: 18px;
+        }
+
+    .box-price .price h3 {
+        font-size: 28px;
     }
 }
+
 @media only screen and (max-width: 991px) {
     #pay {
         max-width: 100%;
@@ -211,18 +229,21 @@
         /*float: right;
         margin-bottom: 2rem;*/
     }
-    .box-price .price{
-        text-align:center;
 
+    .box-price .price {
+        text-align: center;
     }
+
     .box-price .descript, .box-price .service {
-        padding-left: 32%;
+        padding-left: 24%;
     }
-    .box-price .service h5 {
-        margin-bottom: 1%;
-    }
-    .responsive-hidden{
-        display:none;
+
+        .box-price .service h5 {
+            margin-bottom: 1%;
+        }
+
+    .responsive-hidden {
+        display: none;
     }
 }
 
@@ -238,7 +259,8 @@
     #pricing {
         padding-top: 38%;
     }
+
     .box-price .descript, .box-price .service {
-        padding-left: 26%;
+        padding-left: 15%;
     }
 }

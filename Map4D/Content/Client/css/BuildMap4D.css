@@ -62,16 +62,21 @@
 
                 .buildMap4D .rowbottom .boxBuild .img .content .contentRight .name {
                     font-family: 'Myriad Pro';
-                    font-size: 14px;
+                    font-size: 16px;
                     margin-bottom: 0;
                 }
 
                 .buildMap4D .rowbottom .boxBuild .img .content .contentRight .cmt {
                     font-family: 'Myriad Pro';
-                    font-size: 12px;
+                    font-size: 14px;
                     color: #a0a0a0;
                     margin-bottom: 0;
-                    text-align: justify;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    /*white-space: nowrap;*/
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
                 }
 
 @media only screen and (max-width: 1276px) {

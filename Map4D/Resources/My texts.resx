@@ -274,7 +274,7 @@
     <value>Tiếng Anh</value>
   </data>
   <data name="FlagLanguage" xml:space="preserve">
-    <value>/Content/Client/img/Flag_of_Vietnam.svg.png</value>
+    <value>/Content/Client/img/Flag_viet_nam.png</value>
   </data>
   <data name="VietNam" xml:space="preserve">
     <value>Tiếng Việt</value>
@@ -308,5 +308,134 @@
   </data>
   <data name="String1" xml:space="preserve">
     <value />
+  </data>
+  <data name="ApDungChoBangWebVaMobile" xml:space="preserve">
+    <value>(Áp dụng cho bảng Web và Mobile)</value>
+  </data>
+  <data name="BanDoTrenNenTangMobile" xml:space="preserve">
+    <value>Bản đồ trên nền tảng Mobile</value>
+  </data>
+  <data name="BanDoTrenNenTangWeb" xml:space="preserve">
+    <value>Bản đồ trên nền tảng Web</value>
+  </data>
+  <data name="CacDichVuBoSung" xml:space="preserve">
+    <value>Các dịch vụ bổ sung</value>
+  </data>
+  <data name="CacDichVuTuongTac" xml:space="preserve">
+    <value>Các dịch vụ tương ứng</value>
+  </data>
+  <data name="CacTuongTacTrenBanDo" xml:space="preserve">
+    <value>Các tương tác trên bản đồ</value>
+  </data>
+  <data name="ChiDuong" xml:space="preserve">
+    <value>Chỉ đường</value>
+  </data>
+  <data name="ChiDuongTheoNhieuHuong" xml:space="preserve">
+    <value>Chỉ đường theo nhiều hướng và nhiều phương tiện</value>
+  </data>
+  <data name="ChungToiCungCapGoiDichVu" xml:space="preserve">
+    <value>Chúng tôi cung cấp gói tùy chọn cho doanh nghiệp</value>
+  </data>
+  <data name="ChuyenToaDo" xml:space="preserve">
+    <value>Chuyển đổi tọa độ (mã hóa địa lý)</value>
+  </data>
+  <data name="CongCuChinhSua" xml:space="preserve">
+    <value>Công cụ chỉnh sửa basemap</value>
+  </data>
+  <data name="CongThem" xml:space="preserve">
+    <value>Cộng thêm </value>
+  </data>
+  <data name="DanhMucDiaDiem" xml:space="preserve">
+    <value>Danh mục địa điểm</value>
+  </data>
+  <data name="DiaDiem" xml:space="preserve">
+    <value>Địa điểm</value>
+  </data>
+  <data name="DiaDiemXungQuanh" xml:space="preserve">
+    <value>Địa điểm xung quanh</value>
+  </data>
+  <data name="DinhTuyen" xml:space="preserve">
+    <value>Định tuyến:</value>
+  </data>
+  <data name="DoiVoi" xml:space="preserve">
+    <value>đối với</value>
+  </data>
+  <data name="DoiVoiBangBeta" xml:space="preserve">
+    <value>Đối với bảng Beta, dịch vụ cung cấp miễn phí 100%</value>
+  </data>
+  <data name="DuLieu2D3D" xml:space="preserve">
+    <value>Dữ liệu 2D, 3D</value>
+  </data>
+  <data name="DungKhongGianThucTeAo" xml:space="preserve">
+    <value>Dựng không gian thực tế ảo VR360</value>
+  </data>
+  <data name="GoiCoBan" xml:space="preserve">
+    <value>Gói cơ bản</value>
+  </data>
+  <data name="GoiCoBanTheoTungLuotTruyCap" xml:space="preserve">
+    <value>GÓI CƠ BẢN GIÁ THEO TỪNG LƯỢT TRUY CẬP</value>
+  </data>
+  <data name="GoiDichVu" xml:space="preserve">
+    <value>Gói dịch vụ &amp; Bảng giá</value>
+  </data>
+  <data name="GoiHoTro" xml:space="preserve">
+    <value>Gói hỗ trợ</value>
+  </data>
+  <data name="LienHeVoiChungToiTaiDay" xml:space="preserve">
+    <value>liên hệ với chúng tôi.</value>
+  </data>
+  <data name="MienPhi" xml:space="preserve">
+    <value>Miễn phí</value>
+  </data>
+  <data name="MotGio" xml:space="preserve">
+    <value>/ 1 giờ</value>
+  </data>
+  <data name="Map4DCamKet" xml:space="preserve">
+    <value>Map4D cam kết cung cấp các gói dịch vụ cao cấp phù hợp cho doanh nghiệp. Nếu bạn muốn được hỗ trợ nhiều hơn về các dịch vụ của Map4D hoặc muốn hợp tác phát triển, xin vui lòng</value>
+  </data>
+  <data name="NguoiDungTuTai" xml:space="preserve">
+    <value>Người dùng tự tải các đối tượng 3D lên bản đồ</value>
+  </data>
+  <data name="ThemThongTin" xml:space="preserve">
+    <value>THÊM THÔNG TIN</value>
+  </data>
+  <data name="Plus" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ThoiTietVaThoiGianThuc" xml:space="preserve">
+    <value>Thời tiết, thời gian thực</value>
+  </data>
+  <data name="TimKiem" xml:space="preserve">
+    <value>Tìm kiếm:</value>
+  </data>
+  <data name="ToaDoBanDo" xml:space="preserve">
+    <value>Tọa độ bản đồ:</value>
+  </data>
+  <data name="ToiUuHoaKetQua" xml:space="preserve">
+    <value>Tối ưu hóa kết quả</value>
+  </data>
+  <data name="TrenLuotTruyCap" xml:space="preserve">
+    <value>trên 1000 lượt truy cập tiếp theo</value>
+  </data>
+  <data name="TruyCapDuoi" xml:space="preserve">
+    <value>truy cập &lt; 60.00 lượt</value>
+  </data>
+  <data name="XayDungDoiTuong3D" xml:space="preserve">
+    <value>Xây dựng đối tượng 3D</value>
+  </data>
+  <data name="ChiPhiCongThem" xml:space="preserve">
+    <value>0.35 $</value>
+  </data>
+  <data name="ChiPhiDauTien" xml:space="preserve">
+    <value>0 $</value>
+  </data>
+  <data name="ChiPhiTheoGio" xml:space="preserve">
+    <value>20 $</value>
+  </data>
+  <data name="ThuCamOn" xml:space="preserve">
+    <value>Cảm ơn quý khách đã liên hệ với chúng tôi, chúng tôi sẽ phản hồi lại quý khách trong thời gian sớm nhất</value>
+  </data>
+  <data name="TieuDeMail" xml:space="preserve">
+    <value>Thư cảm ơn</value>
   </data>
 </root>

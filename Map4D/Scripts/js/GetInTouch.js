@@ -12,12 +12,6 @@
                     swal("", showError, "warning");
                 }
             }
-            else {
-                swal("Cảm ơn");
-                function() {
-                    location.reload();
-                }
-            }
         }, 100);
     });
 })
