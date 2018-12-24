@@ -304,7 +304,7 @@
     <value>Sorry, we’re doing some work on the site</value>
   </data>
   <data name="ApDungChoBangWebVaMobile" xml:space="preserve">
-    <value>(Web application --&gt; Web SDK)</value>
+    <value>(Web SDK + Mobile SDK)</value>
   </data>
   <data name="BanDoTrenNenTangMobile" xml:space="preserve">
     <value>Moblie map views</value>
