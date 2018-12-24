@@ -1967,7 +1967,7 @@
     <Content Include="Content\Client\css\BuildMap4D.css" />
     <Content Include="Content\Client\css\Commingsoon.css" />
     <Content Include="Content\Client\css\CreateMobileApps.css" />
-    <Content Include="Content\Client\css\PriceTable.css" />
+    <Content Include="Content\Client\css\Pricing.css" />
     <Content Include="Content\Client\css\products\MobileApp.css" />
     <Content Include="Content\Client\css\products\SlideMap.css" />
     <Content Include="Content\Client\css\products\styleSearchGeoDirect.css" />
@@ -2376,7 +2376,7 @@
     <Content Include="Views\Home\Document.cshtml" />
     <Content Include="Views\Sweet\Alert.cshtml" />
     <Content Include="Views\Home\ProductValue.cshtml" />
-    <Content Include="Views\Home\PriceTable.cshtml" />
+    <Content Include="Views\Home\Pricing.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
