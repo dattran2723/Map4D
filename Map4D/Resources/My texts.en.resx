@@ -118,12 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="PriceTable" xml:space="preserve">
-    <value>Price Table</value>
+    <value>Pricing</value>
   </data>
   <data name="ChỉĐường" xml:space="preserve">
     <value>Direction</value>
   </data>
-  <data name="CôngTy" xml:space="preserve">
+  <data name="Company" xml:space="preserve">
     <value>Company</value>
   </data>
   <data name="Solution" xml:space="preserve">
@@ -164,9 +164,6 @@
   </data>
   <data name="NềntảngMap4D" xml:space="preserve">
     <value>4D Mapping Platform</value>
-  </data>
-  <data name="SảnPhẩm" xml:space="preserve">
-    <value>Product</value>
   </data>
   <data name="TinNhắn" xml:space="preserve">
     <value>Message</value>
@@ -217,7 +214,7 @@
     <value>You have to fill in email!</value>
   </data>
   <data name="EmailTontai" xml:space="preserve">
-    <value>Email already exist</value>
+    <value>Email already exist!</value>
   </data>
   <data name="GhiNhớMậtKhẩu" xml:space="preserve">
     <value>Remember me?</value>
@@ -270,7 +267,7 @@
   <data name="CôngtyIOTLink" xml:space="preserve">
     <value>IOTLink</value>
   </data>
-  <data name="SanPham" xml:space="preserve">
+  <data name="Product" xml:space="preserve">
     <value>Product</value>
   </data>
   <data name="TrangChu" xml:space="preserve">
@@ -280,7 +277,7 @@
     <value>English</value>
   </data>
   <data name="FlagLanguage" xml:space="preserve">
-    <value>/Content/Client/img/Flag_of_the_United_States_(Pantone).png</value>
+    <value>/Content/Client/img/Flag_united_states.png</value>
   </data>
   <data name="VietNam" xml:space="preserve">
     <value>Vietnamese</value>
@@ -305,5 +302,134 @@
   </data>
   <data name="ThôngCảm" xml:space="preserve">
     <value>Sorry, we’re doing some work on the site</value>
+  </data>
+  <data name="ApDungChoBangWebVaMobile" xml:space="preserve">
+    <value>(Web SDK + Mobile SDK)</value>
+  </data>
+  <data name="BanDoTrenNenTangMobile" xml:space="preserve">
+    <value>Moblie map views</value>
+  </data>
+  <data name="BanDoTrenNenTangWeb" xml:space="preserve">
+    <value>Web map views</value>
+  </data>
+  <data name="CacDichVuBoSung" xml:space="preserve">
+    <value>Orther services</value>
+  </data>
+  <data name="CacDichVuTuongTac" xml:space="preserve">
+    <value>Map services</value>
+  </data>
+  <data name="CacTuongTacTrenBanDo" xml:space="preserve">
+    <value>Map Views:</value>
+  </data>
+  <data name="ChiDuong" xml:space="preserve">
+    <value>Directions</value>
+  </data>
+  <data name="ChiDuongTheoNhieuHuong" xml:space="preserve">
+    <value>Multi-directions</value>
+  </data>
+  <data name="ChungToiCungCapGoiDichVu" xml:space="preserve">
+    <value>Flexible options that move with you</value>
+  </data>
+  <data name="ChuyenToaDo" xml:space="preserve">
+    <value>Reverse geocoding</value>
+  </data>
+  <data name="CongCuChinhSua" xml:space="preserve">
+    <value>Base map editor</value>
+  </data>
+  <data name="CongThem" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DanhMucDiaDiem" xml:space="preserve">
+    <value>Places type</value>
+  </data>
+  <data name="DiaDiem" xml:space="preserve">
+    <value> Places</value>
+  </data>
+  <data name="DiaDiemXungQuanh" xml:space="preserve">
+    <value>Near by</value>
+  </data>
+  <data name="DinhTuyen" xml:space="preserve">
+    <value>Routing:</value>
+  </data>
+  <data name="DoiVoi" xml:space="preserve">
+    <value>up to</value>
+  </data>
+  <data name="DoiVoiBangBeta" xml:space="preserve">
+    <value>100% FREE providing in Beta process</value>
+  </data>
+  <data name="DuLieu2D3D" xml:space="preserve">
+    <value>2D, 3D data</value>
+  </data>
+  <data name="DungKhongGianThucTeAo" xml:space="preserve">
+    <value>VR 360</value>
+  </data>
+  <data name="GoiCoBan" xml:space="preserve">
+    <value>Public plan</value>
+  </data>
+  <data name="GoiCoBanTheoTungLuotTruyCap" xml:space="preserve">
+    <value>PAY AS YOU GO</value>
+  </data>
+  <data name="GoiDichVu" xml:space="preserve">
+    <value>Plans &amp; Pricing</value>
+  </data>
+  <data name="GoiHoTro" xml:space="preserve">
+    <value>Support service</value>
+  </data>
+  <data name="LienHeVoiChungToiTaiDay" xml:space="preserve">
+    <value>contact us here.</value>
+  </data>
+  <data name="MienPhi" xml:space="preserve">
+    <value>Free to start</value>
+  </data>
+  <data name="MotGio" xml:space="preserve">
+    <value>/ 1 hour</value>
+  </data>
+  <data name="Map4DCamKet" xml:space="preserve">
+    <value>4DMap team appreciates your business and is committed to providing you with world-class service. If you want to more supportings for all services of 4DMap or choosing 4Dmaps for cooperate and development . please don't hesitate to</value>
+  </data>
+  <data name="NguoiDungTuTai" xml:space="preserve">
+    <value>Upload 3D object</value>
+  </data>
+  <data name="ThemThongTin" xml:space="preserve">
+    <value>MORE INFORMATIONS</value>
+  </data>
+  <data name="Plus" xml:space="preserve">
+    <value>plus</value>
+  </data>
+  <data name="ThoiTietVaThoiGianThuc" xml:space="preserve">
+    <value>Weather, real time</value>
+  </data>
+  <data name="TimKiem" xml:space="preserve">
+    <value>Search:</value>
+  </data>
+  <data name="ToaDoBanDo" xml:space="preserve">
+    <value>Geocoding:</value>
+  </data>
+  <data name="ToiUuHoaKetQua" xml:space="preserve">
+    <value>Optimize results</value>
+  </data>
+  <data name="TrenLuotTruyCap" xml:space="preserve">
+    <value>/ 1000 requests</value>
+  </data>
+  <data name="TruyCapDuoi" xml:space="preserve">
+    <value>/ 60.000 requests</value>
+  </data>
+  <data name="XayDungDoiTuong3D" xml:space="preserve">
+    <value>Build 3D object</value>
+  </data>
+  <data name="ChiPhiCongThem" xml:space="preserve">
+    <value>$ 0.35</value>
+  </data>
+  <data name="ChiPhiDauTien" xml:space="preserve">
+    <value>$ 0</value>
+  </data>
+  <data name="ChiPhiTheoGio" xml:space="preserve">
+    <value>$ 20</value>
+  </data>
+  <data name="ThuCamOn" xml:space="preserve">
+    <value>Thank you for contacting us, we will respond to you in the shortest time</value>
+  </data>
+  <data name="TieuDeMail" xml:space="preserve">
+    <value>Thank you letter</value>
   </data>
 </root>

@@ -4,50 +4,31 @@
     background-repeat: no-repeat;
     margin: 0 auto;
     width: 100%;
+    background-position: 70%;
 }
 
-    .webApp .content {
-        margin-left: 20px;
+    .webApp .left .content {
+        padding-left: 25%;
+        padding-top: 20%;
     }
 
-    .webApp .left {
-        /*padding-bottom: 28%;*/
-    }
-
-        .webApp .left .content {
-            padding-left: 20%;
-            padding-top: 20%;
+        .webApp .left .content .tittle {
+            font-family: 'utm avo';
+            padding-left: 5%;
+            font-weight: normal;
+            color: #ffffff;
+            font-size: 44px;
         }
 
-            .webApp .left .content .tittle {
-                font-family: 'utm avo';
-                padding-left: 5%;
-                font-weight: normal;
-                color: #ffffff;
-                font-size: 25.51px;
-                padding-bottom: 8%;
-                
-            }
-
-            .webApp .left .content .webmobile {
-                font-family: 'utm avo';
-                padding-left: 5%;
-                font-weight: normal;
-                color: #1a6ad9;
-                font-size: 26px;
-                padding-bottom: 4%;
-            }
-
-            .webApp .left .content .contrary {
-                padding-left: 5%;
-                padding-right: 25%;
-                font-family: 'Myriad Pro';
-                font-size: 16px;
-                font-weight: normal;
-                color: #ffffff;
-                text-align: justify;
-                padding-bottom: 30%;
-            }
+        .webApp .left .content .contrary {
+            padding-left: 5%;
+            padding-right: 45%;
+            font-family: 'Myriad Pro';
+            font-size: 14px;
+            font-weight: normal;
+            color: #ffffff;
+            padding-bottom: 38%;
+        }
 
     .webApp .right .imgPhone {
         width: 93%;
@@ -60,11 +41,16 @@
     }
 }
 
-
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1033px) {
     .webApp .left .content .imgIP {
         width: 33%;
     }
+}
+
+@media only screen and (max-width: 992px) {
+    /*.webApp .left .content .imgIP {
+        width: 33%;
+    }*/
 
     .webApp {
         background-size: cover;
@@ -77,25 +63,28 @@
         .webApp .left .content .contrary {
             font-size: 14px;
             padding-bottom: 16%;
-            padding-right:0%;
+            padding-right: 0%;
         }
 }
 
+@media only screen and (max-width: 860px) {
+    .webApp .left .content .tittle {
+        font-size: 32px;
+    }
+}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .webApp .left .content {
         padding-top: 0%;
         padding-left: 5%;
     }
 
         .webApp .left .content .imgIP {
-            width: 35%;
-            padding-left:4%;
-            /*margin-right: 380px;*/
+            width: 20%;
+            padding-left: 4%;
         }
 
     .webApp .left .content {
-        /*text-align: center;*/
         padding-left: 0%;
         padding-right: 0%;
         display: block;
@@ -107,7 +96,6 @@
 
         .webApp .left .content .tittle {
             padding-left: 5%;
-            /*margin-right: 380px;*/
         }
 
     .webApp .left {
@@ -124,28 +112,28 @@
     }
 
     .webApp .left .content .contrary {
-        padding-right: 40%;
+        padding-right: 45%;
         text-align: left;
     }
 
     .webApp .left .content .webmobile {
         padding-bottom: 1%;
     }
-    .webApp{
-        background-position:center;
+
+    .webApp {
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .webApp .left .content .imgIP {
+        width: 35%;
     }
 }
 
 @media only screen and (max-width: 435px) {
-    .webApp .left .content .contrary {
-        font-size: 14px;
-    }
 
     .webApp .left .content .tittle {
-        font-size: 22px;
-    }
-
-    .webApp .left .content .webmobile {
         font-size: 22px;
     }
 

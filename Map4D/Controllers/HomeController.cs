@@ -41,7 +41,8 @@ namespace Map4D.Controllers
         [HttpGet]
         public ActionResult Products()
         {
-            return View();
+            ViewBag.Title = Map4D.Resources.My_texts.Product;
+            return View("CommingSoon");
         }
         public ActionResult ProductValue()
         {
@@ -61,22 +62,9 @@ namespace Map4D.Controllers
             ViewBag.Title = Map4D.Resources.My_texts.Document;
             return View("CommingSoon");
         }
-        public ActionResult PriceTable()
+        public ActionResult Pricing()
         {
             ViewBag.Title = Map4D.Resources.My_texts.PriceTable;
-            return View("CommingSoon");
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
         //public ActionResult GetInTouch()
@@ -111,14 +99,14 @@ namespace Map4D.Controllers
         public void SendMail(string guestMail)
         {
             StringBuilder Body = new StringBuilder();
-            Body.Append("<p>Cảm ơn quý khách đã sử dụng sản phẩm của chúng tôi, chúng tôi sẽ liên lạc lại cho quý khách trong thời gian sớm nhất:</p>");
+            Body.Append("<p>" + Map4D.Resources.My_texts.ThuCamOn + "</p>");
             Body.Append("<table>");
             Body.Append("<tr><td> from IOT Company </td>");
             Body.Append("</table>");
             MailMessage mail = new MailMessage();
             mail.To.Add(guestMail);
             mail.From = new MailAddress("iotocteam123@gmail.com", "IOT team");
-            mail.Subject = "Thư cảm ơn";
+            mail.Subject = Map4D.Resources.My_texts.TieuDeMail;
             mail.Body = Body.ToString();// phần thân của mail ở trên
             mail.IsBodyHtml = true;
             SmtpClient smtp = new SmtpClient();

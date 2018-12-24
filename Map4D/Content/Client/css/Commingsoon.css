@@ -28,7 +28,7 @@
     }
 
     .bg .p2 {
-        font-size: 100px;
+        font-size: 82px;
         color: white;
         font-family: 'Montserrat-Bold';
         font-weight: bold;
@@ -43,28 +43,9 @@
         padding-top: 0%;
     }
 
-@media only screen and (max-width:1374px) {
-    .bg p{
-        padding-top:25%;
-    }
-    .bg .p2{
-        padding-top:8%;
-        font-size:80px;
-    }
-    .bg .p3{
-        padding-top:-15%;
-    }
-
-}
-
-@media only screen and (max-width:1244px) {
-    .bg .p3 {
-    }
-}
-
 @media only screen and (max-width:1149px) {
     .bg .p2 {
-        font-size: 88px;
+        font-size: 80px;
     }
 
     .bg .p3 {
@@ -74,15 +55,7 @@
 
 @media only screen and (max-width:1122px) {
     .bg .p {
-        font-size: 10px;
-    }
-
-    .bg .p2 {
-        font-size: 80px;
-    }
-
-    .bg .p3 {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
@@ -95,7 +68,7 @@
 @media only screen and (max-width:690px) {
     .bg p {
         font-size: 16px;
-        padding-top:50%;
+        padding-top: 50%;
     }
 
     .bg .p2 {
@@ -110,15 +83,6 @@
 @media only screen and (max-width:447px) {
     .bg p {
         font-size: 15px;
-        padding-top:70%;
+        padding-top: 70%;
     }
-
-    .bg .p2 {
-    }
-
-    .bg .p3 {
-    }
-}
-@media only screen and (max-width:380px){
-    .bg 
 }

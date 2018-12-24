@@ -55,6 +55,7 @@
         padding-bottom: 2%;
         height: auto;
         width: 62%;
+        cursor: pointer;
     }
 
 #slideMap #carouselExampleIndicators .carousel-indicators {
