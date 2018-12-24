@@ -41,7 +41,8 @@ namespace Map4D.Controllers
         [HttpGet]
         public ActionResult Products()
         {
-            return View();
+            ViewBag.Title = Map4D.Resources.My_texts.Product;
+            return View("CommingSoon");
         }
         public ActionResult CommingSoon()
         {
@@ -60,18 +61,6 @@ namespace Map4D.Controllers
         public ActionResult Pricing()
         {
             ViewBag.Title = Map4D.Resources.My_texts.PriceTable;
-            return View();
-        }
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
         //public ActionResult GetInTouch()
@@ -106,7 +95,7 @@ namespace Map4D.Controllers
         public void SendMail(string guestMail)
         {
             StringBuilder Body = new StringBuilder();
-            Body.Append("<p>" + Map4D.Resources.My_texts.ThuCamOn +"</p>");
+            Body.Append("<p>" + Map4D.Resources.My_texts.ThuCamOn + "</p>");
             Body.Append("<table>");
             Body.Append("<tr><td> from IOT Company </td>");
             Body.Append("</table>");
