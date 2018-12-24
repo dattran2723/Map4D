@@ -61,7 +61,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to (Áp dụng cho phiên bản Web và Mobile).
+        ///   Looks up a localized string similar to (Áp dụng cho bản Web và Mobile).
         /// </summary>
         public static string ApDungChoBangWebVaMobile {
             get {
