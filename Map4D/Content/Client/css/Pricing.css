@@ -125,6 +125,7 @@
 
         .box-price .descript span {
             font-size: 14px;
+            padding-left: 5%;
         }
 
         .box-price .descript ul, .box-price .service ul {
