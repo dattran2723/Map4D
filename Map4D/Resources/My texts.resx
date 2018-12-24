@@ -310,7 +310,7 @@
     <value />
   </data>
   <data name="ApDungChoBangWebVaMobile" xml:space="preserve">
-    <value>(Áp dụng cho bảng Web và Mobile)</value>
+    <value>(Áp dụng cho phiên bản Web và Mobile)</value>
   </data>
   <data name="BanDoTrenNenTangMobile" xml:space="preserve">
     <value>Bản đồ trên nền tảng Mobile</value>
@@ -361,7 +361,7 @@
     <value>đối với</value>
   </data>
   <data name="DoiVoiBangBeta" xml:space="preserve">
-    <value>Đối với bảng Beta, dịch vụ cung cấp miễn phí 100%</value>
+    <value>Đối với bản Beta, dịch vụ cung cấp miễn phí 100%</value>
   </data>
   <data name="DuLieu2D3D" xml:space="preserve">
     <value>Dữ liệu 2D, 3D</value>
@@ -418,7 +418,7 @@
     <value>trên 1000 lượt truy cập tiếp theo</value>
   </data>
   <data name="TruyCapDuoi" xml:space="preserve">
-    <value>truy cập &lt; 60.00 lượt</value>
+    <value>truy cập &lt; 60.000 lượt</value>
   </data>
   <data name="XayDungDoiTuong3D" xml:space="preserve">
     <value>Xây dựng đối tượng 3D</value>

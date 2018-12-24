@@ -61,7 +61,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to (Áp dụng cho bảng Web và Mobile).
+        ///   Looks up a localized string similar to (Áp dụng cho phiên bản Web và Mobile).
         /// </summary>
         public static string ApDungChoBangWebVaMobile {
             get {
@@ -403,7 +403,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Đối với bảng Beta, dịch vụ cung cấp miễn phí 100%.
+        ///   Looks up a localized string similar to Đối với bản Beta, dịch vụ cung cấp miễn phí 100%.
         /// </summary>
         public static string DoiVoiBangBeta {
             get {
@@ -988,7 +988,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to truy cập &lt; 60.00 lượt.
+        ///   Looks up a localized string similar to truy cập &lt; 60.000 lượt.
         /// </summary>
         public static string TruyCapDuoi {
             get {
