@@ -438,4 +438,7 @@
   <data name="TieuDeMail" xml:space="preserve">
     <value>Thư cảm ơn</value>
   </data>
+  <data name="Explore" xml:space="preserve">
+    <value>Khám phá</value>
+  </data>
 </root>
