@@ -19,7 +19,7 @@
         name: "Nguyễn Thanh Hương",
         cmt: 'Map4d thể hiện đầy đủ các công nghệ hiện đại từ không gian ảo tới hình ảnh'
     },
-    {x
+    {
         img: "/content/client/img/Customer4.png",
         name: "Trần Văn Qúy",
         cmt: '"Good plans.awesome work"'
