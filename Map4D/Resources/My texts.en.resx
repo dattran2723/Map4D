@@ -127,7 +127,7 @@
     <value>Company</value>
   </data>
   <data name="Solution" xml:space="preserve">
-    <value>Solution</value>
+    <value>Solutions</value>
   </data>
   <data name="GiớiThiệu1" xml:space="preserve">
     <value>The only map in Vietnam which is displayed in real 4D. It is built from multiple data layers, ready for IOT connections and enable to analyze the information and turn the data into business insight. Our vision is to construct the smart city building, including many applications are integrated for State Management, Business Management and people.</value>
@@ -268,7 +268,7 @@
     <value>IOTLink</value>
   </data>
   <data name="Product" xml:space="preserve">
-    <value>Product</value>
+    <value>Products</value>
   </data>
   <data name="TrangChu" xml:space="preserve">
     <value>Home</value>
@@ -439,15 +439,15 @@
     <value>Explore</value>
   </data>
   <data name="NguyenThanhHuong" xml:space="preserve">
-    <value>- 4D map is full of updated technology: VR 360, MachineLearning, AI..</value>
+    <value>4D map is full of updated technology: VR 360, MachineLearning, AI..</value>
   </data>
   <data name="NguyenVanLinh" xml:space="preserve">
     <value>Real time 4D Map trusted by hundreds of people on the world.</value>
   </data>
   <data name="TranVanDuy" xml:space="preserve">
-    <value>- The most useful feature for delivery drivers</value>
+    <value>The most useful feature for delivery drivers</value>
   </data>
   <data name="TranVanQuy" xml:space="preserve">
-    <value>- We especially like the idea of using the time in real 4D.</value>
+    <value>We especially like the idea of using the time in real 4D.</value>
   </data>
 </root>

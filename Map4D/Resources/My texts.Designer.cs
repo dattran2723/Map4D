@@ -484,15 +484,6 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Khám phá.
-        /// </summary>
-        public static string Explore {
-            get {
-                return ResourceManager.GetString("Explore", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to /Content/Client/img/Flag_viet_nam.png.
         /// </summary>
         public static string FlagLanguage {
@@ -754,7 +745,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to - Map 4D thể hiện đầy đủ các công nghệ hiện đại từ không gian ảo tới hình ảnh thực tế được xây dựng trên nền tảng 3D..
+        ///   Looks up a localized string similar to Map 4D thể hiện đầy đủ các công nghệ hiện đại từ không gian ảo tới hình ảnh thực tế được xây dựng trên nền tảng 3D..
         /// </summary>
         public static string NguyenThanhHuong {
             get {
@@ -1015,7 +1006,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to - Tính năng rất hữu ích và tiện dụng đối với tài xế chúng tôi.
+        ///   Looks up a localized string similar to Tính năng rất hữu ích và tiện dụng đối với tài xế chúng tôi.
         /// </summary>
         public static string TranVanDuy {
             get {
@@ -1024,7 +1015,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to - Chúng tôi đặc biệt ấn tượng với chức năng hiển thị bản đồ theo thời gian..
+        ///   Looks up a localized string similar to Chúng tôi đặc biệt ấn tượng với chức năng hiển thị bản đồ theo thời gian..
         /// </summary>
         public static string TranVanQuy {
             get {
