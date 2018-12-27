@@ -44,10 +44,7 @@ namespace Map4D.Controllers
             ViewBag.Title = Map4D.Resources.My_texts.Product;
             return View("CommingSoon");
         }
-        public ActionResult ProductValue()
-        {
-            return View();
-        }
+
         public ActionResult CommingSoon()
         {
             return View();
@@ -64,7 +61,7 @@ namespace Map4D.Controllers
         }
         public ActionResult Pricing()
         {
-            ViewBag.Title = Map4D.Resources.My_texts.PriceTable;
+            ViewBag.Title = Map4D.Resources.My_texts.Pricing;
             return View();
         }
         //public ActionResult GetInTouch()

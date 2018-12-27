@@ -2,7 +2,7 @@
     {
         img: "/Content/Client/img/product2.jpg",
         name: "Nguyễn Văn Linh",
-        cmt: "Tính năng rất hữu ích và tiện dụng đối với tài xế chúng tôi"
+        cmt: "@Map4D.Resources.My_texts.Trảinghiệmcùngmap4D"
     },
     {
         img: "/Content/Client/img/Customer1.png",
@@ -19,7 +19,7 @@
         name: "Nguyễn Thanh Hương",
         cmt: 'Map4d thể hiện đầy đủ các công nghệ hiện đại từ không gian ảo tới hình ảnh'
     },
-    {
+    {x
         img: "/content/client/img/Customer4.png",
         name: "Trần Văn Qúy",
         cmt: '"Good plans.awesome work"'
