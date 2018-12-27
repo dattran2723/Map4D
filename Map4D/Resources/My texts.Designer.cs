@@ -313,7 +313,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Đăng ký ngay bây giờ để sử dụng Map4D.
+        ///   Looks up a localized string similar to Khám phá map 4D.
         /// </summary>
         public static string Đăngkýngaybâygiờ {
             get {
