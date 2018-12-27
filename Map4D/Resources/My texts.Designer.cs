@@ -871,7 +871,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tiện ích địa chỉ.
+        ///   Looks up a localized string similar to Tiện ích địa điểm.
         /// </summary>
         public static string TiệnÍchĐịaChỉ {
             get {
