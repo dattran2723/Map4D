@@ -172,7 +172,7 @@
     <value>Tiêu đề</value>
   </data>
   <data name="TiệnÍchĐịaChỉ" xml:space="preserve">
-    <value>Tiện ích địa chỉ</value>
+    <value>Tiện ích địa điểm</value>
   </data>
   <data name="Trảinghiệmcùngmap4D" xml:space="preserve">
     <value>Trải nghiệm cùng map 4D</value>
@@ -202,7 +202,7 @@
     <value>Họ và tên</value>
   </data>
   <data name="Đăngkýngaybâygiờ" xml:space="preserve">
-    <value>Đăng ký ngay bây giờ để sử dụng Map4D</value>
+    <value>Khám phá map 4D</value>
   </data>
   <data name="CảmƠn" xml:space="preserve">
     <value>Cảm ơn quý khách đã góp ý cho chúng tôi</value>
@@ -437,5 +437,8 @@
   </data>
   <data name="TieuDeMail" xml:space="preserve">
     <value>Thư cảm ơn</value>
+  </data>
+  <data name="Explore" xml:space="preserve">
+    <value>Khám phá</value>
   </data>
 </root>

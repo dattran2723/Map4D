@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace Map4D.Areas.Admin.Controllers
 {
+    [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
     [Authorize]
     public class HomeController : Controller
     {
