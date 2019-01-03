@@ -54,6 +54,8 @@
                 height: 55px;
                 width: 45px;
                 border-radius: 5px;
+                object-fit: cover;
+                object-position: center;
             }
 
             .buildMap4D .rowbottom .boxBuild .img .content .contentRight {
