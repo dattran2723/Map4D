@@ -4,153 +4,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<style>
-    #menu-top nav {
-        background: #3597e4;
-    }
-
-    .document {
-        padding-top: 8%;
-        /*background-color: #EFF3F6;*/
-        /*font-family: Source Sans Pro;*/
-    }
-
-    .intro-section {
-        width: 100%;
-        padding-top: 20px;
-    }
-
-    .welcome {
-        font-size: 26px;
-    }
-
-    .version {
-        font-size: 16px;
-    }
-
-    .box-link {
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .box-img {
-        text-align: right;
-        /*padding-left: 200px;*/
-    }
-
-        .box-img img {
-            width: 100%;
-            height: auto;
-        }
-
-    .box-intro {
-        /*padding-right: 200px;*/
-        font-family: 'Myriad Pro';
-        padding-top: 50px;
-    }
-
-    .box-intro-text {
-        font-size: 26px;
-        color: #354052;
-    }
-
-    .box-intro-update-date {
-        font-size: 16px;
-        color: #7F8FA4;
-    }
-
-    .list-box {
-        margin-top: 50px;
-        margin-bottom: 100px;
-        /*padding-left: 200px;
-        padding-right: 200px;*/
-        margin-right: unset !important;
-    }
-
-    .box-item {
-        border: 1px solid #E6EAEE;
-        box-sizing: border-box;
-        border-radius: 4px;
-        text-align: center;
-    }
-
-    .box-item-img {        
-        padding-top: 40px;
-        padding-bottom: 20px;
-    }
-
-    
-
-        .box-item-title {
-            font-size: 30px;
-            color: #354052;
-        }
-
-    .box-item-text {
-        font-size: 16px;
-        color: #354052;
-        padding-left: 15px;
-        padding-right: 15px;
-        height: 180px;
-        /*display: flex;
-                    justify-content: center;
-                    align-items: center;*/
-    }
-
-    .box-item-text-middle {
-        /*top: 25%;
-                    position: relative;*/
-    }
-
-    .btn-explore {
-        background-color: #00FBC8;
-        color: #1C2747;
-        font-size: 14px;
-        margin-bottom: 40px;
-        border-radius: 4px;
-        border: none;
-        width: 150px;
-    }
-
-    @@media only screen and (max-width: 1140px) {
-        .intro-section{
-            padding-top: 40px;
-        }
-
-        .box-img {
-            text-align: center;
-        }
-
-        .box-item {
-            margin-top: 10px;
-        }
-
-        .box-item-text {
-            height: 150px;
-        }
-    }
-
-    @@media only screen and (max-width: 576px) {
-        .intro-section {
-            padding-top: 80px;
-        }
-
-        .container{
-            max-width: 450px;
-        }
-
-        .box-item {
-            margin-top: 10px;
-        }
-
-        .box-item-text {
-            height: 150px;
-        }
-    }
-
-</style>
+@section css{
+    <link rel="stylesheet" type="text/css" href="~/Content/Client/css/document.css" />
+}
 
 <div class="container document">
     <div class="row intro-section">
@@ -159,12 +15,14 @@
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 box-intro">
             <span class="box-intro-text">
-                Cung cấp giải pháp map 2D, 3D & 4D trên các nền tảng Mobile (Android & iOS) và Web.
-                Cung cấp các ví dụ mẫu (sample) và tài liệu cho lập trình viên có thể nhanh chóng phát triển ứng dụng dựa trên map4d SDK
+                @Map4D.Resources.My_texts.Doc_Introduction
+                @*Cung cấp giải pháp map 2D, 3D & 4D trên các nền tảng Mobile (Android & iOS) và Web.
+                    Cung cấp các ví dụ mẫu (sample) và tài liệu cho lập trình viên có thể nhanh chóng phát triển ứng dụng dựa trên map4d SDK*@
             </span>
             <br />
             <span class="box-intro-update-date">
-                Cập nhập mới ngày 31 tháng 12 năm 2018
+                @Map4D.Resources.My_texts.Doc_UpdatedTime
+                @*Cập nhập mới ngày 31 tháng 12 năm 2018*@
             </span>
         </div>
     </div>
@@ -172,48 +30,72 @@
         <div class="col-lg-3 col-md-6 col-sm-12 ">
             <div class="box-item">
                 <img src="~/Content/Client/img/SDK-IOS.png" class="box-item-img" /><br />
-                <span class="box-item-title">iOS SDK</span><br />
+                <span class="box-item-title">
+                    @Map4D.Resources.My_texts.Doc_IOSTitle
+                    @*iOS SDK*@
+                </span><br />
                 <div class="box-item-text">
-                    <span class="box-item-text-middle">Cung cấp các ví dụ về các phiên bản phát triển điển hình cho SDK iOS, mỗi phiên bản bao gồm iOS</span>
+                    <span class="box-item-text-middle">
+                        @Map4D.Resources.My_texts.Doc_IOSContent
+                        @*Cung cấp các ví dụ về các phiên bản phát triển điển hình cho SDK iOS, mỗi phiên bản bao gồm iOS*@
+                    </span>
                 </div>
                 <div>
-                    <a class="btn btn-primary btn-explore" href="https://github.com/iotlinkadmin/map4d-ios-sdk" target="_blank">Khám phá</a>
+                    <a class="btn btn-primary btn-explore" href="https://github.com/iotlinkadmin/map4d-ios-sdk" target="_blank">@Map4D.Resources.My_texts.Doc_Explorer</a>
                 </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="box-item">
                 <img src="~/Content/Client/img/SDK-Android.png" class="box-item-img" /><br />
-                <span class="box-item-title">Android SDK</span><br />
+                <span class="box-item-title">
+                    @Map4D.Resources.My_texts.Doc_AndroidTitle
+                    @*Android SDK*@
+                </span><br />
                 <div class="box-item-text">
-                    <div class="box-item-text-middle">Cung cấp các ví dụ về các phiên bản phát triển điển hình cho SDK Android, mỗi trong số đó bao gồm các triển khai của Android</div>
+                    <div class="box-item-text-middle">
+                        @Map4D.Resources.My_texts.Doc_AndroidContent
+                        @*Cung cấp các ví dụ về các phiên bản phát triển điển hình cho SDK Android, mỗi trong số đó bao gồm các triển khai của Android*@
+                    </div>
                 </div>
                 <div>
-                    <a class="btn btn-primary btn-explore" href="https://github.com/iotlinkadmin/map4d-android-sdk" target="_blank">Khám phá</a>
+                    <a class="btn btn-primary btn-explore" href="https://github.com/iotlinkadmin/map4d-android-sdk" target="_blank">@Map4D.Resources.My_texts.Doc_Explorer</a>
                 </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="box-item">
                 <img src="~/Content/Client/img/SDK-Web.png" class="box-item-img" /><br />
-                <span class="box-item-title">Web SDK</span><br />
+                <span class="box-item-title">
+                    @Map4D.Resources.My_texts.Doc_WebTitle
+                    @*Web SDK*@
+                </span><br />
                 <div class="box-item-text">
-                    <span class="box-item-text-middle">Cung cấp các ví dụ về các phiên bản  phát triển điển hình cho SDK Web, mỗi phiên bản triển khai Web</span>
+                    <span class="box-item-text-middle">
+                        @Map4D.Resources.My_texts.Doc_WebContent
+                        @*Cung cấp các ví dụ về các phiên bản  phát triển điển hình cho SDK Web, mỗi phiên bản triển khai Web*@
+                    </span>
                 </div>
                 <div>
-                    <a class="btn btn-primary btn-explore" href="https://github.com/iotlinkadmin/map4d-web-sdk" target="_blank">Khám phá</a>
+                    <a class="btn btn-primary btn-explore" href="https://github.com/iotlinkadmin/map4d-web-sdk" target="_blank">@Map4D.Resources.My_texts.Doc_Explorer</a>
                 </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="box-item">
                 <img src="~/Content/Client/img/SDK-API.png" class="box-item-img" /><br />
-                <span class="box-item-title">API dịch vụ map</span><br />
+                <span class="box-item-title">
+                    @Map4D.Resources.My_texts.Doc_APITitle
+                    @*API dịch vụ map*@
+                </span><br />
                 <div class="box-item-text">
-                    <span class="box-item-text-middle">Cung cấp các ví dụ về các tính năng API dịch vụ bản đồ phổ biến và tổng quan nhanh về các tính năng cốt lõi của API dịch vụ bản đồ bằng cách xem xét ví dụ</span>
+                    <span class="box-item-text-middle">
+                        @Map4D.Resources.My_texts.Doc_APIContent
+                        @*Cung cấp các ví dụ về các tính năng API dịch vụ bản đồ phổ biến và tổng quan nhanh về các tính năng cốt lõi của API dịch vụ bản đồ bằng cách xem xét ví dụ*@
+                    </span>
                 </div>
                 <div>
-                    <a class="btn btn-primary btn-explore" href="https://github.com/iotlinkadmin/map4d-service-api" target="_blank">Khám phá</a>
+                    <a class="btn btn-primary btn-explore" href="https://github.com/iotlinkadmin/map4d-service-api" target="_blank">@Map4D.Resources.My_texts.Doc_Explorer</a>
                 </div>
             </div>
         </div>

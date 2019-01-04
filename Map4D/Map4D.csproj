@@ -1963,6 +1963,7 @@
     <Content Include="Content\Client\css\BuildMap4D.css" />
     <Content Include="Content\Client\css\Commingsoon.css" />
     <Content Include="Content\Client\css\CreateMobileApps.css" />
+    <Content Include="Content\Client\css\document.css" />
     <Content Include="Content\Client\css\Pricing.css" />
     <Content Include="Content\Client\css\products\MobileApp.css" />
     <Content Include="Content\Client\css\products\SlideMap.css" />
