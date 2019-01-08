@@ -42,7 +42,7 @@ namespace Map4D.Controllers
         public ActionResult Products()
         {
             ViewBag.Title = Map4D.Resources.My_texts.Product;
-            return View("CommingSoon");
+            return View();
         }
         public ActionResult CommingSoon()
         {
