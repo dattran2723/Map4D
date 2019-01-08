@@ -223,13 +223,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201812090414356_init-db.cs" />
-    <Compile Include="Migrations\201812090414356_init-db.Designer.cs">
-      <DependentUpon>201812090414356_init-db.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812140312372_init-1.cs" />
-    <Compile Include="Migrations\201812140312372_init-1.Designer.cs">
-      <DependentUpon>201812140312372_init-1.cs</DependentUpon>
+    <Compile Include="Migrations\201812180847194_initdb.cs" />
+    <Compile Include="Migrations\201812180847194_initdb.Designer.cs">
+      <DependentUpon>201812180847194_initdb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -1967,6 +1963,7 @@
     <Content Include="Content\Client\css\BuildMap4D.css" />
     <Content Include="Content\Client\css\Commingsoon.css" />
     <Content Include="Content\Client\css\CreateMobileApps.css" />
+    <Content Include="Content\Client\css\document.css" />
     <Content Include="Content\Client\css\Pricing.css" />
     <Content Include="Content\Client\css\products\MobileApp.css" />
     <Content Include="Content\Client\css\products\SlideMap.css" />
@@ -1987,6 +1984,7 @@
     <Content Include="Content\Client\img\Customer3.png" />
     <Content Include="Content\Client\img\Customer4.png" />
     <Content Include="Content\Client\img\Dang ky.png" />
+    <Content Include="Content\Client\img\document-logo.png" />
     <Content Include="Content\Client\img\Flag_viet_nam.png" />
     <Content Include="Content\Client\img\Flag_united_states.png" />
     <Content Include="Content\Client\img\gallery3.jpg" />
@@ -2051,6 +2049,10 @@
     <Content Include="Content\Client\img\products\page-2_0007_kinh-lup-khong-nen.png" />
     <Content Include="Content\Client\img\products\page-2_0007_kinh-lup-khong-nen2.png" />
     <Content Include="Content\Client\img\products\page-2_0007_kinh-lup.png" />
+    <Content Include="Content\Client\img\SDK-Android.png" />
+    <Content Include="Content\Client\img\SDK-API.png" />
+    <Content Include="Content\Client\img\SDK-IOS.png" />
+    <Content Include="Content\Client\img\SDK-Web.png" />
     <Content Include="Content\Client\img\under contruction page.jpg" />
     <Content Include="Content\Client\img\Untitled-1_0000_Header-Bg.png" />
     <Content Include="Content\Client\img\Untitled-1_0000_Mask-by-Mask.png" />
@@ -2394,11 +2396,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201812090414356_init-db.resx">
-      <DependentUpon>201812090414356_init-db.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812140312372_init-1.resx">
-      <DependentUpon>201812140312372_init-1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201812180847194_initdb.resx">
+      <DependentUpon>201812180847194_initdb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\My texts.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -2408,6 +2407,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>My texts.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

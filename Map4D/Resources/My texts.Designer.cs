@@ -313,7 +313,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Đăng ký ngay bây giờ để sử dụng Map4D.
+        ///   Looks up a localized string similar to Khám phá map 4D.
         /// </summary>
         public static string Đăngkýngaybâygiờ {
             get {
@@ -381,6 +381,105 @@ namespace Map4D.Resources {
         public static string DinhTuyen {
             get {
                 return ResourceManager.GetString("DinhTuyen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cung cấp các ví dụ về các phiên bản phát triển điển hình cho SDK Android, mỗi trong số đó bao gồm các triển khai của Android.
+        /// </summary>
+        public static string Doc_AndroidContent {
+            get {
+                return ResourceManager.GetString("Doc_AndroidContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Android SDK.
+        /// </summary>
+        public static string Doc_AndroidTitle {
+            get {
+                return ResourceManager.GetString("Doc_AndroidTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cung cấp các ví dụ về các tính năng API dịch vụ bản đồ phổ biến và tổng quan nhanh về các tính năng cốt lõi của API dịch vụ bản đồ bằng cách xem xét ví dụ.
+        /// </summary>
+        public static string Doc_APIContent {
+            get {
+                return ResourceManager.GetString("Doc_APIContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to API dịch vụ map.
+        /// </summary>
+        public static string Doc_APITitle {
+            get {
+                return ResourceManager.GetString("Doc_APITitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Khám phá.
+        /// </summary>
+        public static string Doc_Explorer {
+            get {
+                return ResourceManager.GetString("Doc_Explorer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cung cấp giải pháp map 2D, 3D &amp; 4D trên các nền tảng Mobile (Android &amp; iOS) và Web. Cung cấp các ví dụ mẫu (sample) và tài liệu cho lập trình viên có thể nhanh chóng phát triển ứng dụng dựa trên map4d SDK.
+        /// </summary>
+        public static string Doc_Introduction {
+            get {
+                return ResourceManager.GetString("Doc_Introduction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cung cấp các ví dụ về các phiên bản phát triển điển hình cho SDK iOS, mỗi phiên bản bao gồm iOS.
+        /// </summary>
+        public static string Doc_IOSContent {
+            get {
+                return ResourceManager.GetString("Doc_IOSContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to iOS SDK.
+        /// </summary>
+        public static string Doc_IOSTitle {
+            get {
+                return ResourceManager.GetString("Doc_IOSTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cập nhập mới ngày 31 tháng 12 năm 2018.
+        /// </summary>
+        public static string Doc_UpdatedTime {
+            get {
+                return ResourceManager.GetString("Doc_UpdatedTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cung cấp các ví dụ về các phiên bản  phát triển điển hình cho SDK Web, mỗi phiên bản triển khai Web.
+        /// </summary>
+        public static string Doc_WebContent {
+            get {
+                return ResourceManager.GetString("Doc_WebContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Web SDK.
+        /// </summary>
+        public static string Doc_WebTitle {
+            get {
+                return ResourceManager.GetString("Doc_WebTitle", resourceCulture);
             }
         }
         
@@ -610,6 +709,24 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Khám phá ứng dụng.
+        /// </summary>
+        public static string KhámPháExplore {
+            get {
+                return ResourceManager.GetString("KhámPháExplore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Khám phá.
+        /// </summary>
+        public static string KhamPhaExplore1 {
+            get {
+                return ResourceManager.GetString("KhamPhaExplore1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Không chỉ mang hình ảnh thực tế lên trên bản đồ 3D, ngoài ra còn cho phép tương tác và điều chỉnh các đối tượng 3D của bạn.
         /// </summary>
         public static string KhôngChỉ {
@@ -727,6 +844,24 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Map 4D thể hiện đầy đủ các công nghệ hiện đại từ không gian ảo tới hình ảnh thực tế được xây dựng trên nền tảng 3D..
+        /// </summary>
+        public static string NguyenThanhHuong {
+            get {
+                return ResourceManager.GetString("NguyenThanhHuong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Map 4D được đón nhận và tin cậy với hàng trăm người dùng trên toàn thế giới..
+        /// </summary>
+        public static string NguyenVanLinh {
+            get {
+                return ResourceManager.GetString("NguyenVanLinh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Xong.
         /// </summary>
         public static string notifyRegisterButtonPopup {
@@ -772,11 +907,11 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bảng giá.
+        ///   Looks up a localized string similar to Giá.
         /// </summary>
-        public static string PriceTable {
+        public static string Pricing {
             get {
-                return ResourceManager.GetString("PriceTable", resourceCulture);
+                return ResourceManager.GetString("Pricing", resourceCulture);
             }
         }
         
@@ -871,7 +1006,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tiện ích địa chỉ.
+        ///   Looks up a localized string similar to Tiện ích địa điểm.
         /// </summary>
         public static string TiệnÍchĐịaChỉ {
             get {
@@ -966,6 +1101,24 @@ namespace Map4D.Resources {
         public static string TrangChu {
             get {
                 return ResourceManager.GetString("TrangChu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tính năng rất hữu ích và tiện dụng đối với tài xế chúng tôi.
+        /// </summary>
+        public static string TranVanDuy {
+            get {
+                return ResourceManager.GetString("TranVanDuy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chúng tôi đặc biệt ấn tượng với chức năng hiển thị bản đồ theo thời gian..
+        /// </summary>
+        public static string TranVanQuy {
+            get {
+                return ResourceManager.GetString("TranVanQuy", resourceCulture);
             }
         }
         

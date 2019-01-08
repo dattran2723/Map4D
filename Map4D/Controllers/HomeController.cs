@@ -22,6 +22,7 @@ namespace Map4D.Controllers
         {
             return View();
         }
+
         public ActionResult ChangeLanguage(String LanguageAbbreviation, string url)
         {
             if (LanguageAbbreviation != null)
@@ -34,39 +35,47 @@ namespace Map4D.Controllers
             Response.Cookies.Add(cookie);
             return Redirect(url);
         }
+
         public ActionResult ProductValue()
         {
             return View();
         }
+
         [HttpGet]
         public ActionResult Products()
         {
             ViewBag.Title = Map4D.Resources.My_texts.Product;
             return View();
         }
+
         public ActionResult CommingSoon()
         {
             return View();
         }
+
         public ActionResult Solution()
         {
             ViewBag.Title = Map4D.Resources.My_texts.Solution;
             return View("CommingSoon");
         }
+
         public ActionResult Document()
         {
             ViewBag.Title = Map4D.Resources.My_texts.Document;
-            return View("CommingSoon");
+            return View();
+            // return View("CommingSoon");
         }
+
         public ActionResult Pricing()
         {
-            ViewBag.Title = Map4D.Resources.My_texts.PriceTable;
+            ViewBag.Title = Map4D.Resources.My_texts.Pricing;
             return View();
         }
         //public ActionResult GetInTouch()
         //{
         //    return View();
         //}
+
         [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -91,7 +100,6 @@ namespace Map4D.Controllers
 
         }
 
-
         public void SendMail(string guestMail)
         {
             StringBuilder Body = new StringBuilder();
@@ -113,10 +121,12 @@ namespace Map4D.Controllers
             smtp.EnableSsl = true;
             smtp.Send(mail);
         }
+
         public ActionResult Product()
         {
             return View();
         }
+
         public ActionResult Register()
         {
             return View();

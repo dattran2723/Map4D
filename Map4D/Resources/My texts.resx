@@ -117,8 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="PriceTable" xml:space="preserve">
-    <value>Bảng giá</value>
+  <data name="Pricing" xml:space="preserve">
+    <value>Giá</value>
   </data>
   <data name="ChỉĐường" xml:space="preserve">
     <value>Chỉ đường</value>
@@ -172,7 +172,7 @@
     <value>Tiêu đề</value>
   </data>
   <data name="TiệnÍchĐịaChỉ" xml:space="preserve">
-    <value>Tiện ích địa chỉ</value>
+    <value>Tiện ích địa điểm</value>
   </data>
   <data name="Trảinghiệmcùngmap4D" xml:space="preserve">
     <value>Trải nghiệm cùng map 4D</value>
@@ -202,7 +202,7 @@
     <value>Họ và tên</value>
   </data>
   <data name="Đăngkýngaybâygiờ" xml:space="preserve">
-    <value>Đăng ký ngay bây giờ để sử dụng Map4D</value>
+    <value>Khám phá map 4D</value>
   </data>
   <data name="CảmƠn" xml:space="preserve">
     <value>Cảm ơn quý khách đã góp ý cho chúng tôi</value>
@@ -437,5 +437,56 @@
   </data>
   <data name="TieuDeMail" xml:space="preserve">
     <value>Thư cảm ơn</value>
+  </data>
+  <data name="KhamPhaExplore1" xml:space="preserve">
+    <value>Khám phá</value>
+  </data>
+  <data name="KhámPháExplore" xml:space="preserve">
+    <value>Khám phá ứng dụng</value>
+  </data>
+  <data name="NguyenThanhHuong" xml:space="preserve">
+    <value>Map 4D thể hiện đầy đủ các công nghệ hiện đại từ không gian ảo tới hình ảnh thực tế được xây dựng trên nền tảng 3D.</value>
+  </data>
+  <data name="NguyenVanLinh" xml:space="preserve">
+    <value>Map 4D được đón nhận và tin cậy với hàng trăm người dùng trên toàn thế giới.</value>
+  </data>
+  <data name="TranVanDuy" xml:space="preserve">
+    <value>Tính năng rất hữu ích và tiện dụng đối với tài xế chúng tôi</value>
+  </data>
+  <data name="TranVanQuy" xml:space="preserve">
+    <value>Chúng tôi đặc biệt ấn tượng với chức năng hiển thị bản đồ theo thời gian.</value>
+  </data>
+  <data name="Doc_AndroidContent" xml:space="preserve">
+    <value>Cung cấp các ví dụ về các phiên bản phát triển điển hình cho SDK Android, mỗi trong số đó bao gồm các triển khai của Android</value>
+  </data>
+  <data name="Doc_AndroidTitle" xml:space="preserve">
+    <value>Android SDK</value>
+  </data>
+  <data name="Doc_APIContent" xml:space="preserve">
+    <value>Cung cấp các ví dụ về các tính năng API dịch vụ bản đồ phổ biến và tổng quan nhanh về các tính năng cốt lõi của API dịch vụ bản đồ bằng cách xem xét ví dụ</value>
+  </data>
+  <data name="Doc_APITitle" xml:space="preserve">
+    <value>API dịch vụ map</value>
+  </data>
+  <data name="Doc_Explorer" xml:space="preserve">
+    <value>Khám phá</value>
+  </data>
+  <data name="Doc_Introduction" xml:space="preserve">
+    <value>Cung cấp giải pháp map 2D, 3D &amp; 4D trên các nền tảng Mobile (Android &amp; iOS) và Web. Cung cấp các ví dụ mẫu (sample) và tài liệu cho lập trình viên có thể nhanh chóng phát triển ứng dụng dựa trên map4d SDK</value>
+  </data>
+  <data name="Doc_IOSContent" xml:space="preserve">
+    <value>Cung cấp các ví dụ về các phiên bản phát triển điển hình cho SDK iOS, mỗi phiên bản bao gồm iOS</value>
+  </data>
+  <data name="Doc_IOSTitle" xml:space="preserve">
+    <value>iOS SDK</value>
+  </data>
+  <data name="Doc_UpdatedTime" xml:space="preserve">
+    <value>Cập nhập mới ngày 31 tháng 12 năm 2018</value>
+  </data>
+  <data name="Doc_WebContent" xml:space="preserve">
+    <value>Cung cấp các ví dụ về các phiên bản  phát triển điển hình cho SDK Web, mỗi phiên bản triển khai Web</value>
+  </data>
+  <data name="Doc_WebTitle" xml:space="preserve">
+    <value>Web SDK</value>
   </data>
 </root>
