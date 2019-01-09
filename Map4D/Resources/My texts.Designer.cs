@@ -772,7 +772,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Map 4D được đón nhận và tin cậy với hàng trăm người dùng trên toàn thế giới..
+        ///   Looks up a localized string similar to Map 4D! sản phẩm với các tính năng mới được nhiều đối tác tin dùng và phát triển.
         /// </summary>
         public static string Map4DDuocdonnhan {
             get {
@@ -1087,7 +1087,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Trải nghiệm cùng map 4D.
+        ///   Looks up a localized string similar to Đối tác của công ty.
         /// </summary>
         public static string Trảinghiệmcùngmap4D {
             get {
