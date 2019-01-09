@@ -154,7 +154,7 @@
     <value>Liên hệ với chúng tôi</value>
   </data>
   <data name="Map4DDuocdonnhan" xml:space="preserve">
-    <value>Map 4D được đón nhận và tin cậy với hàng trăm người dùng trên toàn thế giới.</value>
+    <value>Map 4D! sản phẩm với các tính năng mới được nhiều đối tác tin dùng và phát triển</value>
   </data>
   <data name="MỗiĐiaiemBanToi" xml:space="preserve">
     <value>Mỗi địa điểm bạn tới đều có những dịch vụ cần thiết được hỗ trợ. Map 4D với kho dữ liệu địa điểm khổng lồ, đầy đủ các tiện ích, giúp bạn dễ dàng tìm kiếm và khám phá.</value>
@@ -175,7 +175,7 @@
     <value>Tiện ích địa điểm</value>
   </data>
   <data name="Trảinghiệmcùngmap4D" xml:space="preserve">
-    <value>Trải nghiệm cùng map 4D</value>
+    <value>Đối tác của công ty</value>
   </data>
   <data name="TrựcQuan3D" xml:space="preserve">
     <value>3D trực quan</value>
@@ -455,6 +455,39 @@
   </data>
   <data name="TranVanQuy" xml:space="preserve">
     <value>Chúng tôi đặc biệt ấn tượng với chức năng hiển thị bản đồ theo thời gian.</value>
+  </data>
+  <data name="Doc_AndroidContent" xml:space="preserve">
+    <value>Cung cấp các ví dụ về các phiên bản phát triển điển hình cho SDK Android, mỗi trong số đó bao gồm các triển khai của Android</value>
+  </data>
+  <data name="Doc_AndroidTitle" xml:space="preserve">
+    <value>Android SDK</value>
+  </data>
+  <data name="Doc_APIContent" xml:space="preserve">
+    <value>Cung cấp các ví dụ về các tính năng API dịch vụ bản đồ phổ biến và tổng quan nhanh về các tính năng cốt lõi của API dịch vụ bản đồ bằng cách xem xét ví dụ</value>
+  </data>
+  <data name="Doc_APITitle" xml:space="preserve">
+    <value>API dịch vụ map</value>
+  </data>
+  <data name="Doc_Explorer" xml:space="preserve">
+    <value>Khám phá</value>
+  </data>
+  <data name="Doc_Introduction" xml:space="preserve">
+    <value>Cung cấp giải pháp map 2D, 3D &amp; 4D trên các nền tảng Mobile (Android &amp; iOS) và Web. Cung cấp các ví dụ mẫu (sample) và tài liệu cho lập trình viên có thể nhanh chóng phát triển ứng dụng dựa trên map4d SDK</value>
+  </data>
+  <data name="Doc_IOSContent" xml:space="preserve">
+    <value>Cung cấp các ví dụ về các phiên bản phát triển điển hình cho SDK iOS, mỗi phiên bản bao gồm iOS</value>
+  </data>
+  <data name="Doc_IOSTitle" xml:space="preserve">
+    <value>iOS SDK</value>
+  </data>
+  <data name="Doc_UpdatedTime" xml:space="preserve">
+    <value>Cập nhập mới ngày 31 tháng 12 năm 2018</value>
+  </data>
+  <data name="Doc_WebContent" xml:space="preserve">
+    <value>Cung cấp các ví dụ về các phiên bản  phát triển điển hình cho SDK Web, mỗi phiên bản triển khai Web</value>
+  </data>
+  <data name="Doc_WebTitle" xml:space="preserve">
+    <value>Web SDK</value>
   </data>
   <data name="DaCoTaiKhoan" xml:space="preserve">
     <value>Đồng ý với Điều khoản dịch vụ và Chính sách quyền riêng tư của Map4D .</value>

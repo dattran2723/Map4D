@@ -394,6 +394,105 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cung cấp các ví dụ về các phiên bản phát triển điển hình cho SDK Android, mỗi trong số đó bao gồm các triển khai của Android.
+        /// </summary>
+        public static string Doc_AndroidContent {
+            get {
+                return ResourceManager.GetString("Doc_AndroidContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Android SDK.
+        /// </summary>
+        public static string Doc_AndroidTitle {
+            get {
+                return ResourceManager.GetString("Doc_AndroidTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cung cấp các ví dụ về các tính năng API dịch vụ bản đồ phổ biến và tổng quan nhanh về các tính năng cốt lõi của API dịch vụ bản đồ bằng cách xem xét ví dụ.
+        /// </summary>
+        public static string Doc_APIContent {
+            get {
+                return ResourceManager.GetString("Doc_APIContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to API dịch vụ map.
+        /// </summary>
+        public static string Doc_APITitle {
+            get {
+                return ResourceManager.GetString("Doc_APITitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Khám phá.
+        /// </summary>
+        public static string Doc_Explorer {
+            get {
+                return ResourceManager.GetString("Doc_Explorer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cung cấp giải pháp map 2D, 3D &amp; 4D trên các nền tảng Mobile (Android &amp; iOS) và Web. Cung cấp các ví dụ mẫu (sample) và tài liệu cho lập trình viên có thể nhanh chóng phát triển ứng dụng dựa trên map4d SDK.
+        /// </summary>
+        public static string Doc_Introduction {
+            get {
+                return ResourceManager.GetString("Doc_Introduction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cung cấp các ví dụ về các phiên bản phát triển điển hình cho SDK iOS, mỗi phiên bản bao gồm iOS.
+        /// </summary>
+        public static string Doc_IOSContent {
+            get {
+                return ResourceManager.GetString("Doc_IOSContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to iOS SDK.
+        /// </summary>
+        public static string Doc_IOSTitle {
+            get {
+                return ResourceManager.GetString("Doc_IOSTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cập nhập mới ngày 31 tháng 12 năm 2018.
+        /// </summary>
+        public static string Doc_UpdatedTime {
+            get {
+                return ResourceManager.GetString("Doc_UpdatedTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cung cấp các ví dụ về các phiên bản  phát triển điển hình cho SDK Web, mỗi phiên bản triển khai Web.
+        /// </summary>
+        public static string Doc_WebContent {
+            get {
+                return ResourceManager.GetString("Doc_WebContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Web SDK.
+        /// </summary>
+        public static string Doc_WebTitle {
+            get {
+                return ResourceManager.GetString("Doc_WebTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Tài Liệu.
         /// </summary>
         public static string Document {
@@ -682,7 +781,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Map 4D được đón nhận và tin cậy với hàng trăm người dùng trên toàn thế giới..
+        ///   Looks up a localized string similar to Map 4D! sản phẩm với các tính năng mới được nhiều đối tác tin dùng và phát triển.
         /// </summary>
         public static string Map4DDuocdonnhan {
             get {
@@ -997,7 +1096,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Trải nghiệm cùng map 4D.
+        ///   Looks up a localized string similar to Đối tác của công ty.
         /// </summary>
         public static string Trảinghiệmcùngmap4D {
             get {

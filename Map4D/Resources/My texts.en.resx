@@ -154,7 +154,7 @@
     <value>Contact with us</value>
   </data>
   <data name="Map4DDuocdonnhan" xml:space="preserve">
-    <value>Real time 4D Map trusted by hundreds of people on the world.</value>
+    <value>Map 4D! products with new features are trusted and developed by many partners</value>
   </data>
   <data name="MỗiĐiaiemBanToi" xml:space="preserve">
     <value>Each location you visit has services that need support. 4D map with a huge location data warehouse, full of utilities, makes it easy to find and explore.</value>
@@ -175,7 +175,7 @@
     <value>POI</value>
   </data>
   <data name="Trảinghiệmcùngmap4D" xml:space="preserve">
-    <value>Experience with Map4D</value>
+    <value>Partner of the company</value>
   </data>
   <data name="TrựcQuan3D" xml:space="preserve">
     <value>3D Reality</value>
@@ -433,7 +433,7 @@
     <value>Thank you letter</value>
   </data>
   <data name="KhamPhaExplore1" xml:space="preserve">
-    <value>Explore</value>
+    <value>Explorer</value>
   </data>
   <data name="KhámPháExplore" xml:space="preserve">
     <value>Explore</value>
@@ -452,5 +452,38 @@
   </data>
   <data name="DaCoTaiKhoan" xml:space="preserve">
     <value>You agree to the Map4D Term of Service and Privacy Policy .</value>
+  </data>
+  <data name="Doc_AndroidContent" xml:space="preserve">
+    <value>Provide examples of typical development scenarios for Android SDK, each of which includes implementations of Android</value>
+  </data>
+  <data name="Doc_AndroidTitle" xml:space="preserve">
+    <value>Android SDK</value>
+  </data>
+  <data name="Doc_APIContent" xml:space="preserve">
+    <value>Provides examples of common Map Service API features, and a quick overview of the Map Service API core features by looking at an example</value>
+  </data>
+  <data name="Doc_APITitle" xml:space="preserve">
+    <value>Map Service API</value>
+  </data>
+  <data name="Doc_Explorer" xml:space="preserve">
+    <value>Explorer</value>
+  </data>
+  <data name="Doc_Introduction" xml:space="preserve">
+    <value>Provide solutions 2D, 3D &amp; 4D on Mobile (Android &amp; iOS) and Web platforms. Provide samples and samples for developers to quickly develop applications based on map4d SDK</value>
+  </data>
+  <data name="Doc_IOSContent" xml:space="preserve">
+    <value>Provide examples of typical development scenarios for iOS SDK, each of which includes implementations of iOS</value>
+  </data>
+  <data name="Doc_IOSTitle" xml:space="preserve">
+    <value>iOS SDK</value>
+  </data>
+  <data name="Doc_UpdatedTime" xml:space="preserve">
+    <value>Update Dec 31. 2018</value>
+  </data>
+  <data name="Doc_WebContent" xml:space="preserve">
+    <value>Provide examples of typical development scenarios for Web SDK, each of which includes implementations of Web</value>
+  </data>
+  <data name="Doc_WebTitle" xml:space="preserve">
+    <value>Web SDK</value>
   </data>
 </root>
