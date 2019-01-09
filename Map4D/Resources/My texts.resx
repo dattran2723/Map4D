@@ -456,4 +456,7 @@
   <data name="TranVanQuy" xml:space="preserve">
     <value>Chúng tôi đặc biệt ấn tượng với chức năng hiển thị bản đồ theo thời gian.</value>
   </data>
+  <data name="DaCoTaiKhoan" xml:space="preserve">
+    <value>Đồng ý với Điều khoản dịch vụ và Chính sách quyền riêng tư của Map4D .</value>
+  </data>
 </root>

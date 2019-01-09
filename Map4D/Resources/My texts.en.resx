@@ -238,7 +238,7 @@
     <value>User name already exist!</value>
   </data>
   <data name="ĐãCóTàiKhoản" xml:space="preserve">
-    <value>Have account?</value>
+    <value>Already have account so sign in ?</value>
   </data>
   <data name="ĐăngNhập" xml:space="preserve">
     <value>Login</value>
@@ -449,5 +449,8 @@
   </data>
   <data name="TranVanQuy" xml:space="preserve">
     <value>We especially like the idea of using the time in real 4D.</value>
+  </data>
+  <data name="DaCoTaiKhoan" xml:space="preserve">
+    <value>You agree to the Map4D Term of Service and Privacy Policy .</value>
   </data>
 </root>

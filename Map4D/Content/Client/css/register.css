@@ -13,6 +13,11 @@ body {
     visibility: hidden;
 }
 
+.title-register {
+    color: #fff;
+    height: 25px;
+}
+
 .registerUser {
     width: 100%;
     margin: auto;
@@ -42,22 +47,54 @@ body {
         width: 100%;
     }
 
-        .registerUser .divBottom a {
+        .registerUser .divBottom .have-account a {
             padding-left: 0%;
             color: #0df8c8;
-            font-size: 16px;
+            font-size: 18px;
             text-decoration: underline;
             font-family: SourceSansPro-Regular;
         }
 
         .registerUser .divBottom button {
             background-color: #0df8c8;
-            border-radius: 20px;
+            border-radius: 8px;
+            margin-top: 4%;
+            line-height: 36px;
         }
 
             .registerUser .divBottom button:hover {
                 background-color: #00cfa5;
             }
+
+.have-account {
+    margin-top: 6%;
+    color: #fff;
+    font-size: 18px;
+}
+
+#UserName-error {
+    display: block;
+    background: #FFD9D9;
+    border: 1px solid #FD0F0F;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 12px;
+    text-align: left;
+    line-height: 36px;
+    padding-left: 4%;
+}
+#Password-error {
+    display: block;
+    background: #FFD9D9;
+    border: 1px solid #FD0F0F;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 12px;
+    text-align: left;
+    line-height: 36px;
+    padding-left: 4%;
+}
+
 
 #footer {
     background-image: none;
