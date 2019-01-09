@@ -6,12 +6,7 @@
 }
 
     .buildMap4D .rowbottom {
-        padding-left: 15%;
-        padding-right: 15%;
-        margin: 0 auto;
         padding-bottom: 19%;
-        display: flex;
-        padding-top: 1%;
     }
 
     .buildMap4D .top {
@@ -38,31 +33,15 @@
         padding-right: 0;
     }
 
-        .buildMap4D .rowbottom .boxBuild img {
-            width: 100%;
-        }
-
         .buildMap4D .rowbottom .boxBuild:hover {
             box-shadow: 0 0 20px rgba(33,33,33,.2);
             z-index: 1;
         }
 
 
-@media only screen and (max-width: 1276px) {
-    .buildMap4D .rowbottom {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-}
-
 @media only screen and (max-width: 1033px) {
     .buildMap4D .top .more {
         font-size: 40px;
-    }
-
-    .buildMap4D .rowbottom {
-        padding-left: 6%;
-        padding-right: 6%;
     }
 }
 
@@ -74,19 +53,10 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .buildMap4D .rowbottom .boxBuild {
-        padding-bottom: 5%;
-    }
 
-    .buildMap4D .rowbottom {
-        width: 80%;
-        padding-left: 3%;
-        padding-right: 3%;
+    .buildMap4D .rowbottom .boxBuild .w-60 {
+        width: 100%;
     }
-
-        .buildMap4D .rowbottom .boxBuild .img {
-            margin: 0 auto;
-        }
 
     .buildMap4D .top {
         padding-left: 1%;
@@ -98,28 +68,13 @@
         }
 
     .buildMap4D .rowbottom .boxBuild {
-        padding-bottom: 2%;
-    }
-
-    .buildMap4D .rowbottom .boxBuild {
         height: 70px;
-    }
-}
-
-@media only screen and (max-width: 675px) {
-
-    .buildMap4D .rowbottom {
-        width: 90%;
     }
 }
 
 @media only screen and (max-width: 625px) {
     .buildMap4D .top .more {
         font-size: 25px;
-    }
-
-    .buildMap4D .rowbottom {
-        width: 100%;
     }
 }
 
@@ -131,6 +86,7 @@
     .buildMap4D .top .build {
         font-size: 14px;
     }
+
     .buildMap4D .rowbottom .boxBuild {
         height: 50px;
     }

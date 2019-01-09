@@ -2323,7 +2323,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\js\delete-contact.js" />
-    <Content Include="Scripts\js\addContentBuildMap4D.js" />
     <Content Include="Scripts\js\footerScroll.js" />
     <Content Include="Scripts\js\GetInTouch.js" />
     <Content Include="Scripts\js\GetListContact.js" />
