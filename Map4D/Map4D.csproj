@@ -1968,10 +1968,6 @@
     <Content Include="Content\Client\css\Commingsoon.css" />
     <Content Include="Content\Client\css\CreateMobileApps.css" />
     <Content Include="Content\Client\css\Pricing.css" />
-    <Content Include="Content\Client\css\products\MobileApp.css" />
-    <Content Include="Content\Client\css\products\SlideMap.css" />
-    <Content Include="Content\Client\css\products\styleSearchGeoDirect.css" />
-    <Content Include="Content\Client\css\productWebApp.css" />
     <Content Include="Content\Client\css\register.css" />
     <Content Include="Content\Client\css\styleFooter.css" />
     <Content Include="Content\Client\css\styleGetInTouch.css" />
@@ -1979,6 +1975,7 @@
     <Content Include="Content\Client\css\styleMapbox.css" />
     <Content Include="Content\Client\css\DirectionThereFaster.css" />
     <Content Include="Content\Client\css\styleMenu.css" />
+    <Content Include="Content\Client\css\styleProducts.css" />
     <Content Include="Content\Client\css\styleSlideHome.css" />
     <Content Include="Content\Client\css\styleWebAppRelity.css" />
     <Content Include="Content\Client\img\bg.jpg" />
