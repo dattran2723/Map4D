@@ -907,7 +907,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Giá.
+        ///   Looks up a localized string similar to Bảng giá.
         /// </summary>
         public static string Pricing {
             get {

@@ -1972,6 +1972,7 @@
     <Content Include="Content\Client\css\register.css" />
     <Content Include="Content\Client\css\styleFooter.css" />
     <Content Include="Content\Client\css\styleGetInTouch.css" />
+    <Content Include="Content\Client\css\styleHome.css" />
     <Content Include="Content\Client\css\styleLogin.css" />
     <Content Include="Content\Client\css\styleMapbox.css" />
     <Content Include="Content\Client\css\DirectionThereFaster.css" />
@@ -1985,6 +1986,7 @@
     <Content Include="Content\Client\img\Customer4.png" />
     <Content Include="Content\Client\img\Dang ky.png" />
     <Content Include="Content\Client\img\document-logo.png" />
+    <Content Include="Content\Client\img\duognthangngang2.png" />
     <Content Include="Content\Client\img\Flag_viet_nam.png" />
     <Content Include="Content\Client\img\Flag_united_states.png" />
     <Content Include="Content\Client\img\gallery3.jpg" />

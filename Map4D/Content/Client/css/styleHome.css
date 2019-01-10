@@ -1,0 +1,993 @@
+﻿/*css slide view Slide ( Phần slide )*/
+#wrap-slide {
+    margin: auto 0;
+    background-image: url("/Content/Client/img/Untitled-1_0000_Header-Bg.png");
+    background-size: cover;
+    padding-top: 16%;
+    transition: 0.5s;
+}
+
+#carouselExampleIndicators {
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+    #carouselExampleIndicators ol {
+        bottom: 60%;
+        left: 75%;
+    }
+
+    #carouselExampleIndicators .carousel-indicators {
+        display: block;
+    }
+
+        #carouselExampleIndicators .carousel-indicators li {
+            border-radius: 10px;
+            height: 10px;
+            width: 10px;
+            padding-bottom: 5%;
+        }
+
+        #carouselExampleIndicators .carousel-indicators li {
+            display: block;
+            margin-top: 10px;
+        }
+
+    #carouselExampleIndicators .carousel-inner .carousel-item .row .image-slide {
+        padding-left: 7%;
+    }
+
+    #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide {
+        padding-top: 7%;
+    }
+
+        #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide > div {
+            padding-bottom: 20%;
+        }
+
+        #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide h1 {
+            color: white;
+            font-family: 'UTM Avo';
+            font-size: 42px;
+            transition: 0.5s;
+        }
+
+        #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide p {
+            margin-top: 3%;
+            color: #fff;
+            font-family: 'Myriad Pro';
+            font-size: 16px;
+            transition: 0.5s;
+        }
+
+        #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide a {
+            background: #0df8c8;
+            width: 149px;
+            height: 43px;
+            border-radius: 30px;
+            font-family: 'Myriad Pro';
+            font-size: 14px;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 7%;
+            box-shadow: 0px 13px 45px 2px rgba(0, 0, 0, 0.21);
+        }
+
+            #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide a:hover {
+                background: #00cda3;
+            }
+
+        #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide .btn-arrow {
+            margin-top: 17%;
+            width: 70px;
+            height: 70px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0px 13px 45px 2px rgba(0, 0, 0, 0.21);
+        }
+
+    #carouselExampleIndicators .carousel-control-prev {
+        visibility: hidden;
+    }
+
+    #carouselExampleIndicators .carousel-control-next {
+        visibility: hidden;
+    }
+
+@media only screen and (max-width: 1033px) {
+    /*#carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide h1 {
+        font-size: 40px;
+    }*/
+}
+
+@media only screen and (max-width: 860px) {
+    #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide h1 {
+        font-size: 32px;
+    }
+
+    #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide p {
+        font-size: 14px;
+    }
+
+    /*#carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide a {
+        width: 140px;
+        height: 40px;
+        font-size: 16px;
+    }*/
+
+    #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide .btn-arrow {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide p {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide h1 {
+        font-size: 20px;
+    }
+
+    #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide a {
+        width: 100px;
+        height: 30px;
+        box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.21);
+    }
+
+    #wrap-slide {
+        padding-top: 25%;
+    }
+}
+
+@media only screen and (min-width:320px) {
+    #carouselExampleIndicators .carousel-inner .carousel-item .row .image-slide {
+        max-width: 50%;
+    }
+
+    #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide {
+        max-width: 50%;
+    }
+
+        #carouselExampleIndicators .carousel-inner .carousel-item .row .content-slide div.col-md-9 {
+            max-width: 75%;
+        }
+}
+
+/*end css slide view Slide*/
+
+/*css view Mapbox ( Phần tiêu đề "nền tảng Map4d" )*/
+#map-box {
+    margin: 9% 0 5% 0;
+    z-index: 10;
+}
+
+    #map-box #map-box-title h1 {
+        font-family: 'UTM Avo';
+        font-size: 42px;
+        color: #2A2F32;
+    }
+
+    #map-box #map-box-content {
+        margin-top: 2%;
+    }
+
+        #map-box #map-box-content a {
+            text-decoration: none;
+        }
+
+        #map-box #map-box-content .map-box-item {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+            #map-box #map-box-content .map-box-item img {
+                padding-top: 31%;
+                padding-bottom: 6%;
+            }
+
+            #map-box #map-box-content .map-box-item h5 {
+                color: black;
+                font-family: 'Myriad Pro';
+                font-size: 26px;
+                line-height: normal;
+                padding-bottom: 28%;
+                color: #354052;
+            }
+
+        #map-box #map-box-content .hover h5 {
+            color: #1c80df;
+        }
+
+        #map-box #map-box-content .map-box-item:hover {
+            box-shadow: 0px 20px 50px 0px rgba(16, 25, 255, 0.20);
+        }
+
+        #map-box #map-box-content .active .map-box-item {
+            box-shadow: 0px 20px 50px 0px rgba(16, 25, 255, 0.20);
+        }
+
+        #map-box #map-box-content .active h5 {
+            color: #1c80df;
+        }
+
+        #map-box #map-box-content .active#visual img {
+            content: url("/Content/Client/img/icon_0006_3d-Icon-copy.png");
+        }
+
+        #map-box #map-box-content .active#multi-platform img {
+            content: url("/Content/Client/img/icon_0004_website--copy-3.png");
+        }
+
+        #map-box #map-box-content .active#direct img {
+            content: url("/Content/Client/img/icon_0002_location-copy.png");
+        }
+
+        #map-box #map-box-content .active#utilities img {
+            content: url("/Content/Client/img/icon_0000_Tiện-ích-địa-điểm-copy.png");
+        }
+
+@media only screen and (max-width: 1033px) {
+    #map-box #map-box-title h1 {
+        font-size: 40px;
+    }
+
+    #map-box #map-box-content .map-box-item h5 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #map-box #map-box-title h1 {
+        font-size: 32px;
+    }
+
+    #map-box #map-box-content .map-box-item h5 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #map-box #map-box-content .map-box-item {
+        width: 80%;
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    #map-box #map-box-title h1 {
+        font-size: 24px;
+    }
+}
+/*end css view Mapbox*/
+
+/*css view 3DTrucQuan*/
+.trucQuan {
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("/Content/Client/img/icon_0000_Grey-Bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -17%;
+}
+
+    .trucQuan .right {
+        margin-top: 43% !important;
+        margin-bottom: 14% !important;
+        margin: 0 auto;
+        background-image: url("/Content/Client/img/icon_0002_Group-1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+        .trucQuan .right .imgRight {
+            padding-left: 9%;
+            padding-top: 5%;
+            margin: 0 auto;
+        }
+
+        .trucQuan .right .content {
+            padding-left: 15%;
+            color: #fff;
+            margin-top: -4%;
+            padding-right: 17%;
+            text-align: justify;
+            padding-bottom: 7%;
+        }
+
+            .trucQuan .right .content h4 {
+                font-family: 'UTM Avo';
+                font-size: 42px;
+            }
+
+            .trucQuan .right .content p {
+                font-family: 'Myriad Pro';
+                font-size: 16px;
+            }
+
+@media only screen and (max-width: 1235px) {
+    .trucQuan .right {
+        margin-top: 38% !important;
+    }
+}
+
+@media only screen and (max-width: 1072px) {
+    .trucQuan .right {
+        margin-top: 33% !important;
+    }
+}
+
+@media only screen and (max-width: 103px) {
+    .trucQuan .right .content h4 {
+        font-family: 'UTM Avo';
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .trucQuan .right .imgRight {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .trucQuan {
+        background-size: 128%;
+    }
+
+        .trucQuan .right {
+            margin-top: 77% !important;
+            background-position: 18%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+            .trucQuan .right .imgRight {
+                width: 25%;
+                padding-left: 0%;
+                padding-top: 0%;
+                display: block;
+            }
+
+            .trucQuan .right .content {
+                text-align: center;
+                display: block;
+                padding-right: 15%;
+            }
+
+                .trucQuan .right .content h4 {
+                    font-family: 'UTM Avo';
+                    font-size: 26px;
+                }
+
+                .trucQuan .right .content p {
+                    font-family: 'Myriad Pro';
+                    font-size: 14px;
+                }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .trucQuan .right .content {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
+
+/*end css view 3DTrucQuan*/
+
+/*css view CreateMobileApps ( Phần tiêu đề "đa nền tảng" )*/
+
+.createMobileApps .left {
+    padding-bottom: 28%;
+}
+
+    .createMobileApps .left .content {
+        padding-left: 14%;
+        padding-top: 20%;
+    }
+
+        .createMobileApps .left .content .tittle {
+            font-family: 'utm avo';
+            padding-left: 5%;
+            font-weight: normal;
+            color: #1E1E1F;
+            font-size: 42px;
+        }
+
+        .createMobileApps .left .content .webmobile {
+            font-family: 'utm avo';
+            padding-left: 5%;
+            font-weight: normal;
+            color: #1E1E1F;
+            font-size: 42px;
+        }
+
+        .createMobileApps .left .content .contrary {
+            padding-left: 5%;
+            padding-right: 12%;
+            font-family: 'Myriad Pro';
+            font-size: 16px;
+            font-weight: normal;
+            color: #354052;
+            text-align: justify;
+        }
+
+.createMobileApps .right .imgPhone {
+    width: 93%;
+    margin-bottom: 48%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .createMobileApps .left .content {
+        padding-left: 20%;
+    }
+}
+
+@media only screen and (max-width: 1033px) {
+    .createMobileApps .left .content .tittle {
+        font-size: 32px;
+    }
+
+    .createMobileApps .left .content .webmobile {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .createMobileApps .left .content .imgIP {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .createMobileApps .left .content {
+        padding-top: 0%;
+        padding-left: 5%;
+    }
+
+        .createMobileApps .left .content .imgIP {
+            width: 24%;
+        }
+
+    .createMobileApps .left .content {
+        text-align: center;
+        padding-left: 0%;
+        padding-right: 0%;
+        display: block;
+    }
+
+        .createMobileApps .left .content .webmobile {
+            padding-left: 0%;
+            font-size: 26px;
+        }
+
+        .createMobileApps .left .content .tittle {
+            padding-left: 0%;
+            font-size: 26px;
+        }
+
+    .createMobileApps .left {
+        padding-bottom: 0%;
+    }
+
+    .createMobileApps .right .imgPhone {
+        margin-bottom: 22%;
+        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0%;
+    }
+
+    .createMobileApps .left .content .contrary {
+        padding-left: 15%;
+        padding-right: 15%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .createMobileApps .left .content .webmobile {
+        padding-bottom: 1%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .createMobileApps .left .content .contrary {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+/*end css view CreateMobileApps*/
+
+/*css view DirectionThereFaster ( Phần tiêu đề "Đến mọi nơi thật dễ dàng" )*/
+.direction {
+    width: 100%;
+    background-image: url("/content/client/img/icon-page-1_0004_blue-bg_repair4.png");
+    margin: 0 auto;
+    background-size: cover;
+    background-position: 34%;
+    background-repeat: no-repeat;
+    /*border-bottom-left-radius: 50% 1cm;
+    border-bottom-right-radius: 47% 2cm;*/
+    margin-top: -19%;
+}
+
+    .direction .right {
+        padding-left: 0%;
+    }
+
+        .direction .right .content {
+            padding-top: 58%;
+            padding-left: 28%;
+            padding-bottom: 51%;
+        }
+
+            .direction .right .content .tittle {
+                color: #fff;
+                font-family: 'UTM Avo';
+                font-size: 42px;
+                padding-left: 6%;
+                padding-bottom: 2%;
+                padding-right: 23%;
+            }
+
+            .direction .right .content .contrary {
+                font-family: 'Myriad Pro';
+                font-size: 16px;
+                color: #fff;
+                padding-left: 6%;
+                padding-right: 15%;
+                text-align: justify;
+            }
+
+@media only screen and (max-width: 1200px) {
+    .direction .right .content .contrary {
+        padding-right: 6%;
+    }
+}
+
+@media only screen and (max-width: 1033px) {
+    .direction .right .content .tittle {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .direction .right .content .img {
+        width: 40%;
+    }
+
+    .direction {
+        background-position: 50%;
+    }
+
+        .direction .right .content {
+            padding-left: 0%;
+        }
+}
+
+@media only screen and (max-width: 767px) {
+    .direction {
+        background-position: center;
+        border-bottom-left-radius: 50% 5%;
+        border-bottom-right-radius: 50% 5%;
+    }
+
+        .direction .right .content {
+            padding-left: 0%;
+            padding-top: 30%;
+        }
+
+            .direction .right .content .img {
+                width: 50%;
+            }
+
+            .direction .right .content .tittle {
+                font-size: 26px;
+            }
+
+            .direction .right .content .contrary {
+                padding-right: 6%;
+                font-size: 14px;
+            }
+
+    .direction {
+        margin-top: -22%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .direction .left {
+        width: 50%;
+    }
+
+    .direction .right {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .direction .right .content .contrary {
+        text-align: start;
+    }
+
+    .direction {
+        margin-top: -25%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .direction {
+        margin-top: -28%;
+    }
+}
+/*end css view DirectionThereFaster*/
+
+/*css view WebAppRelity ( Phần tiêu đề "Khám phá" )*/
+.web-app-relity {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 7%;
+}
+
+    .web-app-relity #web-app-relity-content {
+        padding-left: 7%;
+    }
+
+        .web-app-relity #web-app-relity-content img {
+            padding-top: 30%;
+        }
+
+        .web-app-relity #web-app-relity-content div {
+            margin-left: 5%;
+            margin-top: -5%;
+        }
+
+            .web-app-relity #web-app-relity-content div h3 {
+                font-family: 'UTM Avo';
+                font-size: 42px;
+                color: #1E1E1F;
+            }
+
+                .web-app-relity #web-app-relity-content div h3 span {
+                    color: black;
+                }
+
+            .web-app-relity #web-app-relity-content div p {
+                font-family: 'Myriad Pro';
+                font-size: 16px;
+                color: #1E1E1F;
+                text-align: justify;
+            }
+
+    .web-app-relity #web-app-relity-img {
+        padding-right: 0;
+    }
+
+        .web-app-relity #web-app-relity-img img {
+            width: 100%;
+        }
+
+@media only screen and (max-width: 1240px) {
+    .web-app-relity #web-app-relity-content {
+        padding-left: 15%;
+    }
+
+        .web-app-relity #web-app-relity-content img {
+            padding-top: 30%;
+        }
+}
+
+@media only screen and (max-width: 1100px) {
+    .web-app-relity #web-app-relity-content div {
+        max-width: 83%;
+    }
+}
+
+@media only screen and (max-width: 1033px) {
+    .web-app-relity #web-app-relity-content div h3 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 995px) {
+    .web-app-relity #web-app-relity-content {
+        padding-left: 10%;
+    }
+
+        .web-app-relity #web-app-relity-content img {
+            padding-top: 15%;
+        }
+}
+
+@media only screen and (max-width: 767px) {
+    .web-app-relity #web-app-relity-content {
+        padding-left: 0;
+        text-align: center;
+    }
+
+        .web-app-relity #web-app-relity-content img {
+            width: 24%;
+        }
+
+        .web-app-relity #web-app-relity-content div {
+            margin: auto;
+            margin-top: -5%;
+        }
+
+            .web-app-relity #web-app-relity-content div h3 {
+                font-size: 26px;
+            }
+
+            .web-app-relity #web-app-relity-content div p {
+                text-align: center;
+                font-size: 14px;
+            }
+}
+
+@media only screen and (max-width: 435px) {
+
+    .web-app-relity #web-app-relity-content div p {
+        text-align: center;
+    }
+}
+/*end css view WebAppRelity*/
+
+/*css view BuildMap4D ( Phần tiêu đề "Đối tác của công ty" )*/
+.buildMap4D {
+    background-image: url("/Content/Client/img/icon-page-1_0006_Grey-Bg_Repair4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -7%
+}
+
+    .buildMap4D .rowbottom {
+        padding-bottom: 19%;
+    }
+
+    .buildMap4D .top {
+        padding-top: 21%;
+    }
+
+        .buildMap4D .top .more {
+            font-family: 'UTM Avo';
+            font-size: 42px;
+            color: #1E1E1F;
+        }
+
+        .buildMap4D .top .build {
+            font-family: 'Myriad Pro';
+            font-size: 16px;
+            color: #354052;
+        }
+
+    .buildMap4D .rowbottom .boxBuild {
+        display: flex;
+        border: 1px solid #E6EAEE;
+        background-color: #fff;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+        .buildMap4D .rowbottom .boxBuild:hover {
+            box-shadow: 0 0 20px rgba(33,33,33,.2);
+            z-index: 1;
+        }
+
+@media only screen and (max-width: 1033px) {
+    .buildMap4D .top .more {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .buildMap4D .top .more {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .buildMap4D .rowbottom .boxBuild .w-60 {
+        width: 100%;
+    }
+
+    .buildMap4D .top {
+        padding-left: 1%;
+    }
+
+        .buildMap4D .top .more {
+            font-size: 26px;
+        }
+
+        .buildMap4D .top .build {
+            padding-left: 5%;
+            padding-right: 5%;
+            font-size: 14px;
+        }
+
+    .buildMap4D .rowbottom .boxBuild {
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .buildMap4D .top .more {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+
+    .buildMap4D .rowbottom .boxBuild {
+        height: 50px;
+    }
+}
+/*end css view BuildMap4D*/
+
+/*css view GetInTouch (Phần tiêu đề "Liên hệ với chúng tôi")*/
+#get-in-touch {
+    margin: -20% 0 auto 0;
+    padding-top: 18%;
+    padding-bottom: 10%;
+    background-image: url("/Content/Client/img/Untitled-1_0001_footer-background.png");
+    background-position: 80%;
+    background-size: cover;
+    background-color: #f6f6f8;
+}
+
+#get-in-touch-title {
+    margin-top: 7%;
+}
+
+    #get-in-touch-title h1 {
+        font-family: 'UTM Avo';
+        font-size: 42px;
+        color: #fff;
+    }
+
+#get-in-touch-icon {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-image: url('../img/duognthangngang2.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+}
+
+    #get-in-touch-icon a label {
+        width: 42px;
+        height: 42px;
+        background: white;
+        border-radius: 50%;
+        font-size: 25px;
+        cursor: pointer;
+        box-shadow: 0 0 30px rgb(232, 225, 225);
+    }
+
+
+#get-in-touch-form input {
+    height: 60px;
+    padding: 20px;
+    border: 0.7px solid rgba(55, 55, 55, 0.09);
+}
+
+    #get-in-touch-form input#your-name {
+        border-top-left-radius: 20px;
+    }
+
+    #get-in-touch-form input#your-email {
+        border-top-right-radius: 20px;
+    }
+
+#get-in-touch-form textarea {
+    height: 140px;
+    padding: 20px;
+    border: 0.7px solid rgba(55, 55, 55, 0.09);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    resize: none;
+}
+
+#get-in-touch-form #btn-submit {
+    margin-top: 3%;
+    background: #0df8c8;
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    font-family: 'Myriad Pro';
+    font-size: 14px;
+    line-height: 0;
+    color: black;
+    box-shadow: 0px 13px 20px 2px rgba(0, 0, 0, 0.21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    #get-in-touch-form #btn-submit:hover {
+        background: #00cda3;
+    }
+
+#footer {
+    background-image: none;
+    margin-top: -7%;
+}
+
+@media only screen and (max-width: 1033px) {
+    #get-in-touch-title h1 {
+        font-size: 32px;
+    }
+
+    #footer {
+        background-image: none;
+        margin-top: -9%;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #get-in-touch-title h1 {
+        font-size: 32px;
+    }
+
+    #get-in-touch-form #btn-submit {
+        width: 100px;
+        font-size: 16px;
+        margin-bottom: 3%;
+    }
+
+    #footer {
+        background-image: none;
+        margin-top: -10%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #get-in-touch {
+        background-position: 71%;
+    }
+
+    #get-in-touch-title h1 {
+        font-size: 26px;
+    }
+
+    #get-in-touch-icon {
+        background-size: contain;
+    }
+
+        #get-in-touch-icon a label {
+            width: 35px;
+            height: 35px;
+        }
+
+    @media only screen and (max-width: 625px) {
+        #get-in-touch {
+            padding-top: 40%;
+            background-position: 67%;
+        }
+
+        #get-in-touch-title h1 {
+            font-size: 20px;
+        }
+
+        #get-in-touch-form #btn-submit {
+            width: 100px;
+            height: 30px;
+            font-size: 12px;
+            margin-bottom: 10%;
+        }
+
+        #footer {
+            background-image: none;
+            margin-top: -15%;
+        }
+    }
+    /*end css view GetInTouch*/
+
