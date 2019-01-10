@@ -33,6 +33,7 @@
     .login .login-content #btn-submit {
         background: #0cf8c8;
         font-family: 'Myriad pro';
+        font-size:18px;
         color: black;
         width: 120px;
         height: 45px;
@@ -57,18 +58,20 @@
 
 .validation-summary-errors ul {
     list-style: none;
+    padding-left:0;
 }
-#Email-error, #Password-error {
-    display: block;
-    height: 35px;
-    line-height: 30px;
-    margin-top: 2%;
-    background: #FFD9D9;
-    border: 1px solid #FD0F0F;
-    border-radius: .25rem;
-    color: #FF6464;
-    padding-left: 2%;
-}
+
+    #Email-error, #Password-error, .validation-summary-errors ul li {
+        display: block;
+        height: 35px;
+        line-height: 30px;
+        margin-top: 2%;
+        background: #FFD9D9;
+        border: 1px solid #FD0F0F;
+        border-radius: .25rem;
+        color: #FF6464;
+        padding-left: 2%;
+    }
 p{
     color: white;
     font-family: 'Myriad Pro';

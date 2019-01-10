@@ -438,4 +438,16 @@
   <data name="TieuDeMail" xml:space="preserve">
     <value>Thư cảm ơn</value>
   </data>
+  <data name="DoNotHaveAnAccount" xml:space="preserve">
+    <value>Không có tài khoản?</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Quên mật khẩu</value>
+  </data>
+  <data name="RegisterMap4D" xml:space="preserve">
+    <value>Đăng ký Map4D</value>
+  </data>
+  <data name="UsernameOrEmail" xml:space="preserve">
+    <value>Tên đăng nhập hoặc email</value>
+  </data>
 </root>

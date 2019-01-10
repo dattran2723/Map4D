@@ -432,4 +432,16 @@
   <data name="TieuDeMail" xml:space="preserve">
     <value>Thank you letter</value>
   </data>
+  <data name="DoNotHaveAnAccount" xml:space="preserve">
+    <value>Don't have an account?</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>I forgot my password</value>
+  </data>
+  <data name="RegisterMap4D" xml:space="preserve">
+    <value>Sign up for Map4D</value>
+  </data>
+  <data name="UsernameOrEmail" xml:space="preserve">
+    <value>Username or email</value>
+  </data>
 </root>
