@@ -268,8 +268,6 @@
 
 /*css view 3DTrucQuan*/
 .trucQuan {
-    width: 100%;
-    margin: 0 auto;
     background-image: url("/Content/Client/img/icon_0000_Grey-Bg.png");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -279,7 +277,6 @@
     .trucQuan .right {
         margin-top: 43% !important;
         margin-bottom: 14% !important;
-        margin: 0 auto;
         background-image: url("/Content/Client/img/icon_0002_Group-1.png");
         background-size: cover;
         background-repeat: no-repeat;
@@ -288,7 +285,6 @@
         .trucQuan .right .imgRight {
             padding-left: 9%;
             padding-top: 5%;
-            margin: 0 auto;
         }
 
         .trucQuan .right .content {
@@ -322,7 +318,7 @@
     }
 }
 
-@media only screen and (max-width: 103px) {
+@media only screen and (max-width: 1033px) {
     .trucQuan .right .content h4 {
         font-family: 'UTM Avo';
         font-size: 32px;
@@ -333,9 +329,13 @@
     .trucQuan .right .imgRight {
         width: 40%;
     }
+
+    .trucQuan .right .content {
+        padding-left: 11%;
+    }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .trucQuan {
         background-size: 128%;
     }
@@ -508,44 +508,36 @@
 
 /*css view DirectionThereFaster ( Phần tiêu đề "Đến mọi nơi thật dễ dàng" )*/
 .direction {
-    width: 100%;
     background-image: url("/content/client/img/icon-page-1_0004_blue-bg_repair4.png");
-    margin: 0 auto;
     background-size: cover;
     background-position: 34%;
     background-repeat: no-repeat;
-    /*border-bottom-left-radius: 50% 1cm;
-    border-bottom-right-radius: 47% 2cm;*/
     margin-top: -19%;
 }
 
-    .direction .right {
-        padding-left: 0%;
+    .direction .right .content {
+        padding-top: 58%;
+        padding-left: 28%;
+        padding-bottom: 51%;
     }
 
-        .direction .right .content {
-            padding-top: 58%;
-            padding-left: 28%;
-            padding-bottom: 51%;
+        .direction .right .content .tittle {
+            color: #fff;
+            font-family: 'UTM Avo';
+            font-size: 42px;
+            padding-left: 6%;
+            padding-bottom: 2%;
+            padding-right: 23%;
         }
 
-            .direction .right .content .tittle {
-                color: #fff;
-                font-family: 'UTM Avo';
-                font-size: 42px;
-                padding-left: 6%;
-                padding-bottom: 2%;
-                padding-right: 23%;
-            }
-
-            .direction .right .content .contrary {
-                font-family: 'Myriad Pro';
-                font-size: 16px;
-                color: #fff;
-                padding-left: 6%;
-                padding-right: 15%;
-                text-align: justify;
-            }
+        .direction .right .content .contrary {
+            font-family: 'Myriad Pro';
+            font-size: 16px;
+            color: #fff;
+            padding-left: 6%;
+            padding-right: 15%;
+            text-align: justify;
+        }
 
 @media only screen and (max-width: 1200px) {
     .direction .right .content .contrary {
@@ -632,8 +624,6 @@
 
 /*css view WebAppRelity ( Phần tiêu đề "Khám phá" )*/
 .web-app-relity {
-    margin-left: 0;
-    margin-right: 0;
     padding-top: 7%;
 }
 
@@ -966,28 +956,29 @@
             width: 35px;
             height: 35px;
         }
+}
 
-    @media only screen and (max-width: 625px) {
-        #get-in-touch {
-            padding-top: 40%;
-            background-position: 67%;
-        }
-
-        #get-in-touch-title h1 {
-            font-size: 20px;
-        }
-
-        #get-in-touch-form #btn-submit {
-            width: 100px;
-            height: 30px;
-            font-size: 12px;
-            margin-bottom: 10%;
-        }
-
-        #footer {
-            background-image: none;
-            margin-top: -15%;
-        }
+@media only screen and (max-width: 625px) {
+    #get-in-touch {
+        padding-top: 40%;
+        background-position: 67%;
     }
-    /*end css view GetInTouch*/
+
+    #get-in-touch-title h1 {
+        font-size: 20px;
+    }
+
+    #get-in-touch-form #btn-submit {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+        margin-bottom: 10%;
+    }
+
+    #footer {
+        background-image: none;
+        margin-top: -15%;
+    }
+}
+/*end css view GetInTouch*/
 
