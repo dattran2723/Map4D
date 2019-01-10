@@ -682,7 +682,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gửi ngay.
+        ///   Looks up a localized string similar to Gửi đi.
         /// </summary>
         public static string GửiNgayBâyGiờ {
             get {
