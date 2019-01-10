@@ -170,6 +170,7 @@ namespace Map4D.Controllers
             }
             return Json(true, JsonRequestBehavior.AllowGet);
         }
+        
 
         [HttpPost]
         [AllowAnonymous]
