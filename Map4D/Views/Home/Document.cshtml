@@ -4,5 +4,91 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Document</h2>
+@section css{
+    <link rel="stylesheet" type="text/css" href="~/Content/Client/css/document.css" />
+}
+
+<div class="container document">
+    <div class="row intro-section">
+        <div class="col-lg-6 col-md-12 col-sm-12 box-img">
+            <img src="~/Content/Client/img/document-logo.png" />
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 box-intro">
+            <span class="box-intro-text">
+                @Map4D.Resources.My_texts.Doc_Introduction
+            </span>
+            <br />
+            <span class="box-intro-update-date">
+                @Map4D.Resources.My_texts.Doc_UpdatedTime
+            </span>
+        </div>
+    </div>
+    <div class="row list-box">
+        <div class="col-lg-3 col-md-6 col-sm-12 ">
+            <div class="box-item">
+                <img src="~/Content/Client/img/SDK-IOS.png" class="box-item-img" /><br />
+                <span class="box-item-title">
+                    @Map4D.Resources.My_texts.Doc_IOSTitle
+                </span><br />
+                <div class="box-item-text">
+                    <span class="box-item-text-middle">
+                        @Map4D.Resources.My_texts.Doc_IOSContent
+                    </span>
+                </div>
+                <div>
+                    <a class="btn btn-primary btn-explore" href="https://github.com/iotlinkadmin/map4d-ios-sdk" target="_blank">@Map4D.Resources.My_texts.Doc_Explorer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="box-item">
+                <img src="~/Content/Client/img/SDK-Android.png" class="box-item-img" /><br />
+                <span class="box-item-title">
+                    @Map4D.Resources.My_texts.Doc_AndroidTitle
+                </span><br />
+                <div class="box-item-text">
+                    <div class="box-item-text-middle">
+                        @Map4D.Resources.My_texts.Doc_AndroidContent
+                    </div>
+                </div>
+                <div>
+                    <a class="btn btn-primary btn-explore" href="https://github.com/iotlinkadmin/map4d-android-sdk" target="_blank">@Map4D.Resources.My_texts.Doc_Explorer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="box-item">
+                <img src="~/Content/Client/img/SDK-Web.png" class="box-item-img" /><br />
+                <span class="box-item-title">
+                    @Map4D.Resources.My_texts.Doc_WebTitle
+                </span><br />
+                <div class="box-item-text">
+                    <span class="box-item-text-middle">
+                        @Map4D.Resources.My_texts.Doc_WebContent
+                    </span>
+                </div>
+                <div>
+                    <a class="btn btn-primary btn-explore" href="https://github.com/iotlinkadmin/map4d-web-sdk" target="_blank">@Map4D.Resources.My_texts.Doc_Explorer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="box-item">
+                <img src="~/Content/Client/img/SDK-API.png" class="box-item-img" /><br />
+                <span class="box-item-title">
+                    @Map4D.Resources.My_texts.Doc_APITitle
+                </span><br />
+                <div class="box-item-text">
+                    <span class="box-item-text-middle">
+                        @Map4D.Resources.My_texts.Doc_APIContent
+                    </span>
+                </div>
+                <div>
+                    <a class="btn btn-primary btn-explore" href="https://github.com/iotlinkadmin/map4d-service-api" target="_blank">@Map4D.Resources.My_texts.Doc_Explorer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 

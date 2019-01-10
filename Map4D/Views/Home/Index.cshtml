@@ -51,6 +51,46 @@
 
     }
     @*js add content for view Build Map4D*@
-    <script src="~/Scripts/js/addContentBuildMap4D.js"></script>
+            <script>
+
+            var array = [
+                {
+                    img: "/Content/Client/img/product2.jpg",
+                    name: "Nguyễn Văn Linh",
+                    cmt: "@Map4D.Resources.My_texts.NguyenVanLinh"
+                },
+                {
+                    img: "/Content/Client/img/Customer1.png",
+                    name: "Trần Văn Duy",
+                    cmt: "@Map4D.Resources.My_texts.TranVanDuy"
+                },
+                {
+                    img: "/Content/Client/img/Customer3.png",
+                    name: "Mr Robbert",
+                    cmt: '"It is amazing"'
+                },
+                {
+                    img: "/content/client/img/Customer2.png",
+                    name: "Nguyễn Thanh Hương",
+                    cmt: '@Map4D.Resources.My_texts.NguyenThanhHuong'
+                },
+                {
+                    img: "/content/client/img/Customer4.png",
+                    name: "Trần Văn Qúy",
+                    cmt: '@Map4D.Resources.My_texts.TranVanQuy'
+                },
+                {
+                    img: "/content/client/img/product2.jpg",
+                    name: "Nguyễn Đăng Tài Hoa",
+                    cmt: '"Good plans.awesome work"'
+                }
+            ];
+            for (var i = 0; i < array.length; i++) {
+                $('.boxBuild#' + i + ' img').attr("src", array[i].img);
+                $('.boxBuild#' + i + ' h5').html(array[i].name);
+                $('.boxBuild#' + i + ' p').html(array[i].cmt);
+
+            }
+            </script>
     <script src="~/Scripts/js/GetInTouch.js"></script>
 }

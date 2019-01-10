@@ -223,13 +223,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201812090414356_init-db.cs" />
-    <Compile Include="Migrations\201812090414356_init-db.Designer.cs">
-      <DependentUpon>201812090414356_init-db.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812140312372_init-1.cs" />
-    <Compile Include="Migrations\201812140312372_init-1.Designer.cs">
-      <DependentUpon>201812140312372_init-1.cs</DependentUpon>
+    <Compile Include="Migrations\201812180847194_initdb.cs" />
+    <Compile Include="Migrations\201812180847194_initdb.Designer.cs">
+      <DependentUpon>201812180847194_initdb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -1967,6 +1963,7 @@
     <Content Include="Content\Client\css\BuildMap4D.css" />
     <Content Include="Content\Client\css\Commingsoon.css" />
     <Content Include="Content\Client\css\CreateMobileApps.css" />
+    <Content Include="Content\Client\css\document.css" />
     <Content Include="Content\Client\css\Pricing.css" />
     <Content Include="Content\Client\css\register.css" />
     <Content Include="Content\Client\css\styleFooter.css" />
@@ -1984,6 +1981,7 @@
     <Content Include="Content\Client\img\Customer3.png" />
     <Content Include="Content\Client\img\Customer4.png" />
     <Content Include="Content\Client\img\Dang ky.png" />
+    <Content Include="Content\Client\img\document-logo.png" />
     <Content Include="Content\Client\img\Flag_viet_nam.png" />
     <Content Include="Content\Client\img\Flag_united_states.png" />
     <Content Include="Content\Client\img\gallery3.jpg" />
@@ -2032,6 +2030,18 @@
     <Content Include="Content\Client\img\imac.png" />
     <Content Include="Content\Client\img\left.png" />
     <Content Include="Content\Client\img\LOGO MAP 4d-05.png" />
+    <Content Include="Content\Client\img\logodoitac\Untitled-1_0000_bo-xay-dung-logo-.png" />
+    <Content Include="Content\Client\img\logodoitac\Untitled-1_0001_cocobay-.png" />
+    <Content Include="Content\Client\img\logodoitac\Untitled-1_0002_iot-link-.png" />
+    <Content Include="Content\Client\img\logodoitac\Untitled-1_0003_empire-.png" />
+    <Content Include="Content\Client\img\logodoitac\Untitled-1_0004_Co.png" />
+    <Content Include="Content\Client\img\logodoitac\Untitled-1_0005_iot-link-.png" />
+    <Content Include="Content\Client\img\logodoitac\Untitled-1_0006_download.png" />
+    <Content Include="Content\Client\img\logodoitac\Untitled-1_0007_dananglogo-.png" />
+    <Content Include="Content\Client\img\logodoitac\Untitled-1_0008_Layer-1.png" />
+    <Content Include="Content\Client\img\logodoitac\Untitled-1_0009_anh-khue-logo-.png" />
+    <Content Include="Content\Client\img\logodoitac\Untitled-1_0010_viettel-logo.png" />
+    <Content Include="Content\Client\img\logodoitac\Untitled-1_0011_dn.png" />
     <Content Include="Content\Client\img\logoMap4D.png" />
     <Content Include="Content\Client\img\man-one.jpg" />
     <Content Include="Content\Client\img\page-2_0000_Layer-3 - Copy.png" />
@@ -2048,6 +2058,10 @@
     <Content Include="Content\Client\img\products\page-2_0007_kinh-lup-khong-nen.png" />
     <Content Include="Content\Client\img\products\page-2_0007_kinh-lup-khong-nen2.png" />
     <Content Include="Content\Client\img\products\page-2_0007_kinh-lup.png" />
+    <Content Include="Content\Client\img\SDK-Android.png" />
+    <Content Include="Content\Client\img\SDK-API.png" />
+    <Content Include="Content\Client\img\SDK-IOS.png" />
+    <Content Include="Content\Client\img\SDK-Web.png" />
     <Content Include="Content\Client\img\under contruction page.jpg" />
     <Content Include="Content\Client\img\Untitled-1_0000_Header-Bg.png" />
     <Content Include="Content\Client\img\Untitled-1_0000_Mask-by-Mask.png" />
@@ -2055,6 +2069,14 @@
     <Content Include="Content\Client\img\Untitled-1_0001_footer-background.png" />
     <Content Include="Content\Client\img\right.png" />
     <Content Include="Content\Client\img\Untitled.png" />
+    <Content Include="Content\Client\sweetalert\css\sweetalert.css" />
+    <Content Include="Content\Client\sweetalert\css\sweetalert.min.css" />
+    <Content Include="Content\Client\sweetalert\docs.css" />
+    <Content Include="Content\Client\sweetalert\js\bootstrap-sweetalert.png" />
+    <Content Include="Content\Client\sweetalert\js\sweetalert.js" />
+    <Content Include="Content\Client\sweetalert\js\sweetalert.min.js" />
+    <Content Include="Content\Client\sweetalert\sweet-alert.css" />
+    <Content Include="Content\Client\sweetalert\thumbs-up.jpg" />
     <Content Include="Content\sweetalert\bootstrap-sweetalert.png" />
     <Content Include="Content\sweetalert\css\sweetalert.css" />
     <Content Include="Content\sweetalert\docs.css" />
@@ -2289,6 +2311,9 @@
     <Content Include="fonts\Roboto-Regular.ttf" />
     <Content Include="fonts\Roboto-Thin.ttf" />
     <Content Include="fonts\Roboto-ThinItalic.ttf" />
+    <Content Include="Content\Client\sweetalert\sweet-alert-animations.less" />
+    <Content Include="Content\Client\sweetalert\sweet-alert-combine.less" />
+    <Content Include="Content\Client\sweetalert\sweet-alert.less" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\datatable\dataTables.bootstrap.min.js" />
     <Content Include="Scripts\datatable\dataTables.fixedHeader.min.js" />
@@ -2306,7 +2331,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\js\delete-contact.js" />
-    <Content Include="Scripts\js\addContentBuildMap4D.js" />
     <Content Include="Scripts\js\footerScroll.js" />
     <Content Include="Scripts\js\GetInTouch.js" />
     <Content Include="Scripts\js\GetListContact.js" />
@@ -2391,11 +2415,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201812090414356_init-db.resx">
-      <DependentUpon>201812090414356_init-db.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812140312372_init-1.resx">
-      <DependentUpon>201812140312372_init-1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201812180847194_initdb.resx">
+      <DependentUpon>201812180847194_initdb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\My texts.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -2405,6 +2426,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>My texts.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

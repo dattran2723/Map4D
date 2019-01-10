@@ -1,0 +1,144 @@
+﻿#menu-top nav {
+    background: #3597e4;
+}
+
+.document {
+    padding-top: 8%;
+    /*background-color: #EFF3F6;*/
+    /*font-family: Source Sans Pro;*/
+}
+
+.intro-section {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.welcome {
+    font-size: 26px;
+}
+
+.version {
+    font-size: 16px;
+}
+
+.box-link {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.box-img {
+    text-align: right;
+    /*padding-left: 200px;*/
+}
+
+    .box-img img {
+        width: 100%;
+        height: auto;
+    }
+
+.box-intro {
+    /*padding-right: 200px;*/
+    font-family: 'Myriad Pro';
+    padding-top: 50px;
+}
+
+.box-intro-text {
+    font-size: 26px;
+    color: #354052;
+}
+
+.box-intro-update-date {
+    font-size: 16px;
+    color: #7F8FA4;
+}
+
+.list-box {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    /*padding-left: 200px;
+        padding-right: 200px;*/
+    margin-right: unset !important;
+}
+
+.box-item {
+    border: 1px solid #E6EAEE;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.box-item-img {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+
+
+.box-item-title {
+    font-size: 30px;
+    color: #354052;
+}
+
+.box-item-text {
+    font-size: 16px;
+    color: #354052;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 180px;
+    /*display: flex;
+                    justify-content: center;
+                    align-items: center;*/
+}
+
+.box-item-text-middle {
+    /*top: 25%;
+                    position: relative;*/
+}
+
+.btn-explore {
+    background-color: #00FBC8;
+    color: #1C2747;
+    font-size: 14px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    border: none;
+    width: 150px;
+}
+
+@@media only screen and (max-width: 1140px) {
+    .intro-section {
+        padding-top: 40px;
+    }
+
+    .box-img {
+        text-align: center;
+    }
+
+    .box-item {
+        margin-top: 10px;
+    }
+
+    .box-item-text {
+        height: 150px;
+    }
+}
+
+@@media only screen and (max-width: 576px) {
+    .intro-section {
+        padding-top: 80px;
+    }
+
+    .container {
+        max-width: 450px;
+    }
+
+    .box-item {
+        margin-top: 10px;
+    }
+
+    .box-item-text {
+        height: 150px;
+    }
+}

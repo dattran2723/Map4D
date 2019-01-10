@@ -2,16 +2,11 @@
     background-image: url("/Content/Client/img/icon-page-1_0006_Grey-Bg_Repair4.png");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -7%
+    margin-top: -7%;
 }
 
     .buildMap4D .rowbottom {
-        padding-left: 15%;
-        padding-right: 15%;
-        margin: 0 auto;
         padding-bottom: 19%;
-        display: flex;
-        padding-top: 2%;
     }
 
     .buildMap4D .top {
@@ -32,80 +27,24 @@
 
     .buildMap4D .rowbottom .boxBuild {
         display: flex;
+        border: 1px solid #E6EAEE;
+        background-color: #fff;
+        padding-left: 0;
+        padding-right: 0;
     }
 
-        .buildMap4D .rowbottom .boxBuild .img {
-            box-shadow: 0px 20px 50px 0px rgba(75, 118, 130, 0.2);
-            background-color: #fff;
-            border-radius: 5px;
-            margin-bottom: 10px;
+        .buildMap4D .rowbottom .boxBuild:hover {
+            box-shadow: 0 0 20px rgba(33,33,33,.2);
+            z-index: 1;
         }
 
-            .buildMap4D .rowbottom .boxBuild .img .content {
-                padding: 10px 15px 12px 15px;
-            }
-
-            .buildMap4D .rowbottom .boxBuild .img .col-2 {
-                /*display: flex;
-                align-items: center;*/
-            }
-
-            .buildMap4D .rowbottom .boxBuild .img .content .divImg {
-                height: 45px;
-                width: 45px;
-                border-radius: 5px;
-            }
-
-            .buildMap4D .rowbottom .boxBuild .img .content .contentRight {
-                padding-left: 22px;
-            }
-
-                .buildMap4D .rowbottom .boxBuild .img .content .contentRight .name {
-                    font-family: 'Myriad Pro';
-                    font-size: 16px;
-                    margin-bottom: 0;
-                }
-
-                .buildMap4D .rowbottom .boxBuild .img .content .contentRight .cmt {
-                    font-family: 'Myriad Pro';
-                    font-size: 14px;
-                    color: #a0a0a0;
-                    margin-bottom: 0;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    /*white-space: nowrap;*/
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical;
-                    -webkit-line-clamp: 2;
-                }
-
-@media only screen and (max-width: 1276px) {
-    .buildMap4D .rowbottom {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-}
 
 @media only screen and (max-width: 1033px) {
     .buildMap4D .top .more {
         font-size: 40px;
     }
-
-    .buildMap4D .rowbottom {
-        padding-left: 6%;
-        padding-right: 6%;
-    }
-
-        .buildMap4D .rowbottom .boxBuild .img .content {
-            padding: 3%;
-        }
 }
 
-@media only screen and (max-width: 991px) {
-    .buildMap4D .rowbottom .boxBuild .img .content .contentRight {
-        padding-left: 10px;
-    }
-}
 
 @media only screen and (max-width: 860px) {
     .buildMap4D .top .more {
@@ -114,20 +53,10 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .buildMap4D .rowbottom .boxBuild {
-        padding-bottom: 5%;
+
+    .buildMap4D .rowbottom .boxBuild .w-60 {
+        width: 100%;
     }
-
-    .buildMap4D .rowbottom {
-        width: 80%;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-
-
-        .buildMap4D .rowbottom .boxBuild .img {
-            margin: 0 auto;
-        }
 
     .buildMap4D .top {
         padding-left: 1%;
@@ -138,47 +67,14 @@
             padding-right: 5%;
         }
 
-    .buildMap4D .rowbottom .boxBuild .img .content .col-md-12 {
-        text-align: start;
-    }
-
-    .buildMap4D .rowbottom .boxBuild .img .content .contentRight .cmt {
-        text-align: justify;
-    }
-
-    .buildMap4D .rowbottom .boxBuild .img .content {
-        padding: 3%;
-    }
-
-        .buildMap4D .rowbottom .boxBuild .img .content .contentRight {
-            padding-left: 0px;
-        }
-
     .buildMap4D .rowbottom .boxBuild {
-        padding-bottom: 2%;
-    }
-}
-
-@media only screen and (max-width: 675px) {
-
-    .buildMap4D .rowbottom {
-        width: 90%;
+        height: 70px;
     }
 }
 
 @media only screen and (max-width: 625px) {
     .buildMap4D .top .more {
         font-size: 25px;
-    }
-
-    .buildMap4D .rowbottom {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .buildMap4D .rowbottom .boxBuild .img .content .contentRight {
-        padding-left: 15px;
     }
 }
 
@@ -191,13 +87,7 @@
         font-size: 14px;
     }
 
-    .buildMap4D .rowbottom .boxBuild .img .content .contentRight .cmt {
-        font-family: 'Myriad Pro';
-    }
-}
-
-@media only screen and (max-width: 380px) {
-    .buildMap4D .rowbottom .boxBuild .img .content .contentRight {
-        padding-left: 24px;
+    .buildMap4D .rowbottom .boxBuild {
+        height: 50px;
     }
 }
