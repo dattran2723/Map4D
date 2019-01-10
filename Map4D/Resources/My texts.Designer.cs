@@ -340,7 +340,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Đang xây dựng.
+        ///   Looks up a localized string similar to Trang này đang xây dựng.
         /// </summary>
         public static string Dangxaydung {
             get {

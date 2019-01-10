@@ -1964,6 +1964,7 @@
     <Content Include="Content\Client\css\Commingsoon.css" />
     <Content Include="Content\Client\css\CreateMobileApps.css" />
     <Content Include="Content\Client\css\document.css" />
+    <Content Include="Content\Client\css\ForgotPassword.css" />
     <Content Include="Content\Client\css\Pricing.css" />
     <Content Include="Content\Client\css\register.css" />
     <Content Include="Content\Client\css\styleFooter.css" />
@@ -2063,6 +2064,7 @@
     <Content Include="Content\Client\img\SDK-IOS.png" />
     <Content Include="Content\Client\img\SDK-Web.png" />
     <Content Include="Content\Client\img\under contruction page.jpg" />
+    <Content Include="Content\Client\img\under-contruction-page_0000s_0006_Vector-Smart-Object.png" />
     <Content Include="Content\Client\img\Untitled-1_0000_Header-Bg.png" />
     <Content Include="Content\Client\img\Untitled-1_0000_Mask-by-Mask.png" />
     <Content Include="Content\Client\img\Untitled-1_0000_Right-Mockup--phone-demo-copy.png" />
