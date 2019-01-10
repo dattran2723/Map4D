@@ -14,32 +14,28 @@
     <!-- /.login-logo -->
     <div class="login-content col-12">
         <div class="col-11 col-sm-6 col-md-4 mx-auto form-login">
-            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal"}))
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal" }))
             {
                 @Html.AntiForgeryToken()
-                @Html.ValidationSummary(true,"", new { @class = "text-danger" })
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                 <div class="form-group">
-                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Email" })
-                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                    <label>Username or email</label>
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Email)
                 </div>
                 <div class="form-group">
-                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = Map4D.Resources.My_texts.MậtKhẩu })
-                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                    <label>@Map4D.Resources.My_texts.MậtKhẩu</label>
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Password)
                 </div>
-                <div class="row">
-                    <div class="col-6 text-left">
-                        <div class="checkbox icheck">
-                            <label id="remember-me">
-                                @Html.CheckBoxFor(m => m.RememberMe, new { @class = "checkbox" })
-                                @Map4D.Resources.My_texts.GhiNhớMậtKhẩu
-                            </label>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-6 text-right">
-                        <input type="submit" name="name" class="btn btn-block float-right" id="btn-submit" value="@Map4D.Resources.My_texts.ĐăngNhập" />
-                    </div>
-                    <!-- /.col -->
+                <div class="row ml-0 mr-0">
+                    <input type="submit" name="name" class="btn col-12 mt-1" id="btn-submit" value="@Map4D.Resources.My_texts.ĐăngNhập" />
+                </div>
+                <div class="row ml-0 mr-0 mt-3">
+                    <p>
+                        Don't have an account? <a href="@Url.Action("Register","Account")">Sign up for Map4D <i class="fas fa-angle-right"></i></a><br />
+                        <a href="#">I forgot password <i class="fas fa-angle-right"></i></a>
+                    </p>
                 </div>
             }
         </div>
