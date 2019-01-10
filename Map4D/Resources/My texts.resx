@@ -301,7 +301,7 @@
     <value>Cảm ơn bạn đã quan tâm, chúng tôi đang xây dựng nội dung và sẽ trở lại sớm.</value>
   </data>
   <data name="Dangxaydung" xml:space="preserve">
-    <value>Đang xây dựng</value>
+    <value>Trang này đang xây dựng</value>
   </data>
   <data name="ThôngCảm" xml:space="preserve">
     <value>Thông cảm, chúng tôi đang xây dựng trang này</value>
@@ -438,6 +438,18 @@
   <data name="TieuDeMail" xml:space="preserve">
     <value>Thư cảm ơn</value>
   </data>
+  <data name="DoNotHaveAnAccount" xml:space="preserve">
+    <value>Không có tài khoản?</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Quên mật khẩu</value>
+  </data>
+  <data name="RegisterMap4D" xml:space="preserve">
+    <value>Đăng ký Map4D</value>
+  </data>
+  <data name="UsernameOrEmail" xml:space="preserve">
+    <value>Tên đăng nhập hoặc email</value>
+  </data>
   <data name="KhamPhaExplore1" xml:space="preserve">
     <value>Khám phá</value>
   </data>
@@ -488,5 +500,8 @@
   </data>
   <data name="Doc_WebTitle" xml:space="preserve">
     <value>Web SDK</value>
+  </data>
+  <data name="DaCoTaiKhoan" xml:space="preserve">
+    <value>Đồng ý với Điều khoản dịch vụ và Chính sách quyền riêng tư của Map4D .</value>
   </data>
 </root>

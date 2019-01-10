@@ -238,7 +238,7 @@
     <value>User name already exist!</value>
   </data>
   <data name="ĐãCóTàiKhoản" xml:space="preserve">
-    <value>Have account?</value>
+    <value>Already have account so sign in ?</value>
   </data>
   <data name="ĐăngNhập" xml:space="preserve">
     <value>Login</value>
@@ -298,7 +298,7 @@
     <value>Thank you for being patient. We are doing some work on the site and will be back shortly</value>
   </data>
   <data name="Dangxaydung" xml:space="preserve">
-    <value>UNDER CONSTRUCTION</value>
+    <value>This page is under construction</value>
   </data>
   <data name="ThôngCảm" xml:space="preserve">
     <value>Sorry, we’re doing some work on the site</value>
@@ -432,6 +432,18 @@
   <data name="TieuDeMail" xml:space="preserve">
     <value>Thank you letter</value>
   </data>
+  <data name="DoNotHaveAnAccount" xml:space="preserve">
+    <value>Don't have an account?</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>I forgot my password</value>
+  </data>
+  <data name="RegisterMap4D" xml:space="preserve">
+    <value>Sign up for Map4D</value>
+  </data>
+  <data name="UsernameOrEmail" xml:space="preserve">
+    <value>Username or email</value>
+  </data>
   <data name="KhamPhaExplore1" xml:space="preserve">
     <value>Explorer</value>
   </data>
@@ -449,6 +461,9 @@
   </data>
   <data name="TranVanQuy" xml:space="preserve">
     <value>We especially like the idea of using the time in real 4D.</value>
+  </data>
+  <data name="DaCoTaiKhoan" xml:space="preserve">
+    <value>You agree to the Map4D Term of Service and Privacy Policy .</value>
   </data>
   <data name="Doc_AndroidContent" xml:space="preserve">
     <value>Provide examples of typical development scenarios for Android SDK, each of which includes implementations of Android</value>
