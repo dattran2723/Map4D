@@ -504,4 +504,40 @@
   <data name="TieuDeDangKy" xml:space="preserve">
     <value>Sign up</value>
   </data>
+  <data name="PageFogot_daguimail" xml:space="preserve">
+    <value>We sent an email to you</value>
+  </data>
+  <data name="PageFogot_dangnhapMap4d" xml:space="preserve">
+    <value>Sign in for Map4D &gt;</value>
+  </data>
+  <data name="PageFogot_guihuongdancailai" xml:space="preserve">
+    <value>Sent reset instructions</value>
+  </data>
+  <data name="PageFogot_khoiphucmatkhau" xml:space="preserve">
+    <value>Recover password</value>
+  </data>
+  <data name="PageFogot_khongcotaikhoan" xml:space="preserve">
+    <value>No account is associated with the email</value>
+  </data>
+  <data name="PageFogot_khongthekhoiphucmatkhau" xml:space="preserve">
+    <value>Unable to recover password</value>
+  </data>
+  <data name="PageFogot_ok" xml:space="preserve">
+    <value>Okay</value>
+  </data>
+  <data name="PageFogot_quenmatkhau" xml:space="preserve">
+    <value>Forgot your password?</value>
+  </data>
+  <data name="PageFogot_taikhoanchuaxacnhan" xml:space="preserve">
+    <value>The account has not been previously verified</value>
+  </data>
+  <data name="PageFogot_truycapmail" xml:space="preserve">
+    <value>Please visit the email to proceed to set up a new password</value>
+  </data>
+  <data name="PageFogot_vuilongthumailkhac" xml:space="preserve">
+    <value>Please try a different email.</value>
+  </data>
+  <data name="PageFogot_vuilongxacnhantruoc" xml:space="preserve">
+    <value>Please confirm the account first to perform this function</value>
+  </data>
 </root>
