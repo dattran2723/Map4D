@@ -23,7 +23,7 @@ namespace Map4D.Controllers
             return View();
         }
 
-        public ActionResult ChangeLanguage(String LanguageAbbreviation, string url)
+        public ActionResult ChangeLanguage(string LanguageAbbreviation, string url)
         {
             if (LanguageAbbreviation != null)
             {
