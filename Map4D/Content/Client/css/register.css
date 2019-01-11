@@ -94,7 +94,17 @@ body {
     line-height: 36px;
     padding-left: 4%;
 }
-
+#Email-error {
+    display: block;
+    background: #FFD9D9;
+    border: 1px solid #FD0F0F;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 12px;
+    text-align: left;
+    line-height: 36px;
+    padding-left: 4%;
+}
 
 #footer {
     background-image: none;

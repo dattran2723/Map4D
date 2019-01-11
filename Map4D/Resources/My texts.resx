@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Pricing" xml:space="preserve">
-    <value>Giá</value>
+    <value>Bảng giá</value>
   </data>
   <data name="ChỉĐường" xml:space="preserve">
     <value>Chỉ đường</value>
@@ -133,7 +133,7 @@
     <value>Là bản đồ duy nhất ở Việt Nam hiển thị bản đồ 4D theo thời gian thực. Được xây dựng từ nhiều lớp dữ liệu, sẵn sàng kết nối và hướng tới 1 thành phố thông minh trực tuyến. Hướng đến việc tích hợp nhiều ứng dụng vào một nơi cho việc quản lý nhà nước, phục vụ sản xuất kinh doanh cho doanh nghiệp và người dân.</value>
   </data>
   <data name="GửiNgayBâyGiờ" xml:space="preserve">
-    <value>Gửi ngay</value>
+    <value>Gửi đi</value>
   </data>
   <data name="HọvàTên" xml:space="preserve">
     <value>Họ và tên</value>
@@ -301,7 +301,7 @@
     <value>Cảm ơn bạn đã quan tâm, chúng tôi đang xây dựng nội dung và sẽ trở lại sớm.</value>
   </data>
   <data name="Dangxaydung" xml:space="preserve">
-    <value>Đang xây dựng</value>
+    <value>Trang này đang xây dựng</value>
   </data>
   <data name="ThôngCảm" xml:space="preserve">
     <value>Thông cảm, chúng tôi đang xây dựng trang này</value>

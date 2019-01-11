@@ -340,7 +340,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Đang xây dựng.
+        ///   Looks up a localized string similar to Trang này đang xây dựng.
         /// </summary>
         public static string Dangxaydung {
             get {
@@ -682,7 +682,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gửi ngay.
+        ///   Looks up a localized string similar to Gửi đi.
         /// </summary>
         public static string GửiNgayBâyGiờ {
             get {
@@ -934,7 +934,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Giá.
+        ///   Looks up a localized string similar to Bảng giá.
         /// </summary>
         public static string Pricing {
             get {
