@@ -498,4 +498,10 @@
   <data name="Doc_WebTitle" xml:space="preserve">
     <value>Web SDK</value>
   </data>
+  <data name="DangNhapMenu" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="TieuDeDangKy" xml:space="preserve">
+    <value>Sign up</value>
+  </data>
 </root>

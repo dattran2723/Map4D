@@ -10,12 +10,12 @@
 {
     @Html.AntiForgeryToken()
     <div class="row registerUser">
-        <h2 class="col-12 text-center">@Map4D.Resources.My_texts.Đăngký</h2>
-        <div class="boxRegister col-md-4 col-sm-6 col-8 mx-auto">
+        <h2 class="col-12 text-center">@Map4D.Resources.My_texts.TieuDeDangKy</h2>
+        <div class="boxRegister col-lg-4 col-md-6 col-sm-6 col-9 mx-auto pl-0 pr-0">
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
             <div class="form-group">
                 <div class="title-register">
-                    <p>Username</p>
+                    <p>@Map4D.Resources.My_texts.TênĐăngNhập</p>
                 </div>
                 @Html.TextBoxFor(m => m.UserName, new { @class = "form-control input", @placeholder = Map4D.Resources.My_texts.TênĐăngNhập })
                 @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
@@ -30,7 +30,7 @@
             </div>
             <div class="form-group">
                 <div class="title-register">
-                    <p>Password</p>
+                    <p>@Map4D.Resources.My_texts.MậtKhẩu</p>
                 </div>
                 @Html.PasswordFor(m => m.Password, new { @class = "form-control input", @placeholder = Map4D.Resources.My_texts.MậtKhẩu })
                 @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
@@ -38,7 +38,7 @@
             <div class="form-group">
                 <div class="divBottom">
                     <button type="submit" id="btnRegister" class=" col-12 btn">@Map4D.Resources.My_texts.Đăngký</button>
-                    <div class="col-12 have-account">
+                    <div class="col-12 have-account pl-0 pr-0">
                         <span>@Map4D.Resources.My_texts.DaCoTaiKhoan<a href="@Url.Action("Login","Account")">@Map4D.Resources.My_texts.ĐãCóTàiKhoản</a></span>
                     </div>
                 </div>

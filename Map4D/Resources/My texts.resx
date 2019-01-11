@@ -190,7 +190,7 @@
     <value>Đa nền tảng</value>
   </data>
   <data name="Đăngký" xml:space="preserve">
-    <value>Đăng ký</value>
+    <value>Bắt đầu</value>
   </data>
   <data name="ĐếnMọiNơiThậtDễDàng" xml:space="preserve">
     <value>Đến mọi nơi thật dễ dàng</value>
@@ -241,7 +241,7 @@
     <value>Tên đăng nhập đã tồn tại!</value>
   </data>
   <data name="ĐãCóTàiKhoản" xml:space="preserve">
-    <value>Đã có tài khoản?</value>
+    <value>Đã có sẳn tài khoản đăng nhập &gt;</value>
   </data>
   <data name="ĐăngNhập" xml:space="preserve">
     <value>Đăng nhập</value>
@@ -503,5 +503,11 @@
   </data>
   <data name="DaCoTaiKhoan" xml:space="preserve">
     <value>Đồng ý với Điều khoản dịch vụ và Chính sách quyền riêng tư của Map4D .</value>
+  </data>
+  <data name="DangNhapMenu" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="TieuDeDangKy" xml:space="preserve">
+    <value>Đăng ký</value>
   </data>
 </root>

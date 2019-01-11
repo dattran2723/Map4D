@@ -4,9 +4,7 @@
 }
 
 body {
-    background-image: url('../img/Dang ky.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #4B9DE9;
 }
 
 #menu-top #menu-recommend {
@@ -18,10 +16,14 @@ body {
     height: 25px;
 }
 
+    .title-register p {
+        font-size: 16px;
+    }
+
 .registerUser {
     width: 100%;
     margin: auto;
-    padding-top: 14%;
+    padding-top: 12%;
     padding-bottom: 8%;
 }
 
@@ -29,16 +31,17 @@ body {
         color: #fff;
         font-family: 'UTM Avo';
         font-size: 44px;
-        padding-bottom: 4%;
+        padding-bottom: 2%;
     }
 
     .registerUser .boxRegister {
         margin: auto;
+        max-width: 30% !important;
     }
 
         .registerUser .boxRegister .input {
             line-height: 36px;
-            border-radius: 8px;
+            border-radius: 4px;
             margin: auto;
         }
 
@@ -50,14 +53,14 @@ body {
         .registerUser .divBottom .have-account a {
             padding-left: 0%;
             color: #0df8c8;
-            font-size: 18px;
+            font-size: 16px;
             text-decoration: underline;
             font-family: SourceSansPro-Regular;
         }
 
         .registerUser .divBottom button {
             background-color: #0df8c8;
-            border-radius: 8px;
+            border-radius: 4px;
             margin-top: 4%;
             line-height: 36px;
         }
@@ -69,8 +72,12 @@ body {
 .have-account {
     margin-top: 6%;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
 }
+
+    .have-account span a {
+        text-decoration: none !important;
+    }
 
 #UserName-error {
     display: block;
@@ -83,6 +90,7 @@ body {
     line-height: 36px;
     padding-left: 4%;
 }
+
 #Password-error {
     display: block;
     background: #FFD9D9;
@@ -94,6 +102,7 @@ body {
     line-height: 36px;
     padding-left: 4%;
 }
+
 #Email-error {
     display: block;
     background: #FFD9D9;
@@ -113,6 +122,13 @@ body {
 #menu-top nav .collapse ul li #btn-register {
     display: none;
 }
+
+@media only screen and (max-width: 1200px ) {
+    .registerUser .boxRegister {
+        max-width: 100% !important;
+    }
+}
+
 
 @media only screen and (max-width: 1033px ) {
     .registerUser h2 {
@@ -162,20 +178,15 @@ body {
     }
 
         .registerUser .divBottom a {
-            font-size: 12px;
+            font-size: 14px;
         }
 
         .registerUser .divBottom button {
-            font-size: 12px;
+            font-size: 14px;
         }
-}
 
-@media only screen and (max-width: 376px) {
-    .registerUser .divBottom a {
-        font-size: 12px;
-    }
-
-    .registerUser .divBottom button {
-        font-size: 12px;
+    .have-account {
+        padding-bottom: 5%;
+        font-size: 14px;
     }
 }

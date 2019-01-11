@@ -295,7 +295,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Đã có tài khoản?.
+        ///   Looks up a localized string similar to Đã có sẳn tài khoản đăng nhập &gt;.
         /// </summary>
         public static string ĐãCóTàiKhoản {
             get {
@@ -313,7 +313,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Đăng ký.
+        ///   Looks up a localized string similar to Bắt đầu.
         /// </summary>
         public static string Đăngký {
             get {
@@ -336,6 +336,15 @@ namespace Map4D.Resources {
         public static string ĐăngNhập {
             get {
                 return ResourceManager.GetString("ĐăngNhập", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Đăng nhập.
+        /// </summary>
+        public static string DangNhapMenu {
+            get {
+                return ResourceManager.GetString("DangNhapMenu", resourceCulture);
             }
         }
         
@@ -1056,6 +1065,15 @@ namespace Map4D.Resources {
         public static string Tiêuđề {
             get {
                 return ResourceManager.GetString("Tiêuđề", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Đăng ký.
+        /// </summary>
+        public static string TieuDeDangKy {
+            get {
+                return ResourceManager.GetString("TieuDeDangKy", resourceCulture);
             }
         }
         
