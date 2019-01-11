@@ -121,7 +121,6 @@ body {
 
     .registerUser .boxRegister .input {
         margin-bottom: 5% !important;
-        /*line-height: 40px;*/
         font-size: 18px;
     }
 
@@ -142,7 +141,7 @@ body {
     }
 
     .registerUser .boxRegister .input {
-        line-height: 24px;
+        line-height: 1.5;
     }
 }
 
@@ -154,11 +153,6 @@ body {
 
         .registerUser h2 {
             font-size: 28px;
-        }
-
-        .registerUser .boxRegister .input {
-            line-height: 20px;
-            font-size: 14px;
         }
 }
 
