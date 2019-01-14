@@ -43,5 +43,6 @@ namespace Map4D.Models
         [DefaultValue(false)]
         [DisplayName("Trạng thái")]
         public bool Status { get; set; }
+
     }
 }

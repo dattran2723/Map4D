@@ -10,7 +10,7 @@
                 <img class="img-responsive w-75" src="~/Content/Client/img/icon-page-1_0022_logo-map-4d.png" alt="" />
             </a>
         </div>
-        <button class="navbar-toggler text-right" id="btn-menu" type="button" data-toggle="collapse" data-target="#list-menu-top" aria-controls ="list-menu-top">
+        <button class="navbar-toggler text-right" id="btn-menu" type="button" data-toggle="collapse" data-target="#list-menu-top" aria-controls="list-menu-top">
             <i class="fas fa-bars"></i>
         </button>
 
@@ -51,17 +51,36 @@
                             </a>
 
                             <a class="dropdown-item btn" href="@Url.Action("ChangeLanguage", "Home", new { LanguageAbbreviation = "en-US", url = Request.Url.AbsolutePath.ToString() })">
-                                <img class="img-responsive" src="~/Content/Client/img/Flag_united_states.png"  alt=""/>
+                                <img class="img-responsive" src="~/Content/Client/img/Flag_united_states.png" alt="" />
                                 <span>@Map4D.Resources.My_texts.English</span>
 
                             </a>
                         </div>
                     </div>
                 </li>
-                <li class="space-item"></li>
-                <li class="nav-item">
-                    <a class="btn" href="@Url.Action("Login","Account")" id="btn-register">@Map4D.Resources.My_texts.DangNhapMenu</a>
-                </li>
+                @*@if (!User.Identity.IsAuthenticated)
+                    {*@
+                        <li class="space-item"></li>
+                        <li class="nav-item">
+                            <a class="btn" href="@Url.Action("Login","Account")" id="btn-register">@Map4D.Resources.My_texts.DangNhapMenu</a>
+                        </li>
+               
+                @*<li class="dropdown row" style="padding-left:2%;padding-top:5px">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="~/Content/Client/img/Pic.png" class="img-circle" width="36" height="36" />
+                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                    </a>
+                    <ul class="dropdown-menu profile-avatar col-12">
+                        <li class="col-12">Account</li>
+                        <li>Studio</li>
+                        <li>Documentation</li>
+                        <li></li>
+                        <li></li>
+                        <li>My Name</li>
+                        <li>Sign out</li>
+                    </ul>
+                </li>*@
+
             </ul>
         </div>
     </nav>
