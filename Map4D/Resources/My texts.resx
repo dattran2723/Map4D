@@ -190,7 +190,7 @@
     <value>Đa nền tảng</value>
   </data>
   <data name="Đăngký" xml:space="preserve">
-    <value>Đăng ký</value>
+    <value>Bắt đầu</value>
   </data>
   <data name="ĐếnMọiNơiThậtDễDàng" xml:space="preserve">
     <value>Đến mọi nơi thật dễ dàng</value>
@@ -241,7 +241,7 @@
     <value>Tên đăng nhập đã tồn tại!</value>
   </data>
   <data name="ĐãCóTàiKhoản" xml:space="preserve">
-    <value>Đã có tài khoản?</value>
+    <value>Đã có sẳn tài khoản đăng nhập &gt;</value>
   </data>
   <data name="ĐăngNhập" xml:space="preserve">
     <value>Đăng nhập</value>
@@ -500,5 +500,47 @@
   </data>
   <data name="SupportPackage" xml:space="preserve">
     <value>Gói hỗ trợ</value>
+  </data>
+  <data name="DangNhapMenu" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="TieuDeDangKy" xml:space="preserve">
+    <value>Đăng ký</value>
+  </data>
+  <data name="PageFogot_daguimail" xml:space="preserve">
+    <value>Chúng tôi đã gửi một email cho bạn</value>
+  </data>
+  <data name="PageFogot_dangnhapMap4d" xml:space="preserve">
+    <value>Đăng nhập Map4D &gt;</value>
+  </data>
+  <data name="PageFogot_guihuongdancailai" xml:space="preserve">
+    <value>Gửi hướng dẫn cài đặt lại</value>
+  </data>
+  <data name="PageFogot_khoiphucmatkhau" xml:space="preserve">
+    <value>Khôi phục mật khẩu</value>
+  </data>
+  <data name="PageFogot_khongcotaikhoan" xml:space="preserve">
+    <value>Không có tài khoản nào được liên kết với email</value>
+  </data>
+  <data name="PageFogot_khongthekhoiphucmatkhau" xml:space="preserve">
+    <value>Không thể khôi phục mật khẩu</value>
+  </data>
+  <data name="PageFogot_ok" xml:space="preserve">
+    <value>Đồng ý</value>
+  </data>
+  <data name="PageFogot_quenmatkhau" xml:space="preserve">
+    <value>Quên mật khẩu ?</value>
+  </data>
+  <data name="PageFogot_taikhoanchuaxacnhan" xml:space="preserve">
+    <value>Tài khoản chưa được xác nhận trước đó</value>
+  </data>
+  <data name="PageFogot_truycapmail" xml:space="preserve">
+    <value>Vui lòng truy cập email để tiến hành thiết lập mật khẩu mới</value>
+  </data>
+  <data name="PageFogot_vuilongthumailkhac" xml:space="preserve">
+    <value>Vui lòng thử một email khác.</value>
+  </data>
+  <data name="PageFogot_vuilongxacnhantruoc" xml:space="preserve">
+    <value>Vui lòng xác nhận tài khoản trước để thực hiện chức năng này</value>
   </data>
 </root>

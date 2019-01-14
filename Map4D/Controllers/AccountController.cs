@@ -56,7 +56,7 @@ namespace Map4D.Controllers
         // GET: /Account/Login
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
-        {           
+        {
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
@@ -86,7 +86,7 @@ namespace Map4D.Controllers
                     return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("",Map4D.Resources.My_texts.LoginFail);
+                    ModelState.AddModelError("", Map4D.Resources.My_texts.LoginFail);
                     return View(model);
             }
         }
@@ -170,7 +170,7 @@ namespace Map4D.Controllers
             }
             return Json(true, JsonRequestBehavior.AllowGet);
         }
-        
+
 
         [HttpPost]
         [AllowAnonymous]
@@ -197,10 +197,9 @@ namespace Map4D.Controllers
                 return View(model);
             }
             return View(model);
-        }   
-        
+        }
 
-        //
+        
         // GET: /Account/ConfirmEmail
         [AllowAnonymous]
         public async Task<ActionResult> ConfirmEmail(string userId, string code)
@@ -218,34 +217,51 @@ namespace Map4D.Controllers
         [AllowAnonymous]
         public ActionResult ForgotPassword()
         {
+            ViewBag.Message = null;
             return View();
         }
-
-        //
+        /// <summary>
+        /// Gọi API
+        /// sau khi API trả về thì sẻ có 3 trường hợp xảy ra
+        ///     + Email đó không tìm thấy thì API trả về NotFound
+        ///     + Email tìm thấy nhưng chưa xác nhận Email thì trả về False
+        ///     + Thỏa 2 điều kiện trên thì gửi mail cho người dùng và trả về True
+        /// </summary>
+        /// <param name="model">truyền vào model có chứa Email</param>
+        /// <returns>
+        /// return về View(model) khi người dùng nhập sai
+        /// 3 trường hợp trên thì sẻ return về 1 ViewBag.Message = resultReturn để kiểm tra tại view và show popup lên cho đúng
+        /// </returns>
         // POST: /Account/ForgotPassword
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         public async Task<ActionResult> ForgotPassword(ForgotPasswordViewModel model)
         {
             if (ModelState.IsValid)
             {
-                var user = await UserManager.FindByNameAsync(model.Email);
-                if (user == null || !(await UserManager.IsEmailConfirmedAsync(user.Id)))
+                HttpClient client = new HttpClient();
+                string host = System.Configuration.ConfigurationManager.AppSettings["APIForgotPassword"];
+                client.BaseAddress = new Uri(host);
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                client.DefaultRequestHeaders.Accept.Clear();
+
+                HttpResponseMessage response = await client.PostAsJsonAsync("api/account/ForgotPassword", model);
+                if (response.IsSuccessStatusCode == true)
                 {
-                    // Don't reveal that the user does not exist or is not confirmed
-                    return View("ForgotPasswordConfirmation");
+                    string resultReturn = null;
+                    using (HttpContent content = response.Content)
+                    {
+                        Task<string> result = content.ReadAsStringAsync();
+                        resultReturn = result.Result;
+                    }
+                    ViewBag.Message = resultReturn;
+                    return View();
                 }
-
-                // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
-                // Send an email with this link
-                // string code = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
-                // var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
-                // await UserManager.SendEmailAsync(user.Id, "Reset Password", "Please reset your password by clicking <a href=\"" + callbackUrl + "\">here</a>");
-                // return RedirectToAction("ForgotPasswordConfirmation", "Account");
+                ViewBag.Message = "NotFound";
+                return View();
             }
-
-            // If we got this far, something failed, redisplay form
             return View(model);
         }
 

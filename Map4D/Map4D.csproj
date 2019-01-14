@@ -2317,7 +2317,6 @@
     <Content Include="Scripts\datatable\dataTables.responsive.min.js" />
     <Content Include="Scripts\datatable\jquery.dataTables.min.js" />
     <Content Include="Scripts\datatable\responsive.bootstrap.min.js" />
-    <Content Include="Scripts\js\deleteCustomer.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -2328,6 +2327,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\js\delete-contact.js" />
+    <Content Include="Scripts\js\deleteCustomer.js" />
     <Content Include="Scripts\js\footerScroll.js" />
     <Content Include="Scripts\js\GetInTouch.js" />
     <Content Include="Scripts\js\GetListContact.js" />
@@ -2337,9 +2337,9 @@
     <Content Include="Scripts\js\responsiveTable.js" />
     <Content Include="Scripts\js\slideMap.js" />
     <Content Include="Scripts\js\sticky-menu.js" />
+    <Content Include="Scripts\js\sweetalert2.js" />
     <Content Include="Scripts\js\zoomImgSlideMap.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Scripts\sweetalert.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

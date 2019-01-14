@@ -62,9 +62,6 @@
         font-size: 30px;
         padding-top: 24%;
     }
-    .bg .p3 {
-        padding-top: 24%;
-    }
 }
 
 @media only screen and (max-width:1021px) {
@@ -84,13 +81,11 @@
 
     .bg .p3 {
         font-size: 16px;
-       
     }
 }
 
 @media only screen and (max-width:447px) {
-    .bg p {
-        font-size: 15px;
-        padding-top: 70%;
+    .bg .p3 {
+        font-size: 14px;
     }
 }

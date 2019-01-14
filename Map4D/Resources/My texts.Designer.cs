@@ -313,7 +313,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Đã có tài khoản?.
+        ///   Looks up a localized string similar to Đã có sẳn tài khoản đăng nhập &gt;.
         /// </summary>
         public static string ĐãCóTàiKhoản {
             get {
@@ -331,7 +331,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Đăng ký.
+        ///   Looks up a localized string similar to Bắt đầu.
         /// </summary>
         public static string Đăngký {
             get {
@@ -354,6 +354,15 @@ namespace Map4D.Resources {
         public static string ĐăngNhập {
             get {
                 return ResourceManager.GetString("ĐăngNhập", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Đăng nhập.
+        /// </summary>
+        public static string DangNhapMenu {
+            get {
+                return ResourceManager.GetString("DangNhapMenu", resourceCulture);
             }
         }
         
@@ -925,7 +934,115 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mỗi giờ.
+        ///   Looks up a localized string similar to Chúng tôi đã gửi một email cho bạn.
+        /// </summary>
+        public static string PageFogot_daguimail {
+            get {
+                return ResourceManager.GetString("PageFogot_daguimail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Đăng nhập Map4D &gt;.
+        /// </summary>
+        public static string PageFogot_dangnhapMap4d {
+            get {
+                return ResourceManager.GetString("PageFogot_dangnhapMap4d", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gửi hướng dẫn cài đặt lại.
+        /// </summary>
+        public static string PageFogot_guihuongdancailai {
+            get {
+                return ResourceManager.GetString("PageFogot_guihuongdancailai", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Khôi phục mật khẩu.
+        /// </summary>
+        public static string PageFogot_khoiphucmatkhau {
+            get {
+                return ResourceManager.GetString("PageFogot_khoiphucmatkhau", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Không có tài khoản nào được liên kết với email.
+        /// </summary>
+        public static string PageFogot_khongcotaikhoan {
+            get {
+                return ResourceManager.GetString("PageFogot_khongcotaikhoan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Không thể khôi phục mật khẩu.
+        /// </summary>
+        public static string PageFogot_khongthekhoiphucmatkhau {
+            get {
+                return ResourceManager.GetString("PageFogot_khongthekhoiphucmatkhau", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Đồng ý.
+        /// </summary>
+        public static string PageFogot_ok {
+            get {
+                return ResourceManager.GetString("PageFogot_ok", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quên mật khẩu ?.
+        /// </summary>
+        public static string PageFogot_quenmatkhau {
+            get {
+                return ResourceManager.GetString("PageFogot_quenmatkhau", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tài khoản chưa được xác nhận trước đó.
+        /// </summary>
+        public static string PageFogot_taikhoanchuaxacnhan {
+            get {
+                return ResourceManager.GetString("PageFogot_taikhoanchuaxacnhan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vui lòng truy cập email để tiến hành thiết lập mật khẩu mới.
+        /// </summary>
+        public static string PageFogot_truycapmail {
+            get {
+                return ResourceManager.GetString("PageFogot_truycapmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vui lòng thử một email khác..
+        /// </summary>
+        public static string PageFogot_vuilongthumailkhac {
+            get {
+                return ResourceManager.GetString("PageFogot_vuilongthumailkhac", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vui lòng xác nhận tài khoản trước để thực hiện chức năng này.
+        /// </summary>
+        public static string PageFogot_vuilongxacnhantruoc {
+            get {
+                return ResourceManager.GetString("PageFogot_vuilongxacnhantruoc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string PerHours {
             get {
@@ -1065,6 +1182,15 @@ namespace Map4D.Resources {
         public static string Tiêuđề {
             get {
                 return ResourceManager.GetString("Tiêuđề", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Đăng ký.
+        /// </summary>
+        public static string TieuDeDangKy {
+            get {
+                return ResourceManager.GetString("TieuDeDangKy", resourceCulture);
             }
         }
         
