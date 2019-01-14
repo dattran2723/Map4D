@@ -2330,6 +2330,7 @@
     <Content Include="Scripts\js\delete-contact.js" />
     <Content Include="Scripts\js\deleteCustomer.js" />
     <Content Include="Scripts\js\footerScroll.js" />
+    <Content Include="Scripts\js\ForgotPassword.js" />
     <Content Include="Scripts\js\GetInTouch.js" />
     <Content Include="Scripts\js\GetListContact.js" />
     <Content Include="Scripts\js\hover-mapbox.js" />
