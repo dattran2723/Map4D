@@ -131,5 +131,9 @@ namespace Map4D.Controllers
         {
             return View();
         }
+        public ActionResult SendMailRegister()
+        {
+            return View();
+        }
     }
 }

@@ -1969,6 +1969,7 @@
     <Content Include="Content\Client\css\styleLogin.css" />
     <Content Include="Content\Client\css\styleMenu.css" />
     <Content Include="Content\Client\css\styleProducts.css" />
+    <Content Include="Content\Client\css\styleSendMailRegister.css" />
     <Content Include="Content\Client\img\bg.jpg" />
     <Content Include="Content\Client\img\Customer1.png" />
     <Content Include="Content\Client\img\Customer2.png" />
@@ -2393,6 +2394,7 @@
     <Content Include="Views\Sweet\Alert.cshtml" />
     <Content Include="Views\Home\ProductValue.cshtml" />
     <Content Include="Views\Home\Pricing.cshtml" />
+    <Content Include="Views\Home\SendMailRegister.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
