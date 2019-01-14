@@ -306,9 +306,6 @@
   <data name="ThôngCảm" xml:space="preserve">
     <value>Thông cảm, chúng tôi đang xây dựng trang này</value>
   </data>
-  <data name="String1" xml:space="preserve">
-    <value />
-  </data>
   <data name="ApDungChoBangWebVaMobile" xml:space="preserve">
     <value>(Áp dụng cho bản Web và Mobile)</value>
   </data>
@@ -342,9 +339,6 @@
   <data name="CongCuChinhSua" xml:space="preserve">
     <value>Công cụ chỉnh sửa basemap</value>
   </data>
-  <data name="CongThem" xml:space="preserve">
-    <value>Cộng thêm </value>
-  </data>
   <data name="DanhMucDiaDiem" xml:space="preserve">
     <value>Danh mục địa điểm</value>
   </data>
@@ -369,11 +363,11 @@
   <data name="DungKhongGianThucTeAo" xml:space="preserve">
     <value>Dựng không gian thực tế ảo VR360</value>
   </data>
-  <data name="GoiCoBan" xml:space="preserve">
+  <data name="BasicPackage" xml:space="preserve">
     <value>Gói cơ bản</value>
   </data>
-  <data name="GoiCoBanTheoTungLuotTruyCap" xml:space="preserve">
-    <value>GÓI CƠ BẢN GIÁ THEO TỪNG LƯỢT TRUY CẬP</value>
+  <data name="ThePriceIsDependOnRequest" xml:space="preserve">
+    <value>giá theo từng lượt truy cập</value>
   </data>
   <data name="GoiDichVu" xml:space="preserve">
     <value>Gói dịch vụ &amp; Bảng giá</value>
@@ -384,11 +378,11 @@
   <data name="LienHeVoiChungToiTaiDay" xml:space="preserve">
     <value>liên hệ với chúng tôi.</value>
   </data>
-  <data name="MienPhi" xml:space="preserve">
+  <data name="Free" xml:space="preserve">
     <value>Miễn phí</value>
   </data>
-  <data name="MotGio" xml:space="preserve">
-    <value>/ 1 giờ</value>
+  <data name="PerHours" xml:space="preserve">
+    <value>Mỗi giờ</value>
   </data>
   <data name="Map4DCamKet" xml:space="preserve">
     <value>Map4D cam kết cung cấp các gói dịch vụ cao cấp phù hợp cho doanh nghiệp. Nếu bạn muốn được hỗ trợ nhiều hơn về các dịch vụ của Map4D hoặc muốn hợp tác phát triển, xin vui lòng</value>
@@ -396,11 +390,11 @@
   <data name="NguoiDungTuTai" xml:space="preserve">
     <value>Người dùng tự tải các đối tượng 3D lên bản đồ</value>
   </data>
-  <data name="ThemThongTin" xml:space="preserve">
+  <data name="MoreInformation" xml:space="preserve">
     <value>THÊM THÔNG TIN</value>
   </data>
   <data name="Plus" xml:space="preserve">
-    <value />
+    <value>Cộng thêm</value>
   </data>
   <data name="ThoiTietVaThoiGianThuc" xml:space="preserve">
     <value>Thời tiết, thời gian thực</value>
@@ -414,11 +408,11 @@
   <data name="ToiUuHoaKetQua" xml:space="preserve">
     <value>Tối ưu hóa kết quả</value>
   </data>
-  <data name="TrenLuotTruyCap" xml:space="preserve">
-    <value>trên 1000 lượt truy cập tiếp theo</value>
+  <data name="AccessRequestsPerNext" xml:space="preserve">
+    <value>Truy cập 1000 lượt tiếp theo</value>
   </data>
-  <data name="TruyCapDuoi" xml:space="preserve">
-    <value>truy cập &lt; 60.000 lượt</value>
+  <data name="AccessRequests" xml:space="preserve">
+    <value>Truy cập ít hơn 60.000 lượt</value>
   </data>
   <data name="XayDungDoiTuong3D" xml:space="preserve">
     <value>Xây dựng đối tượng 3D</value>
@@ -503,6 +497,9 @@
   </data>
   <data name="DaCoTaiKhoan" xml:space="preserve">
     <value>Đồng ý với Điều khoản dịch vụ và Chính sách quyền riêng tư của Map4D .</value>
+  </data>
+  <data name="SupportPackage" xml:space="preserve">
+    <value>Gói hỗ trợ</value>
   </data>
   <data name="DangNhapMenu" xml:space="preserve">
     <value>Đăng nhập</value>

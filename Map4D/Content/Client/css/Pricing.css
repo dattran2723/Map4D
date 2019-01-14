@@ -22,6 +22,7 @@
     margin-right: 0;
     padding-top: 12%;
     padding-bottom: 5%;
+    background-image: url("/Content/Client/img/price-bg.png");
 }
 
     #pricing .row {
@@ -40,31 +41,31 @@
         }
 
         #pricing .pricing-title p {
-            font-family: Roboto-Regular;
-            font-size: 20px;
+            font-family: Myriad Pro;
+            line-height: normal;
+            font-size: 16px;
             margin-bottom: 0;
+            margin-top: 1%;
         }
 
-            #pricing .pricing-title p.small {
+            #pricing .pricing-title p span {
                 color: #f72758;
-                font-size: 16px;
             }
 
-    #pricing .prircing-content #pay {
+/*.prircing-content #pay {
         box-shadow: 0px 13px 45px 2px rgba(0, 0, 0, 0.21);
         padding-left: 0;
         padding-right: 0;
     }
 
-    #pricing .prircing-content #behind {
+    .prircing-content #behind {
         max-width: 30%;
         margin-left: 3%;
         box-shadow: 0px 13px 45px 2px rgba(0, 0, 0, 0.21);
         padding-left: 0;
         padding-right: 0;
-        background-image: url("/Content/Client/img/pbg.jpg");
         background-position-y: bottom;
-    }
+    }*/
 
 .prircing-content .title {
     background: #4264fb;
@@ -81,106 +82,137 @@
         margin: 0 auto;
     }
 
-.box-price {
-    margin-top: 4%;
+.box-item {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 52.49%, rgba(255, 255, 255, 0.15) 100%);
+    padding: 0;
+    border: 1px solid #E6EAEE;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
-    .box-price .price {
-        padding-left: 4%;
+    .box-item b {
+        text-transform: uppercase;
+        font-family: UTM Avo;
+        line-height: normal;
     }
 
-        .box-price .price h5 {
-            font-family: Roboto-Regular;
-            font-size: 20px;
-            color: #092a3f;
-        }
-
-        .box-price .price h3 {
-            font-family: 'UTM AvoBold';
-            font-size: 30px;
-            color: #274cf2;
-        }
-
-        .box-price .price small, .box-price .price p, .box-price .price span {
-            font-family: Roboto-Light;
-            font-size: 14px;
-            color: #0b4f7a;
-            font-style: italic;
-        }
-
-    .box-price .descript {
-        padding-left: 4%;
-        font-family: Roboto-Regular;
-        color: #0b4f7a;
-    }
-
-        .box-price .descript h5 {
-            font-size: 20px;
-        }
-
-        .box-price .descript label, .box-price .service label {
-            font-size: 16px;
-            margin-bottom: 0;
-        }
-
-        .box-price .descript span {
-            font-size: 14px;
-            padding-left: 5%;
-        }
-
-        .box-price .descript ul, .box-price .service ul {
-            list-style: none;
-            padding-top: 1%;
-            padding-left: 5%;
-            font-size: 14px;
-        }
-        .box-price li::before {
-            content: "+ ";
-        }
-
-    .box-price .service {
-        font-family: Roboto-Regular;
-        color: #0b4f7a;
-    }
-
-        .box-price .service h5 {
-            font-size: 20px;
-            margin-bottom: 15%;
-        }
-
-    .box-price.last {
-        padding-bottom: 10%;
-    }
-
-#pay hr {
-    width: 80%;
-    float: right;
-    margin-bottom: 2rem;
+.header {
+    height: 40px;
 }
 
-#behind .behind-content p {
-    margin: auto;
-    margin-top: 25%;
+    .header > p {
+        font-family: UTM Avo;
+        line-height: 35px;
+        font-size: 18px;
+    }
+
+.price {
+    padding: 0;
+}
+
+    .price > div {
+        border-bottom: 1px solid #C0C4C7;
+        padding-top: 5%;
+    }
+
+    .price h5 {
+        font-family: UTM Avo;
+        line-height: normal;
+        font-size: 25px;
+        margin-bottom: -2%;
+    }
+
+    .price h3 {
+        font-family: UTM Avo;
+        line-height: normal;
+        font-size: 42px;
+        color: #4264FB;
+        font-weight: bold;
+    }
+
+    .price p {
+        font-family: Myriad Pro;
+        line-height: 20px;
+        font-size: 14px;
+        color: #354052;
+    }
+
+.price-left {
+    border-right: 1px solid #C0C4C7;
+}
+
+#support .price > div {
+    padding-top: 10%;
+}
+
+.descript {
+    margin-top: 20px;
+    padding-left: 4%;
+    padding: 0;
+}
+
+    .descript h5 {
+        font-family: UTM Avo;
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase
+    }
+
+#support .descript h5 {
+    text-align: center;
+}
+
+.descript small {
+    font-family: Myriad Pro;
+    line-height: 20px;
+    font-size: 14px;
+    color: #4264FB;
+}
+
+.descript label, .service label {
+    font-family: Myriad Pro;
+    line-height: 20px;
+    font-size: 14px;
     margin-bottom: 0;
-    font-family: Roboto-Regular;
-    font-size: 14px;
-    font-weight: bold;
-    color: #0b4f7a;
-    max-width: 80%;
 }
 
-#behind .behind-content a {
-    font-family: Roboto-Regular;
+.descript span {
+    font-family: Myriad Pro;
+    line-height: 20px;
     font-size: 14px;
-    font-weight: bold;
-    color: #4264fb;
+    padding-left: 5%;
 }
-#footer{
-    background: none;
+
+.descript ul {
+    list-style: none;
+    padding-top: 1%;
+    padding-left: 5%;
+    font-size: 14px;
 }
-    #footer p, #footer a {
-        color: #4563f5;
+
+.list-style li {
+    padding-left: 1.3em;
+}
+
+    .list-style li::before {
+        content: "+ ";
+        display: inline-block;
+        margin-left: -1.3em;
+        width: 1.3em;
     }
+
+#more-information .content p {
+    padding-top: 15%;
+    width: 80%;
+    margin: auto;
+    font-family: Myriad Pro;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: justify;
+    color: #354052;
+}
+
 @media only screen and (max-width: 1033px) {
 
     #pricing {
@@ -191,14 +223,86 @@
             font-size: 40px;
         }
 
-        #pricing .pricing-title p, .box-price .price h5, .box-price .descript h5, .box-price .service h5 {
-            font-size: 18px;
-        }
+    .header > p {
+        font-size: 16px;
+    }
 
-    .box-price .price h3 {
-        font-size: 28px;
+    .price h5 {
+        font-size: 23px;
+    }
+
+    .price h3 {
+        font-size: 38px;
     }
 }
+
+@media only screen and (min-width: 991px) {
+    #basic {
+        max-width: 45% !important;
+    }
+
+    #support {
+        max-width: 24% !important;
+    }
+
+    #more-information {
+        max-width: 24% !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    #pricing {
+        margin-top: 10%;
+    }
+
+    #basic {
+        max-width: 68% !important;
+        flex: 0 0 65%;
+    }
+
+    #support {
+        max-width: 32% !important;
+        flex: 0 0 32%;
+    }
+
+    #more-information {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #pricing .pricing-title h2 {
+        font-size: 36px;
+    }
+    #pricing .pricing-title p {
+        width:90% !important;
+        margin:auto;
+    }
+
+@media only screen and (max-width: 767px) {
+    #pricing {
+        margin-top: 15%;
+    }
+
+    #basic {
+        max-width: 100% !important;
+        flex: 0 0 100%;
+    }
+
+    #support {
+        max-width: 100% !important;
+        flex: 0 0 100%;
+        margin-top: 5%;
+    }
+}
+@media only screen and (max-width: 525px){
+    .header span{
+        display: none;
+    }
+}
+/*
+
 
 @media only screen and (max-width: 991px) {
     #pay {
@@ -222,13 +326,8 @@
     #pricing {
         padding-top: 24%;
     }
-    /*.prircing-content .title{
-        height:4%;
-    }*/
     #pay hr {
         width: 100%;
-        /*float: right;
-        margin-bottom: 2rem;*/
     }
 
     .box-price .price {
@@ -264,4 +363,4 @@
     .box-price .descript, .box-price .service {
         padding-left: 15%;
     }
-}
+}*/

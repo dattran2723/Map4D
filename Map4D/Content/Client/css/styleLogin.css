@@ -114,6 +114,12 @@ p{
     }
 }
 
+@media only screen and (min-width: 1033px) {
+    .form-login {
+        max-width: 28%;
+        flex: 0 0 28%;
+    }
+}
 @media only screen and (max-width: 960px) {
 
     .login .login-content .form-login {
@@ -143,12 +149,6 @@ p{
 
     #remember-me {
         font-size: 10px;
-    }
-}
-@media only screen and (min-width: 768px) {
-    .form-login{
-        max-width:28%;
-        flex: 0 0 28%;
     }
 }
 @media only screen and (max-width: 625px) {
