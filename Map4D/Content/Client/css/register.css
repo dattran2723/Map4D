@@ -35,12 +35,11 @@ body {
     }
 
     .registerUser .boxRegister {
-        margin: auto;
-        max-width: 30% !important;
+        flex: 0 0 28%;
     }
 
         .registerUser .boxRegister .input {
-            line-height: 36px;
+            line-height: 30px;
             border-radius: 4px;
             margin: auto;
         }
@@ -62,7 +61,7 @@ body {
             background-color: #0df8c8;
             border-radius: 4px;
             margin-top: 4%;
-            line-height: 36px;
+            line-height: 30px;
         }
 
             .registerUser .divBottom button:hover {
@@ -72,7 +71,7 @@ body {
 .have-account {
     margin-top: 6%;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
 }
 
     .have-account span a {
@@ -127,6 +126,10 @@ body {
     .registerUser .boxRegister {
         max-width: 100% !important;
     }
+
+    .registerUser .boxRegister {
+        flex: 0 0 40%;
+    }
 }
 
 
@@ -137,16 +140,18 @@ body {
 
     .registerUser .boxRegister .input {
         margin-bottom: 5% !important;
-        font-size: 18px;
-    }
-
-    #footer {
-        margin-top: -12%;
+        font-size: 15px;
     }
 
     body {
         background-size: auto;
         background-repeat: repeat;
+    }
+}
+
+@media only screen and (max-width: 960px ) {
+    .registerUser .boxRegister {
+        flex: 0 0 50%;
     }
 }
 
@@ -156,8 +161,8 @@ body {
         font-size: 32px;
     }
 
-    .registerUser .boxRegister .input {
-        line-height: 1.5;
+    .registerUser .boxRegister {
+        flex: 0 0 50%;
     }
 }
 
@@ -169,6 +174,10 @@ body {
 
         .registerUser h2 {
             font-size: 28px;
+        }
+
+        .registerUser .boxRegister {
+            flex: 0 0 60%;
         }
 }
 
@@ -188,5 +197,15 @@ body {
     .have-account {
         padding-bottom: 5%;
         font-size: 14px;
+    }
+
+    .registerUser .boxRegister {
+        flex: 0 0 70%;
+    }
+}
+
+@media only screen and (max-width: 350px ) {
+    .registerUser .boxRegister {
+        flex: 0 0 90%;
     }
 }
