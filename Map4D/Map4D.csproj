@@ -223,6 +223,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Migrations\201812180847194_initdb.cs" />
     <Compile Include="Migrations\201812180847194_initdb.Designer.cs">
       <DependentUpon>201812180847194_initdb.cs</DependentUpon>
@@ -1964,7 +1965,7 @@
     <Content Include="Content\Client\css\Pricing.css" />
     <Content Include="Content\Client\css\register.css" />
     <Content Include="Content\Client\css\styleFooter.css" />
-    <Content Include="Content\Client\css\styleHome.css" />
+    <Content Include="Content\Client\css\home.css" />
     <Content Include="Content\Client\css\styleLogin.css" />
     <Content Include="Content\Client\css\styleMenu.css" />
     <Content Include="Content\Client\css\styleProducts.css" />

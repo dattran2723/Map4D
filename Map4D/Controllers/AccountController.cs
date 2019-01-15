@@ -159,6 +159,7 @@ namespace Map4D.Controllers
             }
             return Json(true);
         }
+
         [AllowAnonymous]
         [HttpGet]
         public async Task<ActionResult> CheckExistUserName(string userName)
@@ -224,6 +225,7 @@ namespace Map4D.Controllers
             ViewBag.Message = null;
             return View();
         }
+
         /// <summary>
         /// Gọi API
         /// sau khi API trả về thì sẻ có 3 trường hợp xảy ra

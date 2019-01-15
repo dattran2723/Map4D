@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
 namespace Map4D.Models
 {
@@ -43,5 +40,6 @@ namespace Map4D.Models
         [DefaultValue(false)]
         [DisplayName("Trạng thái")]
         public bool Status { get; set; }
+
     }
 }

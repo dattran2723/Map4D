@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Map4D.Models.DataTableResponse
+﻿namespace Map4D.Models.DataTableResponse
 {
     public class DataTableResponse
     {

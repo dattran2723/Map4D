@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Map4D.Models
@@ -36,6 +32,7 @@ namespace Map4D.Models
         [DisplayName("Trạng thái")]
         public bool Status { get; set; }
     }
+
     public class CustomerRegisterViewModels
     {
 
