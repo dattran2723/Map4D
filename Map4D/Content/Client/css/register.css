@@ -39,7 +39,7 @@ body {
     }
 
         .registerUser .boxRegister .input {
-            line-height: 30px;
+            line-height: 2;
             border-radius: 4px;
             margin: auto;
         }
@@ -61,7 +61,7 @@ body {
             background-color: #0df8c8;
             border-radius: 4px;
             margin-top: 4%;
-            line-height: 30px;
+            line-height: 2;
         }
 
             .registerUser .divBottom button:hover {
@@ -163,6 +163,14 @@ body {
 
     .registerUser .boxRegister {
         flex: 0 0 50%;
+    }
+
+        .registerUser .boxRegister .input {
+            line-height: 1.5;
+        }
+
+    .registerUser .divBottom button {
+        line-height: 1.5;
     }
 }
 
