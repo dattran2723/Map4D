@@ -4,8 +4,11 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using System;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Net.Mail;
+using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -190,6 +193,7 @@ namespace Map4D.Controllers
 
                 if (response.IsSuccessStatusCode == true)
                 {
+                    await SendMailRegister(model.Email);
                     ViewBag.Message = "success";
                     return View();
                 }
@@ -464,6 +468,48 @@ namespace Map4D.Controllers
             }
 
             base.Dispose(disposing);
+        }
+
+        public Task SendMailRegister(string email)
+        {
+            SmtpClient smtp = new SmtpClient();
+            smtp.Host = "smtp.gmail.com";
+            smtp.Port = 587;
+            smtp.EnableSsl = true;
+            smtp.Credentials = new NetworkCredential("iotocteam123@gmail.com", "Klapaucius123");
+
+            //Nội dung mail
+            string content = System.IO.File.ReadAllText(Server.MapPath("~/Views/Home/SendMailRegister.cshtml"));
+            content = content.Replace("{{WeHopeYou}}",Map4D.Resources.My_texts.WeHopeYou);
+            content = content.Replace("{{ClickTheButtonBelow}}", Map4D.Resources.My_texts.ClickTheButtonBelow);
+            content = content.Replace("{{YesItIsMyEmail}}", Map4D.Resources.My_texts.YesItIsMyEmail);
+            content = content.Replace("{{ExploreTheLatest}}", Map4D.Resources.My_texts.ExploreTheLatest);
+            content = content.Replace("{{AndBookmark}}", Map4D.Resources.My_texts.AndBookmark);
+            content = content.Replace("{{TheSupportContactFrom}}", Map4D.Resources.My_texts.TheSupportContactFrom);
+            content = content.Replace("{{ForHelpAnyTime}}", Map4D.Resources.My_texts.ForHelpAnyTime);
+            content = content.Replace("{{Cheers}}", Map4D.Resources.My_texts.Cheers);
+            content = content.Replace("{{TeamMap4D}}", Map4D.Resources.My_texts.TeamMap4D);
+            content = content.Replace("{{IfTheConfirm}}", Map4D.Resources.My_texts.IfTheConfirm);
+            content = content.Replace("{{Unsubscribe}}", Map4D.Resources.My_texts.Unsubscribe);
+            content = content.Replace("{{ViewThisEmailOnline}}", Map4D.Resources.My_texts.ViewThisEmailOnline);
+            content = content.Replace("{{CopyRight}}", Map4D.Resources.My_texts.Bảnquyền);
+            content = content.Replace("{{IOTLinkCompany}}", Map4D.Resources.My_texts.CôngtyIOTLink);
+
+
+            var fromEmail = new MailAddress("iotocteam123@gmail.com", "Map4D");
+            var toEmail = new MailAddress(email);
+            var mail = new MailMessage(fromEmail, toEmail)
+            {
+                Subject = "Thông báo",
+                Body = content,
+                IsBodyHtml = true,
+                BodyEncoding = UTF8Encoding.UTF8
+            };
+
+            smtp.Send(mail);
+
+            // Plug in your email service here to send an email.
+            return Task.FromResult(0);
         }
 
         #region Helpers

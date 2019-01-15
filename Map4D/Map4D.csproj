@@ -239,7 +239,6 @@
     <Compile Include="Models\Repository\IContactRepository.cs" />
     <Compile Include="Models\Repository\ICustomersRepository.cs" />
     <Compile Include="Models\Contact.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\My texts.en.Designer.cs">
       <DependentUpon>My texts.en.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -2038,6 +2037,7 @@
     <Content Include="Content\Client\img\logodoitac\Untitled-1_0009_anh-khue-logo-.png" />
     <Content Include="Content\Client\img\logodoitac\Untitled-1_0010_viettel-logo.png" />
     <Content Include="Content\Client\img\logodoitac\Untitled-1_0011_dn.png" />
+    <Content Include="Content\Client\img\logofacebook.png" />
     <Content Include="Content\Client\img\logoMap4D.png" />
     <Content Include="Content\Client\img\man-one.jpg" />
     <Content Include="Content\Client\img\page-2_0000_Layer-3 - Copy.png" />
@@ -2400,6 +2400,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Properties\" />
     <Folder Include="Views\Language\" />
   </ItemGroup>
   <ItemGroup>

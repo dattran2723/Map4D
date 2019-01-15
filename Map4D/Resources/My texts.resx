@@ -543,4 +543,40 @@
   <data name="PageFogot_vuilongxacnhantruoc" xml:space="preserve">
     <value>Vui lòng xác nhận tài khoản trước để thực hiện chức năng này</value>
   </data>
+  <data name="AndBookmark" xml:space="preserve">
+    <value>và</value>
+  </data>
+  <data name="Cheers" xml:space="preserve">
+    <value>Thân</value>
+  </data>
+  <data name="ClickTheButtonBelow" xml:space="preserve">
+    <value>Nhấn vào nút bên dưới để hoàn thành quá trình đăng ký.</value>
+  </data>
+  <data name="ExploreTheLatest" xml:space="preserve">
+    <value>Khám phá các bản phát hành mới nhất trên</value>
+  </data>
+  <data name="ForHelpAnyTime" xml:space="preserve">
+    <value>để được trợ giúp bất cứ lúc nào.</value>
+  </data>
+  <data name="IfTheConfirm" xml:space="preserve">
+    <value>Nếu nút "Xác nhận địa chỉ email của bạn" ở trên không xuất hiện, hãy sao chép và dán URL này vào trình duyệt của bạn:</value>
+  </data>
+  <data name="TeamMap4D" xml:space="preserve">
+    <value>Đội Map4D</value>
+  </data>
+  <data name="TheSupportContactFrom" xml:space="preserve">
+    <value>liên hệ hỗ trợ</value>
+  </data>
+  <data name="Unsubscribe" xml:space="preserve">
+    <value>Hủy đăng ký</value>
+  </data>
+  <data name="ViewThisEmailOnline" xml:space="preserve">
+    <value>Xem email này trực tuyến</value>
+  </data>
+  <data name="WeHopeYou" xml:space="preserve">
+    <value>Chúng tôi hy vọng bạn sẽ thích Map4D!</value>
+  </data>
+  <data name="YesItIsMyEmail" xml:space="preserve">
+    <value>Vâng, đó là email của tôi</value>
+  </data>
 </root>
