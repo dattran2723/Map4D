@@ -17,7 +17,7 @@ namespace Map4D.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
         SmtpClient client = new SmtpClient();
 
-        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")] /// Xóa cache không cho điền lại form submit 
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")] // Xóa cache không cho điền lại form submit 
         public ActionResult Index()
         {
             return View();
@@ -63,7 +63,6 @@ namespace Map4D.Controllers
         {
             ViewBag.Title = Map4D.Resources.My_texts.Document;
             return View();
-            // return View("CommingSoon");
         }
 
         public ActionResult Pricing()
@@ -71,10 +70,6 @@ namespace Map4D.Controllers
             ViewBag.Title = Map4D.Resources.My_texts.Pricing;
             return View();
         }
-        //public ActionResult GetInTouch()
-        //{
-        //    return View();
-        //}
 
         [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         [AllowAnonymous]

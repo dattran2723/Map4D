@@ -10,7 +10,9 @@ namespace Map4D.Areas.Admin.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
         // GET: Admin/Customers
+#pragma warning disable CS1998 // This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.
         public async Task<ActionResult> Index()
+#pragma warning restore CS1998 // This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.
         {
             return View();
         }
@@ -31,12 +33,13 @@ namespace Map4D.Areas.Admin.Controllers
         }
 
         // GET: Admin/Customers/Edit/5
+
         /// <summary>
         /// using automapper
         /// create var session["phone"] using check isExitPhone for view edit customer
         /// </summary>
         /// <param name="id">get id form id customer</param>
-        /// <returns></returns>
+        /// <returns>View(result)</returns>
         public async Task<ActionResult> Edit(string id)
         {
             if (id == null)
@@ -92,6 +95,7 @@ namespace Map4D.Areas.Admin.Controllers
             }
             base.Dispose(disposing);
         }
+
         /// <summary>
         /// true : no check is exist phone input
         /// fasle : check is exist for phone input
@@ -102,7 +106,7 @@ namespace Map4D.Areas.Admin.Controllers
         /// else then return true
         /// </summary>
         /// <param name="phone">is value input when want to edit phone for customer</param>
-        /// <returns></returns>
+        /// <returns>Json true false</returns>
         [HttpPost]
         public JsonResult IsPhoneExist(string phone)
         {

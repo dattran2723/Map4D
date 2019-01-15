@@ -223,6 +223,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Migrations\201812180847194_initdb.cs" />
     <Compile Include="Migrations\201812180847194_initdb.Designer.cs">
       <DependentUpon>201812180847194_initdb.cs</DependentUpon>

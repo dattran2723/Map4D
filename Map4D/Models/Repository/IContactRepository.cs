@@ -9,6 +9,7 @@ namespace Map4D.Models.Repository
     {
         IQueryable<Contact> GetContacts();
     }
+
     public class ContactRepository : IContactRepository
     {
         private ApplicationDbContext db;
@@ -21,7 +22,6 @@ namespace Map4D.Models.Repository
         {
             return db.Contacts;
         }
-
-
+        
     }
 }
