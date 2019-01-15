@@ -1965,7 +1965,7 @@
     <Content Include="Content\Client\css\Pricing.css" />
     <Content Include="Content\Client\css\register.css" />
     <Content Include="Content\Client\css\styleFooter.css" />
-    <Content Include="Content\Client\css\styleHome.css" />
+    <Content Include="Content\Client\css\home.css" />
     <Content Include="Content\Client\css\styleLogin.css" />
     <Content Include="Content\Client\css\styleMenu.css" />
     <Content Include="Content\Client\css\styleProducts.css" />
