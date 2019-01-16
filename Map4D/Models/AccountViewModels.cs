@@ -64,7 +64,8 @@ namespace Map4D.Models
 
     public class RegisterViewModel
     {
-
+        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "EnterDisplayName")]
+        public string DisplayName { get; set; }
         [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "RegisterEnterUserName")]
         [Remote("CheckExistUserName", HttpMethod = "get", ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "RegisterExistUserName")]
         public string UserName { get; set; }
@@ -75,6 +76,9 @@ namespace Map4D.Models
         [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "EnterPassword")]
         [StringLength(32, MinimumLength = 6, ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "ToiThieu"), DataType(DataType.Password)]
         public string Password { get; set; }
+
+        [System.ComponentModel.DataAnnotations.Compare("Password", ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "XacNhanMatKhauValidate")]        
+        public string ConfirmPassword { get; set; }
     }
 
     public class ResetPasswordViewModel

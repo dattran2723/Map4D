@@ -10,7 +10,6 @@ namespace Map4D.Areas.Admin.Controllers
     [Authorize]
     public class HomeController : Controller
     {
-
         private ApplicationDbContext db = new ApplicationDbContext();
         // GET: Admin/Home
         public ActionResult Index()
@@ -40,8 +39,6 @@ namespace Map4D.Areas.Admin.Controllers
             }
             return View(contact);
         }
-
-
 
         public JsonResult DeleteContact(int id)
         {

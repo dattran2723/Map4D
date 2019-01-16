@@ -579,4 +579,16 @@
   <data name="YesItIsMyEmail" xml:space="preserve">
     <value>Vâng, đó là email của tôi</value>
   </data>
+  <data name="EnterDisplayName" xml:space="preserve">
+    <value>Nhập vào tên hiển thị</value>
+  </data>
+  <data name="TenHienThi" xml:space="preserve">
+    <value>Tên hiển thị</value>
+  </data>
+  <data name="XacNhanMatKhau" xml:space="preserve">
+    <value>Xác nhận mật khẩu</value>
+  </data>
+  <data name="XacNhanMatKhauValidate" xml:space="preserve">
+    <value>Mật khẩu xác nhận không đúng</value>
+  </data>
 </root>

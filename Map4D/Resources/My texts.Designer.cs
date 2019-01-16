@@ -637,6 +637,15 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Nhập vào tên hiển thị.
+        /// </summary>
+        public static string EnterDisplayName {
+            get {
+                return ResourceManager.GetString("EnterDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Vui lòng nhập email!.
         /// </summary>
         public static string EnterEmail {
@@ -1195,6 +1204,15 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tên hiển thị.
+        /// </summary>
+        public static string TenHienThi {
+            get {
+                return ResourceManager.GetString("TenHienThi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to giá theo từng lượt truy cập.
         /// </summary>
         public static string ThePriceIsDependOnRequest {
@@ -1425,6 +1443,24 @@ namespace Map4D.Resources {
         public static string WeHopeYou {
             get {
                 return ResourceManager.GetString("WeHopeYou", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Xác nhận mật khẩu.
+        /// </summary>
+        public static string XacNhanMatKhau {
+            get {
+                return ResourceManager.GetString("XacNhanMatKhau", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mật khẩu xác nhận không đúng.
+        /// </summary>
+        public static string XacNhanMatKhauValidate {
+            get {
+                return ResourceManager.GetString("XacNhanMatKhauValidate", resourceCulture);
             }
         }
         

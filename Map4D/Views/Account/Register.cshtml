@@ -15,6 +15,14 @@
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
             <div class="form-group">
                 <div class="title-register">
+                    <p>@Map4D.Resources.My_texts.TenHienThi</p>
+                </div>
+                @Html.TextBoxFor(m => m.DisplayName, new { @class = "form-control input", @placeholder = Map4D.Resources.My_texts.TenHienThi })
+                @Html.ValidationMessageFor(m => m.DisplayName, "", new { @class = "text-danger" })
+
+            </div>
+            <div class="form-group">
+                <div class="title-register">
                     <p>@Map4D.Resources.My_texts.TênĐăngNhập</p>
                 </div>
                 @Html.TextBoxFor(m => m.UserName, new { @class = "form-control input", @placeholder = Map4D.Resources.My_texts.TênĐăngNhập })
@@ -34,6 +42,13 @@
                 </div>
                 @Html.PasswordFor(m => m.Password, new { @class = "form-control input", @placeholder = Map4D.Resources.My_texts.MậtKhẩu })
                 @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <div class="title-register">
+                    <p>@Map4D.Resources.My_texts.XacNhanMatKhau</p>
+                </div>
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control input", @placeholder = Map4D.Resources.My_texts.MậtKhẩu })
+                @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
             </div>
             <div class="form-group">
                 <div class="divBottom">
