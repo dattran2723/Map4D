@@ -208,10 +208,10 @@
     <value>Cảm ơn quý khách đã góp ý cho chúng tôi</value>
   </data>
   <data name="EmailDinhDang" xml:space="preserve">
-    <value>Email không đúng định dạng!</value>
+    <value>Email không đúng định dạng.</value>
   </data>
   <data name="EmailLàBắtBuộc" xml:space="preserve">
-    <value>Email là bắt buộc!</value>
+    <value>Email là bắt buộc.</value>
   </data>
   <data name="EmailTontai" xml:space="preserve">
     <value>Email đã tồn tại!</value>
@@ -223,22 +223,22 @@
     <value>Ghi nhớ mật khẩu</value>
   </data>
   <data name="EnterPassword" xml:space="preserve">
-    <value>Vui lòng nhập mật khẩu!</value>
+    <value>Vui lòng nhập mật khẩu.</value>
   </data>
   <data name="MậtKhẩu" xml:space="preserve">
     <value>Mật khẩu</value>
   </data>
   <data name="ToiThieu" xml:space="preserve">
-    <value>Yêu cầu nhập tối thiểu 6 và tối đa 32 kí tự!</value>
+    <value>Yêu cầu nhập tối thiểu 6 và tối đa 32 kí tự.</value>
   </data>
   <data name="TênĐăngNhập" xml:space="preserve">
     <value>Tên đăng nhập</value>
   </data>
   <data name="RegisterEnterUserName" xml:space="preserve">
-    <value>Vui lòng nhập tên đăng nhập!</value>
+    <value>Vui lòng nhập tên đăng nhập.</value>
   </data>
   <data name="RegisterExistUserName" xml:space="preserve">
-    <value>Tên đăng nhập đã tồn tại!</value>
+    <value>Tên đăng nhập đã tồn tại.</value>
   </data>
   <data name="ĐãCóTàiKhoản" xml:space="preserve">
     <value>Đã có sẳn tài khoản đăng nhập &gt;</value>
@@ -286,7 +286,7 @@
     <value>Trang chủ</value>
   </data>
   <data name="EnterEmail" xml:space="preserve">
-    <value>Vui lòng nhập email!</value>
+    <value>Vui lòng nhập email.</value>
   </data>
   <data name="ContactEnterMessage" xml:space="preserve">
     <value>Vui lòng nhập tin nhắn!</value>
@@ -511,7 +511,7 @@
     <value>Chúng tôi đã gửi một email cho bạn</value>
   </data>
   <data name="PageFogot_dangnhapMap4d" xml:space="preserve">
-    <value>Đăng nhập Map4D &gt;</value>
+    <value>Đăng nhập Map4D</value>
   </data>
   <data name="PageFogot_guihuongdancailai" xml:space="preserve">
     <value>Gửi hướng dẫn cài đặt lại</value>

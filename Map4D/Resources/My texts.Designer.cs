@@ -601,7 +601,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email không đúng định dạng!.
+        ///   Looks up a localized string similar to Email không đúng định dạng..
         /// </summary>
         public static string EmailDinhDang {
             get {
@@ -610,7 +610,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email là bắt buộc!.
+        ///   Looks up a localized string similar to Email là bắt buộc..
         /// </summary>
         public static string EmailLàBắtBuộc {
             get {
@@ -646,7 +646,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vui lòng nhập email!.
+        ///   Looks up a localized string similar to Vui lòng nhập email..
         /// </summary>
         public static string EnterEmail {
             get {
@@ -655,7 +655,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vui lòng nhập mật khẩu!.
+        ///   Looks up a localized string similar to Vui lòng nhập mật khẩu..
         /// </summary>
         public static string EnterPassword {
             get {
@@ -1006,7 +1006,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Đăng nhập Map4D &gt;.
+        ///   Looks up a localized string similar to Đăng nhập Map4D.
         /// </summary>
         public static string PageFogot_dangnhapMap4d {
             get {
@@ -1141,7 +1141,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vui lòng nhập tên đăng nhập!.
+        ///   Looks up a localized string similar to Vui lòng nhập tên đăng nhập..
         /// </summary>
         public static string RegisterEnterUserName {
             get {
@@ -1150,7 +1150,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tên đăng nhập đã tồn tại!.
+        ///   Looks up a localized string similar to Tên đăng nhập đã tồn tại..
         /// </summary>
         public static string RegisterExistUserName {
             get {
@@ -1330,7 +1330,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Yêu cầu nhập tối thiểu 6 và tối đa 32 kí tự!.
+        ///   Looks up a localized string similar to Yêu cầu nhập tối thiểu 6 và tối đa 32 kí tự..
         /// </summary>
         public static string ToiThieu {
             get {
