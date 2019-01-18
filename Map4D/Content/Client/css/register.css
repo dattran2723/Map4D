@@ -23,6 +23,7 @@ body {
 }
 
     .title-register p {
+        font-family:'Lato';
         font-size: 15px;
     }
 
@@ -41,7 +42,7 @@ body {
     }
 
     .registerUser .boxRegister {
-        flex: 0 0 28%;
+        flex: 0 0 27%;
     }
 
         .registerUser .boxRegister .input {
@@ -87,7 +88,8 @@ body {
     }
 
 .registerUser .divBottom .have-account a:hover {
-    color: #28a745;
+    color: #1c20e5;
+    
 }
 
 #DisplayName-error {
