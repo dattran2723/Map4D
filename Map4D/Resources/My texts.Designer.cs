@@ -1060,7 +1060,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Quên mật khẩu ?.
+        ///   Looks up a localized string similar to Quên mật khẩu.
         /// </summary>
         public static string PageFogot_quenmatkhau {
             get {
