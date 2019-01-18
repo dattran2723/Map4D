@@ -200,13 +200,13 @@ p {
     padding-right: 2%;
 }
 
-label {
+/*label {
     color: #fff;
     height: 25px;
     margin-bottom: 0.75rem;
     font-family: Lato;
     font-size: 15px;
-}
+}*/
 
 .content h2 {
     color: #fff;
@@ -215,7 +215,7 @@ label {
     padding-bottom: 2%;
 }
 
-.box button {
+.box .btn-submit {
     background-color: #0df8c8;
     border-radius: 4px;
     margin-top: 4%;
