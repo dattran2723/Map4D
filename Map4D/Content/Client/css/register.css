@@ -1,4 +1,33 @@
-﻿.registerUser {
+﻿@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url('../../../fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MyriadPro-Light';
+    src: url('../../../fonts/MyriadPro-Light.otf') format('opentype');
+}
+
+body {
+    background-color: #4B9DE9;
+}
+
+#menu-top #menu-recommend {
+    visibility: hidden;
+}
+
+.title-register {
+    color: #fff;
+    height: 25px;
+    margin-bottom: 0.75rem;
+}
+
+    .title-register p {
+        font-family: 'Lato';
+        font-size: 15px;
+    }
+
+.registerUser {
     width: 100%;
     margin: auto;
     padding-top: 12%;
