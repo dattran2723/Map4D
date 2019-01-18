@@ -49,9 +49,8 @@ namespace Map4D.Models
 
     public class LoginViewModel
     {
-        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "EnterEmail")]
+        [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "RequiredEmailLogin")]
         [Display(Name = "Email")]
-        [EmailAddress(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "EmailDinhDang")]
         public string Email { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(Map4D.Resources.My_texts), ErrorMessageResourceName = "EnterPassword")]

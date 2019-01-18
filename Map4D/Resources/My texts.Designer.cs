@@ -1168,6 +1168,15 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Vui lòng nhập tên người dùng hoặc email..
+        /// </summary>
+        public static string RequiredEmailLogin {
+            get {
+                return ResourceManager.GetString("RequiredEmailLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Giải Pháp.
         /// </summary>
         public static string Solution {
