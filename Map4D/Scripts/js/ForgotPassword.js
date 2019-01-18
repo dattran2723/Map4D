@@ -41,7 +41,7 @@
                 title: title,
                 html: true,
                 html: '<p class="text-danger mb-0">' + khongcotaikhoan + '</p>' +
-                    '<p class="text-danger mb-0"><b>' + $('#Email').val() + '</p>' +
+                    '<p class="text-danger mb-0"><b>' + $('#Email').val() + '</b></p>' +
                     '<p class="text-danger mb-0">' + vuilongthumailkhac + '</p> ',
                 confirmButtonClass: "w-100",
                 confirmButtonColor: '#0CF8C8',
