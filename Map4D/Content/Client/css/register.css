@@ -23,7 +23,7 @@ body {
 }
 
     .title-register p {
-        font-family:'Lato';
+        font-family: 'Lato';
         font-size: 15px;
     }
 
@@ -75,6 +75,11 @@ body {
                 background-color: #00cfa5;
             }
 
+#btnRegister {
+    font-family: MyriadPro-Light;
+    font-size: 14px;
+}
+
 .have-account {
     margin-top: 0.75rem;
     color: #fff;
@@ -89,10 +94,10 @@ body {
 
 .registerUser .divBottom .have-account a:hover {
     color: #1c20e5;
-    
 }
 
 #DisplayName-error {
+    font-family:'Lato';
     display: block;
     background: #FFD9D9;
     border: 1px solid #FD0F0F;
@@ -105,6 +110,7 @@ body {
 }
 
 #UserName-error {
+    font-family: 'Lato';
     display: block;
     background: #FFD9D9;
     border: 1px solid #FD0F0F;
@@ -117,6 +123,7 @@ body {
 }
 
 #Password-error {
+    font-family: 'Lato';
     display: block;
     background: #FFD9D9;
     border: 1px solid #FD0F0F;
@@ -129,6 +136,7 @@ body {
 }
 
 #ConfirmPassword-error {
+    font-family: 'Lato';
     display: block;
     background: #FFD9D9;
     border: 1px solid #FD0F0F;
@@ -141,6 +149,7 @@ body {
 }
 
 #Email-error {
+    font-family: 'Lato';
     display: block;
     background: #FFD9D9;
     border: 1px solid #FD0F0F;
