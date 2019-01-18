@@ -13,6 +13,11 @@
     src: url('/fonts/MYRIADPRO-REGULAR.OTF') format('opentype');
 }
 
+@font-face {
+    font-family: 'Lato';
+    src: url('../../../fonts/Lato-Regular.ttf') format('truetype');
+}
+
 #menu-top {
     margin: auto 0;
     position: fixed;
