@@ -23,7 +23,7 @@ body {
 }
 
     .title-register p {
-        font-family:'Lato';
+        font-family: 'Lato';
         font-size: 15px;
     }
 
@@ -89,10 +89,9 @@ body {
 
 .registerUser .divBottom .have-account a:hover {
     color: #1c20e5;
-    
 }
 
-#DisplayName-error {
+#DisplayName-error, #UserName-error, #Password-error, #ConfirmPassword-error, #Email-error {
     display: block;
     background: #FFD9D9;
     border: 1px solid #FD0F0F;
@@ -100,56 +99,10 @@ body {
     border-radius: 4px;
     margin-top: 12px;
     text-align: left;
-    line-height: 36px;
     padding-left: 4%;
-}
-
-#UserName-error {
-    display: block;
-    background: #FFD9D9;
-    border: 1px solid #FD0F0F;
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin-top: 12px;
-    text-align: left;
-    line-height: 36px;
-    padding-left: 4%;
-}
-
-#Password-error {
-    display: block;
-    background: #FFD9D9;
-    border: 1px solid #FD0F0F;
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin-top: 12px;
-    text-align: left;
-    line-height: 36px;
-    padding-left: 4%;
-}
-
-#ConfirmPassword-error {
-    display: block;
-    background: #FFD9D9;
-    border: 1px solid #FD0F0F;
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin-top: 12px;
-    text-align: left;
-    line-height: 36px;
-    padding-left: 4%;
-}
-
-#Email-error {
-    display: block;
-    background: #FFD9D9;
-    border: 1px solid #FD0F0F;
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin-top: 12px;
-    text-align: left;
-    line-height: 36px;
-    padding-left: 4%;
+    line-height: 32px;
+    font-family: Lato;
+    font-size: 14px;
 }
 
 #footer {
@@ -172,14 +125,18 @@ body {
 
 
 @media only screen and (max-width: 1033px ) {
-    .registerUser h2 {
-        font-size: 40px;
+    .registerUser {
+        padding-top: 20%;
     }
 
-    .registerUser .boxRegister .input {
-        margin-bottom: 5% !important;
-        font-size: 15px;
-    }
+        .registerUser h2 {
+            font-size: 40px;
+        }
+
+        .registerUser .boxRegister .input {
+            margin-bottom: 5% !important;
+            font-size: 15px;
+        }
 
     body {
         background-size: auto;
@@ -213,11 +170,10 @@ body {
 }
 
 
-@media only screen and (max-width: 600px ) {
-    .registerUser {
-        padding-top: 27%;
-    }
-
+@media only screen and (max-width: 625px ) {
+        h1{
+            padding-bottom:5%;
+        }
         .registerUser h2 {
             font-size: 24px;
         }
@@ -227,7 +183,11 @@ body {
         }
 }
 
-@media only screen and (max-width: 530px ) {
+@media only screen and (max-width: 500px ) {
+    .registerUser {
+        padding-top: 30%;
+    }
+
     .registerUser {
         padding-bottom: 10%;
     }
