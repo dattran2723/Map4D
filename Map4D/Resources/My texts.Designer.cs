@@ -331,7 +331,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Đồng ý với Điều khoản dịch vụ và Chính sách quyền riêng tư của Map4D ..
+        ///   Looks up a localized string similar to Đồng ý với Điều khoản dịch vụ và Chính sách quyền riêng tư của Map4D..
         /// </summary>
         public static string DaCoTaiKhoan {
             get {

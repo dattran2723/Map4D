@@ -1,182 +1,5 @@
-﻿/*body {
-    background: #4b9dea;
-}
+﻿
 
-#menu-top #menu-recommend {
-    background: none;
-}
-
-#menu-top #menu-recommend {
-    visibility: hidden;
-}
-
-.form-login {
-    flex: 0 0 27%;
-    max-width: 27%;
-}
-
-#btn-register {
-    display: none !important;
-}
-
-.login {
-    margin: 12% 0 auto 0;
-}
-
-    .login .login-title h1 {
-        font-family: UTM Avo;
-        font-size: 42px;
-        color: white;
-        margin-bottom: 3%;
-        text-align: center;
-    }
-
-    .login .login-content #btn-submit {
-        margin-top: .75rem;
-        background: #0cf8c8;
-        font-family: 'Myriad pro';
-        font-size: 14px;
-        color: black;
-        width: 120px;
-        height: 45px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 0.5s;
-    }
-
-    .login .login-content .form-group label {
-        color: white;
-        font-size: 15px;
-        padding-bottom: .75rem;
-        font-family: Lato;
-    }
-
-    .login .login-content .form-group input {
-        height: 45px;
-    }
-
-    .login .login-content #btn-submit:hover {
-        background: #00cda3;
-    }
-
-.validation-summary-errors ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-    #Email-error, #Password-error, .validation-summary-errors ul li {
-        display: block;
-        height: 35px;
-        font-family: Lato;
-        font-size: 14px;
-        line-height: 32px;
-        margin-top: 2%;
-        background: #FFD9D9;
-        border: 1px solid #FD0F0F;
-        border-radius: .25rem;
-        color: #FF6464;
-        padding-left: 4%;
-    }
-
-p {
-    color: white;
-    font-family: 'Myriad Pro';
-    font-size: 14px;
-    margin-left: 3%;
-}
-
-    p a {
-        color: #0CF8C8;
-    }
-
-        p a:hover {
-            text-decoration: none;
-            color: #1c20e5;
-        }
-
-#remember-me {
-    margin-top: 5%;
-    color: #324e89;
-    font-family: 'Myriad Pro';
-    font-size: 16px;
-}
-
-#footer {
-    background-image: none;
-}
-
-    #footer p {
-        padding-top: 5%;
-        padding-bottom: 0;
-    }
-
-@media only screen and (max-width: 1200px ) {
-    .form-login {
-        flex: 0 0 40%;
-        max-width: 40%;
-    }
-}
-
-@media only screen and (max-width: 1033px) {
-
-    .login {
-        margin-top: 20%;
-    }
-
-        .login .login-title h1 {
-            font-size: 40px;
-        }
-}
-
-@media only screen and (max-width: 960px ) {
-    .form-login {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-}
-
-@media only screen and (max-width: 860px) {
-
-    .login .login-title h1 {
-        font-size: 32px;
-    }
-
-    .login .login-content .form-group input {
-        height: auto;
-    }
-}
-
-@media only screen and (max-width: 625px) {
-    .login .login-title h1 {
-        font-size: 24px;
-        margin-bottom: 7%;
-    }
-
-    .form-login {
-        flex: 0 0 60%;
-        max-width: 60%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .login {
-        margin-top: 30%;
-        margin-top: 27%;
-    }
-
-    .form-login {
-        flex: 0 0 70%;
-        max-width: 70%;
-    }
-}
-
-@media only screen and (max-width: 350px ) {
-    .form-login {
-        flex: 0 0 90%;
-        max-width: 90%;
-    }
-}*/
 @font-face {
     font-family: 'SourceSansPro-Regular';
     src: url('../../../fonts/SourceSansPro-Regular.ttf') format('truetype');
@@ -199,34 +22,6 @@ p {
     flex: 0 0 27%;
     padding-right: 2%;
 }
-
-/*label {
-    color: #fff;
-    height: 25px;
-    margin-bottom: 0.75rem;
-    font-family: Lato;
-    font-size: 15px;
-}*/
-
-.content h2 {
-    color: #fff;
-    font-family: 'UTM Avo';
-    font-size: 42px;
-    padding-bottom: 2%;
-}
-
-.box .btn-submit {
-    background-color: #0df8c8;
-    border-radius: 4px;
-    margin-top: 4%;
-    line-height: 19px;
-    font-size: 14px;
-    font-family: Myriad pro;
-}
-
-    .box button:hover {
-        background-color: #00cfa5;
-    }
 
 
 .questions p {
@@ -259,31 +54,25 @@ body {
 #menu-top #menu-recommend {
     visibility: hidden;
 }
+
 .validation-summary-errors > ul {
-    padding-left:0;
-}
-.field-validation-error > span, .validation-summary-errors > ul > li {
-    display: block;
-    background: #FFD9D9;
-    border: 1px solid #FD0F0F;
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin-top: 12px;
-    text-align: left;
-    padding-left: 4%;
-    line-height: 32px;
-    font-family: Lato;
-    font-size: 14px;
-    margin-left: 0;
+    padding-left: 0;
 }
 
-#btn-register {
-    display: none;
-}
-
-#footer {
-    background-image: none;
-}
+    .field-validation-error > span, .validation-summary-errors > ul > li {
+        display: block;
+        background: #FFD9D9;
+        border: 1px solid #FD0F0F;
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin-top: 12px;
+        text-align: left;
+        padding-left: 4%;
+        line-height: 32px;
+        font-family: Lato;
+        font-size: 14px;
+        margin-left: 0;
+    }
 
 @media only screen and (max-width: 1200px ) {
     .box {
@@ -296,10 +85,6 @@ body {
     .content {
         padding-top: 20%;
     }
-
-        .content h2 {
-            font-size: 40px;
-        }
 }
 
 
@@ -312,40 +97,13 @@ body {
 
 @media only screen and (max-width: 860px ) {
 
-    .content h2 {
-        font-size: 32px;
-    }
-
     .box {
         max-width: 40%;
         flex: 0 0 50%;
     }
-
-        .box .input {
-            line-height: 1.5;
-        }
-
-    .bottom button {
-        line-height: 1.5;
-    }
-}
-
-@media only screen and (max-width: 767px ) {
-
-    .content h2 {
-        font-size: 24px;
-    }
 }
 
 @media only screen and (max-width: 625px ) {
-    h1 {
-        padding-bottom: 5%;
-    }
-
-    .content h2 {
-        font-size: 24px;
-    }
-
     .box {
         max-width: 60%;
         flex: 0 0 60%;
@@ -355,12 +113,8 @@ body {
 @media only screen and (max-width: 500px ) {
     .content {
         padding-top: 30%;
-    }
-
-    .content {
         padding-bottom: 10%;
     }
-
 
     .questions {
         padding-bottom: 5%;

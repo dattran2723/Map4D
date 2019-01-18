@@ -1,4 +1,8 @@
-﻿.title-label {
+﻿#menu-top #menu-recommend {
+    visibility: hidden;
+}
+
+.title-label {
     color: #fff;
     font-family: 'Lato';
     font-size: 15px;

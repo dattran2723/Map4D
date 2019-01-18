@@ -45,10 +45,6 @@
 }
 
 
-#menu-top nav .collapse ul li #btn-register {
-    display: none;
-}
-
 @media only screen and (max-width: 1200px ) {
     .registerUser .boxRegister {
         max-width: 100% !important;
