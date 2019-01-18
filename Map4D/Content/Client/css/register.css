@@ -1,14 +1,4 @@
-﻿@font-face {
-    font-family: 'SourceSansPro-Regular';
-    src: url('../../../fonts/SourceSansPro-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'MyriadPro-Light';
-    src: url('../../../fonts/MyriadPro-Light.otf') format('opentype');
-}
-
-body {
+﻿body {
     background-color: #4B9DE9;
 }
 
@@ -16,16 +6,12 @@ body {
     visibility: hidden;
 }
 
-.title-register {
+label {
     color: #fff;
-    height: 25px;
-    margin-bottom: 0.75rem;
+    font-family: 'Lato';
+    font-size: 15px;
+    line-height: 28px;
 }
-
-    .title-register label {
-        font-family: 'Lato';
-        font-size: 15px;
-    }
 
 .registerUser {
     width: 100%;
@@ -67,19 +53,19 @@ body {
             line-height: 20px;
         }
 
-            .registerUser .divBottom .have-account p a {
-                padding-left: 0%;
-                color: #0df8c8;
-                font-size: 14px;
-                text-decoration: none !important;
-                font-family: Myriad pro;
-            }
+        .registerUser .divBottom .have-account a {
+            padding-left: 0%;
+            color: #0df8c8;
+            font-size: 14px;
+            text-decoration: none !important;
+            font-family: Myriad pro;
+        }
 
         .registerUser .divBottom button {
             background-color: #0df8c8;
             border-radius: 4px;
             margin-top: 4%;
-            line-height: 19px;
+            line-height: 2;
             font-size: 14px;
             font-family: Myriad pro;
         }
@@ -178,9 +164,6 @@ body {
 }
 
 @media only screen and (max-width: 625px ) {
-    h1 {
-        padding-bottom: 5%;
-    }
 
     .registerUser h2 {
         font-size: 24px;
