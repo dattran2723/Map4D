@@ -2313,7 +2313,24 @@
     <Content Include="Content\Client\sweetalert\sweet-alert-animations.less" />
     <Content Include="Content\Client\sweetalert\sweet-alert-combine.less" />
     <Content Include="Content\Client\sweetalert\sweet-alert.less" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="fonts\Lato-Black.ttf" />
+    <Content Include="fonts\Lato-BlackItalic.ttf" />
+    <Content Include="fonts\Lato-Bold.ttf" />
+    <Content Include="fonts\Lato-BoldItalic.ttf" />
+    <Content Include="fonts\Lato-Hairline.ttf" />
+    <Content Include="fonts\Lato-HairlineItalic.ttf" />
+    <Content Include="fonts\Lato-Heavy.ttf" />
+    <Content Include="fonts\Lato-HeavyItalic.ttf" />
+    <Content Include="fonts\Lato-Italic.ttf" />
+    <Content Include="fonts\Lato-Light.ttf" />
+    <Content Include="fonts\Lato-LightItalic.ttf" />
+    <Content Include="fonts\Lato-Medium.ttf" />
+    <Content Include="fonts\Lato-MediumItalic.ttf" />
+    <Content Include="fonts\Lato-Regular.ttf" />
+    <Content Include="fonts\Lato-Semibold.ttf" />
+    <Content Include="fonts\Lato-SemiboldItalic.ttf" />
+    <Content Include="fonts\Lato-Thin.ttf" />
+    <Content Include="fonts\Lato-ThinItalic.ttf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\datatable\dataTables.bootstrap.min.js" />
     <Content Include="Scripts\datatable\dataTables.fixedHeader.min.js" />
@@ -2402,6 +2419,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Properties\" />
     <Folder Include="Views\Language\" />
   </ItemGroup>
   <ItemGroup>

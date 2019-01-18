@@ -11,9 +11,8 @@
     <div class="login-title col-12">
         <h1>@Map4D.Resources.My_texts.ĐăngNhập</h1>
     </div>
-    <!-- /.login-logo -->
-    <div class="login-content col-12">
-        <div class="col-11 col-sm-8 col-xl-4 col-lg-5 mx-auto form-login">
+    <div class="login-content col-12 p-0">
+        <div class="col-9 col-sm-5 col-md-5 col-lg-4  mx-auto form-login">
             @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal" }))
             {
                 @Html.AntiForgeryToken()
@@ -29,12 +28,12 @@
                     @Html.ValidationMessageFor(m => m.Password)
                 </div>
                 <div class="row ml-0 mr-0">
-                    <input type="submit" name="name" class="btn col-12 mt-1" id="btn-submit" value="@Map4D.Resources.My_texts.ĐăngNhập" />
+                    <input type="submit" name="name" class="btn col-12" id="btn-submit" value="@Map4D.Resources.My_texts.ĐăngNhập" />
                 </div>
                 <div class="row ml-0 mr-0 mt-3">
                     <p>
-                        @Map4D.Resources.My_texts.DoNotHaveAnAccount <a href="@Url.Action("Register","Account")">@Map4D.Resources.My_texts.RegisterMap4D <i class="fas fa-angle-right"></i></a><br />
-                        <a href="@Url.Action("ForgotPassword","Account")">@Map4D.Resources.My_texts.ForgotPassword <i class="fas fa-angle-right"></i></a>
+                        @Map4D.Resources.My_texts.DoNotHaveAnAccount <a href="@Url.Action("Register","Account")">@Map4D.Resources.My_texts.RegisterMap4D</a><br />
+                        <a href="@Url.Action("ForgotPassword","Account")">@Map4D.Resources.My_texts.ForgotPassword</a>
                     </p>
                 </div>
             }

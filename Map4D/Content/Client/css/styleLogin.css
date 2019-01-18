@@ -2,38 +2,40 @@
     background: #4b9dea;
 }
 
-#menu-top {
-    margin-top: -1%;
+#menu-top #menu-recommend {
+    background: none;
 }
 
-    #menu-top #menu-recommend {
-        background: none;
-    }
+#menu-top #menu-recommend {
+    visibility: hidden;
+}
 
-    #menu-top #menu-recommend {
-        visibility: hidden;
-    }
+.form-login {
+    flex: 0 0 27%;
+    max-width: 27%;
+}
 
 #btn-register {
     display: none !important;
 }
 
 .login {
-    margin: 11% 0 auto 0;
+    margin: 12% 0 auto 0;
 }
 
     .login .login-title h1 {
-        font-family: 'UTM Avo';
-        font-size: 44px;
+        font-family: UTM Avo;
+        font-size: 42px;
         color: white;
-        margin-bottom: 2%;
+        margin-bottom: 3%;
         text-align: center;
     }
 
     .login .login-content #btn-submit {
+        margin-top: .75rem;
         background: #0cf8c8;
         font-family: 'Myriad pro';
-        font-size:18px;
+        font-size: 14px;
         color: black;
         width: 120px;
         height: 45px;
@@ -43,14 +45,16 @@
         transition: 0.5s;
     }
 
-    .login .login-content .form-group label{
+    .login .login-content .form-group label {
         color: white;
-        font-size: 18px;
+        font-size: 15px;
+        padding-bottom: .75rem;
+        font-family: Lato;
     }
 
-        .login .login-content .form-group input {
-            height: 45px;
-        }
+    .login .login-content .form-group input {
+        height: 45px;
+    }
 
     .login .login-content #btn-submit:hover {
         background: #00cda3;
@@ -58,29 +62,38 @@
 
 .validation-summary-errors ul {
     list-style: none;
-    padding-left:0;
+    padding-left: 0;
 }
 
     #Email-error, #Password-error, .validation-summary-errors ul li {
         display: block;
         height: 35px;
-        line-height: 30px;
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 32px;
         margin-top: 2%;
         background: #FFD9D9;
         border: 1px solid #FD0F0F;
         border-radius: .25rem;
         color: #FF6464;
-        padding-left: 2%;
+        padding-left: 4%;
     }
-p{
+
+p {
     color: white;
     font-family: 'Myriad Pro';
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 3%;
 }
+
     p a {
-        color: #0cf8c8;
+        color: #0CF8C8;
     }
+
+        p a:hover {
+            text-decoration: none;
+            color: #1c20e5;
+        }
 
 #remember-me {
     margin-top: 5%;
@@ -90,7 +103,19 @@ p{
 }
 
 #footer {
-    display: none;
+    background-image: none;
+}
+
+    #footer p {
+        padding-top: 5%;
+        padding-bottom: 0;
+    }
+
+@media only screen and (max-width: 1200px ) {
+    .form-login {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
 }
 
 @media only screen and (max-width: 1033px) {
@@ -102,27 +127,11 @@ p{
         .login .login-title h1 {
             font-size: 40px;
         }
-
-        .login .login-content #btn-submit {
-            width: 100px;
-            height: 40px;
-            font-size: 16px;
-        }
-
-    #remember-me {
-        font-size: 14px;
-    }
 }
 
-@media only screen and (min-width: 1033px) {
+@media only screen and (max-width: 960px ) {
     .form-login {
-        max-width: 28%;
-        flex: 0 0 28%;
-    }
-}
-@media only screen and (max-width: 960px) {
-
-    .login .login-content .form-login {
+        flex: 0 0 50%;
         max-width: 50%;
     }
 }
@@ -133,50 +142,38 @@ p{
         font-size: 32px;
     }
 
-    .login .login-content .form-login {
-        max-width: 40%;
-    }
-
     .login .login-content .form-group input {
         height: auto;
     }
-
-    .login .login-content #btn-submit {
-        width: 90px;
-        height: 30px;
-        font-size: 12px;
-    }
-
-    #remember-me {
-        font-size: 10px;
-    }
 }
-@media only screen and (max-width: 625px) {
 
-    .login {
-        margin-top: 25%;
+@media only screen and (max-width: 625px) {
+    .login .login-title h1 {
+        font-size: 24px;
+        margin-bottom: 7%;
     }
 
-        .login .login-title h1 {
-            font-size: 20px;
-        }
-
-        .login .login-content .form-login {
-            max-width: 60%;
-        }
+    .form-login {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
-
     .login {
-        margin-top: 40%;
+        margin-top: 30%;
+        margin-top: 27%;
     }
 
-        .login .login-content .form-login {
-            max-width: 70%;
-        }
+    .form-login {
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+}
 
-    #remember-me {
-        font-size: 10px;
+@media only screen and (max-width: 350px ) {
+    .form-login {
+        flex: 0 0 90%;
+        max-width: 90%;
     }
 }
