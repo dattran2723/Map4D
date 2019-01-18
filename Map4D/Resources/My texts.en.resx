@@ -523,7 +523,7 @@
     <value>Okay</value>
   </data>
   <data name="PageFogot_quenmatkhau" xml:space="preserve">
-    <value>Forgot your password?</value>
+    <value>Forgot your password</value>
   </data>
   <data name="PageFogot_taikhoanchuaxacnhan" xml:space="preserve">
     <value>The account has not been previously verified</value>

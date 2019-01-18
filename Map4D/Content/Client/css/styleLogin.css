@@ -10,6 +10,11 @@
     visibility: hidden;
 }
 
+.form-login {
+    flex: 0 0 27%;
+    max-width: 27%;
+}
+
 #btn-register {
     display: none !important;
 }
@@ -63,7 +68,9 @@
     #Email-error, #Password-error, .validation-summary-errors ul li {
         display: block;
         height: 35px;
-        line-height: 30px;
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 32px;
         margin-top: 2%;
         background: #FFD9D9;
         border: 1px solid #FD0F0F;
@@ -104,6 +111,12 @@ p {
         padding-bottom: 0;
     }
 
+@media only screen and (max-width: 1200px ) {
+    .form-login {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+}
 
 @media only screen and (max-width: 1033px) {
 
@@ -114,28 +127,11 @@ p {
         .login .login-title h1 {
             font-size: 40px;
         }
-
-        .login .login-content #btn-submit {
-            width: 100px;
-            height: 40px;
-            font-size: 16px;
-        }
-
-    #remember-me {
-        font-size: 14px;
-    }
 }
 
-@media only screen and (min-width: 1033px) {
+@media only screen and (max-width: 960px ) {
     .form-login {
-        max-width: 28%;
-        flex: 0 0 28%;
-    }
-}
-
-@media only screen and (max-width: 960px) {
-
-    .login .login-content .form-login {
+        flex: 0 0 50%;
         max-width: 50%;
     }
 }
@@ -146,52 +142,38 @@ p {
         font-size: 32px;
     }
 
-    .login .login-content .form-login {
-        max-width: 40%;
-    }
-
     .login .login-content .form-group input {
         height: auto;
-    }
-
-    .login .login-content #btn-submit {
-        width: 90px;
-        height: 30px;
-        font-size: 12px;
-    }
-
-    #remember-me {
-        font-size: 10px;
     }
 }
 
 @media only screen and (max-width: 625px) {
-
-    .login {
-        margin-top: 25%;
+    .login .login-title h1 {
+        font-size: 24px;
+        margin-bottom: 7%;
     }
 
-        .login .login-title h1 {
-            font-size: 24px;
-            margin-bottom: 10%;
-        }
-
-        .login .login-content .form-login {
-            max-width: 60%;
-        }
+    .form-login {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
-
     .login {
-        margin-top: 40%;
+        margin-top: 30%;
+        margin-top: 27%;
     }
 
-        .login .login-content .form-login {
-            max-width: 70%;
-        }
+    .form-login {
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+}
 
-    #remember-me {
-        font-size: 10px;
+@media only screen and (max-width: 350px ) {
+    .form-login {
+        flex: 0 0 90%;
+        max-width: 90%;
     }
 }

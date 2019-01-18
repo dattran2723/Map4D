@@ -11,9 +11,8 @@
     <div class="login-title col-12">
         <h1>@Map4D.Resources.My_texts.ĐăngNhập</h1>
     </div>
-    <!-- /.login-logo -->
-    <div class="login-content col-12">
-        <div class="col-11 col-sm-8 col-xl-4 col-lg-5 mx-auto form-login">
+    <div class="login-content col-12 p-0">
+        <div class="col-9 col-sm-5 col-md-5 col-lg-4  mx-auto form-login">
             @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal" }))
             {
                 @Html.AntiForgeryToken()
