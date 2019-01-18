@@ -22,7 +22,7 @@ body {
     margin-bottom: 0.75rem;
 }
 
-    .title-register p {
+    .title-register label {
         font-family: 'Lato';
         font-size: 15px;
     }
@@ -43,6 +43,7 @@ body {
 
     .registerUser .boxRegister {
         flex: 0 0 27%;
+        padding-right: 2%;
     }
 
         .registerUser .boxRegister .input {
@@ -56,40 +57,40 @@ body {
         width: 100%;
     }
 
-        .registerUser .divBottom .have-account a {
-            padding-left: 0%;
-            color: #0df8c8;
+        .registerUser .divBottom .have-account p {
+            padding-right: 5%;
+            text-align: justify;
+            margin-top: 0.75rem;
+            color: #fff;
             font-size: 14px;
-            text-decoration: underline;
-            font-family: SourceSansPro-Regular;
+            font-family: Myriad pro;
+            line-height: 20px;
         }
+
+            .registerUser .divBottom .have-account p a {
+                padding-left: 0%;
+                color: #0df8c8;
+                font-size: 14px;
+                text-decoration: none !important;
+                font-family: Myriad pro;
+            }
 
         .registerUser .divBottom button {
             background-color: #0df8c8;
             border-radius: 4px;
             margin-top: 4%;
-            line-height: 2;
+            line-height: 19px;
+            font-size: 14px;
+            font-family: Myriad pro;
         }
 
             .registerUser .divBottom button:hover {
                 background-color: #00cfa5;
             }
 
-.have-account {
-    margin-top: 0.75rem;
-    color: #fff;
-    font-size: 14px;
-    font-family: MyriadPro-Light;
-}
-
-    .have-account span a {
-        font-family: MyriadPro-Light;
-        text-decoration: none !important;
-    }
-
-.registerUser .divBottom .have-account a:hover {
-    color: #1c20e5;
-}
+        .registerUser .divBottom .have-account a:hover {
+            color: #1c20e5;
+        }
 
 #DisplayName-error, #UserName-error, #Password-error, #ConfirmPassword-error, #Email-error {
     display: block;
@@ -177,16 +178,17 @@ body {
 }
 
 @media only screen and (max-width: 625px ) {
-        h1{
-            padding-bottom:5%;
-        }
-        .registerUser h2 {
-            font-size: 24px;
-        }
+    h1 {
+        padding-bottom: 5%;
+    }
 
-        .registerUser .boxRegister {
-            flex: 0 0 60%;
-        }
+    .registerUser h2 {
+        font-size: 24px;
+    }
+
+    .registerUser .boxRegister {
+        flex: 0 0 60%;
+    }
 }
 
 @media only screen and (max-width: 500px ) {

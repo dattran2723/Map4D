@@ -21,6 +21,7 @@
 
 .login {
     margin: 12% 0 auto 0;
+    padding-right: 2%;
 }
 
     .login .login-title h1 {
@@ -127,16 +128,6 @@ p {
         .login .login-title h1 {
             font-size: 40px;
         }
-
-        .login .login-content #btn-submit {
-            width: 100px;
-            height: 40px;
-            font-size: 16px;
-        }
-
-    #remember-me {
-        font-size: 14px;
-    }
 }
 
 @media only screen and (max-width: 960px ) {
@@ -155,16 +146,6 @@ p {
     .login .login-content .form-group input {
         height: auto;
     }
-
-    .login .login-content #btn-submit {
-        width: 90px;
-        height: 30px;
-        font-size: 12px;
-    }
-
-    #remember-me {
-        font-size: 10px;
-    }
 }
 
 @media only screen and (max-width: 625px) {
@@ -182,19 +163,12 @@ p {
 @media only screen and (max-width: 500px) {
     .login {
         margin-top: 30%;
-    }
-
-    .login {
         margin-top: 27%;
     }
 
     .form-login {
         flex: 0 0 70%;
         max-width: 70%;
-    }
-
-    #remember-me {
-        font-size: 10px;
     }
 }
 
