@@ -11,13 +11,12 @@ using System.Web.Mvc;
 
 namespace Map4D.Controllers
 {
-
     public class HomeController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
-        SmtpClient client = new SmtpClient();
+        private SmtpClient client = new SmtpClient();
 
-        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")] // Xóa cache không cho điền lại form submit 
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")] // Xóa cache không cho điền lại form submit
         public ActionResult Index()
         {
             return View();
@@ -92,7 +91,6 @@ namespace Map4D.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest, message);
             }
             return View("Index");
-
         }
 
         public void SendMail(string guestMail)
@@ -126,6 +124,7 @@ namespace Map4D.Controllers
         {
             return View();
         }
+
         public ActionResult SendMailRegister()
         {
             return View();
