@@ -18,8 +18,9 @@ body {
 
 .title-register {
     color: #fff;
-    height: 25px;
-    margin-bottom: 0.75rem;
+    line-height: 28px;
+    margin-bottom: 8px;
+    height: 28px;
 }
 
     .title-register p {
@@ -78,7 +79,9 @@ body {
 #btnRegister {
     font-family: MyriadPro-Light;
     font-size: 14px;
+    line-height:2;
 }
+
 
 .have-account {
     margin-top: 0.75rem;
@@ -97,7 +100,7 @@ body {
 }
 
 #DisplayName-error {
-    font-family:'Lato';
+    font-family: 'Lato';
     display: block;
     background: #FFD9D9;
     border: 1px solid #FD0F0F;
