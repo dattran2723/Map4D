@@ -1970,6 +1970,7 @@
     <Content Include="Content\Client\css\styleMenu.css" />
     <Content Include="Content\Client\css\styleProducts.css" />
     <Content Include="Content\Client\css\styleSendMailRegister.css" />
+    <Content Include="Content\Client\css\textbox-button-label.css" />
     <Content Include="Content\Client\img\bg.jpg" />
     <Content Include="Content\Client\img\Customer1.png" />
     <Content Include="Content\Client\img\Customer2.png" />
