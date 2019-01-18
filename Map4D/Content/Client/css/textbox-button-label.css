@@ -36,7 +36,8 @@
         background-color: #00cfa5;
     }
 
-#DisplayName-error, #UserName-error, #Password-error, #ConfirmPassword-error, #Email-error {
+
+.field-validation-error > span, .validation-summary-errors > ul > li {
     display: block;
     background: #FFD9D9;
     border: 1px solid #FD0F0F;
@@ -48,6 +49,7 @@
     line-height: 32px;
     font-family: Lato;
     font-size: 14px;
+    margin-left: 0;
 }
 
 body {
