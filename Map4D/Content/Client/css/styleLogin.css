@@ -2,24 +2,20 @@
     background: #4b9dea;
 }
 
-#menu-top {
-    margin-top: -1%;
+#menu-top #menu-recommend {
+    background: none;
 }
 
-    #menu-top #menu-recommend {
-        background: none;
-    }
-
-    #menu-top #menu-recommend {
-        visibility: hidden;
-    }
+#menu-top #menu-recommend {
+    visibility: hidden;
+}
 
 #btn-register {
     display: none !important;
 }
 
 .login {
-    margin: 11% 0 auto 0;
+    margin: 12% 0 auto 0;
 }
 
     .login .login-title h1 {
@@ -48,6 +44,7 @@
         color: white;
         font-size: 15px;
         padding-bottom: .75rem;
+        font-family: Lato;
     }
 
     .login .login-content .form-group input {
@@ -85,9 +82,10 @@ p {
     p a {
         color: #0CF8C8;
     }
+
         p a:hover {
             text-decoration: none;
-            color: #1a1da9;
+            color: #1c20e5;
         }
 
 #remember-me {
@@ -175,7 +173,7 @@ p {
 
         .login .login-title h1 {
             font-size: 24px;
-            margin-bottom:10%;
+            margin-bottom: 10%;
         }
 
         .login .login-content .form-login {
