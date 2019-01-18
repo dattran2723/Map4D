@@ -340,7 +340,7 @@ namespace Map4D.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Đã có sẳn tài khoản đăng nhập &gt;.
+        ///   Looks up a localized string similar to Đã có sẳn tài khoản đăng nhập.
         /// </summary>
         public static string ĐãCóTàiKhoản {
             get {

@@ -2,7 +2,10 @@
     font-family: 'SourceSansPro-Regular';
     src: url('../../../fonts/SourceSansPro-Regular.ttf') format('truetype');
 }
-
+@font-face {
+    font-family: 'MyriadPro-Light';
+    src: url('../../../fonts/MyriadPro-Light.otf') format('opentype');
+}
 body {
     background-color: #4B9DE9;
 }
@@ -14,10 +17,11 @@ body {
 .title-register {
     color: #fff;
     height: 25px;
+    margin-bottom:4%;
 }
 
     .title-register p {
-        font-size: 16px;
+        font-size: 15px;
     }
 
 .registerUser {
@@ -30,7 +34,7 @@ body {
     .registerUser h2 {
         color: #fff;
         font-family: 'UTM Avo';
-        font-size: 44px;
+        font-size: 42px;
         padding-bottom: 2%;
     }
 
@@ -52,7 +56,7 @@ body {
         .registerUser .divBottom .have-account a {
             padding-left: 0%;
             color: #0df8c8;
-            font-size: 16px;
+            font-size: 14px;
             text-decoration: underline;
             font-family: SourceSansPro-Regular;
         }
@@ -69,12 +73,14 @@ body {
             }
 
 .have-account {
-    margin-top: 6%;
+    margin-top: 8%;
     color: #fff;
     font-size: 14px;
+    font-family: MyriadPro-Light;
 }
 
     .have-account span a {
+        font-family: MyriadPro-Light;
         text-decoration: none !important;
     }
 
