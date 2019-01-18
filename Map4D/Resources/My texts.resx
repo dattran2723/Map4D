@@ -591,4 +591,7 @@
   <data name="XacNhanMatKhauValidate" xml:space="preserve">
     <value>Mật khẩu xác nhận không đúng</value>
   </data>
+  <data name="RequiredEmailLogin" xml:space="preserve">
+    <value>Vui lòng nhập tên người dùng hoặc email.</value>
+  </data>
 </root>
