@@ -852,15 +852,19 @@
     background-size: 100%;
 }
 
-    #get-in-touch-icon a label {
-        width: 42px;
-        height: 42px;
-        background: white;
-        border-radius: 50%;
-        font-size: 25px;
-        cursor: pointer;
-        box-shadow: 0 0 30px rgb(232, 225, 225);
+    #get-in-touch-icon a {
+        color: #43a4e7;
     }
+
+        #get-in-touch-icon a label {
+            width: 42px;
+            height: 42px;
+            background: white;
+            border-radius: 50%;
+            font-size: 25px;
+            cursor: pointer;
+            box-shadow: 0 0 30px rgb(232, 225, 225);
+        }
 
 
 #get-in-touch-form input {
