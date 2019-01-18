@@ -259,8 +259,10 @@ body {
 #menu-top #menu-recommend {
     visibility: hidden;
 }
-
-#Password-error, #Email-error {
+.validation-summary-errors > ul {
+    padding-left:0;
+}
+.field-validation-error > span, .validation-summary-errors > ul > li {
     display: block;
     background: #FFD9D9;
     border: 1px solid #FD0F0F;
@@ -272,6 +274,7 @@ body {
     line-height: 32px;
     font-family: Lato;
     font-size: 14px;
+    margin-left: 0;
 }
 
 #btn-register {
