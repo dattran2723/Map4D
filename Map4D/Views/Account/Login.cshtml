@@ -7,39 +7,69 @@
 @section css{
     <link href="~/Content/Client/css/styleLogin.css" rel="stylesheet" />
 }
-<div class="login row w-100">
-    <div class="login-title col-12">
-        <h1>@Map4D.Resources.My_texts.ĐăngNhập</h1>
-    </div>
-    <div class="login-content col-12 p-0">
-        <div class="col-9 col-sm-5 col-md-5 col-lg-4  mx-auto form-login">
-            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal" }))
-            {
-                @Html.AntiForgeryToken()
-                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                <div class="form-group">
-                    <label>@Map4D.Resources.My_texts.UsernameOrEmail</label>
-                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-                    @Html.ValidationMessageFor(m => m.Email)
-                </div>
-                <div class="form-group">
-                    <label>@Map4D.Resources.My_texts.MậtKhẩu</label>
-                    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-                    @Html.ValidationMessageFor(m => m.Password)
-                </div>
-                <div class="row ml-0 mr-0">
-                    <input type="submit" name="name" class="btn col-12" id="btn-submit" value="@Map4D.Resources.My_texts.ĐăngNhập" />
-                </div>
-                <div class="row ml-0 mr-0 mt-3">
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "w-100", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row content">
+        <h2 class="col-12 text-center">@Map4D.Resources.My_texts.ĐăngNhập</h2>
+        <div class="box col-lg-4 col-sm-5 col-9 mx-auto">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                <label>@Map4D.Resources.My_texts.UsernameOrEmail</label>
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Email)
+
+            </div>
+            <div class="form-group">
+                <label>@Map4D.Resources.My_texts.MậtKhẩu</label>
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control input" })
+                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group bottom">
+                <button type="submit" id="btnRegister" class=" col-12 btn">@Map4D.Resources.My_texts.ĐăngNhập</button>
+                <div class="col-12 questions pl-0 pr-0">
                     <p>
                         @Map4D.Resources.My_texts.DoNotHaveAnAccount <a href="@Url.Action("Register","Account")">@Map4D.Resources.My_texts.RegisterMap4D</a><br />
                         <a href="@Url.Action("ForgotPassword","Account")">@Map4D.Resources.My_texts.ForgotPassword</a>
                     </p>
                 </div>
-            }
+            </div>
         </div>
     </div>
-</div>
+}
+@*<div class="login row w-100">
+        <div class="login-title col-12">
+            <h1>@Map4D.Resources.My_texts.ĐăngNhập</h1>
+        </div>
+        <div class="login-content col-12 p-0">
+            <div class="col-9 col-sm-5 col-md-5 col-lg-4  mx-auto form-login">
+                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-group">
+                        <label>@Map4D.Resources.My_texts.UsernameOrEmail</label>
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Email)
+                    </div>
+                    <div class="form-group">
+                        <label>@Map4D.Resources.My_texts.MậtKhẩu</label>
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Password)
+                    </div>
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="row ml-0 mr-0">
+                        <input type="submit" name="name" class="btn col-12" id="btn-submit" value="@Map4D.Resources.My_texts.ĐăngNhập" />
+                    </div>
+                    <div class="row ml-0 mr-0 mt-3">
+                        <p>
+                            @Map4D.Resources.My_texts.DoNotHaveAnAccount <a href="@Url.Action("Register","Account")">@Map4D.Resources.My_texts.RegisterMap4D</a><br />
+                            <a href="@Url.Action("ForgotPassword","Account")">@Map4D.Resources.My_texts.ForgotPassword</a>
+                        </p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>*@
 @section scripts{
     <script src="~/Scripts/jquery.validate.min.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
