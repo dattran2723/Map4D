@@ -33,7 +33,7 @@
     .login .login-content #btn-submit {
         background: #0cf8c8;
         font-family: 'Myriad pro';
-        font-size:18px;
+        font-size: 18px;
         color: black;
         width: 120px;
         height: 45px;
@@ -43,14 +43,14 @@
         transition: 0.5s;
     }
 
-    .login .login-content .form-group label{
+    .login .login-content .form-group label {
         color: white;
         font-size: 18px;
     }
 
-        .login .login-content .form-group input {
-            height: 45px;
-        }
+    .login .login-content .form-group input {
+        height: 45px;
+    }
 
     .login .login-content #btn-submit:hover {
         background: #00cda3;
@@ -58,7 +58,7 @@
 
 .validation-summary-errors ul {
     list-style: none;
-    padding-left:0;
+    padding-left: 0;
 }
 
     #Email-error, #Password-error, .validation-summary-errors ul li {
@@ -72,12 +72,14 @@
         color: #FF6464;
         padding-left: 2%;
     }
-p{
+
+p {
     color: white;
     font-family: 'Myriad Pro';
     font-size: 16px;
     margin-left: 3%;
 }
+
     p a {
         color: #0cf8c8;
     }
@@ -90,8 +92,14 @@ p{
 }
 
 #footer {
-    display: none;
+    background-image: none;
 }
+
+    #footer p {
+        padding-top: 3%;
+        padding-bottom: 0;
+    }
+
 
 @media only screen and (max-width: 1033px) {
 
@@ -120,6 +128,7 @@ p{
         flex: 0 0 28%;
     }
 }
+
 @media only screen and (max-width: 960px) {
 
     .login .login-content .form-login {
@@ -151,6 +160,7 @@ p{
         font-size: 10px;
     }
 }
+
 @media only screen and (max-width: 625px) {
 
     .login {

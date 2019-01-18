@@ -471,7 +471,6 @@ namespace Map4D.Controllers
 
             base.Dispose(disposing);
         }
-
         public Task SendMailRegister(string email)
         {
             SmtpClient smtp = new SmtpClient();
