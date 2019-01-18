@@ -1,0 +1,76 @@
+﻿.title-label {
+    color: #fff;
+    font-family: 'Lato';
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0.75rem;
+}
+
+.title {
+    color: #fff;
+    font-family: 'UTM Avo';
+    font-size: 42px;
+    padding-bottom: 2%;
+}
+
+.form-control {
+    border-radius: 4px;
+    margin: auto;
+    line-height: 2;
+}
+
+.btn-submit {
+    background-color: #0df8c8;
+    border-radius: 4px;
+    margin-top: 4%;
+    line-height: 2;
+    font-size: 14px;
+    font-family: Myriad pro;
+}
+
+    .btn-submit:hover {
+        background-color: #00cfa5;
+    }
+
+#DisplayName-error, #UserName-error, #Password-error, #ConfirmPassword-error, #Email-error {
+    display: block;
+    background: #FFD9D9;
+    border: 1px solid #FD0F0F;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 12px;
+    text-align: left;
+    padding-left: 4%;
+    line-height: 32px;
+    font-family: Lato;
+    font-size: 14px;
+}
+
+body {
+    background-color: #4B9DE9;
+}
+
+#footer {
+    background-image: none;
+}
+
+@media only screen and (max-width: 860px ) {
+    .form-control {
+        line-height: 1.5;
+    }
+
+    .btn-submit {
+        line-height: 1.5;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+}
+
+
+@media only screen and (max-width: 767px ) {
+    .title {
+        font-size: 24px;
+    }
+}
