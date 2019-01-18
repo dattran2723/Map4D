@@ -190,7 +190,7 @@
     <value>Multi platform</value>
   </data>
   <data name="Đăngký" xml:space="preserve">
-    <value>Register</value>
+    <value>Get started</value>
   </data>
   <data name="ĐếnMọiNơiThậtDễDàng" xml:space="preserve">
     <value>Get there faster</value>
@@ -575,5 +575,17 @@
   </data>
   <data name="YesItIsMyEmail" xml:space="preserve">
     <value>Yes, it's my email</value>
+  </data>
+  <data name="EnterDisplayName" xml:space="preserve">
+    <value>Enter display name</value>
+  </data>
+  <data name="TenHienThi" xml:space="preserve">
+    <value>Display name</value>
+  </data>
+  <data name="XacNhanMatKhau" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="XacNhanMatKhauValidate" xml:space="preserve">
+    <value>Confirm password is not match with password</value>
   </data>
 </root>

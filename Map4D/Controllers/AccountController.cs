@@ -204,7 +204,7 @@ namespace Map4D.Controllers
             return View(model);
         }
 
-        
+
         // GET: /Account/ConfirmEmail
         [AllowAnonymous]
         public async Task<ActionResult> ConfirmEmail(string userId, string code)
@@ -482,7 +482,7 @@ namespace Map4D.Controllers
 
             //Nội dung mail
             string content = System.IO.File.ReadAllText(Server.MapPath("~/Views/Home/SendMailRegister.cshtml"));
-            content = content.Replace("{{WeHopeYou}}",Map4D.Resources.My_texts.WeHopeYou);
+            content = content.Replace("{{WeHopeYou}}", Map4D.Resources.My_texts.WeHopeYou);
             content = content.Replace("{{ClickTheButtonBelow}}", Map4D.Resources.My_texts.ClickTheButtonBelow);
             content = content.Replace("{{YesItIsMyEmail}}", Map4D.Resources.My_texts.YesItIsMyEmail);
             content = content.Replace("{{ExploreTheLatest}}", Map4D.Resources.My_texts.ExploreTheLatest);
@@ -496,8 +496,6 @@ namespace Map4D.Controllers
             content = content.Replace("{{ViewThisEmailOnline}}", Map4D.Resources.My_texts.ViewThisEmailOnline);
             content = content.Replace("{{CopyRight}}", Map4D.Resources.My_texts.Bảnquyền);
             content = content.Replace("{{IOTLinkCompany}}", Map4D.Resources.My_texts.CôngtyIOTLink);
-
-
             var fromEmail = new MailAddress("iotocteam123@gmail.com", "Map4D");
             var toEmail = new MailAddress(email);
             var mail = new MailMessage(fromEmail, toEmail)
