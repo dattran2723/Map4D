@@ -2313,6 +2313,7 @@
     <Content Include="Content\Client\sweetalert\sweet-alert-animations.less" />
     <Content Include="Content\Client\sweetalert\sweet-alert-combine.less" />
     <Content Include="Content\Client\sweetalert\sweet-alert.less" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\datatable\dataTables.bootstrap.min.js" />
     <Content Include="Scripts\datatable\dataTables.fixedHeader.min.js" />
@@ -2401,7 +2402,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Properties\" />
     <Folder Include="Views\Language\" />
   </ItemGroup>
   <ItemGroup>
