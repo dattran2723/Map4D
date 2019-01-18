@@ -505,7 +505,7 @@
     <value>We sent an email to you</value>
   </data>
   <data name="PageFogot_dangnhapMap4d" xml:space="preserve">
-    <value>Sign in for Map4D &gt;</value>
+    <value>Sign in for Map4D</value>
   </data>
   <data name="PageFogot_guihuongdancailai" xml:space="preserve">
     <value>Sent reset instructions</value>
@@ -587,5 +587,8 @@
   </data>
   <data name="XacNhanMatKhauValidate" xml:space="preserve">
     <value>Confirm password is not match with password</value>
+  </data>
+  <data name="RequiredEmailLogin" xml:space="preserve">
+    <value>Please enter your username or email.</value>
   </data>
 </root>

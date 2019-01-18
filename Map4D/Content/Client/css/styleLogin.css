@@ -2,38 +2,35 @@
     background: #4b9dea;
 }
 
-#menu-top {
-    margin-top: -1%;
+#menu-top #menu-recommend {
+    background: none;
 }
 
-    #menu-top #menu-recommend {
-        background: none;
-    }
-
-    #menu-top #menu-recommend {
-        visibility: hidden;
-    }
+#menu-top #menu-recommend {
+    visibility: hidden;
+}
 
 #btn-register {
     display: none !important;
 }
 
 .login {
-    margin: 11% 0 auto 0;
+    margin: 12% 0 auto 0;
 }
 
     .login .login-title h1 {
-        font-family: 'UTM Avo';
-        font-size: 44px;
+        font-family: UTM Avo;
+        font-size: 42px;
         color: white;
-        margin-bottom: 2%;
+        margin-bottom: 3%;
         text-align: center;
     }
 
     .login .login-content #btn-submit {
+        margin-top: .75rem;
         background: #0cf8c8;
         font-family: 'Myriad pro';
-        font-size: 18px;
+        font-size: 14px;
         color: black;
         width: 120px;
         height: 45px;
@@ -45,7 +42,9 @@
 
     .login .login-content .form-group label {
         color: white;
-        font-size: 18px;
+        font-size: 15px;
+        padding-bottom: .75rem;
+        font-family: Lato;
     }
 
     .login .login-content .form-group input {
@@ -70,19 +69,24 @@
         border: 1px solid #FD0F0F;
         border-radius: .25rem;
         color: #FF6464;
-        padding-left: 2%;
+        padding-left: 4%;
     }
 
 p {
     color: white;
     font-family: 'Myriad Pro';
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 3%;
 }
 
     p a {
-        color: #0cf8c8;
+        color: #0CF8C8;
     }
+
+        p a:hover {
+            text-decoration: none;
+            color: #1c20e5;
+        }
 
 #remember-me {
     margin-top: 5%;
@@ -96,7 +100,7 @@ p {
 }
 
     #footer p {
-        padding-top: 3%;
+        padding-top: 5%;
         padding-bottom: 0;
     }
 
@@ -168,7 +172,8 @@ p {
     }
 
         .login .login-title h1 {
-            font-size: 20px;
+            font-size: 24px;
+            margin-bottom: 10%;
         }
 
         .login .login-content .form-login {
