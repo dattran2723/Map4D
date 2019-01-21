@@ -1,16 +1,4 @@
 ﻿
-
-@font-face {
-    font-family: 'SourceSansPro-Regular';
-    src: url('../../../fonts/SourceSansPro-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'MyriadPro-Light';
-    src: url('../../../fonts/MyriadPro-Light.otf') format('opentype');
-}
-
-
 .content {
     width: 100%;
     margin: auto;
@@ -35,10 +23,10 @@
 }
 
     .questions p a {
-        padding-left: 0%;
+        padding-left: 0;
         color: #0df8c8;
         font-size: 14px;
-        text-decoration: none !important;
+        text-decoration: none;
         font-family: Myriad pro;
     }
 
