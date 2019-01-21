@@ -241,7 +241,7 @@
     <value>Tên đăng nhập đã tồn tại.</value>
   </data>
   <data name="ĐãCóTàiKhoản" xml:space="preserve">
-    <value>Đã có sẳn tài khoản đăng nhập</value>
+    <value>Đã có sẵn tài khoản đăng nhập</value>
   </data>
   <data name="ĐăngNhập" xml:space="preserve">
     <value>Đăng nhập</value>
@@ -496,7 +496,7 @@
     <value>Web SDK</value>
   </data>
   <data name="DaCoTaiKhoan" xml:space="preserve">
-    <value>Đồng ý với Điều khoản dịch vụ và Chính sách quyền riêng tư của Map4D .</value>
+    <value>Đồng ý với Điều khoản dịch vụ và Chính sách quyền riêng tư của Map4D.</value>
   </data>
   <data name="SupportPackage" xml:space="preserve">
     <value>Gói hỗ trợ</value>

@@ -1,179 +1,112 @@
-﻿body {
-    background: #4b9dea;
+﻿
+
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url('../../../fonts/SourceSansPro-Regular.ttf') format('truetype');
 }
 
-#menu-top #menu-recommend {
-    background: none;
+@font-face {
+    font-family: 'MyriadPro-Light';
+    src: url('../../../fonts/MyriadPro-Light.otf') format('opentype');
+}
+
+
+.content {
+    width: 100%;
+    margin: auto;
+    padding-top: 12%;
+    padding-bottom: 8%;
+}
+
+.box {
+    flex: 0 0 27%;
+    padding-right: 2%;
+}
+
+
+.questions p {
+    padding-right: 5%;
+    text-align: justify;
+    margin-top: 0.75rem;
+    color: #fff;
+    font-size: 14px;
+    font-family: Myriad pro;
+    line-height: 20px;
+}
+
+    .questions p a {
+        padding-left: 0%;
+        color: #0df8c8;
+        font-size: 14px;
+        text-decoration: none !important;
+        font-family: Myriad pro;
+    }
+
+
+.questions a:hover {
+    color: #1c20e5;
+}
+
+body {
+    background-color: #4B9DE9;
 }
 
 #menu-top #menu-recommend {
     visibility: hidden;
 }
 
-.form-login {
-    flex: 0 0 27%;
-    max-width: 27%;
-}
-
-#btn-register {
-    display: none !important;
-}
-
-.login {
-    margin: 12% 0 auto 0;
-}
-
-    .login .login-title h1 {
-        font-family: UTM Avo;
-        font-size: 42px;
-        color: white;
-        margin-bottom: 3%;
-        text-align: center;
-    }
-
-    .login .login-content #btn-submit {
-        margin-top: .75rem;
-        background: #0cf8c8;
-        font-family: 'Myriad pro';
-        font-size: 14px;
-        color: black;
-        width: 120px;
-        height: 45px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 0.5s;
-    }
-
-    .login .login-content .form-group label {
-        color: white;
-        font-size: 15px;
-        padding-bottom: .75rem;
-        font-family: Lato;
-    }
-
-    .login .login-content .form-group input {
-        height: 45px;
-    }
-
-    .login .login-content #btn-submit:hover {
-        background: #00cda3;
-    }
-
-.validation-summary-errors ul {
-    list-style: none;
+.validation-summary-errors > ul {
     padding-left: 0;
 }
 
-    #Email-error, #Password-error, .validation-summary-errors ul li {
-        display: block;
-        height: 35px;
-        font-family: Lato;
-        font-size: 14px;
-        line-height: 32px;
-        margin-top: 2%;
-        background: #FFD9D9;
-        border: 1px solid #FD0F0F;
-        border-radius: .25rem;
-        color: #FF6464;
-        padding-left: 4%;
-    }
-
-p {
-    color: white;
-    font-family: 'Myriad Pro';
-    font-size: 14px;
-    margin-left: 3%;
-}
-
-    p a {
-        color: #0CF8C8;
-    }
-
-        p a:hover {
-            text-decoration: none;
-            color: #1c20e5;
-        }
-
-#remember-me {
-    margin-top: 5%;
-    color: #324e89;
-    font-family: 'Myriad Pro';
-    font-size: 16px;
-}
-
-#footer {
-    background-image: none;
-}
-
-    #footer p {
-        padding-top: 5%;
-        padding-bottom: 0;
-    }
 
 @media only screen and (max-width: 1200px ) {
-    .form-login {
-        flex: 0 0 40%;
+    .box {
         max-width: 40%;
+        flex: 0 0 40%;
     }
 }
 
-@media only screen and (max-width: 1033px) {
-
-    .login {
-        margin-top: 20%;
+@media only screen and (max-width: 1033px ) {
+    .content {
+        padding-top: 20%;
     }
-
-        .login .login-title h1 {
-            font-size: 40px;
-        }
 }
+
 
 @media only screen and (max-width: 960px ) {
-    .form-login {
-        flex: 0 0 50%;
+    .box {
         max-width: 50%;
+        flex: 0 0 50%;
     }
 }
 
-@media only screen and (max-width: 860px) {
-
-    .login .login-title h1 {
-        font-size: 32px;
-    }
-
-    .login .login-content .form-group input {
-        height: auto;
-    }
-}
-
-@media only screen and (max-width: 625px) {
-    .login .login-title h1 {
-        font-size: 24px;
-        margin-bottom: 7%;
-    }
-
-    .form-login {
-        flex: 0 0 60%;
+@media only screen and (max-width: 625px ) {
+    .box {
         max-width: 60%;
+        flex: 0 0 60%;
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .login {
-        margin-top: 30%;
-        margin-top: 27%;
+@media only screen and (max-width: 500px ) {
+    .content {
+        padding-top: 30%;
+        padding-bottom: 10%;
     }
 
-    .form-login {
-        flex: 0 0 70%;
+    .questions {
+        padding-bottom: 5%;
+    }
+
+    .box {
         max-width: 70%;
+        flex: 0 0 70%;
     }
 }
 
 @media only screen and (max-width: 350px ) {
-    .form-login {
-        flex: 0 0 90%;
+    .box {
         max-width: 90%;
+        flex: 0 0 90%;
     }
 }

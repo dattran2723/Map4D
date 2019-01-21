@@ -22,7 +22,7 @@ body {
     margin-bottom: 0.75rem;
 }
 
-    .title-register label {
+    .title-register p {
         font-family: 'Lato';
         font-size: 15px;
     }
@@ -34,85 +34,45 @@ body {
     padding-bottom: 8%;
 }
 
-    .registerUser h2 {
-        color: #fff;
-        font-family: 'UTM Avo';
-        font-size: 42px;
-        padding-bottom: 2%;
-    }
-
     .registerUser .boxRegister {
         flex: 0 0 27%;
         padding-right: 2%;
     }
 
-        .registerUser .boxRegister .input {
-            border-radius: 4px;
-            margin: auto;
-            height: 45px;
-        }
-
-    .registerUser .divBottom {
-        margin: auto;
-        width: 100%;
+    .registerUser .divBottom .have-account p {
+        padding-right: 5%;
+        text-align: justify;
+        margin-top: 0.75rem;
+        color: #fff;
+        font-size: 14px;
+        font-family: Myriad pro;
+        line-height: 20px;
     }
 
-        .registerUser .divBottom .have-account p {
-            padding-right: 5%;
-            text-align: justify;
-            margin-top: 0.75rem;
-            color: #fff;
-            font-size: 14px;
-            font-family: Myriad pro;
-            line-height: 20px;
-        }
+    .registerUser .divBottom .have-account a {
+        padding-left: 0%;
+        color: #0df8c8;
+        font-size: 14px;
+        text-decoration: none !important;
+        font-family: Myriad pro;
+    }
 
-            .registerUser .divBottom .have-account p a {
-                padding-left: 0%;
-                color: #0df8c8;
-                font-size: 14px;
-                text-decoration: none !important;
-                font-family: Myriad pro;
-            }
-
-        .registerUser .divBottom button {
-            background-color: #0df8c8;
-            border-radius: 4px;
-            margin-top: 4%;
-            line-height: 19px;
-            font-size: 14px;
-            font-family: Myriad pro;
-        }
-
-            .registerUser .divBottom button:hover {
-                background-color: #00cfa5;
-            }
-
-        .registerUser .divBottom .have-account a:hover {
-            color: #1c20e5;
-        }
-
-#DisplayName-error, #UserName-error, #Password-error, #ConfirmPassword-error, #Email-error {
-    display: block;
-    background: #FFD9D9;
-    border: 1px solid #FD0F0F;
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin-top: 12px;
-    text-align: left;
-    padding-left: 4%;
-    line-height: 32px;
-    font-family: Lato;
+.have-account {
+    margin-top: 0.75rem;
+    color: #fff;
     font-size: 14px;
+    font-family: MyriadPro-Light;
 }
 
-#footer {
-    background-image: none;
+    .have-account span a {
+        font-family: MyriadPro-Light;
+        text-decoration: none !important;
+    }
+
+.registerUser .divBottom .have-account a:hover {
+    color: #1c20e5;
 }
 
-#menu-top nav .collapse ul li #btn-register {
-    display: none;
-}
 
 @media only screen and (max-width: 1200px ) {
     .registerUser .boxRegister {
@@ -129,20 +89,6 @@ body {
     .registerUser {
         padding-top: 20%;
     }
-
-        .registerUser h2 {
-            font-size: 40px;
-        }
-
-        .registerUser .boxRegister .input {
-            margin-bottom: 5% !important;
-            font-size: 15px;
-        }
-
-    body {
-        background-size: auto;
-        background-repeat: repeat;
-    }
 }
 
 @media only screen and (max-width: 960px ) {
@@ -152,40 +98,12 @@ body {
 }
 
 @media only screen and (max-width: 860px ) {
-
-    .registerUser h2 {
-        font-size: 32px;
-    }
-
     .registerUser .boxRegister {
         flex: 0 0 50%;
-    }
-
-        .registerUser .boxRegister .input {
-            line-height: 1.5;
-        }
-
-    .registerUser .divBottom button {
-        line-height: 1.5;
-    }
-}
-
-@media only screen and (max-width: 767px ) {
-
-    .registerUser h2 {
-        font-size: 24px;
     }
 }
 
 @media only screen and (max-width: 625px ) {
-    h1 {
-        padding-bottom: 5%;
-    }
-
-    .registerUser h2 {
-        font-size: 24px;
-    }
-
     .registerUser .boxRegister {
         flex: 0 0 60%;
     }
@@ -194,28 +112,12 @@ body {
 @media only screen and (max-width: 500px ) {
     .registerUser {
         padding-top: 30%;
-    }
-
-    .registerUser {
         padding-bottom: 10%;
     }
 
-        .registerUser .divBottom a {
-            font-size: 14px;
+        .registerUser .boxRegister {
+            flex: 0 0 70%;
         }
-
-        .registerUser .divBottom button {
-            font-size: 14px;
-        }
-
-    .have-account {
-        padding-bottom: 5%;
-        font-size: 14px;
-    }
-
-    .registerUser .boxRegister {
-        flex: 0 0 70%;
-    }
 }
 
 @media only screen and (max-width: 350px ) {

@@ -5,57 +5,45 @@
 @section css{
     <link href="~/Content/Client/css/register.css" rel="stylesheet" />
     <link href="~/Content/sweetalert/css/sweetalert.min.css" rel="stylesheet" />
+    <link href="~/Content/Client/css/textbox-button-label.css" rel="stylesheet" />
 }
 @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "w-100", role = "form" }))
 {
     @Html.AntiForgeryToken()
     <div class="row registerUser">
-        <h2 class="col-12 text-center">@Map4D.Resources.My_texts.TieuDeDangKy</h2>
+        <h2 class="col-12 title text-center">@Map4D.Resources.My_texts.TieuDeDangKy</h2>
         <div class="boxRegister col-lg-4 col-sm-5 col-9 mx-auto">
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
             <div class="form-group">
-                <div class="title-register">
-                    <label>@Map4D.Resources.My_texts.TenHienThi</label>
-                </div>
-                @Html.TextBoxFor(m => m.DisplayName, new { @class = "form-control input" })
+                <label class="title-label">@Map4D.Resources.My_texts.TenHienThi</label>
+                @Html.TextBoxFor(m => m.DisplayName, new { @class = "form-control" })
                 @Html.ValidationMessageFor(m => m.DisplayName, "", new { @class = "text-danger" })
 
             </div>
             <div class="form-group">
-                <div class="title-register">
-                    <label>@Map4D.Resources.My_texts.TênĐăngNhập</label>
-                </div>
-                @Html.TextBoxFor(m => m.UserName, new { @class = "form-control input" })
+                <label class="title-label">@Map4D.Resources.My_texts.TênĐăngNhập</label>
+                @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
                 @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
-
             </div>
             <div class="form-group">
-                <div class="title-register">
-                    <label>Email</label>
-                </div>
-                @Html.TextBoxFor(m => m.Email, new { @class = "form-control input" })
+                <label class="title-label">Email</label>
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
                 @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
             </div>
             <div class="form-group">
-                <div class="title-register">
-                    <label>@Map4D.Resources.My_texts.MậtKhẩu</label>
-                </div>
-                @Html.PasswordFor(m => m.Password, new { @class = "form-control input" })
+                <label class="title-label">@Map4D.Resources.My_texts.MậtKhẩu</label>
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
                 @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
             </div>
             <div class="form-group">
-                <div class="title-register">
-                    <label>@Map4D.Resources.My_texts.XacNhanMatKhau</label>
-                </div>
-                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control input" })
+                <label class="title-label">@Map4D.Resources.My_texts.XacNhanMatKhau</label>
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
                 @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
             </div>
-            <div class="form-group">
-                <div class="divBottom">
-                    <button type="submit" id="btnRegister" class=" col-12 btn">@Map4D.Resources.My_texts.Đăngký</button>
-                    <div class="col-12 have-account pl-0 pr-0">
-                        <p>@Map4D.Resources.My_texts.DaCoTaiKhoan<a href="@Url.Action("Login","Account")"> @Map4D.Resources.My_texts.ĐãCóTàiKhoản</a></p>
-                    </div>
+            <div class="form-group divBottom mx-auto w-100">
+                <button type="submit" id="btnRegister" class="btn-submit col-12 btn">@Map4D.Resources.My_texts.Đăngký</button>
+                <div class="col-12 have-account pl-0 pr-0">
+                    <p>@Map4D.Resources.My_texts.DaCoTaiKhoan<a href="@Url.Action("Login","Account")"> @Map4D.Resources.My_texts.ĐãCóTàiKhoản</a></p>
                 </div>
             </div>
         </div>
