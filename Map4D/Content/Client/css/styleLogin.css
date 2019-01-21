@@ -81,14 +81,6 @@ body {
     }
 }
 
-@media only screen and (max-width: 860px ) {
-
-    .box {
-        max-width: 40%;
-        flex: 0 0 50%;
-    }
-}
-
 @media only screen and (max-width: 625px ) {
     .box {
         max-width: 60%;
