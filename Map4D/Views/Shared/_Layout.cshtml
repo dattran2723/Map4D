@@ -27,6 +27,15 @@
     <script src="~/Scripts/js/footerScroll.js"></script>
     @*js sweetalert*@
     <script src="~/Content/Client/sweetalert/js/sweetalert.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112387324-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112387324-4');
+    </script>
     @RenderSection("scripts", required: false)
 </body>
 </html>
